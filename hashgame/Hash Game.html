@@ -1390,15 +1390,18 @@
 
 		function copy(textDiv, btn) {
 			let text = $(textDiv).text();
+
 			var clipboard = new Clipboard(btn, {
 				text: function () {
 					return text;
 				}
 			});  
+			
 			clipboard.on('success', function (e) {
 				$("#fuzhi").fadeIn();
-				$("#fuzhi").fadeOut(3000);
+				$("#fuzhi").fadeOut(2000);
 				e.clearSelection();
+				console.log(e.clearSelection());
 				
 			})
 		}

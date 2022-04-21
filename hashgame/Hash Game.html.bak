@@ -1360,8 +1360,6 @@
 
 
 	<div class="vuedl-notification right " style="max-width: 500px; z-index: 2000; top: 10px;display: none;background-color:#4caf50 !important;border-color:#4caf50 !important;" id="fuzhi">
-		 <div  style="margin: 0px; min-width: 300px;">复制成功</div>
-
         <div  class="v-alert v-sheet theme--dark success" style="margin: 0px; min-width: 300px;">
           <div class="v-alert__wrapper">
             <i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-check-circle theme--dark"></i>
@@ -1392,15 +1390,18 @@
 
 		function copy(textDiv, btn) {
 			let text = $(textDiv).text();
+
 			var clipboard = new Clipboard(btn, {
 				text: function () {
 					return text;
 				}
 			});  
+			
 			clipboard.on('success', function (e) {
 				$("#fuzhi").fadeIn();
 				$("#fuzhi").fadeOut(3000);
 				e.clearSelection();
+				console.log(e.clearSelection());
 				
 			})
 		}
