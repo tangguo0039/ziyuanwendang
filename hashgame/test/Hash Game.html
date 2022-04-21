@@ -1,584 +1,1194 @@
 <!DOCTYPE html>
 <!-- saved from url=(0021)https://www.8043.com/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1,viewport-fit=contain"><meta name="theme-color" content="#1a1a26"><link rel="apple-touch-icon" href="https://www.8043.com/favicon.ico"><meta name="apple-mobile-web-app-title" content="Hash-Game"><meta name="rating" content="General"><meta http-equiv="Expires" content="0"><meta http-equiv="Cache-Control" content="no-siteapp no-cache"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Cache" content="no-cache"><meta name="screen-orientation" content="portrait"><meta name="x5-orientation" content="portrait"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="icon" href="https://www.8043.com/favicon.ico"><title>Hash Game</title><link rel="stylesheet" href="./Hash Game_files/css"><link rel="stylesheet" href="./Hash Game_files/materialdesignicons.min.css"><link href="./Hash Game_files/chunk-1ba2429b.f44d659c.css" rel="prefetch"><link href="./Hash Game_files/chunk-1ba2429b.0a672d89.js.下载" rel="prefetch"><link href="https://www.8043.com/js/chunk-47723c3f.7ad111ca.js" rel="prefetch"><link href="./Hash Game_files/app.e35375e7.css" rel="preload" as="style"><link href="./Hash Game_files/chunk-vendors.ec344657.css" rel="preload" as="style"><link href="./Hash Game_files/app.b164434a.js.下载" rel="preload" as="script"><link href="./Hash Game_files/chunk-vendors.6291b02f.js.下载" rel="preload" as="script"><link href="./Hash Game_files/chunk-vendors.ec344657.css" rel="stylesheet"><link href="./Hash Game_files/app.e35375e7.css" rel="stylesheet"><style type="text/css">.video-wrapper[data-v-229e82cd]{display:flex;justify-content:center;align-items:center;width:100%;height:100%;position:absolute;overflow:hidden;z-index:0}.fade[data-v-229e82cd]{-webkit-backface-visibility:hidden;backface-visibility:hidden}.fade-enter-active[data-v-229e82cd],.fade-leave-active[data-v-229e82cd]{transition:opacity 1s}.fade-enter[data-v-229e82cd],.fade-leave-to[data-v-229e82cd]{opacity:0}video[data-v-229e82cd]{visibility:visible;pointer-events:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);height:100%;width:100%}</style><style type="text/css">.video-buffering[data-v-b5717866]{width:100%;overflow:hidden;background-size:cover;background-position:50%;height:100%;top:0;left:0;position:absolute}</style><style type="text/css">.video-overlay[data-v-ea6e5e6a]{height:100%;width:100%;top:0;left:0;position:absolute}</style><style type="text/css">.vue-responsive-videobg[data-v-7bbc3657]{background:none;position:relative;width:100%;overflow:hidden}.vue-responsive-videobg .videobg-content[data-v-7bbc3657]{position:absolute;top:0;left:0;width:100%;height:100%}</style><link rel="stylesheet" type="text/css" href="./Hash Game_files/chunk-1ba2429b.f44d659c.css"><script charset="utf-8" src="./Hash Game_files/chunk-1ba2429b.0a672d89.js.下载"></script><style data-vue-meta="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">.v-application a { color: #42a5f6; }
+<html lang="en">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimum-scale=1,maximum-scale=1,viewport-fit=contain">
+    <meta name="theme-color" content="#1a1a26">
+    <link rel="apple-touch-icon" href="https://www.8043.com/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Hash-Game">
+    <meta name="rating" content="General">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-siteapp no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" href="https://www.8043.com/favicon.ico">
+    <title>Hash Game</title>
+    <link rel="stylesheet" href="./Hash Game_files/css">
+    <link rel="stylesheet" href="./Hash Game_files/materialdesignicons.min.css">
+    <link href="./Hash Game_files/chunk-1ba2429b.f44d659c.css" rel="prefetch">
+    <link href="./Hash Game_files/chunk-1ba2429b.0a672d89.js.下载" rel="prefetch">
+    <link href="https://www.8043.com/js/chunk-47723c3f.7ad111ca.js" rel="prefetch">
+    <link href="./Hash Game_files/app.e35375e7.css" rel="preload" as="style">
+    <link href="./Hash Game_files/chunk-vendors.ec344657.css" rel="preload" as="style">
+    <link href="./Hash Game_files/app.b164434a.js.下载" rel="preload" as="script">
+    <link href="./Hash Game_files/chunk-vendors.6291b02f.js.下载" rel="preload" as="script">
+    <link href="./Hash Game_files/chunk-vendors.ec344657.css" rel="stylesheet">
+    <link href="./Hash Game_files/app.e35375e7.css" rel="stylesheet">
+    <style type="text/css">.video-wrapper[data-v-229e82cd]{display:flex;justify-content:center;align-items:center;width:100%;height:100%;position:absolute;overflow:hidden;z-index:0}.fade[data-v-229e82cd]{-webkit-backface-visibility:hidden;backface-visibility:hidden}.fade-enter-active[data-v-229e82cd],.fade-leave-active[data-v-229e82cd]{transition:opacity 1s}.fade-enter[data-v-229e82cd],.fade-leave-to[data-v-229e82cd]{opacity:0}video[data-v-229e82cd]{visibility:visible;pointer-events:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);height:100%;width:100%}</style>
+    <style type="text/css">.video-buffering[data-v-b5717866]{width:100%;overflow:hidden;background-size:cover;background-position:50%;height:100%;top:0;left:0;position:absolute}</style>
+    <style type="text/css">.video-overlay[data-v-ea6e5e6a]{height:100%;width:100%;top:0;left:0;position:absolute}</style>
+    <style type="text/css">.vue-responsive-videobg[data-v-7bbc3657]{background:none;position:relative;width:100%;overflow:hidden}.vue-responsive-videobg .videobg-content[data-v-7bbc3657]{position:absolute;top:0;left:0;width:100%;height:100%}</style>
+    <link rel="stylesheet" type="text/css" href="./Hash Game_files/chunk-1ba2429b.f44d659c.css">
+    <script charset="utf-8" src="./Hash Game_files/chunk-1ba2429b.0a672d89.js.下载"></script>
+    <style data-vue-meta="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">
+		.v-application a {
+	color:#42a5f6;
+}
 .v-application .primary {
-  background-color: #42a5f6 !important;
-  border-color: #42a5f6 !important;
+	background-color:#42a5f6 !important;
+	border-color:#42a5f6 !important;
 }
 .v-application .primary--text {
-  color: #42a5f6 !important;
-  caret-color: #42a5f6 !important;
+	color:#42a5f6 !important;
+	caret-color:#42a5f6 !important;
 }
 .v-application .primary.lighten-5 {
-  background-color: #e4ffff !important;
-  border-color: #e4ffff !important;
+	background-color:#e4ffff !important;
+	border-color:#e4ffff !important;
 }
 .v-application .primary--text.text--lighten-5 {
-  color: #e4ffff !important;
-  caret-color: #e4ffff !important;
+	color:#e4ffff !important;
+	caret-color:#e4ffff !important;
 }
 .v-application .primary.lighten-4 {
-  background-color: #c5ffff !important;
-  border-color: #c5ffff !important;
+	background-color:#c5ffff !important;
+	border-color:#c5ffff !important;
 }
 .v-application .primary--text.text--lighten-4 {
-  color: #c5ffff !important;
-  caret-color: #c5ffff !important;
+	color:#c5ffff !important;
+	caret-color:#c5ffff !important;
 }
 .v-application .primary.lighten-3 {
-  background-color: #a6f8ff !important;
-  border-color: #a6f8ff !important;
+	background-color:#a6f8ff !important;
+	border-color:#a6f8ff !important;
 }
 .v-application .primary--text.text--lighten-3 {
-  color: #a6f8ff !important;
-  caret-color: #a6f8ff !important;
+	color:#a6f8ff !important;
+	caret-color:#a6f8ff !important;
 }
 .v-application .primary.lighten-2 {
-  background-color: #87dcff !important;
-  border-color: #87dcff !important;
+	background-color:#87dcff !important;
+	border-color:#87dcff !important;
 }
 .v-application .primary--text.text--lighten-2 {
-  color: #87dcff !important;
-  caret-color: #87dcff !important;
+	color:#87dcff !important;
+	caret-color:#87dcff !important;
 }
 .v-application .primary.lighten-1 {
-  background-color: #66c0ff !important;
-  border-color: #66c0ff !important;
+	background-color:#66c0ff !important;
+	border-color:#66c0ff !important;
 }
 .v-application .primary--text.text--lighten-1 {
-  color: #66c0ff !important;
-  caret-color: #66c0ff !important;
+	color:#66c0ff !important;
+	caret-color:#66c0ff !important;
 }
 .v-application .primary.darken-1 {
-  background-color: #008bd9 !important;
-  border-color: #008bd9 !important;
+	background-color:#008bd9 !important;
+	border-color:#008bd9 !important;
 }
 .v-application .primary--text.text--darken-1 {
-  color: #008bd9 !important;
-  caret-color: #008bd9 !important;
+	color:#008bd9 !important;
+	caret-color:#008bd9 !important;
 }
 .v-application .primary.darken-2 {
-  background-color: #0072bd !important;
-  border-color: #0072bd !important;
+	background-color:#0072bd !important;
+	border-color:#0072bd !important;
 }
 .v-application .primary--text.text--darken-2 {
-  color: #0072bd !important;
-  caret-color: #0072bd !important;
+	color:#0072bd !important;
+	caret-color:#0072bd !important;
 }
 .v-application .primary.darken-3 {
-  background-color: #0059a2 !important;
-  border-color: #0059a2 !important;
+	background-color:#0059a2 !important;
+	border-color:#0059a2 !important;
 }
 .v-application .primary--text.text--darken-3 {
-  color: #0059a2 !important;
-  caret-color: #0059a2 !important;
+	color:#0059a2 !important;
+	caret-color:#0059a2 !important;
 }
 .v-application .primary.darken-4 {
-  background-color: #004387 !important;
-  border-color: #004387 !important;
+	background-color:#004387 !important;
+	border-color:#004387 !important;
 }
 .v-application .primary--text.text--darken-4 {
-  color: #004387 !important;
-  caret-color: #004387 !important;
+	color:#004387 !important;
+	caret-color:#004387 !important;
 }
 .v-application .secondary {
-  background-color: #050b1f !important;
-  border-color: #050b1f !important;
+	background-color:#050b1f !important;
+	border-color:#050b1f !important;
 }
 .v-application .secondary--text {
-  color: #050b1f !important;
-  caret-color: #050b1f !important;
+	color:#050b1f !important;
+	caret-color:#050b1f !important;
 }
 .v-application .secondary.lighten-5 {
-  background-color: #7a7f95 !important;
-  border-color: #7a7f95 !important;
+	background-color:#7a7f95 !important;
+	border-color:#7a7f95 !important;
 }
 .v-application .secondary--text.text--lighten-5 {
-  color: #7a7f95 !important;
-  caret-color: #7a7f95 !important;
+	color:#7a7f95 !important;
+	caret-color:#7a7f95 !important;
 }
 .v-application .secondary.lighten-4 {
-  background-color: #61667c !important;
-  border-color: #61667c !important;
+	background-color:#61667c !important;
+	border-color:#61667c !important;
 }
 .v-application .secondary--text.text--lighten-4 {
-  color: #61667c !important;
-  caret-color: #61667c !important;
+	color:#61667c !important;
+	caret-color:#61667c !important;
 }
 .v-application .secondary.lighten-3 {
-  background-color: #494e63 !important;
-  border-color: #494e63 !important;
+	background-color:#494e63 !important;
+	border-color:#494e63 !important;
 }
 .v-application .secondary--text.text--lighten-3 {
-  color: #494e63 !important;
-  caret-color: #494e63 !important;
+	color:#494e63 !important;
+	caret-color:#494e63 !important;
 }
 .v-application .secondary.lighten-2 {
-  background-color: #32374b !important;
-  border-color: #32374b !important;
+	background-color:#32374b !important;
+	border-color:#32374b !important;
 }
 .v-application .secondary--text.text--lighten-2 {
-  color: #32374b !important;
-  caret-color: #32374b !important;
+	color:#32374b !important;
+	caret-color:#32374b !important;
 }
 .v-application .secondary.lighten-1 {
-  background-color: #1c2234 !important;
-  border-color: #1c2234 !important;
+	background-color:#1c2234 !important;
+	border-color:#1c2234 !important;
 }
 .v-application .secondary--text.text--lighten-1 {
-  color: #1c2234 !important;
-  caret-color: #1c2234 !important;
+	color:#1c2234 !important;
+	caret-color:#1c2234 !important;
 }
 .v-application .secondary.darken-1 {
-  background-color: #000007 !important;
-  border-color: #000007 !important;
+	background-color:#000007 !important;
+	border-color:#000007 !important;
 }
 .v-application .secondary--text.text--darken-1 {
-  color: #000007 !important;
-  caret-color: #000007 !important;
+	color:#000007 !important;
+	caret-color:#000007 !important;
 }
 .v-application .secondary.darken-2 {
-  background-color: #000000 !important;
-  border-color: #000000 !important;
+	background-color:#000000 !important;
+	border-color:#000000 !important;
 }
 .v-application .secondary--text.text--darken-2 {
-  color: #000000 !important;
-  caret-color: #000000 !important;
+	color:#000000 !important;
+	caret-color:#000000 !important;
 }
 .v-application .secondary.darken-3 {
-  background-color: #000000 !important;
-  border-color: #000000 !important;
+	background-color:#000000 !important;
+	border-color:#000000 !important;
 }
 .v-application .secondary--text.text--darken-3 {
-  color: #000000 !important;
-  caret-color: #000000 !important;
+	color:#000000 !important;
+	caret-color:#000000 !important;
 }
 .v-application .secondary.darken-4 {
-  background-color: #000000 !important;
-  border-color: #000000 !important;
+	background-color:#000000 !important;
+	border-color:#000000 !important;
 }
 .v-application .secondary--text.text--darken-4 {
-  color: #000000 !important;
-  caret-color: #000000 !important;
+	color:#000000 !important;
+	caret-color:#000000 !important;
 }
 .v-application .accent {
-  background-color: #204165 !important;
-  border-color: #204165 !important;
+	background-color:#204165 !important;
+	border-color:#204165 !important;
 }
 .v-application .accent--text {
-  color: #204165 !important;
-  caret-color: #204165 !important;
+	color:#204165 !important;
+	caret-color:#204165 !important;
 }
 .v-application .accent.lighten-5 {
-  background-color: #a4bfeb !important;
-  border-color: #a4bfeb !important;
+	background-color:#a4bfeb !important;
+	border-color:#a4bfeb !important;
 }
 .v-application .accent--text.text--lighten-5 {
-  color: #a4bfeb !important;
-  caret-color: #a4bfeb !important;
+	color:#a4bfeb !important;
+	caret-color:#a4bfeb !important;
 }
 .v-application .accent.lighten-4 {
-  background-color: #89a4cf !important;
-  border-color: #89a4cf !important;
+	background-color:#89a4cf !important;
+	border-color:#89a4cf !important;
 }
 .v-application .accent--text.text--lighten-4 {
-  color: #89a4cf !important;
-  caret-color: #89a4cf !important;
+	color:#89a4cf !important;
+	caret-color:#89a4cf !important;
 }
 .v-application .accent.lighten-3 {
-  background-color: #6e8ab3 !important;
-  border-color: #6e8ab3 !important;
+	background-color:#6e8ab3 !important;
+	border-color:#6e8ab3 !important;
 }
 .v-application .accent--text.text--lighten-3 {
-  color: #6e8ab3 !important;
-  caret-color: #6e8ab3 !important;
+	color:#6e8ab3 !important;
+	caret-color:#6e8ab3 !important;
 }
 .v-application .accent.lighten-2 {
-  background-color: #547198 !important;
-  border-color: #547198 !important;
+	background-color:#547198 !important;
+	border-color:#547198 !important;
 }
 .v-application .accent--text.text--lighten-2 {
-  color: #547198 !important;
-  caret-color: #547198 !important;
+	color:#547198 !important;
+	caret-color:#547198 !important;
 }
 .v-application .accent.lighten-1 {
-  background-color: #3b587e !important;
-  border-color: #3b587e !important;
+	background-color:#3b587e !important;
+	border-color:#3b587e !important;
 }
 .v-application .accent--text.text--lighten-1 {
-  color: #3b587e !important;
-  caret-color: #3b587e !important;
+	color:#3b587e !important;
+	caret-color:#3b587e !important;
 }
 .v-application .accent.darken-1 {
-  background-color: #002b4d !important;
-  border-color: #002b4d !important;
+	background-color:#002b4d !important;
+	border-color:#002b4d !important;
 }
 .v-application .accent--text.text--darken-1 {
-  color: #002b4d !important;
-  caret-color: #002b4d !important;
+	color:#002b4d !important;
+	caret-color:#002b4d !important;
 }
 .v-application .accent.darken-2 {
-  background-color: #001736 !important;
-  border-color: #001736 !important;
+	background-color:#001736 !important;
+	border-color:#001736 !important;
 }
 .v-application .accent--text.text--darken-2 {
-  color: #001736 !important;
-  caret-color: #001736 !important;
+	color:#001736 !important;
+	caret-color:#001736 !important;
 }
 .v-application .accent.darken-3 {
-  background-color: #000021 !important;
-  border-color: #000021 !important;
+	background-color:#000021 !important;
+	border-color:#000021 !important;
 }
 .v-application .accent--text.text--darken-3 {
-  color: #000021 !important;
-  caret-color: #000021 !important;
+	color:#000021 !important;
+	caret-color:#000021 !important;
 }
 .v-application .accent.darken-4 {
-  background-color: #00000c !important;
-  border-color: #00000c !important;
+	background-color:#00000c !important;
+	border-color:#00000c !important;
 }
 .v-application .accent--text.text--darken-4 {
-  color: #00000c !important;
-  caret-color: #00000c !important;
+	color:#00000c !important;
+	caret-color:#00000c !important;
 }
 .v-application .error {
-  background-color: #ff5252 !important;
-  border-color: #ff5252 !important;
+	background-color:#ff5252 !important;
+	border-color:#ff5252 !important;
 }
 .v-application .error--text {
-  color: #ff5252 !important;
-  caret-color: #ff5252 !important;
+	color:#ff5252 !important;
+	caret-color:#ff5252 !important;
 }
 .v-application .error.lighten-5 {
-  background-color: #ffe4d5 !important;
-  border-color: #ffe4d5 !important;
+	background-color:#ffe4d5 !important;
+	border-color:#ffe4d5 !important;
 }
 .v-application .error--text.text--lighten-5 {
-  color: #ffe4d5 !important;
-  caret-color: #ffe4d5 !important;
+	color:#ffe4d5 !important;
+	caret-color:#ffe4d5 !important;
 }
 .v-application .error.lighten-4 {
-  background-color: #ffc6b9 !important;
-  border-color: #ffc6b9 !important;
+	background-color:#ffc6b9 !important;
+	border-color:#ffc6b9 !important;
 }
 .v-application .error--text.text--lighten-4 {
-  color: #ffc6b9 !important;
-  caret-color: #ffc6b9 !important;
+	color:#ffc6b9 !important;
+	caret-color:#ffc6b9 !important;
 }
 .v-application .error.lighten-3 {
-  background-color: #ffa99e !important;
-  border-color: #ffa99e !important;
+	background-color:#ffa99e !important;
+	border-color:#ffa99e !important;
 }
 .v-application .error--text.text--lighten-3 {
-  color: #ffa99e !important;
-  caret-color: #ffa99e !important;
+	color:#ffa99e !important;
+	caret-color:#ffa99e !important;
 }
 .v-application .error.lighten-2 {
-  background-color: #ff8c84 !important;
-  border-color: #ff8c84 !important;
+	background-color:#ff8c84 !important;
+	border-color:#ff8c84 !important;
 }
 .v-application .error--text.text--lighten-2 {
-  color: #ff8c84 !important;
-  caret-color: #ff8c84 !important;
+	color:#ff8c84 !important;
+	caret-color:#ff8c84 !important;
 }
 .v-application .error.lighten-1 {
-  background-color: #ff6f6a !important;
-  border-color: #ff6f6a !important;
+	background-color:#ff6f6a !important;
+	border-color:#ff6f6a !important;
 }
 .v-application .error--text.text--lighten-1 {
-  color: #ff6f6a !important;
-  caret-color: #ff6f6a !important;
+	color:#ff6f6a !important;
+	caret-color:#ff6f6a !important;
 }
 .v-application .error.darken-1 {
-  background-color: #df323b !important;
-  border-color: #df323b !important;
+	background-color:#df323b !important;
+	border-color:#df323b !important;
 }
 .v-application .error--text.text--darken-1 {
-  color: #df323b !important;
-  caret-color: #df323b !important;
+	color:#df323b !important;
+	caret-color:#df323b !important;
 }
 .v-application .error.darken-2 {
-  background-color: #bf0025 !important;
-  border-color: #bf0025 !important;
+	background-color:#bf0025 !important;
+	border-color:#bf0025 !important;
 }
 .v-application .error--text.text--darken-2 {
-  color: #bf0025 !important;
-  caret-color: #bf0025 !important;
+	color:#bf0025 !important;
+	caret-color:#bf0025 !important;
 }
 .v-application .error.darken-3 {
-  background-color: #9f0010 !important;
-  border-color: #9f0010 !important;
+	background-color:#9f0010 !important;
+	border-color:#9f0010 !important;
 }
 .v-application .error--text.text--darken-3 {
-  color: #9f0010 !important;
-  caret-color: #9f0010 !important;
+	color:#9f0010 !important;
+	caret-color:#9f0010 !important;
 }
 .v-application .error.darken-4 {
-  background-color: #800000 !important;
-  border-color: #800000 !important;
+	background-color:#800000 !important;
+	border-color:#800000 !important;
 }
 .v-application .error--text.text--darken-4 {
-  color: #800000 !important;
-  caret-color: #800000 !important;
+	color:#800000 !important;
+	caret-color:#800000 !important;
 }
 .v-application .info {
-  background-color: #2196f3 !important;
-  border-color: #2196f3 !important;
+	background-color:#2196f3 !important;
+	border-color:#2196f3 !important;
 }
 .v-application .info--text {
-  color: #2196f3 !important;
-  caret-color: #2196f3 !important;
+	color:#2196f3 !important;
+	caret-color:#2196f3 !important;
 }
 .v-application .info.lighten-5 {
-  background-color: #d4ffff !important;
-  border-color: #d4ffff !important;
+	background-color:#d4ffff !important;
+	border-color:#d4ffff !important;
 }
 .v-application .info--text.text--lighten-5 {
-  color: #d4ffff !important;
-  caret-color: #d4ffff !important;
+	color:#d4ffff !important;
+	caret-color:#d4ffff !important;
 }
 .v-application .info.lighten-4 {
-  background-color: #b5ffff !important;
-  border-color: #b5ffff !important;
+	background-color:#b5ffff !important;
+	border-color:#b5ffff !important;
 }
 .v-application .info--text.text--lighten-4 {
-  color: #b5ffff !important;
-  caret-color: #b5ffff !important;
+	color:#b5ffff !important;
+	caret-color:#b5ffff !important;
 }
 .v-application .info.lighten-3 {
-  background-color: #95e8ff !important;
-  border-color: #95e8ff !important;
+	background-color:#95e8ff !important;
+	border-color:#95e8ff !important;
 }
 .v-application .info--text.text--lighten-3 {
-  color: #95e8ff !important;
-  caret-color: #95e8ff !important;
+	color:#95e8ff !important;
+	caret-color:#95e8ff !important;
 }
 .v-application .info.lighten-2 {
-  background-color: #75ccff !important;
-  border-color: #75ccff !important;
+	background-color:#75ccff !important;
+	border-color:#75ccff !important;
 }
 .v-application .info--text.text--lighten-2 {
-  color: #75ccff !important;
-  caret-color: #75ccff !important;
+	color:#75ccff !important;
+	caret-color:#75ccff !important;
 }
 .v-application .info.lighten-1 {
-  background-color: #51b0ff !important;
-  border-color: #51b0ff !important;
+	background-color:#51b0ff !important;
+	border-color:#51b0ff !important;
 }
 .v-application .info--text.text--lighten-1 {
-  color: #51b0ff !important;
-  caret-color: #51b0ff !important;
+	color:#51b0ff !important;
+	caret-color:#51b0ff !important;
 }
 .v-application .info.darken-1 {
-  background-color: #007cd6 !important;
-  border-color: #007cd6 !important;
+	background-color:#007cd6 !important;
+	border-color:#007cd6 !important;
 }
 .v-application .info--text.text--darken-1 {
-  color: #007cd6 !important;
-  caret-color: #007cd6 !important;
+	color:#007cd6 !important;
+	caret-color:#007cd6 !important;
 }
 .v-application .info.darken-2 {
-  background-color: #0064ba !important;
-  border-color: #0064ba !important;
+	background-color:#0064ba !important;
+	border-color:#0064ba !important;
 }
 .v-application .info--text.text--darken-2 {
-  color: #0064ba !important;
-  caret-color: #0064ba !important;
+	color:#0064ba !important;
+	caret-color:#0064ba !important;
 }
 .v-application .info.darken-3 {
-  background-color: #004d9f !important;
-  border-color: #004d9f !important;
+	background-color:#004d9f !important;
+	border-color:#004d9f !important;
 }
 .v-application .info--text.text--darken-3 {
-  color: #004d9f !important;
-  caret-color: #004d9f !important;
+	color:#004d9f !important;
+	caret-color:#004d9f !important;
 }
 .v-application .info.darken-4 {
-  background-color: #003784 !important;
-  border-color: #003784 !important;
+	background-color:#003784 !important;
+	border-color:#003784 !important;
 }
 .v-application .info--text.text--darken-4 {
-  color: #003784 !important;
-  caret-color: #003784 !important;
+	color:#003784 !important;
+	caret-color:#003784 !important;
 }
 .v-application .success {
-  background-color: #4caf50 !important;
-  border-color: #4caf50 !important;
+	background-color:#4caf50 !important;
+	border-color:#4caf50 !important;
 }
 .v-application .success--text {
-  color: #4caf50 !important;
-  caret-color: #4caf50 !important;
+	color:#4caf50 !important;
+	caret-color:#4caf50 !important;
 }
 .v-application .success.lighten-5 {
-  background-color: #dcffd6 !important;
-  border-color: #dcffd6 !important;
+	background-color:#dcffd6 !important;
+	border-color:#dcffd6 !important;
 }
 .v-application .success--text.text--lighten-5 {
-  color: #dcffd6 !important;
-  caret-color: #dcffd6 !important;
+	color:#dcffd6 !important;
+	caret-color:#dcffd6 !important;
 }
 .v-application .success.lighten-4 {
-  background-color: #beffba !important;
-  border-color: #beffba !important;
+	background-color:#beffba !important;
+	border-color:#beffba !important;
 }
 .v-application .success--text.text--lighten-4 {
-  color: #beffba !important;
-  caret-color: #beffba !important;
+	color:#beffba !important;
+	caret-color:#beffba !important;
 }
 .v-application .success.lighten-3 {
-  background-color: #a2ff9e !important;
-  border-color: #a2ff9e !important;
+	background-color:#a2ff9e !important;
+	border-color:#a2ff9e !important;
 }
 .v-application .success--text.text--lighten-3 {
-  color: #a2ff9e !important;
-  caret-color: #a2ff9e !important;
+	color:#a2ff9e !important;
+	caret-color:#a2ff9e !important;
 }
 .v-application .success.lighten-2 {
-  background-color: #85e783 !important;
-  border-color: #85e783 !important;
+	background-color:#85e783 !important;
+	border-color:#85e783 !important;
 }
 .v-application .success--text.text--lighten-2 {
-  color: #85e783 !important;
-  caret-color: #85e783 !important;
+	color:#85e783 !important;
+	caret-color:#85e783 !important;
 }
 .v-application .success.lighten-1 {
-  background-color: #69cb69 !important;
-  border-color: #69cb69 !important;
+	background-color:#69cb69 !important;
+	border-color:#69cb69 !important;
 }
 .v-application .success--text.text--lighten-1 {
-  color: #69cb69 !important;
-  caret-color: #69cb69 !important;
+	color:#69cb69 !important;
+	caret-color:#69cb69 !important;
 }
 .v-application .success.darken-1 {
-  background-color: #2d9437 !important;
-  border-color: #2d9437 !important;
+	background-color:#2d9437 !important;
+	border-color:#2d9437 !important;
 }
 .v-application .success--text.text--darken-1 {
-  color: #2d9437 !important;
-  caret-color: #2d9437 !important;
+	color:#2d9437 !important;
+	caret-color:#2d9437 !important;
 }
 .v-application .success.darken-2 {
-  background-color: #00791e !important;
-  border-color: #00791e !important;
+	background-color:#00791e !important;
+	border-color:#00791e !important;
 }
 .v-application .success--text.text--darken-2 {
-  color: #00791e !important;
-  caret-color: #00791e !important;
+	color:#00791e !important;
+	caret-color:#00791e !important;
 }
 .v-application .success.darken-3 {
-  background-color: #006000 !important;
-  border-color: #006000 !important;
+	background-color:#006000 !important;
+	border-color:#006000 !important;
 }
 .v-application .success--text.text--darken-3 {
-  color: #006000 !important;
-  caret-color: #006000 !important;
+	color:#006000 !important;
+	caret-color:#006000 !important;
 }
 .v-application .success.darken-4 {
-  background-color: #004700 !important;
-  border-color: #004700 !important;
+	background-color:#004700 !important;
+	border-color:#004700 !important;
 }
 .v-application .success--text.text--darken-4 {
-  color: #004700 !important;
-  caret-color: #004700 !important;
+	color:#004700 !important;
+	caret-color:#004700 !important;
 }
 .v-application .warning {
-  background-color: #fb8c00 !important;
-  border-color: #fb8c00 !important;
+	background-color:#fb8c00 !important;
+	border-color:#fb8c00 !important;
 }
 .v-application .warning--text {
-  color: #fb8c00 !important;
-  caret-color: #fb8c00 !important;
+	color:#fb8c00 !important;
+	caret-color:#fb8c00 !important;
 }
 .v-application .warning.lighten-5 {
-  background-color: #ffff9e !important;
-  border-color: #ffff9e !important;
+	background-color:#ffff9e !important;
+	border-color:#ffff9e !important;
 }
 .v-application .warning--text.text--lighten-5 {
-  color: #ffff9e !important;
-  caret-color: #ffff9e !important;
+	color:#ffff9e !important;
+	caret-color:#ffff9e !important;
 }
 .v-application .warning.lighten-4 {
-  background-color: #fffb82 !important;
-  border-color: #fffb82 !important;
+	background-color:#fffb82 !important;
+	border-color:#fffb82 !important;
 }
 .v-application .warning--text.text--lighten-4 {
-  color: #fffb82 !important;
-  caret-color: #fffb82 !important;
+	color:#fffb82 !important;
+	caret-color:#fffb82 !important;
 }
 .v-application .warning.lighten-3 {
-  background-color: #ffdf67 !important;
-  border-color: #ffdf67 !important;
+	background-color:#ffdf67 !important;
+	border-color:#ffdf67 !important;
 }
 .v-application .warning--text.text--lighten-3 {
-  color: #ffdf67 !important;
-  caret-color: #ffdf67 !important;
+	color:#ffdf67 !important;
+	caret-color:#ffdf67 !important;
 }
 .v-application .warning.lighten-2 {
-  background-color: #ffc24b !important;
-  border-color: #ffc24b !important;
+	background-color:#ffc24b !important;
+	border-color:#ffc24b !important;
 }
 .v-application .warning--text.text--lighten-2 {
-  color: #ffc24b !important;
-  caret-color: #ffc24b !important;
+	color:#ffc24b !important;
+	caret-color:#ffc24b !important;
 }
 .v-application .warning.lighten-1 {
-  background-color: #ffa72d !important;
-  border-color: #ffa72d !important;
+	background-color:#ffa72d !important;
+	border-color:#ffa72d !important;
 }
 .v-application .warning--text.text--lighten-1 {
-  color: #ffa72d !important;
-  caret-color: #ffa72d !important;
+	color:#ffa72d !important;
+	caret-color:#ffa72d !important;
 }
 .v-application .warning.darken-1 {
-  background-color: #db7200 !important;
-  border-color: #db7200 !important;
+	background-color:#db7200 !important;
+	border-color:#db7200 !important;
 }
 .v-application .warning--text.text--darken-1 {
-  color: #db7200 !important;
-  caret-color: #db7200 !important;
+	color:#db7200 !important;
+	caret-color:#db7200 !important;
 }
 .v-application .warning.darken-2 {
-  background-color: #bb5900 !important;
-  border-color: #bb5900 !important;
+	background-color:#bb5900 !important;
+	border-color:#bb5900 !important;
 }
 .v-application .warning--text.text--darken-2 {
-  color: #bb5900 !important;
-  caret-color: #bb5900 !important;
+	color:#bb5900 !important;
+	caret-color:#bb5900 !important;
 }
 .v-application .warning.darken-3 {
-  background-color: #9d4000 !important;
-  border-color: #9d4000 !important;
+	background-color:#9d4000 !important;
+	border-color:#9d4000 !important;
 }
 .v-application .warning--text.text--darken-3 {
-  color: #9d4000 !important;
-  caret-color: #9d4000 !important;
+	color:#9d4000 !important;
+	caret-color:#9d4000 !important;
 }
 .v-application .warning.darken-4 {
-  background-color: #802700 !important;
-  border-color: #802700 !important;
+	background-color:#802700 !important;
+	border-color:#802700 !important;
 }
 .v-application .warning--text.text--darken-4 {
-  color: #802700 !important;
-  caret-color: #802700 !important;
-}</style><meta data-vue-meta="1" name="viewport" content="width=device-width, initial-scale=1"></head><body><noscript><strong>We're sorry but Hash-Game doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div data-v-4f3eb12c="" data-app="true" class="v-application v-application--is-ltr theme--light" id="app"><div class="v-application--wrap"><div data-v-4ffe569c="" data-v-4f3eb12c=""><div data-v-4ffe569c="" class="d-flex flex-row align-center app-bar justify-start app-bar-sm" style="height: 48px; background-color: rgb(19, 29, 44);"><div data-v-4ffe569c="" class="d-flex flex-row align-center justify-start"><img data-v-4ffe569c="" src="./Hash Game_files/logo-1.bb3a3245.png" class="logo-icon"><!----><!----><div data-v-4ffe569c="" class="btn text-center d-flex align-center btn-sm btn-copy"> 客服： <span data-v-4ffe569c=""> @Eleven1_8043 </span></div><div data-v-4ffe569c="" class="btn text-center d-flex align-center btn-sm btn-copy"> 招商客服: <span data-v-4ffe569c=""> @chahca_8043 </span></div></div></div><div data-v-4ffe569c="" class="v-dialog__container"><!----></div></div><main data-v-4f3eb12c="" class="v-main" data-booted="true" style="padding: 0px;"><div class="v-main__wrap"><div data-v-4f3eb12c="" class="main-bg"><div data-v-7b3d0382="" data-v-4f3eb12c="" class="bg-inn d-flex flex-column justify-center align-content-center"><div data-v-7b3d0382="" class="d-flex flex-row justify-center"><div data-v-7b3d0382="" class="d-flex flex-row justify-center align-center" style="width: 720px;"><div data-v-7b3d0382="" class="con-left"><div data-v-7b3d0382="" class="title-head">HASH 数字货币抽奖平台</div><div data-v-7b3d0382="" class="line-item d-flex align-center"><span data-v-7b3d0382="" class="circle"></span><span data-v-7b3d0382="" class="line-yellow">公平</span> 赔率1.98 全网最高 </div><div data-v-7b3d0382="" class="line-item d-flex align-center"><span data-v-7b3d0382="" class="circle"></span><span data-v-7b3d0382="" class="line-yellow">公开</span> 哈希结果 唯一可查 </div><div data-v-7b3d0382="" class="line-item d-flex align-center"><span data-v-7b3d0382="" class="circle"></span><span data-v-7b3d0382="" class="line-yellow">公正</span> 中奖资产 自动秒赔 </div></div><div data-v-7b3d0382="" class="con-right d-flex align-center justify-center"><img data-v-7b3d0382="" src="./Hash Game_files/logo-img.5b63be61.png" class="img-logo"></div></div></div><div data-v-7b3d0382="" class="d-flex flex-row justify-center align-center top-tips"> 必须使用【去中心化钱包】转账 </div><div data-v-7b3d0382="" class="content-bottom"><div data-v-7b3d0382="" class="content-bottom-item"><div data-v-7b3d0382="" class="content-bottom-item-left"><div data-v-7b3d0382="" class="content-bottom-item-left-top">双尾哈希地址</div><div data-v-7b3d0382="" class="content-bottom-item-left-bottom"> TCCXCakwoo***xXT2pD3333 </div></div><div data-v-7b3d0382="" class="content-bottom-item-btn btn-copy"> 复制 </div></div><div data-v-7b3d0382="" class="content-bottom-item"><div data-v-7b3d0382="" class="content-bottom-item-left"><div data-v-7b3d0382="" class="content-bottom-item-left-top">单双哈希地址</div><div data-v-7b3d0382="" class="content-bottom-item-left-bottom"> TGPptKLoND***WsQxrH6666 </div></div><div data-v-7b3d0382="" class="content-bottom-item-btn btn-copy"> 复制 </div></div><div data-v-7b3d0382="" class="content-bottom-item"><div data-v-7b3d0382="" class="content-bottom-item-left"><div data-v-7b3d0382="" class="content-bottom-item-left-top">大小哈希地址</div><div data-v-7b3d0382="" class="content-bottom-item-left-bottom"> THXKfn6niq***V7oc5U9999 </div></div><div data-v-7b3d0382="" class="content-bottom-item-btn btn-copy"> 复制 </div></div></div></div><div data-v-3410f546="" data-v-4f3eb12c="" id="rules" class="bg-in"><div data-v-3410f546="" class="d-flex flex-row justify-center"><div data-v-1ee9098c="" data-v-3410f546="" class="content"><div data-v-1ee9098c="" class="bg-text"> RULES </div><div data-v-1ee9098c="" class="bg-shadow bg-shadow-1"></div><div data-v-1ee9098c="" class="item-text"> 中奖规则 </div></div></div><div data-v-3410f546="" class="layoutt"><div data-v-3410f546="" class="contain"><div data-v-3410f546="" class="title-head">双尾哈希中奖规则</div><div data-v-3410f546="" class="d-flex flex-row box-inn"><div data-v-3410f546="" class="circle"></div><div data-v-3410f546="" class="sub-content"> 向 <a data-v-3410f546="">官方指定地址</a> 转账后，该笔交易生成的区块哈希值（Block Hash），如果最后两位同时包括数字和字母(1a,a1)，则为双尾哈希，将获得奖励，如果最后两位为字母和字母(fa)或者数字和数字(31)，则没有获奖； </div></div><div data-v-3410f546="" class="d-flex flex-row"><div data-v-3410f546="" class="circle"></div><div data-v-3410f546="" class="sub-content"> 示例：如中奖，系统将在 10 秒内对您进⾏1.98倍奖励返还，如您转账100TRX，该笔交易的区块哈希值（Block Hash）为0x******796d，该哈希值最后两位为数字和字母，则中奖，将返还您198TRX。 </div></div></div><div data-v-3410f546="" class="contain"><div data-v-3410f546="" class="title-head">单双哈希中奖规则</div><div data-v-3410f546="" class="d-flex flex-row box-inn"><div data-v-3410f546="" class="circle"></div><div data-v-3410f546="" class="sub-content"> 向 <a data-v-3410f546="">官方指定地址</a> 转账后，如果转账金额的个位数为双数（0/2/4/6/8），该笔交易生成的区块哈希值（Block Hash）最后一个数字也是双数，将获得奖励；如果转账金额的个位数为单数（1/3/5/7/9），该笔交易生成的区块哈希值（Block Hash）最后一个数字也是单数，将获得奖励； </div></div><div data-v-3410f546="" class="d-flex flex-row"><div data-v-3410f546="" class="circle"></div><div data-v-3410f546="" class="sub-content"> 示例：如中奖，系统将在10秒内对您进行1.98倍奖励返还，如您转账101TRX，该笔交易的区块哈希值（Block Hash）为0x******9e3a，该哈希值最后一个数字为单数，转账金额个位数为单数，则中奖，将返还199.98TRX。 </div></div></div><div data-v-3410f546="" class="contain"><div data-v-3410f546="" class="title-head">大小哈希中奖规则</div><div data-v-3410f546="" class="d-flex flex-row box-inn"><div data-v-3410f546="" class="circle"></div><div data-v-3410f546="" class="sub-content"> 向 <a data-v-3410f546="">官方指定地址</a> 转账后，如果转账金额的个位数为双数（0/2/4/6/8），代表押大，如果转账金额的个位数为单数（1/3/5/7/9），代表押小； 该笔交易生成的区块哈希值（Block Hash）最后一个数字是0～4为小，是5～9为大； </div></div><div data-v-3410f546="" class="d-flex flex-row"><div data-v-3410f546="" class="circle"></div><div data-v-3410f546="" class="sub-content"> 示例：如中奖，系统将在10秒内对您进行1.98倍奖励返还，如您转账101TRX，该笔交易的区块哈希值（Block Hash）为0x******6g2c，该哈希值最后一个数字为2，在0～4区间，转账金额个位数为单数，代表押小，则中奖，将返还199.98TRX。 </div></div></div></div></div><div data-v-e3d29290="" data-v-4f3eb12c="" class="bg-inn"><div data-v-e3d29290="" class="d-flex flex-row justify-center"><div data-v-1ee9098c="" data-v-e3d29290="" class="content"><div data-v-1ee9098c="" class="bg-text"> LIMIT </div><div data-v-1ee9098c="" class="bg-shadow bg-shadow-2"></div><div data-v-1ee9098c="" class="item-text"> 金额限制 </div></div></div><div data-v-e3d29290="" class="d-flex flex-column align-center conten"><div data-v-e3d29290="" class="sub-content">转账支持TRX和TRC20USDT</div><div data-v-e3d29290="" class="sub-content">TRX转账金额最小为 <span class="sub-content-innnnnn">10</span> ，最大为 <span class="sub-content-innnnnn">300000</span></div><div data-v-e3d29290="" class="sub-content">TRC20USDT转账金额最小为<span class="sub-content-innnnnn">10</span> ，最大为<span class="sub-content-innnnnn">30000</span></div><div data-v-e3d29290="" class="sub-content"> 转账低于最小金额时，不可以参与且不会退回，转账高于最大金额时，扣除手续费后退回 </div><div data-v-e3d29290="" class="sub-content"> 转账仅支持整数币，小数部分将自动忽略 </div></div></div><div data-v-33e5ca40="" data-v-4f3eb12c="" id="rules" class="bg-in"><div data-v-33e5ca40="" class="d-flex flex-row justify-center"><div data-v-1ee9098c="" data-v-33e5ca40="" class="content"><div data-v-1ee9098c="" class="bg-text"> ROADRECORD </div><div data-v-1ee9098c="" class="bg-shadow bg-shadow-1"></div><div data-v-1ee9098c="" class="item-text"> 路单图 </div></div></div><div data-v-33e5ca40="" class="layoutt"><div data-v-21c8ae04="" data-v-33e5ca40="" class="contain"><div data-v-21c8ae04="" class="title-head">单双哈希路单</div><div data-v-21c8ae04="" class="d-flex flex-column box-inn"><div data-v-21c8ae04="" class="d-flex flex-row justify-space-around" style="width: 100%;"><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><!----><div data-v-0a7ef2cb="" class="img-logo img-white"> 双 </div><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><!----><div data-v-0a7ef2cb="" class="img-logo img-white"> 双 </div><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-bottom"><!----><!----><img data-v-0a7ef2cb="" src="data:image/png;base64,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" class="img-logo"></div></div><div data-v-21c8ae04="" class="d-flex flex-row justify-space-around" style="width: 100%;"><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><!----><div data-v-0a7ef2cb="" class="img-logo img-white"> 双 </div><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-bottom"><!----><!----><!----></div></div><div data-v-21c8ae04="" class="d-flex flex-row justify-space-around" style="width: 100%;"><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><!----><div data-v-0a7ef2cb="" class="img-logo img-white"> 双 </div><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-bottom"><!----><!----><!----></div></div><div data-v-21c8ae04="" class="d-flex flex-row justify-space-around" style="width: 100%;"><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><!----><div data-v-0a7ef2cb="" class="img-logo img-white"> 双 </div><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><!----><div data-v-0a7ef2cb="" class="img-logo img-white"> 双 </div><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-bottom"><!----><!----><!----></div></div><div data-v-21c8ae04="" class="d-flex flex-row justify-space-around" style="width: 100%;"><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right"><!----><div data-v-0a7ef2cb="" class="img-logo img-white"> 双 </div><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right"><!----><div data-v-0a7ef2cb="" class="img-logo img-white"> 双 </div><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right"><div data-v-0a7ef2cb="" class="img-logo img-yellow"> 单 </div><!----><!----></div><div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content"><!----><!----><!----></div></div></div></div><div data-v-33e5ca40="" class="layoutt-divide"></div><div data-v-26e095cc="" data-v-33e5ca40="" class="contain"><div data-v-26e095cc="" class="title-head">大小哈希路单</div><div data-v-26e095cc="" class="d-flex flex-column box-inn"><div data-v-26e095cc="" class="d-flex flex-row justify-space-around" style="width: 100%;"><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><!----><div data-v-7eb26f4d="" class="img-logo img-white"> 小 </div><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><!----><div data-v-7eb26f4d="" class="img-logo img-white"> 小 </div><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-bottom"><!----><!----><img data-v-7eb26f4d="" src="data:image/png;base64,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" class="img-logo"></div></div><div data-v-26e095cc="" class="d-flex flex-row justify-space-around" style="width: 100%;"><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><!----><div data-v-7eb26f4d="" class="img-logo img-white"> 小 </div><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-bottom"><!----><!----><!----></div></div><div data-v-26e095cc="" class="d-flex flex-row justify-space-around" style="width: 100%;"><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><!----><div data-v-7eb26f4d="" class="img-logo img-white"> 小 </div><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-bottom"><!----><!----><!----></div></div><div data-v-26e095cc="" class="d-flex flex-row justify-space-around" style="width: 100%;"><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><!----><div data-v-7eb26f4d="" class="img-logo img-white"> 小 </div><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><!----><div data-v-7eb26f4d="" class="img-logo img-white"> 小 </div><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom"><!----><div data-v-7eb26f4d="" class="img-logo img-white"> 小 </div><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-bottom"><!----><!----><!----></div></div><div data-v-26e095cc="" class="d-flex flex-row justify-space-around" style="width: 100%;"><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right"><div data-v-7eb26f4d="" class="img-logo img-yellow"> 大 </div><!----><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right"><!----><div data-v-7eb26f4d="" class="img-logo img-white"> 小 </div><!----></div><div data-v-7eb26f4d="" data-v-26e095cc="" class="content"><!----><!----><!----></div></div></div></div></div></div><div data-v-13fe6866="" data-v-4f3eb12c="" id="process" class="bg-ub d-flex flex-column align-center"><div data-v-13fe6866="" class="d-flex flex-row justify-center"><div data-v-1ee9098c="" data-v-13fe6866="" class="content"><div data-v-1ee9098c="" class="bg-text"> PROCESS </div><div data-v-1ee9098c="" class="bg-shadow bg-shadow-1"></div><div data-v-1ee9098c="" class="item-text"> 参与流程 </div></div></div><div data-v-13fe6866="" class="d-flex justify-center align-center inn-content flex-column"><!----><div data-v-13fe6866="" class="d-flex flex-row justify-center align-center"><div data-v-1743f360="" data-v-13fe6866="" class="d-flex flex-column align-center justify-center bg-normal"><div data-v-1743f360="" class="number circle d-flex align-center justify-center"> 1 </div><div data-v-1743f360="" class="title-head"> 注册钱包 </div></div><div data-v-1743f360="" data-v-13fe6866="" class="d-flex flex-column align-center justify-center bg-normal"><div data-v-1743f360="" class="number circle d-flex align-center justify-center"> 2 </div><div data-v-1743f360="" class="title-head"> 购买虚拟币 </div></div><div data-v-1743f360="" data-v-13fe6866="" class="d-flex flex-column align-center justify-center bg-normal"><div data-v-1743f360="" class="number circle d-flex align-center justify-center"> 3 </div><div data-v-1743f360="" class="title-head"> 转账参与 </div></div><div data-v-1743f360="" data-v-13fe6866="" class="d-flex flex-column align-center justify-center bg-normal"><div data-v-1743f360="" class="number circle d-flex align-center justify-center number-active circle-active"> 4 </div><div data-v-1743f360="" class="title-head title-active"> 自动秒赔 </div></div></div><div data-v-13fe6866="" id="processInit" class="right-content"><!----><!----><!----><div data-v-1064f47f="" data-v-13fe6866="" class="bg-inn"><div data-v-1064f47f="" class="title-pro">中奖后自动秒赔</div><div data-v-1064f47f="" class="bg-box"><div data-v-1064f47f="" class="
-        d-flex
-        flex-column
-        justify-center
-        align-center
-        justify-space-between
-        table-bodyd
-      "><div data-v-1064f47f="" class="box-text-1"> 区块哈希值符合您参与玩法的中奖规则，即可获得对应的奖励！ </div><div data-v-1064f47f=""><img data-v-1064f47f="" src="./Hash Game_files/logo-img.5b63be61.png" class="img-logo"></div></div></div></div></div></div></div><div data-v-416a9382="" data-v-4f3eb12c="" id="pingtai" class="bg-innn"><div data-v-416a9382="" class="d-flex flex-row justify-center"><div data-v-1ee9098c="" data-v-416a9382="" class="content"><div data-v-1ee9098c="" class="bg-text"> ADVANTAGE </div><div data-v-1ee9098c="" class="bg-shadow bg-shadow-2"></div><div data-v-1ee9098c="" class="item-text"> 平台优势 </div></div></div><div data-v-416a9382="" class="d-flex flex-row align-center justify-center content-inn"><div data-v-416a9382=""><div data-v-416a9382="" class="item-bg d-flex flex-column justify-center align-center"><div data-v-416a9382=""><img data-v-416a9382="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA9CAMAAAAnFe+0AAAAAXNSR0IArs4c6QAAAR1QTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////kQ6XXAAAAF50Uk5TAAIDBAgJDA4QEhUYGh0eIyQoKSosLS8wOj1ARUlKWVtdYGRlZmdpamtsc4GChYqMjo+QkZiZpqywsrO0tri7vcbHyMvMz9DR19na29ze3+Dj6u/w8/T19vf5+vv9/tvIiLwAAAHRSURBVFjD7ddZT9tAGIXhw1KaEgoJKYtDccueEMpWkrKVsm8JS4Fgm5L3//+MXrQOIEWRPUPUi+bcfTPyY2tmpPEnSZKSs1vlKjFTLW/NJvWUxKKHYbzFRKgMlrFIefCPkrnBKjcZSUpUALhcnvkUMzPLlwBUEpKWAPxcpwzSmfMBlqQ+H/AdGcbxAb9POYC8jJMHyGkbuOoyZ7qugG1VgFVZZBWo6B6Ys2HmgHsBTNgwEwCtZwb27tZ77JkSMG/PHABr9swhUGwp82Eh/8aeeV+Fb/bMZ8CzZ6YB2sy/ZJJfS+OvwPyAX2l7JnhemDMA0y1l3jrJV2BSP/HH7ZkvwHd7pggctpk2EzIPwGQ4VAOmGt6aa8BBWEwBtbCYBB50DRTCoTMg2/AOnwdKYZEFzsKiAFxrF9ivz5/frjT+o+hZv9sbqE+t3J7X37YP7GqB518QP1mAgkYALnpNld4LgBFpE+A0baakTwE2JWU8gKA41v8uZvrHigGAl5Ekt2bXetTcvzsf2ChB/dSNnpgrJ6NPK9Xhbhj1d96G2/FyzbtTzseYcVLd+o8y5EZrM92hpk1N5JNYa9Y8HUXf66MmzE50ZqcJM3z8GA15PB5+8eBvNuQdt8LUCLsAAAAASUVORK5CYII=" class="img-logo"></div><div data-v-416a9382="" class="title-subb">公平透明</div></div><!----></div><div data-v-416a9382=""><div data-v-416a9382="" class="
-            item-bg
-            d-flex
-            flex-column
-            justify-center
-            align-center
-            item-m-l
-          "><div data-v-416a9382=""><img data-v-416a9382="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAABACAMAAAB4KUSAAAAAAXNSR0IArs4c6QAAAg1QTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////G4sPWAAAAK50Uk5TAAECAwUGBwgJCg0ODxAREhMUFhcYGhscHR4gISMkJSYnKCksLS4vMzQ2Nzg5Ojw9P0FFRkhJSktMTU9RU1VWW1xeYGRlZ2hqa2xub3BydHd4eXx9g4SFhoeIiYqLkZOWl5iZmp2en6ChoqOkqKmrrK2usLK0tri5uru8vr/AwcXGx8nLzc/S09TV1tfY2dze4OHi4+Xm5+jp6uvs7e7v8PHy8/T19vf4+fr7/P3+jHOnFwAAAxJJREFUSMftludbE0EQhwcREisKFiwRC3YjilhQFEUsWLALRs8OCCqoKEJUxIaCJXYwAkKixETy/o1+OLhgLmXveXz85HzanZ337vY3s3sjEsfSC2u/hR/umy6WLG1T7TcAGHqwJ1OdujJM6RZqKZ2iQG2s6cNkwTslkxJSG6ojlKciN7fCY0wDjcXjY1NjN1T3GmHdZ52613m223D+uLFtnIlaXxWh+mvWpUaWUtfV9BtL/mtbbKOogss9xtJgQ5Et+rG2ooZBI2CgrjBNRETyR1GhuyUTYm9kQsndkBHWV5UvUmlMw21lCVOWWdYWNoIrZWB41H5kdvJkzTnSPvLBokt/cpFqeSw6qadIAFZZK8hVBigW7T/4T8G9vobIGb3eU6AMumH3yPgEtCqDF8A/Tx8uC4FLGZzmhUepIiLpL+C1XV2cIuCYiEgl/HJaUfUKBJeKLA/BGUvpmPgWOu22TnhpUwYXuDRNuw+0NAHNmqadXqIEPjdfyO+VQL8ZHBqrAp4zg1fVxJnhcDgcDsdr+KSPsq0V+XPT3v4OGAZSrH1qCvBTvgM2a+LYgF7pAmZYS8dMwCNPAWeyAnj3R4ATcEsdUGYuOU3TvsKAPooquTLgvOwH6q2pWg9slwWA324FtPshnC3yCthpBdwJtIlIOdAxRh0c0wHsEpGpPqBUHSwFPo8TEakAujPMEU+g0+zN6AYOiIjIZG9sYbd2fSiMLWn7cD3sIJ4+sZUJLRuZNQGBPBUuLwAcNKZZnwCvIznn8AK1oxxrg4AnOxmX8x64nTbatRvg7cLE3Bov4I66Z88A9G9OxJWHgA5Ty+YCGDqVFg/LaiTOdvYGAZ7lxuaKvgC8mBVrbfVHgMDxGEdl5k0AWuP011nNALzZFN0FH9Q7xUvp8faRske/b9x/nPj1LwHwFSdSbu49AH5dNaphqVu/dh7PT5Lk7V16r1yVIyKSW6/3toOHUpOW1WQtqL/1+oqVN4b017XMVzoBObei/o5blVsnpzuC9R22W+m61jTrm/O5pohFW3yxjw9HM+It/wZQp4wjCZbrAwAAAABJRU5ErkJggg==" class="img-logo"></div><div data-v-416a9382="" class="title-subb">安全可靠</div></div><!----></div><div data-v-416a9382=""><div data-v-416a9382="" class="
-            item-bg
-            d-flex
-            flex-column
-            justify-center
-            align-center
-            item-m-l
-          "><div data-v-416a9382=""><img data-v-416a9382="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABBCAMAAAC6njdfAAAAAXNSR0IArs4c6QAAAmpQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////xH3ReQAAAM10Uk5TAAECAwQFBgcICQoLDA0OEBESExQVFhcYGRobHB4fICEiIyQlJicoKSorLC0vMDEyNDU2Nzg5Oj0+P0BBQkRFRkdISUpMTU5SU1RVVldYWVpbXV9gYWJjZmdoaWprbG1vcXR3eHp8fX+AgYKDhYaHiImKi4yNj5CWl5iam5yho6Smp6mqq62ur7CxsrO0tba3uLq7vL/AwcLDxMbHycrLzM3Oz9DR0tPU1dbX2Nna29ze4OHi4+bn6Onq6+zt7u/w8fP09fb3+Pn6+/z9/lcELMUAAAQoSURBVBgZncGHX5R1AMfx7x3HUkNLhqQ2cESao7ShDSut1KTQxFyZ5SjNhDLMsuy4HIGmBQqp4KRQNDTTAAmTIaA8n/+p33N34D3PnXIv3m/FY/g3HbWzNDgLrwE3NBijS7H9pUFYfRObtURxGrtscYpClhBkfaS4JBf8ZkGVR0GHCbuwIUMDGbahiaAcBfnp1/XdWN2PZ3kjId0PKujRNu7q+mqY7mniUcL+yVPYGmwnOwm68pruYUkHQe07X0xQH08lRlnayovYrCKfYkj4mqCWdcMVKacD6PHIk38ZW0WaoqSWYru9LU0ua4HTMpK39GDUZskl+RdsDVMUxfuj1TxdQTOvYfwxUg7efdgOjlAsqV6FjT6JcSJVkQqxbfVqIEP2YJQowlsWxnrFwVeKsUb9RrVgbFNcUqqBjonqsxfjoFfxyW4EKhX2MkZjuuI1zwIWKeQMxnzFbxfQkCDbPIwKRZr1/aZhuuvJncVZipDdBrwr2xGMZxRhfDfUjFCfF9qgWpEKgRoZ4yygQpHewTj9kEJeagd6ExUh4xYwWdJmjAWKlHkdozZdtjmdGHvk4AeKJJ0FWpPkMK0Foy5T0txbGIeHyuFV4JyUbQElcnmqGaM+W292YZQPkVPSTWCM5mO8J7dJjRh/rurGOJQit1LgbRVi5CrKE9fosz9ZUdYDX+gnoNOraOOvErI3SdHmAqU6C1yQi6/oTH19EyEN58+f2z1WTrlArZqACrm8j9shOQ0HmtQO7JPL57gdl5MPaNcdoEQuUztwap0iJ48Fd9QB7JXbmPwCowaoXmbkZ8plCNChZqBcsQUAv2IaBTSrDqhXbAHAr5hmAnU6AHR65fJ4wSrjFHBitbFytlwWAwdUjJErp+lduHwip+1AsfIxlsppK271cqoB8pWDEZBTAW5FcsjsBXKkBuC/FDkkfHrstNEK/HvKOLbZJ4cVwCVJxRh5iiUA+BVLDbBd0tMYRxRLAPArhhkYM2TUYjyrGAKAXzHsB36XbRnGYcUQAPyKNssClsuWeAVjgaIFAL+iJNYCV5MUtBSjcaSilAA/KMoWjBUK8dRglHnkthH4QG6v3AHOJChsSjfGJrkN/ba20CeXCa3A7Znqtw7DWqE4PPY3xme6y7sfo/dDDSj3CkalTxHS6rDt8CksQTHNuYFxOV0OD1/CVj5StqzLPf4RipK4pRejcYJcHmnA1rRIxpfAHrk9X4etaZKipFcTVPWctAsjTw7TyixsDTmKIfU7Qo7mvYFxPUP9HsivIqQ8XbHltxByswdjt8KySm4R0rPRq3vJ2NVLhIUK+ZWw45N1P1N/tujXlChbskXQxTyPBpC74wZ9xsmWUAdYlQt9ikPSx4SUeRU02l+1bpzi83oXtguzNQjnMbo3J2sw2oCjuRqctW0tKz2Kw/8nAkd0VrPfhAAAAABJRU5ErkJggg==" class="img-logo"></div><div data-v-416a9382="" class="title-subb">自动秒赔</div></div><!----></div></div></div><div data-v-138451fa="" data-v-4f3eb12c="" id="pexchange" class="bg-innn"><div data-v-138451fa="" class="d-flex flex-row justify-center"><div data-v-1ee9098c="" data-v-138451fa="" class="content"><div data-v-1ee9098c="" class="bg-text"> PEXCHANGE </div><div data-v-1ee9098c="" class="bg-shadow bg-shadow-2"></div><div data-v-1ee9098c="" class="item-text"> 数字币兑换 </div></div></div><div data-v-138451fa="" class="d-flex flex-row align-center justify-center content-inn"><div data-v-138451fa="" class="exchange-tips"> 当前兑换率：<span data-v-138451fa="">兑换数量=（接收数量*市场价）- 油费</span></div></div><div data-v-138451fa="" class="d-flex flex-row align-center justify-center content-inn"><div data-v-138451fa="" class="exchange-tips"> TRX(USDT)最低兑换金额:<span data-v-138451fa=""> 10 </span>USDT </div></div><div data-v-138451fa="" class="d-flex align-center justify-center exchange flex-column"><div data-v-138451fa="" class="exchange-left"><div data-v-138451fa="" class="exchange-left-nav"><div data-v-138451fa="" class="exchange-left-nav-left exchange-left-nav-left-active"> USDT兑换TRX </div><div data-v-138451fa="" class="exchange-left-nav-right"> TRX兑换USDT </div></div><div data-v-138451fa="" class="exchange-left-input"><input data-v-138451fa="" type="number"><div data-v-138451fa="" class="exchange-left-input-tips"> USDT </div></div><div data-v-138451fa="" class="exchange-left-input exchange-left-input-second"><input data-v-138451fa="" type="number"><div data-v-138451fa=""> TRX </div></div><div data-v-138451fa="" class="exchange-left-calc">计算</div></div><div data-v-138451fa="" class="exchange-right"><div data-v-138451fa="" class="exchange-right-tips"> 如果您需要使用USDT兑换TRX币或使用TRX币兑换USDT币，可以向下方地址转账，平台将免费在10秒内给您返还同等价值的TRX或USDT币。 </div><div data-v-138451fa="" class="exchange-right-address"><div data-v-138451fa="" class="exchange-right-address-top"><div data-v-138451fa="" class="exchange-right-address-top-left">平台官方兑换地址</div><div data-v-138451fa="" class="exchange-right-address-top-right btn-copy"> 复制 </div></div><div data-v-138451fa="" class="exchange-right-address-address"> TYJ7yjRqLTgzT6XY97qiv8cQsptqSQ9999 </div></div></div></div></div><div data-v-519528ab="" data-v-4f3eb12c="" id="questions" class="bg-inn d-flex flex-column justify-center align-center"><div data-v-519528ab="" class="d-flex flex-row justify-center"><div data-v-1ee9098c="" data-v-519528ab="" class="content"><div data-v-1ee9098c="" class="bg-text"> TEH PROBLEM </div><div data-v-1ee9098c="" class="bg-shadow bg-shadow-1"></div><div data-v-1ee9098c="" class="item-text"> 常见问题 </div></div></div><div data-v-519528ab="" class="d-flex flex-column align-center"><div data-v-519528ab="" class="bg-box"><div data-v-519528ab="" class="ques-title"> Q:什么是区块哈希值？ </div><div data-v-519528ab="" class="ques-sub-title"> 区块哈希值是去中心化的区块链网络，在转账时自动生成的一段字母与数字混合的数列，记录了转账的发起方，接收方，转账金额等信息，哈希值是唯一且不可篡改的。 </div></div><div data-v-519528ab="" class="bg-box"><div data-v-519528ab="" class="ques-title"> Q:为什么要选择去中心化钱包？ </div><div data-v-519528ab="" class="ques-sub-title"> 中心化钱包是所有用户共用一个钱包地址进行转账，无法查询哪一笔是您的转账，无法获取属于您的哈希值，去中心化钱包只记录您的转账记录，可以获取属于您的哈希值。 </div></div><div data-v-519528ab="" class="bg-box"><div data-v-519528ab="" class="ques-title"> Q:为什么我会连续中奖或连续不中奖？ </div><div data-v-519528ab="" class="ques-sub-title"> 首先连续多次不中奖的是小概率事件，其次中奖与不中奖是随机事件，随机事件的发生频率会趋于一个稳定值，事物出现的概率对每个人来讲是相等的，这个情况下，每个人都是公平的；同时随机事件会遵大数定律（在试验不变的条件下，重复试验多次，随机事件的频率近似于它的概率），在转账频次不断增加的情况下，中奖与不中奖的概率会趋于一个稳定值，随着转账频次增加则中奖总概率会提升。 </div></div><div data-v-519528ab="" class="bg-box"><div data-v-519528ab="" class="ques-title"> Q:为什么我的奖励延迟到账了？ </div><div data-v-519528ab="" class="ques-sub-title"> 当您中奖后，区块链会自动执行奖励进行转账，但是当TRX链发生拥堵时，可能转账会需要一些时间，请您耐心等待，平台会保证您的资金安全。 </div></div></div></div></div></div></main></div></div><script src="./Hash Game_files/chunk-vendors.6291b02f.js.下载"></script><script src="./Hash Game_files/app.b164434a.js.下载"></script></body></html>
+	color:#802700 !important;
+	caret-color:#802700 !important;
+}
+
+
+
+    </style>
+    <meta data-vue-meta="1" name="viewport" content="width=device-width, initial-scale=1"></head>
+  
+  <body>
+    <noscript>
+      <strong>We're sorry but Hash-Game doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+    <div data-v-4f3eb12c="" data-app="true" class="v-application v-application--is-ltr theme--light" id="app">
+      <div class="v-application--wrap">
+        <div data-v-4ffe569c="" data-v-4f3eb12c="">
+          <div data-v-4ffe569c="" class="d-flex flex-row align-center app-bar justify-start app-bar-sm" style="height: 48px; background-color: transparent;">
+            <div data-v-4ffe569c="" class="d-flex flex-row align-center justify-start">
+              <img data-v-4ffe569c="" src="./Hash Game_files/logo-1.bb3a3245.png" class="logo-icon">
+              <!---->
+              <!---->
+              <div data-v-4ffe569c="" class="btn text-center d-flex align-center btn-sm btn-copy">客服：
+                <span data-v-4ffe569c="">@Eleven1_8043</span></div>
+              <div data-v-4ffe569c="" class="btn text-center d-flex align-center btn-sm btn-copy">招商客服:
+                <span data-v-4ffe569c="">@chahca_8043</span></div>
+            </div>
+          </div>
+          <div data-v-4ffe569c="" class="v-dialog__container">
+            <!----></div>
+        </div>
+        <main data-v-4f3eb12c="" class="v-main" data-booted="true" style="padding: 0px;">
+          <div class="v-main__wrap">
+            <div data-v-4f3eb12c="" class="main-bg">
+              <div data-v-7b3d0382="" data-v-4f3eb12c="" class="bg-inn d-flex flex-column justify-center align-content-center">
+                <div data-v-7b3d0382="" class="d-flex flex-row justify-center">
+                  <div data-v-7b3d0382="" class="d-flex flex-row justify-center align-center" style="width: 720px;">
+                    <div data-v-7b3d0382="" class="con-left">
+                      <div data-v-7b3d0382="" class="title-head">HASH 数字货币抽奖平台</div>
+                      <div data-v-7b3d0382="" class="line-item d-flex align-center">
+                        <span data-v-7b3d0382="" class="circle"></span>
+                        <span data-v-7b3d0382="" class="line-yellow">公平</span>赔率1.98 全网最高</div>
+                      <div data-v-7b3d0382="" class="line-item d-flex align-center">
+                        <span data-v-7b3d0382="" class="circle"></span>
+                        <span data-v-7b3d0382="" class="line-yellow">公开</span>哈希结果 唯一可查</div>
+                      <div data-v-7b3d0382="" class="line-item d-flex align-center">
+                        <span data-v-7b3d0382="" class="circle"></span>
+                        <span data-v-7b3d0382="" class="line-yellow">公正</span>中奖资产 自动秒赔</div></div>
+                    <div data-v-7b3d0382="" class="con-right d-flex align-center justify-center">
+                      <img data-v-7b3d0382="" src="./Hash Game_files/logo-img.5b63be61.png" class="img-logo"></div>
+                  </div>
+                </div>
+                <div data-v-7b3d0382="" class="d-flex flex-row justify-center align-center top-tips">必须使用【去中心化钱包】转账</div>
+                <div data-v-7b3d0382="" class="content-bottom">
+                  <div data-v-7b3d0382="" class="content-bottom-item">
+                    <div data-v-7b3d0382="" class="content-bottom-item-left">
+                      <div data-v-7b3d0382="" class="content-bottom-item-left-top">双尾哈希地址</div>
+                      <div data-v-7b3d0382="" class="content-bottom-item-left-bottom">TCCXCakwoo***xXT2pD3333</div></div>
+                    <div data-v-7b3d0382="" class="content-bottom-item-btn btn-copy">复制</div></div>
+                  <div data-v-7b3d0382="" class="content-bottom-item">
+                    <div data-v-7b3d0382="" class="content-bottom-item-left">
+                      <div data-v-7b3d0382="" class="content-bottom-item-left-top">单双哈希地址</div>
+                      <div data-v-7b3d0382="" class="content-bottom-item-left-bottom">TGPptKLoND***WsQxrH6666</div></div>
+                    <div data-v-7b3d0382="" class="content-bottom-item-btn btn-copy">复制</div></div>
+                  <div data-v-7b3d0382="" class="content-bottom-item">
+                    <div data-v-7b3d0382="" class="content-bottom-item-left">
+                      <div data-v-7b3d0382="" class="content-bottom-item-left-top">大小哈希地址</div>
+                      <div data-v-7b3d0382="" class="content-bottom-item-left-bottom">THXKfn6niq***V7oc5U9999</div></div>
+                    <div data-v-7b3d0382="" class="content-bottom-item-btn btn-copy">复制</div></div>
+                </div>
+              </div>
+              <div data-v-3410f546="" data-v-4f3eb12c="" id="rules" class="bg-in">
+                <div data-v-3410f546="" class="d-flex flex-row justify-center">
+                  <div data-v-1ee9098c="" data-v-3410f546="" class="content">
+                    <div data-v-1ee9098c="" class="bg-text">RULES</div>
+                    <div data-v-1ee9098c="" class="bg-shadow bg-shadow-1"></div>
+                    <div data-v-1ee9098c="" class="item-text">中奖规则</div></div>
+                </div>
+                <div data-v-3410f546="" class="layoutt">
+                  <div data-v-3410f546="" class="contain">
+                    <div data-v-3410f546="" class="title-head">双尾哈希中奖规则</div>
+                    <div data-v-3410f546="" class="d-flex flex-row box-inn">
+                      <div data-v-3410f546="" class="circle"></div>
+                      <div data-v-3410f546="" class="sub-content">向
+                        <a data-v-3410f546="">官方指定地址</a>转账后，该笔交易生成的区块哈希值（Block Hash），如果最后两位同时包括数字和字母(1a,a1)，则为双尾哈希，将获得奖励，如果最后两位为字母和字母(fa)或者数字和数字(31)，则没有获奖；</div></div>
+                    <div data-v-3410f546="" class="d-flex flex-row">
+                      <div data-v-3410f546="" class="circle"></div>
+                      <div data-v-3410f546="" class="sub-content">示例：如中奖，系统将在 10 秒内对您进⾏1.98倍奖励返还，如您转账100TRX，该笔交易的区块哈希值（Block Hash）为0x******796d，该哈希值最后两位为数字和字母，则中奖，将返还您198TRX。</div></div>
+                  </div>
+                  <div data-v-3410f546="" class="contain">
+                    <div data-v-3410f546="" class="title-head">单双哈希中奖规则</div>
+                    <div data-v-3410f546="" class="d-flex flex-row box-inn">
+                      <div data-v-3410f546="" class="circle"></div>
+                      <div data-v-3410f546="" class="sub-content">向
+                        <a data-v-3410f546="">官方指定地址</a>转账后，如果转账金额的个位数为双数（0/2/4/6/8），该笔交易生成的区块哈希值（Block Hash）最后一个数字也是双数，将获得奖励；如果转账金额的个位数为单数（1/3/5/7/9），该笔交易生成的区块哈希值（Block Hash）最后一个数字也是单数，将获得奖励；</div></div>
+                    <div data-v-3410f546="" class="d-flex flex-row">
+                      <div data-v-3410f546="" class="circle"></div>
+                      <div data-v-3410f546="" class="sub-content">示例：如中奖，系统将在10秒内对您进行1.98倍奖励返还，如您转账101TRX，该笔交易的区块哈希值（Block Hash）为0x******9e3a，该哈希值最后一个数字为单数，转账金额个位数为单数，则中奖，将返还199.98TRX。</div></div>
+                  </div>
+                  <div data-v-3410f546="" class="contain">
+                    <div data-v-3410f546="" class="title-head">大小哈希中奖规则</div>
+                    <div data-v-3410f546="" class="d-flex flex-row box-inn">
+                      <div data-v-3410f546="" class="circle"></div>
+                      <div data-v-3410f546="" class="sub-content">向
+                        <a data-v-3410f546="">官方指定地址</a>转账后，如果转账金额的个位数为双数（0/2/4/6/8），代表押大，如果转账金额的个位数为单数（1/3/5/7/9），代表押小； 该笔交易生成的区块哈希值（Block Hash）最后一个数字是0～4为小，是5～9为大；</div></div>
+                    <div data-v-3410f546="" class="d-flex flex-row">
+                      <div data-v-3410f546="" class="circle"></div>
+                      <div data-v-3410f546="" class="sub-content">示例：如中奖，系统将在10秒内对您进行1.98倍奖励返还，如您转账101TRX，该笔交易的区块哈希值（Block Hash）为0x******6g2c，该哈希值最后一个数字为2，在0～4区间，转账金额个位数为单数，代表押小，则中奖，将返还199.98TRX。</div></div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-e3d29290="" data-v-4f3eb12c="" class="bg-inn">
+                <div data-v-e3d29290="" class="d-flex flex-row justify-center">
+                  <div data-v-1ee9098c="" data-v-e3d29290="" class="content">
+                    <div data-v-1ee9098c="" class="bg-text">LIMIT</div>
+                    <div data-v-1ee9098c="" class="bg-shadow bg-shadow-2"></div>
+                    <div data-v-1ee9098c="" class="item-text">金额限制</div></div>
+                </div>
+                <div data-v-e3d29290="" class="d-flex flex-column align-center conten">
+                  <div data-v-e3d29290="" class="sub-content">转账支持TRX和TRC20USDT</div>
+                  <div data-v-e3d29290="" class="sub-content">TRX转账金额最小为
+                    <span class="sub-content-innnnnn">10</span>，最大为
+                    <span class="sub-content-innnnnn">300000</span></div>
+                  <div data-v-e3d29290="" class="sub-content">TRC20USDT转账金额最小为
+                    <span class="sub-content-innnnnn">10</span>，最大为
+                    <span class="sub-content-innnnnn">30000</span></div>
+                  <div data-v-e3d29290="" class="sub-content">转账低于最小金额时，不可以参与且不会退回，转账高于最大金额时，扣除手续费后退回</div>
+                  <div data-v-e3d29290="" class="sub-content">转账仅支持整数币，小数部分将自动忽略</div></div>
+              </div>
+              <div data-v-33e5ca40="" data-v-4f3eb12c="" id="rules" class="bg-in">
+                <div data-v-33e5ca40="" class="d-flex flex-row justify-center">
+                  <div data-v-1ee9098c="" data-v-33e5ca40="" class="content">
+                    <div data-v-1ee9098c="" class="bg-text">ROADRECORD</div>
+                    <div data-v-1ee9098c="" class="bg-shadow bg-shadow-1"></div>
+                    <div data-v-1ee9098c="" class="item-text">路单图</div></div>
+                </div>
+                <div data-v-33e5ca40="" class="layoutt">
+                  <div data-v-21c8ae04="" data-v-33e5ca40="" class="contain">
+                    <div data-v-21c8ae04="" class="title-head">单双哈希路单</div>
+                    <div data-v-21c8ae04="" class="d-flex flex-column box-inn">
+                      <div data-v-21c8ae04="" class="d-flex flex-row justify-space-around" style="width: 100%;">
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-0a7ef2cb="" class="img-logo img-white">双</div>
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-0a7ef2cb="" class="img-logo img-white">双</div>
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-bottom">
+                          <!---->
+                          <!---->
+                          <img data-v-0a7ef2cb="" src="data:image/png;base64,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" class="img-logo"></div>
+                      </div>
+                      <div data-v-21c8ae04="" class="d-flex flex-row justify-space-around" style="width: 100%;">
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-0a7ef2cb="" class="img-logo img-white">双</div>
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-bottom">
+                          <!---->
+                          <!---->
+                          <!----></div>
+                      </div>
+                      <div data-v-21c8ae04="" class="d-flex flex-row justify-space-around" style="width: 100%;">
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-0a7ef2cb="" class="img-logo img-white">双</div>
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-bottom">
+                          <!---->
+                          <!---->
+                          <!----></div>
+                      </div>
+                      <div data-v-21c8ae04="" class="d-flex flex-row justify-space-around" style="width: 100%;">
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-0a7ef2cb="" class="img-logo img-white">双</div>
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-0a7ef2cb="" class="img-logo img-white">双</div>
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-0a7ef2cb="" class="img-logo img-white">双</div>
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-bottom">
+                          <!---->
+                          <!---->
+                          <!----></div>
+                      </div>
+                      <div data-v-21c8ae04="" class="d-flex flex-row justify-space-around" style="width: 100%;">
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right">
+                          <!---->
+                          <div data-v-0a7ef2cb="" class="img-logo img-white">双</div>
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right">
+                          <div data-v-0a7ef2cb="" class="img-logo img-yellow">单</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content con-bor-right">
+                          <!---->
+                          <div data-v-0a7ef2cb="" class="img-logo img-white">双</div>
+                          <!----></div>
+                        <div data-v-0a7ef2cb="" data-v-21c8ae04="" class="content">
+                          <!---->
+                          <!---->
+                          <!----></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-v-33e5ca40="" class="layoutt-divide"></div>
+                  <div data-v-26e095cc="" data-v-33e5ca40="" class="contain">
+                    <div data-v-26e095cc="" class="title-head">大小哈希路单</div>
+                    <div data-v-26e095cc="" class="d-flex flex-column box-inn">
+                      <div data-v-26e095cc="" class="d-flex flex-row justify-space-around" style="width: 100%;">
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-7eb26f4d="" class="img-logo img-yellow">大</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-7eb26f4d="" class="img-logo img-yellow">大</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-7eb26f4d="" class="img-logo img-yellow">大</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-bottom">
+                          <!---->
+                          <!---->
+                          <img data-v-7eb26f4d="" src="data:image/png;base64,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" class="img-logo"></div>
+                      </div>
+                      <div data-v-26e095cc="" class="d-flex flex-row justify-space-around" style="width: 100%;">
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-7eb26f4d="" class="img-logo img-yellow">大</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-bottom">
+                          <!---->
+                          <!---->
+                          <!----></div>
+                      </div>
+                      <div data-v-26e095cc="" class="d-flex flex-row justify-space-around" style="width: 100%;">
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-7eb26f4d="" class="img-logo img-yellow">大</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-bottom">
+                          <!---->
+                          <!---->
+                          <!----></div>
+                      </div>
+                      <div data-v-26e095cc="" class="d-flex flex-row justify-space-around" style="width: 100%;">
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-7eb26f4d="" class="img-logo img-yellow">大</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <div data-v-7eb26f4d="" class="img-logo img-yellow">大</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right con-bor-bottom">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-bottom">
+                          <!---->
+                          <!---->
+                          <!----></div>
+                      </div>
+                      <div data-v-26e095cc="" class="d-flex flex-row justify-space-around" style="width: 100%;">
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right">
+                          <div data-v-7eb26f4d="" class="img-logo img-yellow">大</div>
+                          <!---->
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content con-bor-right">
+                          <!---->
+                          <div data-v-7eb26f4d="" class="img-logo img-white">小</div>
+                          <!----></div>
+                        <div data-v-7eb26f4d="" data-v-26e095cc="" class="content">
+                          <!---->
+                          <!---->
+                          <!----></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-13fe6866="" data-v-4f3eb12c="" id="process" class="bg-ub d-flex flex-column align-center">
+                <div data-v-13fe6866="" class="d-flex flex-row justify-center">
+                  <div data-v-1ee9098c="" data-v-13fe6866="" class="content">
+                    <div data-v-1ee9098c="" class="bg-text">PROCESS</div>
+                    <div data-v-1ee9098c="" class="bg-shadow bg-shadow-1"></div>
+                    <div data-v-1ee9098c="" class="item-text">参与流程</div></div>
+                </div>
+                <div data-v-13fe6866="" class="d-flex justify-center align-center inn-content flex-column">
+                  <!---->
+                  <div data-v-13fe6866="" class="d-flex flex-row justify-center align-center">
+                    <div data-v-1743f360="" data-v-13fe6866="" class="d-flex flex-column align-center justify-center bg-normal">
+                      <div data-v-1743f360="" class="number circle d-flex align-center justify-center number-active circle-active">1</div>
+                      <div data-v-1743f360="" class="title-head title-active">注册钱包</div></div>
+                    <div data-v-1743f360="" data-v-13fe6866="" class="d-flex flex-column align-center justify-center bg-normal">
+                      <div data-v-1743f360="" class="number circle d-flex align-center justify-center">2</div>
+                      <div data-v-1743f360="" class="title-head">购买虚拟币</div></div>
+                    <div data-v-1743f360="" data-v-13fe6866="" class="d-flex flex-column align-center justify-center bg-normal">
+                      <div data-v-1743f360="" class="number circle d-flex align-center justify-center">3</div>
+                      <div data-v-1743f360="" class="title-head">转账参与</div></div>
+                    <div data-v-1743f360="" data-v-13fe6866="" class="d-flex flex-column align-center justify-center bg-normal">
+                      <div data-v-1743f360="" class="number circle d-flex align-center justify-center">4</div>
+                      <div data-v-1743f360="" class="title-head">自动秒赔</div></div>
+                  </div>
+                  <div data-v-13fe6866="" id="processInit" class="right-content">
+                    <div data-v-5e6cf59a="" data-v-13fe6866="" class="bg-inn">
+                      <div data-v-5e6cf59a="" class="title-pro">注册数字币【去中心化】钱包</div>
+                      <div data-v-5e6cf59a="" class="bg-box">
+                        <div data-v-5e6cf59a="" class="d-flex flex-row text-center bg-header table-header-title">
+                          <div data-v-5e6cf59a="" style="flex-basis: 30%;">平台</div>
+                          <div data-v-5e6cf59a="" style="flex-basis: 40%;">网址</div>
+                          <div data-v-5e6cf59a="" style="flex-basis: 30%;">教程</div></div>
+                        <div data-v-5e6cf59a="" class="
+                        d-flex
+                        flex-column
+                        justify-center justify-space-between
+                        table-bodyd
+                        ">
+                          <div data-v-5e6cf59a="" class="table-item">
+                            <div data-v-5e6cf59a="" class="d-flex flex-row text-center align-center table-item-cont">
+                              <div data-v-5e6cf59a="" class="tab-yellow" style="flex-basis: 30%;">
+                                <img data-v-5e6cf59a="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcYAAACVCAMAAAD10ar2AAAA81BMVEUAAAD////////////////////////////////////////////////h5un///////////+SxNf////////////////////////Q3+Vou9f///////////////////8Cibz///////////8Tib1DvNROob5XsdL///8ClL+U0OP///8yss4lksFIt9NVvNYypMlVytphudYEdrSFx94StMwJpMUChLkYlsK5xMypxM4owtNEmcepvschn8WFwNxCncj///8ImMEDfLcEgroKpcYFibwHkr8MrsoJn8QOtcwHjr4DeLUMqccCdLQOus4Pv88Aaa67CayKAAAAQHRSTlMA+U3Q8i3nHNgS4yGhCK6DQQtXRHW9wjgPf31nd2An8reL79eoHz0391CVx65pkblLK99j4fDr5yIq4KI3eun9FTAiHQAADilJREFUeNrswYEAAAAAgKD9qRepAgAAAAAAAAAAAAAAAAAAmD077EkbCAM4/twVRqkF0q20BVcYsXSFCkrAIIsuNVLAxrjv/212XA9KezAVcZnjfopvaAzen+doqyAIgiAIgiAIgiAIgnDENG0yHPYdqt+50UD4aDRr2PdHo6enp18roz4IH4im3dT80cPDE5V0/OGC8FFo18uGJCLJGFtnvAROiQDhH6O1L53R/IHiSvIZSyenqvo1D/+8YiF2FG85rd3zR3NakXVc25qxhA0UBEg+PdRSP2/PHEbuE4Xh/0ciXs0J0nHOzeO2jFjOBUuHWR2MPr1QTs7D68hB7DN8RO2221katK3nj70kESkWke/Yy4yPigIKqcWDZAxeat+M6ANmtAZDZ+yFYRSFnl9z2/AnmutcPbKIO0veQkq+GjDVvMj4TtzaOIxmd8zMc1wNdprURlMWkT2Sksk89jIZjYAxRMb3cU0izggSkIX0rmoD2E679BePZBYfyRfBSnLzmP1stFoB07JExvfgOvfRjEiFjC5c2Ma6HU0fNxLSiPw8PmQzQl5iq/odDgAHKCtgcijlWDK6fhiRjNmQnj8A3rUzvSIZidQ4cvPIZwSTXnAYGA4h36pndFlH9K2eph9FRnfcjJZCsq9GIQ0Z8xwLsibO3ZSIOxKP6U/INT4j0ajrer0B78TMsdXXIesIMg4uaMWw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" contain="" class="table-icon"></div>
+                              <div data-v-5e6cf59a="" style="flex-basis: 40%;">
+                                <a data-v-5e6cf59a="" href="https://token.im/download" target="_blank">token.im</a></div>
+                              <div data-v-5e6cf59a="" style="flex-basis: 30%;">
+                                <a data-v-5e6cf59a="" href="https://www.8043.com/help?wallet=imToken" target="_blank">查看教程</a></div>
+                            </div>
+                            <div data-v-5e6cf59a="" class="bg-line"></div>
+                          </div>
+                          <div data-v-5e6cf59a="" class="table-item">
+                            <div data-v-5e6cf59a="" class="d-flex flex-row text-center align-center table-item-cont">
+                              <div data-v-5e6cf59a="" class="tab-yellow" style="flex-basis: 30%;">
+                                <img data-v-5e6cf59a="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcYAAACVCAMAAAD10ar2AAAArlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////8Qgv7///////9Fnv////+Et/IMgP5osP9irf8ciP4qkP////9Lof8Vhf4tkv////////////////////8mjv4/m/////////////+Tnaggi/5Gnv+Qxf9rsv9Hn/9psf////8MgP4DfP5aAKVCAAAAN3RSTlMADPwsCd3hos0huwSvNfIW5Hlcne331vTFP4dUEbhEMdW9gh/oqhptmIdKyp6MamEM4VwjWm91zughygAACvxJREFUeNrswYEAAAAAgKD9qRepAgAAAAAAAAAAAAAAAAAAmF27XU4UhgIwfPhQREYrSrWii6KAWq21a90T7v/Gtl07EyXC0WFjgenzsxOh42v4CPyQomU3G0+9ZwWKzLIs+JGu21fxn7qtQzH9Dv319MPa3xy8OfwQWAZyDROK6A87NVhvDhOoFmW1NE4sZw83VmziqX4RO44HLGngu1WalJaBCU24yQrPNQp4gpwP2AWB60FVKA4mdHS4gaZigg2FwzMmhFUJqdSFjArcoIlJ7QcoGp5REFbjJJkzo6miYARFwzNecNhB+eXMOETREr6ZNfEmOyojt67AhMyZcYuiJnyvuc8Ym+7JjNw7lF3OjDMUNeBbeQH79LYnM3Kbsq/v5MzYLdxsfGdHsUtn5PySnyBzZtQQsVB3HHy9JrwlY+yPocxyZlQcFAxBProi+3WWkRKvS92RyEiyMamhZ++wBbLwimJGUlzq42rejOLnh9nje7gAWTyWmpEWl/k6h8hIG91016gYiDUL5NgHeTKy2IXSojLStiqe6EEW3UDEmg5S7KYxkZEQl3eFlcxIe+abcFbU4xSJGd2YERkpwR5Kis5IU+zj4/+6YVIVJWacMJY3YxxCSeXJyFlmd9ttUR/socSMu+l1Gau5LJeSUYYeysx4iDMysmtNS3rXcb+MS5SZcR+w9IyW/9m4ylerd8u4RKkZ3VjMyM39QbAOw9APGCEo53S8V8YXlJpxHDAx46n9+DjOO/hVnI6SM/KKcjO6cVpGkReyDNNSruXIzcgrys1oTRmdkfOyzpWlXAO4S8YV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" contain="" class="table-icon"></div>
+                              <div data-v-5e6cf59a="" style="flex-basis: 40%;">
+                                <a data-v-5e6cf59a="" href="https://ownbit.io/en/download/" target="_blank">ownbit.io</a></div>
+                              <div data-v-5e6cf59a="" style="flex-basis: 30%;">
+                                <a data-v-5e6cf59a="" href="https://www.8043.com/help?wallet=ownBit" target="_blank">查看教程</a></div>
+                            </div>
+                            <div data-v-5e6cf59a="" class="bg-line"></div>
+                          </div>
+                          <div data-v-5e6cf59a="" class="table-item">
+                            <div data-v-5e6cf59a="" class="d-flex flex-row text-center align-center table-item-cont">
+                              <div data-v-5e6cf59a="" class="tab-yellow" style="flex-basis: 30%;">
+                                <img data-v-5e6cf59a="" src="data:image/png;base64,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" contain="" class="table-icon"></div>
+                              <div data-v-5e6cf59a="" style="flex-basis: 40%;">
+                                <a data-v-5e6cf59a="" href="https://trustwallet.com/zh_CN/" target="_blank">trustwallet.com</a></div>
+                              <div data-v-5e6cf59a="" style="flex-basis: 30%;">
+                                <a data-v-5e6cf59a="" href="https://www.8043.com/help?wallet=trust" target="_blank">查看教程</a></div>
+                            </div>
+                            <div data-v-5e6cf59a="" class="bg-line"></div>
+                          </div>
+                          <div data-v-5e6cf59a="" class="table-item">
+                            <div data-v-5e6cf59a="" class="d-flex flex-row text-center align-center table-item-cont">
+                              <div data-v-5e6cf59a="" class="tab-yellow" style="flex-basis: 30%;">
+                                <img data-v-5e6cf59a="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcYAAACVCAMAAAD10ar2AAAAt1BMVEUAAAD///////////////////////////////////////////8TYNP5+/7///////////////8SXs7///////////////8VXM4TXc7////9/v////8SXc3///8SXc////8kXcs9etd8peWqxu4RW8+2zvITVtITXc/b5/htmt0SXc3///8IVcsSXtAEU8rt8/xNhdqLsOgaYs/O3vayy/AucNTc5/hekd1smuHD1vObu+oladHl7fr+nU4dAAAAKnRSTlMA9gdHEMUi1+qYGdD0/kA0UrqsK7KlZQqIdOF8m4TWkCz+/PtOMxt03bzSB0+iAAAMzUlEQVR42uzZe3PpQBjH8RVJaBp1K3pRSjPMZDepuivv/3Ud9ciZilOl2d1D+vvwLzK+nt2dYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAuGj3P698l1/eeGw0G/0XDa7ZcSVqV/jMDvShixQ0Cf/NMht7Cbd0hpHa9phv4gS8LhfSwsupFoyjXOmQfHXWhihRRssC9Q0d9nqmifJhHjRpNJRVpXfUY6OG5ga9KUOkx0KFXCRRmdHFc/cIFDaMfYBy/cik74wZ2Rz16rcBXKcBhVQfP9eNwyLk8fVfxNLaQUYOmwoqUEbfINaggYxogYyogYyogYyogYyogYyrsZxRhKAQyXpb9jINZZ0ktkfFixDMKMR+Nxu/ddcuAWirIaNp7qlt2nGMwXQy7SBymglktEpMRhRkD0ZlyzgurxablZN2SYsrMWKrdxpQjt3Ftk+lity1SMpgCxZq1US4yonJRFf57ga9Ry5e3+aCzHFJLaRnvM/xoOYfpUrQ4eVSSMfvASZYRtUec2Yp/thpFLWmRlZCxnudHs/RNY7XMyb2ajDm+kdGTcbLge153WyLj2Wf0xVuBk72W43XLybolQcazzjiYcnKoZSCI6r3x2mFfQ8YDGZdjflhh23LoC3qcOo25fEzUNZOPK/+KaTSdLUNGRiK6Bf6twl7L4zPa2dKubG3bMVcvxdwY7DD9GelrNyRmtNtW+YN1ZUvMOBjFin3fUghK+cO7OI+ZBDuh9oxGtmZZT1VpGe3oV/xQlzmNw5edVovx6PXgEruKWn74BRnrDx81ykUJGakiJ3mqmDwjCec72abz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" contain="" class="table-icon"></div>
+                              <div data-v-5e6cf59a="" style="flex-basis: 40%;">
+                                <a data-v-5e6cf59a="" href="https://www.tronlink.org/cn/" target="_blank">tronlink.org</a></div>
+                              <div data-v-5e6cf59a="" style="flex-basis: 30%;">
+                                <a data-v-5e6cf59a="" href="https://tron7010.zendesk.com/hc/en-us/articles/360027090691-How-to-download-TronLink-Chrome-and-create-wallet-" target="_blank">查看教程</a></div>
+                            </div>
+                            <div data-v-5e6cf59a="" class="bg-line"></div>
+                          </div>
+                          <div data-v-5e6cf59a="" class="table-item">
+                            <div data-v-5e6cf59a="" class="d-flex flex-row text-center align-center table-item-cont">
+                              <div data-v-5e6cf59a="" class="tab-yellow" style="flex-basis: 30%;">
+                                <img data-v-5e6cf59a="" src="./Hash Game_files/bitpie.aa9bddb2.png" contain="" class="table-icon"></div>
+                              <div data-v-5e6cf59a="" style="flex-basis: 40%;">
+                                <a data-v-5e6cf59a="" href="https://bitpie.com/" target="_blank">bitpie.com</a></div>
+                              <div data-v-5e6cf59a="" style="flex-basis: 30%;">
+                                <a data-v-5e6cf59a="" href="https://www.8043.com/help?wallet=bitpie" target="_blank">查看教程</a></div>
+                            </div>
+                            <!----></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!---->
+                    <!---->
+                    <!----></div>
+                </div>
+              </div>
+              <div data-v-416a9382="" data-v-4f3eb12c="" id="pingtai" class="bg-innn">
+                <div data-v-416a9382="" class="d-flex flex-row justify-center">
+                  <div data-v-1ee9098c="" data-v-416a9382="" class="content">
+                    <div data-v-1ee9098c="" class="bg-text">ADVANTAGE</div>
+                    <div data-v-1ee9098c="" class="bg-shadow bg-shadow-2"></div>
+                    <div data-v-1ee9098c="" class="item-text">平台优势</div></div>
+                </div>
+                <div data-v-416a9382="" class="d-flex flex-row align-center justify-center content-inn">
+                  <div data-v-416a9382="">
+                    <div data-v-416a9382="" class="item-bg d-flex flex-column justify-center align-center">
+                      <div data-v-416a9382="">
+                        <img data-v-416a9382="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA9CAMAAAAnFe+0AAAAAXNSR0IArs4c6QAAAR1QTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////kQ6XXAAAAF50Uk5TAAIDBAgJDA4QEhUYGh0eIyQoKSosLS8wOj1ARUlKWVtdYGRlZmdpamtsc4GChYqMjo+QkZiZpqywsrO0tri7vcbHyMvMz9DR19na29ze3+Dj6u/w8/T19vf5+vv9/tvIiLwAAAHRSURBVFjD7ddZT9tAGIXhw1KaEgoJKYtDccueEMpWkrKVsm8JS4Fgm5L3//+MXrQOIEWRPUPUi+bcfTPyY2tmpPEnSZKSs1vlKjFTLW/NJvWUxKKHYbzFRKgMlrFIefCPkrnBKjcZSUpUALhcnvkUMzPLlwBUEpKWAPxcpwzSmfMBlqQ+H/AdGcbxAb9POYC8jJMHyGkbuOoyZ7qugG1VgFVZZBWo6B6Ys2HmgHsBTNgwEwCtZwb27tZ77JkSMG/PHABr9swhUGwp82Eh/8aeeV+Fb/bMZ8CzZ6YB2sy/ZJJfS+OvwPyAX2l7JnhemDMA0y1l3jrJV2BSP/HH7ZkvwHd7pggctpk2EzIPwGQ4VAOmGt6aa8BBWEwBtbCYBB50DRTCoTMg2/AOnwdKYZEFzsKiAFxrF9ivz5/frjT+o+hZv9sbqE+t3J7X37YP7GqB518QP1mAgkYALnpNld4LgBFpE+A0baakTwE2JWU8gKA41v8uZvrHigGAl5Ekt2bXetTcvzsf2ChB/dSNnpgrJ6NPK9Xhbhj1d96G2/FyzbtTzseYcVLd+o8y5EZrM92hpk1N5JNYa9Y8HUXf66MmzE50ZqcJM3z8GA15PB5+8eBvNuQdt8LUCLsAAAAASUVORK5CYII=" class="img-logo"></div>
+                      <div data-v-416a9382="" class="title-subb">公平透明</div></div>
+                    <!----></div>
+                  <div data-v-416a9382="">
+                    <div data-v-416a9382="" class="
+                    item-bg
+                    d-flex
+                    flex-column
+                    justify-center
+                    align-center
+                    item-m-l
+                    ">
+                      <div data-v-416a9382="">
+                        <img data-v-416a9382="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAABACAMAAAB4KUSAAAAAAXNSR0IArs4c6QAAAg1QTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////G4sPWAAAAK50Uk5TAAECAwUGBwgJCg0ODxAREhMUFhcYGhscHR4gISMkJSYnKCksLS4vMzQ2Nzg5Ojw9P0FFRkhJSktMTU9RU1VWW1xeYGRlZ2hqa2xub3BydHd4eXx9g4SFhoeIiYqLkZOWl5iZmp2en6ChoqOkqKmrrK2usLK0tri5uru8vr/AwcXGx8nLzc/S09TV1tfY2dze4OHi4+Xm5+jp6uvs7e7v8PHy8/T19vf4+fr7/P3+jHOnFwAAAxJJREFUSMftludbE0EQhwcREisKFiwRC3YjilhQFEUsWLALRs8OCCqoKEJUxIaCJXYwAkKixETy/o1+OLhgLmXveXz85HzanZ337vY3s3sjEsfSC2u/hR/umy6WLG1T7TcAGHqwJ1OdujJM6RZqKZ2iQG2s6cNkwTslkxJSG6ojlKciN7fCY0wDjcXjY1NjN1T3GmHdZ52613m223D+uLFtnIlaXxWh+mvWpUaWUtfV9BtL/mtbbKOogss9xtJgQ5Et+rG2ooZBI2CgrjBNRETyR1GhuyUTYm9kQsndkBHWV5UvUmlMw21lCVOWWdYWNoIrZWB41H5kdvJkzTnSPvLBokt/cpFqeSw6qadIAFZZK8hVBigW7T/4T8G9vobIGb3eU6AMumH3yPgEtCqDF8A/Tx8uC4FLGZzmhUepIiLpL+C1XV2cIuCYiEgl/HJaUfUKBJeKLA/BGUvpmPgWOu22TnhpUwYXuDRNuw+0NAHNmqadXqIEPjdfyO+VQL8ZHBqrAp4zg1fVxJnhcDgcDsdr+KSPsq0V+XPT3v4OGAZSrH1qCvBTvgM2a+LYgF7pAmZYS8dMwCNPAWeyAnj3R4ATcEsdUGYuOU3TvsKAPooquTLgvOwH6q2pWg9slwWA324FtPshnC3yCthpBdwJtIlIOdAxRh0c0wHsEpGpPqBUHSwFPo8TEakAujPMEU+g0+zN6AYOiIjIZG9sYbd2fSiMLWn7cD3sIJ4+sZUJLRuZNQGBPBUuLwAcNKZZnwCvIznn8AK1oxxrg4AnOxmX8x64nTbatRvg7cLE3Bov4I66Z88A9G9OxJWHgA5Ty+YCGDqVFg/LaiTOdvYGAZ7lxuaKvgC8mBVrbfVHgMDxGEdl5k0AWuP011nNALzZFN0FH9Q7xUvp8faRske/b9x/nPj1LwHwFSdSbu49AH5dNaphqVu/dh7PT5Lk7V16r1yVIyKSW6/3toOHUpOW1WQtqL/1+oqVN4b017XMVzoBObei/o5blVsnpzuC9R22W+m61jTrm/O5pohFW3yxjw9HM+It/wZQp4wjCZbrAwAAAABJRU5ErkJggg==" class="img-logo"></div>
+                      <div data-v-416a9382="" class="title-subb">安全可靠</div></div>
+                    <!----></div>
+                  <div data-v-416a9382="">
+                    <div data-v-416a9382="" class="
+                    item-bg
+                    d-flex
+                    flex-column
+                    justify-center
+                    align-center
+                    item-m-l
+                    ">
+                      <div data-v-416a9382="">
+                        <img data-v-416a9382="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABBCAMAAAC6njdfAAAAAXNSR0IArs4c6QAAAmpQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////xH3ReQAAAM10Uk5TAAECAwQFBgcICQoLDA0OEBESExQVFhcYGRobHB4fICEiIyQlJicoKSorLC0vMDEyNDU2Nzg5Oj0+P0BBQkRFRkdISUpMTU5SU1RVVldYWVpbXV9gYWJjZmdoaWprbG1vcXR3eHp8fX+AgYKDhYaHiImKi4yNj5CWl5iam5yho6Smp6mqq62ur7CxsrO0tba3uLq7vL/AwcLDxMbHycrLzM3Oz9DR0tPU1dbX2Nna29ze4OHi4+bn6Onq6+zt7u/w8fP09fb3+Pn6+/z9/lcELMUAAAQoSURBVBgZncGHX5R1AMfx7x3HUkNLhqQ2cESao7ShDSut1KTQxFyZ5SjNhDLMsuy4HIGmBQqp4KRQNDTTAAmTIaA8n/+p33N34D3PnXIv3m/FY/g3HbWzNDgLrwE3NBijS7H9pUFYfRObtURxGrtscYpClhBkfaS4JBf8ZkGVR0GHCbuwIUMDGbahiaAcBfnp1/XdWN2PZ3kjId0PKujRNu7q+mqY7mniUcL+yVPYGmwnOwm68pruYUkHQe07X0xQH08lRlnayovYrCKfYkj4mqCWdcMVKacD6PHIk38ZW0WaoqSWYru9LU0ua4HTMpK39GDUZskl+RdsDVMUxfuj1TxdQTOvYfwxUg7efdgOjlAsqV6FjT6JcSJVkQqxbfVqIEP2YJQowlsWxnrFwVeKsUb9RrVgbFNcUqqBjonqsxfjoFfxyW4EKhX2MkZjuuI1zwIWKeQMxnzFbxfQkCDbPIwKRZr1/aZhuuvJncVZipDdBrwr2xGMZxRhfDfUjFCfF9qgWpEKgRoZ4yygQpHewTj9kEJeagd6ExUh4xYwWdJmjAWKlHkdozZdtjmdGHvk4AeKJJ0FWpPkMK0Foy5T0txbGIeHyuFV4JyUbQElcnmqGaM+W292YZQPkVPSTWCM5mO8J7dJjRh/rurGOJQit1LgbRVi5CrKE9fosz9ZUdYDX+gnoNOraOOvErI3SdHmAqU6C1yQi6/oTH19EyEN58+f2z1WTrlArZqACrm8j9shOQ0HmtQO7JPL57gdl5MPaNcdoEQuUztwap0iJ48Fd9QB7JXbmPwCowaoXmbkZ8plCNChZqBcsQUAv2IaBTSrDqhXbAHAr5hmAnU6AHR65fJ4wSrjFHBitbFytlwWAwdUjJErp+lduHwip+1AsfIxlsppK271cqoB8pWDEZBTAW5FcsjsBXKkBuC/FDkkfHrstNEK/HvKOLbZJ4cVwCVJxRh5iiUA+BVLDbBd0tMYRxRLAPArhhkYM2TUYjyrGAKAXzHsB36XbRnGYcUQAPyKNssClsuWeAVjgaIFAL+iJNYCV5MUtBSjcaSilAA/KMoWjBUK8dRglHnkthH4QG6v3AHOJChsSjfGJrkN/ba20CeXCa3A7Znqtw7DWqE4PPY3xme6y7sfo/dDDSj3CkalTxHS6rDt8CksQTHNuYFxOV0OD1/CVj5StqzLPf4RipK4pRejcYJcHmnA1rRIxpfAHrk9X4etaZKipFcTVPWctAsjTw7TyixsDTmKIfU7Qo7mvYFxPUP9HsivIqQ8XbHltxByswdjt8KySm4R0rPRq3vJ2NVLhIUK+ZWw45N1P1N/tujXlChbskXQxTyPBpC74wZ9xsmWUAdYlQt9ikPSx4SUeRU02l+1bpzi83oXtguzNQjnMbo3J2sw2oCjuRqctW0tKz2Kw/8nAkd0VrPfhAAAAABJRU5ErkJggg==" class="img-logo"></div>
+                      <div data-v-416a9382="" class="title-subb">自动秒赔</div></div>
+                    <!----></div>
+                </div>
+              </div>
+              <div data-v-138451fa="" data-v-4f3eb12c="" id="pexchange" class="bg-innn">
+                <div data-v-138451fa="" class="d-flex flex-row justify-center">
+                  <div data-v-1ee9098c="" data-v-138451fa="" class="content">
+                    <div data-v-1ee9098c="" class="bg-text">PEXCHANGE</div>
+                    <div data-v-1ee9098c="" class="bg-shadow bg-shadow-2"></div>
+                    <div data-v-1ee9098c="" class="item-text">数字币兑换</div></div>
+                </div>
+                <div data-v-138451fa="" class="d-flex flex-row align-center justify-center content-inn">
+                  <div data-v-138451fa="" class="exchange-tips">当前兑换率：
+                    <span data-v-138451fa="">兑换数量=（接收数量*市场价）- 油费</span></div>
+                </div>
+                <div data-v-138451fa="" class="d-flex flex-row align-center justify-center content-inn">
+                  <div data-v-138451fa="" class="exchange-tips">TRX(USDT)最低兑换金额:
+                    <span data-v-138451fa="">10</span>USDT</div></div>
+                <div data-v-138451fa="" class="d-flex align-center justify-center exchange flex-column">
+                  <div data-v-138451fa="" class="exchange-left">
+                    <div data-v-138451fa="" class="exchange-left-nav">
+                      <div data-v-138451fa="" class="exchange-left-nav-left exchange-left-nav-left-active">USDT兑换TRX</div>
+                      <div data-v-138451fa="" class="exchange-left-nav-right">TRX兑换USDT</div></div>
+                    <div data-v-138451fa="" class="exchange-left-input">
+                      <input data-v-138451fa="" type="number">
+                      <div data-v-138451fa="" class="exchange-left-input-tips">USDT</div></div>
+                    <div data-v-138451fa="" class="exchange-left-input exchange-left-input-second">
+                      <input data-v-138451fa="" type="number">
+                      <div data-v-138451fa="">TRX</div></div>
+                    <div data-v-138451fa="" class="exchange-left-calc">计算</div></div>
+                  <div data-v-138451fa="" class="exchange-right">
+                    <div data-v-138451fa="" class="exchange-right-tips">如果您需要使用USDT兑换TRX币或使用TRX币兑换USDT币，可以向下方地址转账，平台将免费在10秒内给您返还同等价值的TRX或USDT币。</div>
+                    <div data-v-138451fa="" class="exchange-right-address">
+                      <div data-v-138451fa="" class="exchange-right-address-top">
+                        <div data-v-138451fa="" class="exchange-right-address-top-left">平台官方兑换地址</div>
+                        <div data-v-138451fa="" class="exchange-right-address-top-right btn-copy">复制</div></div>
+                      <div data-v-138451fa="" class="exchange-right-address-address">TYJ7yjRqLTgzT6XY97qiv8cQsptqSQ9999</div></div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-519528ab="" data-v-4f3eb12c="" id="questions" class="bg-inn d-flex flex-column justify-center align-center">
+                <div data-v-519528ab="" class="d-flex flex-row justify-center">
+                  <div data-v-1ee9098c="" data-v-519528ab="" class="content">
+                    <div data-v-1ee9098c="" class="bg-text">TEH PROBLEM</div>
+                    <div data-v-1ee9098c="" class="bg-shadow bg-shadow-1"></div>
+                    <div data-v-1ee9098c="" class="item-text">常见问题</div></div>
+                </div>
+                <div data-v-519528ab="" class="d-flex flex-column align-center">
+                  <div data-v-519528ab="" class="bg-box">
+                    <div data-v-519528ab="" class="ques-title">Q:什么是区块哈希值？</div>
+                    <div data-v-519528ab="" class="ques-sub-title">区块哈希值是去中心化的区块链网络，在转账时自动生成的一段字母与数字混合的数列，记录了转账的发起方，接收方，转账金额等信息，哈希值是唯一且不可篡改的。</div></div>
+                  <div data-v-519528ab="" class="bg-box">
+                    <div data-v-519528ab="" class="ques-title">Q:为什么要选择去中心化钱包？</div>
+                    <div data-v-519528ab="" class="ques-sub-title">中心化钱包是所有用户共用一个钱包地址进行转账，无法查询哪一笔是您的转账，无法获取属于您的哈希值，去中心化钱包只记录您的转账记录，可以获取属于您的哈希值。</div></div>
+                  <div data-v-519528ab="" class="bg-box">
+                    <div data-v-519528ab="" class="ques-title">Q:为什么我会连续中奖或连续不中奖？</div>
+                    <div data-v-519528ab="" class="ques-sub-title">首先连续多次不中奖的是小概率事件，其次中奖与不中奖是随机事件，随机事件的发生频率会趋于一个稳定值，事物出现的概率对每个人来讲是相等的，这个情况下，每个人都是公平的；同时随机事件会遵大数定律（在试验不变的条件下，重复试验多次，随机事件的频率近似于它的概率），在转账频次不断增加的情况下，中奖与不中奖的概率会趋于一个稳定值，随着转账频次增加则中奖总概率会提升。</div></div>
+                  <div data-v-519528ab="" class="bg-box">
+                    <div data-v-519528ab="" class="ques-title">Q:为什么我的奖励延迟到账了？</div>
+                    <div data-v-519528ab="" class="ques-sub-title">当您中奖后，区块链会自动执行奖励进行转账，但是当TRX链发生拥堵时，可能转账会需要一些时间，请您耐心等待，平台会保证您的资金安全。</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div role="alert" class="vuedl-notification right" style="max-width: 500px; z-index: 2000; top: 10px;">
+        <div role="alert" class="v-alert v-sheet theme--dark success" style="margin: 0px; min-width: 300px;">
+          <div class="v-alert__wrapper">
+            <i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-check-circle theme--dark"></i>
+            <div class="v-alert__content">
+              <div class="d-flex align-center">
+                <div class="mr-2">复制成功</div>
+                <!----></div>
+            </div>
+            <button type="button" class="v-alert__dismissible v-btn v-btn--icon v-btn--round theme--dark v-size--small" aria-label="Close">
+              <span class="v-btn__content">
+                <i aria-hidden="true" class="v-icon notranslate mdi mdi-close-circle theme--dark"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+        <!----></div>
+    </div>
+    <script src="./Hash Game_files/chunk-vendors.6291b02f.js.下载"></script>
+    <script src="./Hash Game_files/app.b164434a.js.下载"></script>
+  </body>
+
+</html>

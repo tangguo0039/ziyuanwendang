@@ -1390,6 +1390,14 @@ video[data-v-5bd6504d]::-webkit-media-controls,video[data-v-5bd6504d]::-webkit-m
 	width:44.444vw;
 	text-align:center
 }
+#tipDiv {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(#f68d6a, #ca5f3c);
+  transition: all 1s;
+  opacity: 0;
+}
+
 .bg-text[data-v-1ee9098c] {
 	font-size:5.185vw;
 	font-weight:700;

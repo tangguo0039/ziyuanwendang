@@ -14179,11 +14179,11 @@ html.overflow-y-hidden {
 .theme--light.v-sheet--outlined {
 	border:thin solid rgba(0,0,0,.12)
 }
-#.theme--dark.v-sheet {
-#	background-color:#1e1e1e;
-#	border-color:#1e1e1e;
-#	color:#fff
-#}
+.theme--dark.v-sheet {
+	background-color:#1e1e1e;
+	border-color:#1e1e1e;
+	color:#fff
+}
 .theme--dark.v-sheet--outlined {
 	border:thin solid hsla(0,0%,100%,.12)
 }
@@ -16921,7 +16921,8 @@ to {
 	background-attachment:local,local,scroll,scroll
 }
 .vuedl-notification {
-	background-color:#4caf50 !important;border-color:#4caf50 !important;
+	background-color:#4caf50 !important;
+	border-color:#4caf50 !important;
 	display:flex;
 	box-sizing:border-box;
 	position:fixed;

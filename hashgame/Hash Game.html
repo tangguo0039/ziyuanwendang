@@ -29,71 +29,576 @@
     <link href="./js/chunk-vendors.6291b02f.js" rel="preload" as="script">
     <link href="./css/chunk-vendors.ec344657.css" rel="stylesheet">
     <link href="./css/app.e35375e7.css" rel="stylesheet">
-	<style type="text/css">
-.video-wrapper[data-v-229e82cd] {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	width:100%;
-	height:100%;
-	position:absolute;
-	overflow:hidden;
-	z-index:0
+
+
+ <style data-vue-meta="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">
+		.v-application a {
+	color:#42a5f6;
 }
-.fade[data-v-229e82cd] {
-	-webkit-backface-visibility:hidden;
-	backface-visibility:hidden
+.v-application .primary {
+	background-color:#42a5f6 !important;
+	border-color:#42a5f6 !important;
 }
-.fade-enter-active[data-v-229e82cd],.fade-leave-active[data-v-229e82cd] {
-	transition:opacity 1s
+.v-application .primary--text {
+	color:#42a5f6 !important;
+	caret-color:#42a5f6 !important;
 }
-.fade-enter[data-v-229e82cd],.fade-leave-to[data-v-229e82cd] {
-	opacity:0
+.v-application .primary.lighten-5 {
+	background-color:#e4ffff !important;
+	border-color:#e4ffff !important;
 }
-video[data-v-229e82cd] {
-	visibility:visible;
-	pointer-events:none;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	height:100%;
-	width:100%
+.v-application .primary--text.text--lighten-5 {
+	color:#e4ffff !important;
+	caret-color:#e4ffff !important;
 }
-</style>
-    <style type="text/css">.video-buffering[data-v-b5717866] {
-	width:100%;
-	overflow:hidden;
-	background-size:cover;
-	background-position:50%;
-	height:100%;
-	top:0;
-	left:0;
-	position:absolute
+.v-application .primary.lighten-4 {
+	background-color:#c5ffff !important;
+	border-color:#c5ffff !important;
 }
-</style>
-    <style type="text/css">.video-overlay[data-v-ea6e5e6a] {
-	height:100%;
-	width:100%;
-	top:0;
-	left:0;
-	position:absolute
+.v-application .primary--text.text--lighten-4 {
+	color:#c5ffff !important;
+	caret-color:#c5ffff !important;
 }
-</style>
-    <style type="text/css">.vue-responsive-videobg[data-v-7bbc3657] {
-	background:none;
-	position:relative;
-	width:100%;
-	overflow:hidden
+.v-application .primary.lighten-3 {
+	background-color:#a6f8ff !important;
+	border-color:#a6f8ff !important;
 }
-.vue-responsive-videobg .videobg-content[data-v-7bbc3657] {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%
+.v-application .primary--text.text--lighten-3 {
+	color:#a6f8ff !important;
+	caret-color:#a6f8ff !important;
 }
-</style>
+.v-application .primary.lighten-2 {
+	background-color:#87dcff !important;
+	border-color:#87dcff !important;
+}
+.v-application .primary--text.text--lighten-2 {
+	color:#87dcff !important;
+	caret-color:#87dcff !important;
+}
+.v-application .primary.lighten-1 {
+	background-color:#66c0ff !important;
+	border-color:#66c0ff !important;
+}
+.v-application .primary--text.text--lighten-1 {
+	color:#66c0ff !important;
+	caret-color:#66c0ff !important;
+}
+.v-application .primary.darken-1 {
+	background-color:#008bd9 !important;
+	border-color:#008bd9 !important;
+}
+.v-application .primary--text.text--darken-1 {
+	color:#008bd9 !important;
+	caret-color:#008bd9 !important;
+}
+.v-application .primary.darken-2 {
+	background-color:#0072bd !important;
+	border-color:#0072bd !important;
+}
+.v-application .primary--text.text--darken-2 {
+	color:#0072bd !important;
+	caret-color:#0072bd !important;
+}
+.v-application .primary.darken-3 {
+	background-color:#0059a2 !important;
+	border-color:#0059a2 !important;
+}
+.v-application .primary--text.text--darken-3 {
+	color:#0059a2 !important;
+	caret-color:#0059a2 !important;
+}
+.v-application .primary.darken-4 {
+	background-color:#004387 !important;
+	border-color:#004387 !important;
+}
+.v-application .primary--text.text--darken-4 {
+	color:#004387 !important;
+	caret-color:#004387 !important;
+}
+.v-application .secondary {
+	background-color:#050b1f !important;
+	border-color:#050b1f !important;
+}
+.v-application .secondary--text {
+	color:#050b1f !important;
+	caret-color:#050b1f !important;
+}
+.v-application .secondary.lighten-5 {
+	background-color:#7a7f95 !important;
+	border-color:#7a7f95 !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+	color:#7a7f95 !important;
+	caret-color:#7a7f95 !important;
+}
+.v-application .secondary.lighten-4 {
+	background-color:#61667c !important;
+	border-color:#61667c !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+	color:#61667c !important;
+	caret-color:#61667c !important;
+}
+.v-application .secondary.lighten-3 {
+	background-color:#494e63 !important;
+	border-color:#494e63 !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+	color:#494e63 !important;
+	caret-color:#494e63 !important;
+}
+.v-application .secondary.lighten-2 {
+	background-color:#32374b !important;
+	border-color:#32374b !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+	color:#32374b !important;
+	caret-color:#32374b !important;
+}
+.v-application .secondary.lighten-1 {
+	background-color:#1c2234 !important;
+	border-color:#1c2234 !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+	color:#1c2234 !important;
+	caret-color:#1c2234 !important;
+}
+.v-application .secondary.darken-1 {
+	background-color:#000007 !important;
+	border-color:#000007 !important;
+}
+.v-application .secondary--text.text--darken-1 {
+	color:#000007 !important;
+	caret-color:#000007 !important;
+}
+.v-application .secondary.darken-2 {
+	background-color:#000000 !important;
+	border-color:#000000 !important;
+}
+.v-application .secondary--text.text--darken-2 {
+	color:#000000 !important;
+	caret-color:#000000 !important;
+}
+.v-application .secondary.darken-3 {
+	background-color:#000000 !important;
+	border-color:#000000 !important;
+}
+.v-application .secondary--text.text--darken-3 {
+	color:#000000 !important;
+	caret-color:#000000 !important;
+}
+.v-application .secondary.darken-4 {
+	background-color:#000000 !important;
+	border-color:#000000 !important;
+}
+.v-application .secondary--text.text--darken-4 {
+	color:#000000 !important;
+	caret-color:#000000 !important;
+}
+.v-application .accent {
+	background-color:#204165 !important;
+	border-color:#204165 !important;
+}
+.v-application .accent--text {
+	color:#204165 !important;
+	caret-color:#204165 !important;
+}
+.v-application .accent.lighten-5 {
+	background-color:#a4bfeb !important;
+	border-color:#a4bfeb !important;
+}
+.v-application .accent--text.text--lighten-5 {
+	color:#a4bfeb !important;
+	caret-color:#a4bfeb !important;
+}
+.v-application .accent.lighten-4 {
+	background-color:#89a4cf !important;
+	border-color:#89a4cf !important;
+}
+.v-application .accent--text.text--lighten-4 {
+	color:#89a4cf !important;
+	caret-color:#89a4cf !important;
+}
+.v-application .accent.lighten-3 {
+	background-color:#6e8ab3 !important;
+	border-color:#6e8ab3 !important;
+}
+.v-application .accent--text.text--lighten-3 {
+	color:#6e8ab3 !important;
+	caret-color:#6e8ab3 !important;
+}
+.v-application .accent.lighten-2 {
+	background-color:#547198 !important;
+	border-color:#547198 !important;
+}
+.v-application .accent--text.text--lighten-2 {
+	color:#547198 !important;
+	caret-color:#547198 !important;
+}
+.v-application .accent.lighten-1 {
+	background-color:#3b587e !important;
+	border-color:#3b587e !important;
+}
+.v-application .accent--text.text--lighten-1 {
+	color:#3b587e !important;
+	caret-color:#3b587e !important;
+}
+.v-application .accent.darken-1 {
+	background-color:#002b4d !important;
+	border-color:#002b4d !important;
+}
+.v-application .accent--text.text--darken-1 {
+	color:#002b4d !important;
+	caret-color:#002b4d !important;
+}
+.v-application .accent.darken-2 {
+	background-color:#001736 !important;
+	border-color:#001736 !important;
+}
+.v-application .accent--text.text--darken-2 {
+	color:#001736 !important;
+	caret-color:#001736 !important;
+}
+.v-application .accent.darken-3 {
+	background-color:#000021 !important;
+	border-color:#000021 !important;
+}
+.v-application .accent--text.text--darken-3 {
+	color:#000021 !important;
+	caret-color:#000021 !important;
+}
+.v-application .accent.darken-4 {
+	background-color:#00000c !important;
+	border-color:#00000c !important;
+}
+.v-application .accent--text.text--darken-4 {
+	color:#00000c !important;
+	caret-color:#00000c !important;
+}
+.v-application .error {
+	background-color:#ff5252 !important;
+	border-color:#ff5252 !important;
+}
+.v-application .error--text {
+	color:#ff5252 !important;
+	caret-color:#ff5252 !important;
+}
+.v-application .error.lighten-5 {
+	background-color:#ffe4d5 !important;
+	border-color:#ffe4d5 !important;
+}
+.v-application .error--text.text--lighten-5 {
+	color:#ffe4d5 !important;
+	caret-color:#ffe4d5 !important;
+}
+.v-application .error.lighten-4 {
+	background-color:#ffc6b9 !important;
+	border-color:#ffc6b9 !important;
+}
+.v-application .error--text.text--lighten-4 {
+	color:#ffc6b9 !important;
+	caret-color:#ffc6b9 !important;
+}
+.v-application .error.lighten-3 {
+	background-color:#ffa99e !important;
+	border-color:#ffa99e !important;
+}
+.v-application .error--text.text--lighten-3 {
+	color:#ffa99e !important;
+	caret-color:#ffa99e !important;
+}
+.v-application .error.lighten-2 {
+	background-color:#ff8c84 !important;
+	border-color:#ff8c84 !important;
+}
+.v-application .error--text.text--lighten-2 {
+	color:#ff8c84 !important;
+	caret-color:#ff8c84 !important;
+}
+.v-application .error.lighten-1 {
+	background-color:#ff6f6a !important;
+	border-color:#ff6f6a !important;
+}
+.v-application .error--text.text--lighten-1 {
+	color:#ff6f6a !important;
+	caret-color:#ff6f6a !important;
+}
+.v-application .error.darken-1 {
+	background-color:#df323b !important;
+	border-color:#df323b !important;
+}
+.v-application .error--text.text--darken-1 {
+	color:#df323b !important;
+	caret-color:#df323b !important;
+}
+.v-application .error.darken-2 {
+	background-color:#bf0025 !important;
+	border-color:#bf0025 !important;
+}
+.v-application .error--text.text--darken-2 {
+	color:#bf0025 !important;
+	caret-color:#bf0025 !important;
+}
+.v-application .error.darken-3 {
+	background-color:#9f0010 !important;
+	border-color:#9f0010 !important;
+}
+.v-application .error--text.text--darken-3 {
+	color:#9f0010 !important;
+	caret-color:#9f0010 !important;
+}
+.v-application .error.darken-4 {
+	background-color:#800000 !important;
+	border-color:#800000 !important;
+}
+.v-application .error--text.text--darken-4 {
+	color:#800000 !important;
+	caret-color:#800000 !important;
+}
+.v-application .info {
+	background-color:#2196f3 !important;
+	border-color:#2196f3 !important;
+}
+.v-application .info--text {
+	color:#2196f3 !important;
+	caret-color:#2196f3 !important;
+}
+.v-application .info.lighten-5 {
+	background-color:#d4ffff !important;
+	border-color:#d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+	color:#d4ffff !important;
+	caret-color:#d4ffff !important;
+}
+.v-application .info.lighten-4 {
+	background-color:#b5ffff !important;
+	border-color:#b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+	color:#b5ffff !important;
+	caret-color:#b5ffff !important;
+}
+.v-application .info.lighten-3 {
+	background-color:#95e8ff !important;
+	border-color:#95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+	color:#95e8ff !important;
+	caret-color:#95e8ff !important;
+}
+.v-application .info.lighten-2 {
+	background-color:#75ccff !important;
+	border-color:#75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+	color:#75ccff !important;
+	caret-color:#75ccff !important;
+}
+.v-application .info.lighten-1 {
+	background-color:#51b0ff !important;
+	border-color:#51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+	color:#51b0ff !important;
+	caret-color:#51b0ff !important;
+}
+.v-application .info.darken-1 {
+	background-color:#007cd6 !important;
+	border-color:#007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+	color:#007cd6 !important;
+	caret-color:#007cd6 !important;
+}
+.v-application .info.darken-2 {
+	background-color:#0064ba !important;
+	border-color:#0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+	color:#0064ba !important;
+	caret-color:#0064ba !important;
+}
+.v-application .info.darken-3 {
+	background-color:#004d9f !important;
+	border-color:#004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+	color:#004d9f !important;
+	caret-color:#004d9f !important;
+}
+.v-application .info.darken-4 {
+	background-color:#003784 !important;
+	border-color:#003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+	color:#003784 !important;
+	caret-color:#003784 !important;
+}
+.v-application .success {
+	background-color:#4caf50 !important;border-color:#4caf50 !important;
+}
+.v-application .success--text {
+	color:#4caf50 !important;
+	caret-color:#4caf50 !important;
+}
+.v-application .success.lighten-5 {
+	background-color:#dcffd6 !important;
+	border-color:#dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+	color:#dcffd6 !important;
+	caret-color:#dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+	background-color:#beffba !important;
+	border-color:#beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+	color:#beffba !important;
+	caret-color:#beffba !important;
+}
+.v-application .success.lighten-3 {
+	background-color:#a2ff9e !important;
+	border-color:#a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+	color:#a2ff9e !important;
+	caret-color:#a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+	background-color:#85e783 !important;
+	border-color:#85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+	color:#85e783 !important;
+	caret-color:#85e783 !important;
+}
+.v-application .success.lighten-1 {
+	background-color:#69cb69 !important;
+	border-color:#69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+	color:#69cb69 !important;
+	caret-color:#69cb69 !important;
+}
+.v-application .success.darken-1 {
+	background-color:#2d9437 !important;
+	border-color:#2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+	color:#2d9437 !important;
+	caret-color:#2d9437 !important;
+}
+.v-application .success.darken-2 {
+	background-color:#00791e !important;
+	border-color:#00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+	color:#00791e !important;
+	caret-color:#00791e !important;
+}
+.v-application .success.darken-3 {
+	background-color:#006000 !important;
+	border-color:#006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+	color:#006000 !important;
+	caret-color:#006000 !important;
+}
+.v-application .success.darken-4 {
+	background-color:#004700 !important;
+	border-color:#004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+	color:#004700 !important;
+	caret-color:#004700 !important;
+}
+.v-application .warning {
+	background-color:#fb8c00 !important;
+	border-color:#fb8c00 !important;
+}
+.v-application .warning--text {
+	color:#fb8c00 !important;
+	caret-color:#fb8c00 !important;
+}
+.v-application .warning.lighten-5 {
+	background-color:#ffff9e !important;
+	border-color:#ffff9e !important;
+}
+.v-application .warning--text.text--lighten-5 {
+	color:#ffff9e !important;
+	caret-color:#ffff9e !important;
+}
+.v-application .warning.lighten-4 {
+	background-color:#fffb82 !important;
+	border-color:#fffb82 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+	color:#fffb82 !important;
+	caret-color:#fffb82 !important;
+}
+.v-application .warning.lighten-3 {
+	background-color:#ffdf67 !important;
+	border-color:#ffdf67 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+	color:#ffdf67 !important;
+	caret-color:#ffdf67 !important;
+}
+.v-application .warning.lighten-2 {
+	background-color:#ffc24b !important;
+	border-color:#ffc24b !important;
+}
+.v-application .warning--text.text--lighten-2 {
+	color:#ffc24b !important;
+	caret-color:#ffc24b !important;
+}
+.v-application .warning.lighten-1 {
+	background-color:#ffa72d !important;
+	border-color:#ffa72d !important;
+}
+.v-application .warning--text.text--lighten-1 {
+	color:#ffa72d !important;
+	caret-color:#ffa72d !important;
+}
+.v-application .warning.darken-1 {
+	background-color:#db7200 !important;
+	border-color:#db7200 !important;
+}
+.v-application .warning--text.text--darken-1 {
+	color:#db7200 !important;
+	caret-color:#db7200 !important;
+}
+.v-application .warning.darken-2 {
+	background-color:#bb5900 !important;
+	border-color:#bb5900 !important;
+}
+.v-application .warning--text.text--darken-2 {
+	color:#bb5900 !important;
+	caret-color:#bb5900 !important;
+}
+.v-application .warning.darken-3 {
+	background-color:#9d4000 !important;
+	border-color:#9d4000 !important;
+}
+.v-application .warning--text.text--darken-3 {
+	color:#9d4000 !important;
+	caret-color:#9d4000 !important;
+}
+.v-application .warning.darken-4 {
+	background-color:#802700 !important;
+	border-color:#802700 !important;
+}
+.v-application .warning--text.text--darken-4 {
+	color:#802700 !important;
+	caret-color:#802700 !important;
+}
+
+
+
+    </style>
+
 <!--    <link rel="stylesheet" type="text/css" href="./hashgame/css/chunk-1ba2429b.f44d659c.css">-->
 	<link rel="stylesheet" type="text/css" href="./css/v-application.css">
     <script charset="utf-8" src="./js/chunk-1ba2429b.0a672d89.js"></script>
@@ -164,8 +669,8 @@ video[data-v-229e82cd] {
                   <div data-v-7b3d0382="" class="content-bottom-item">
                     <div data-v-7b3d0382="" class="content-bottom-item-left">
                       <div data-v-7b3d0382="" class="content-bottom-item-left-top">双尾哈希地址</div>
-                      <div data-v-7b3d0382="" class="content-bottom-item-left-bottom">TCCXCakwoo***xXT2pD3333</div></div>
-                    <div data-v-7b3d0382="" class="content-bottom-item-btn btn-copy">复制</div></div>
+                      <div data-v-7b3d0382="" class="content-bottom-item-left-bottom" id = "hashAddress">TCCXCakwoo***xXT2pD3333</div></div>
+                    <div data-v-7b3d0382="" class="content-bottom-item-btn btn-copy" id="firstCopyBut" onclick="copy('#hashAddress','#firstCopyBut')">复制</div></div>
                   <div data-v-7b3d0382="" class="content-bottom-item">
                     <div data-v-7b3d0382="" class="content-bottom-item-left">
                       <div data-v-7b3d0382="" class="content-bottom-item-left-top">单双哈希地址</div>
@@ -847,16 +1352,80 @@ video[data-v-229e82cd] {
                 </div>
               </div>
             </div>
-<!--          </div>-->
+
+
         </main>
       </div>
     </div>
+
+
+	<div class="vuedl-notification right " style="max-width: 500px; z-index: 2000; top: 10px;display: none;background-color:#4caf50 !important;border-color:#4caf50 !important;" id="fuzhi">
+        <div  class="v-alert v-sheet theme--dark success" style="margin: 0px; min-width: 300px;">
+          <div class="v-alert__wrapper">
+            <i aria-hidden="true" class="v-icon notranslate v-alert__icon mdi mdi-check-circle theme--dark"></i>
+            <div class="v-alert__content">
+              <div class="d-flex align-center">
+                <div class="mr-2">复制成功</div>
+                <!----></div>
+            </div>
+            <button type="button" class="v-alert__dismissible v-btn v-btn--icon v-btn--round theme--dark v-size--small" aria-label="Close">
+              <span class="v-btn__content">
+                <i aria-hidden="true" class="v-icon notranslate mdi mdi-close-circle theme--dark"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+        <!---->
+		
+		</div>
+
     <script src="./js/chunk-vendors.6291b02f.js"></script>
     <script src="./js/app.b164434a.js"></script>
 	<script src="./js/jquery.js" type="text/javascript"></script>
+		<script src="./js/clipboard.js" type="text/javascript"></script>
 <!--<script src="./js/main.js" type="text/javascript"></script> -->
 
 	<script type="text/javascript">
+
+
+		function copy(textDiv, btn) {
+			let text = $(textDiv).text();
+			var clipboard = new Clipboard(btn, {
+				text: function () {
+					return text;
+				}
+			});  
+			clipboard.on('success', function (e) {
+				$("#fuzhi").fadeIn();
+				$("#fuzhi").fadeOut(3000);
+				e.clearSelection();
+				
+			})
+		}
+
+		//弹出页面小提示
+//		function msg(str, time) {
+//		
+//			if (!time) {
+//				time = 3000;
+//			}
+//			$('#tipDiv').html(str).show().css({
+//				'opacity': 1,
+//				'top': '30%'
+//			});
+//			setTimeout(function () {
+//				$('#tipDiv').css({
+//					'opacity': 0,
+//					'top': '35%'
+//				});
+//				setTimeout(function () {
+//					$('#tipDiv').css({
+//						'top': '25%'
+//					}).hide();
+//				}, 1000);
+//			}, time);
+//		}
+
 		var usdtToTrx = document.getElementById("usdtToTrx") ;
 		usdtToTrx.addEventListener('click',function(){	
 				$("#usdtToTrx").removeClass("exchange-left-nav-right");	
