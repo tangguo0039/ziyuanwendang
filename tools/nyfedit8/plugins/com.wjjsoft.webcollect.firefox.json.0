@@ -1,0 +1,7 @@
+{
+	"name": "com.wjjsoft.webcollect"
+	, "description": "Mybase/Webcollect Host for Mozilla Firefox"
+	, "path": "%PathToHost%"
+	, "type": "stdio"
+	, "allowed_extensions": ["%IdOfExtension%"]
+}

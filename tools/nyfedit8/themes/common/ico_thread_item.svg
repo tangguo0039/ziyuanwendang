@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+	<defs>
+		<g id="c">
+			<circle r="2" stroke-width="2" />
+		</g>
+		<g id="b">
+			<path d="M4 0 h-4 M0 0 v18 M0 18 h4" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+		</g>
+		<g id="L">
+			<use href="#b" x="0" y="0" transform="matrix(1 0 0 1 5 11)" />
+			<use href="#b" x="0" y="0" transform="matrix(1 0 0 1 9 11)" />
+			<use href="#c" x="0" y="0" transform="matrix(1 0 0 1 15 20)" />
+		</g>
+	</defs>
+
+	<rect x="0" y="0" width="40" height="40" fill="none" stroke="none" />
+
+	<use href="#L" x="0" y="0" transform="matrix(1 0 0 1 0 0)" stroke="currentColor" />
+	<use href="#L" x="0" y="0" transform="matrix(-1 0 0 1 40 0)" stroke="currentColor" />
+
+</svg>

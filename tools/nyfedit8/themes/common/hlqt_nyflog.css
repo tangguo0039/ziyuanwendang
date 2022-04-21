@@ -1,0 +1,57 @@
+
+/****************************************************************************************
+
+Stylesheet for Log Messages Highlighting within Event Log Viewer in Light mode
+
+Note that:
+1. the stylesheet code applies only to the application's Event Log Viewer.
+2. The stylesheet supports a subset of W3C/CSS Specs (e.g. font-size, style, weight, color etc.)
+3. it's recommended first to create a backup of the original code before making any changes.
+
+****************************************************************************************/
+
+
+.timestamp{
+	color: darkblue;
+	font-style: italic;
+}
+
+.debug{
+	color: black;
+}
+
+.warning{
+	color: DarkViolet;
+	color: peru;
+}
+
+.critical{
+	color: red;
+	color: crimson;
+	font-weight: bold;
+}
+
+.fatal{
+	color: red;
+	color: crimson;
+	font-weight: bold;
+}
+
+.info{
+	color: darkgreen;
+}
+
+.urgent{
+	color: red;
+	color: crimson;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.prompt{
+	color: #B660CD;
+	color: royalBlue;
+}
+
+
+

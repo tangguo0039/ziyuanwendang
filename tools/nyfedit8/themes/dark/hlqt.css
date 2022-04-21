@@ -1,0 +1,105 @@
+﻿
+/****************************************************************************************
+
+General Stylesheet for Syntax-highlighting within Rich/Plain Editors in Dark mode
+
+Note that:
+1. the stylesheet code applies to all Rich/Plain text documents loaded within Rich/Plain text editors.
+2. The stylesheet supports a subset of W3C/CSS Specs (e.g. font-size, style, weight, color etc.)
+3. it's recommended first to create a backup of the original code before making any changes.
+
+****************************************************************************************/
+
+
+.tag{
+	/* keywords */
+	color: coral;
+	color: orchid;
+	color: #c678dd;
+	font-weight: bold;
+}
+
+.tag1{
+	/* reserved tags, etc. */
+	color: skyblue;
+	color: deepskyblue;
+	font-weight: bold;
+}
+
+.tag2{
+	/* additional tags */
+	color: peru;
+	font-weight: bold;
+}
+
+.tag3{
+	/* misc. tags */
+	color: #cc0000;
+	color: peru;
+	color: bisque;
+	color: #e6c07b;
+	font-weight: bold;
+}
+
+.stl{
+	/* for c++ stl names */
+	color: DarkViolet;
+	font-weight: bold;
+}
+
+.qt{
+	/* for Qt class names */
+	color: lightSeaGreen;
+	font-weight: normal;
+}
+
+.rem{
+	/* remarks, comments, etc. */
+	color: LightSlateGrey;
+	color: silver;
+	font-style: italic;
+}
+
+.string{
+	/* constant strings */
+	color: SeaGreen;
+	color: khaki;
+	color: yellow green;
+	color: wheat;
+	color: darkseagreen;
+	font-weight: bold;
+}
+
+.num{
+	/* constant numbers */
+	color: SteelBlue;
+	color: lightcoral;
+	color: mediumvioletred;
+	color: skyblue;
+	color: deepskyblue;
+	font-weight: bold;
+}
+
+.directive{
+	/* pre-compiler directives */
+	color: purple;
+	color: #61aeee;
+	font-weight: bold;
+}
+
+.attrname{
+	/* attribute names for html/ini */
+	color: lightgreen;
+}
+
+.attrval{
+	/* attribute values for html/ini */
+	color: skyblue;
+	color: plum;
+	color: gold;
+}
+
+.lvalue{
+	/* L-value */
+	color: #458;
+}

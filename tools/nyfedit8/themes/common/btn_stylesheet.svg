@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" >
+	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g transform="translate(-340.000000, -2106.000000)">
+			<g transform="translate(100.000000, 1960.000000)">
+				<g transform="translate(238.000000, 142.000000)">
+					<g>
+						<polygon stroke="currentColor" points="0 0 24 0 24 24 0 24" />
+						<path d="M2.5,4 L2.5,7 L7.5,7 L7.5,19 L10.5,19 L10.5,7 L15.5,7 L15.5,4 L2.5,4 Z M21.5,9 L12.5,9 L12.5,12 L15.5,12 L15.5,19 L18.5,19 L18.5,12 L21.5,12 L21.5,9 Z" fill="currentColor" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

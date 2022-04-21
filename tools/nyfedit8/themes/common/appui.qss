@@ -1,0 +1,826 @@
+
+/* Common Qss for Light mode */
+
+/* Custom UI themes may inherit from these Common theme settings. */
+
+/*------------- Splitters ---------------*/
+
+QSplitter::handle
+{
+	background-color: purple;
+	background-color: lightgrey;
+	background-color: #c3d9ff;
+	background-color: %AppUIBackColorMuchMuchDarker%;
+}
+
+QSplitter::vertical::handle
+{
+	width: 2px;
+}
+
+QSplitter::horizontal::handle
+{
+	height: 1px;
+}
+
+/*------------- Font family/size list on main toolbar ---------------*/
+
+QComboBox#FontSize{
+	width: 56px;
+	max-width: 100px;
+}
+
+QComboBox#FontFamily{
+	width: 200px;
+	max-width: 350px;
+}
+
+QComboBox QAbstractItemView::item{
+}
+
+QToolBar, QStatusBar, QStatusBar QLabel
+{
+}
+
+QToolBar QToolButton{
+	color: %AppUISvgIconColor%;
+}
+
+/*------------- Blank/white area for treeView, listView and/or textEdit to overlay with approriate background opacity applied ---------------*/
+
+QWidget#BlankArea{
+	background-color: white;
+}
+
+/*------------- Find phrase input ---------------*/
+
+QLineEditQueryInput{
+	border: 1px solid darkgray;
+	border-radius: 4px;
+}
+
+QLineEdit{
+	border: 1px solid %AppUIBackColorMuchDarker%;
+	border-radius: 4px;
+}
+
+QLineEdit:hover{
+}
+
+/*------------- Tool buttons ---------------*/
+
+QToolButtonTransparent {
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	padding: 1px 5px;
+}
+QToolButtonTransparent:disabled {
+	color: gray;
+}
+QToolButtonTransparent:checked {
+	border-style: solid;
+	border-color: %AppUIBackColorDarker%;
+	border-color: gray;
+}
+QToolButtonTransparent:pressed {
+	border-color: #CACACA;
+	background-color: #CACACA;
+	background-color: %AppUIBackColorDarker%;
+}
+QToolButtonTransparent:hover {
+	border-color: %AppUIBackColorDarker%;
+	border-color: gray;
+}
+QToolButtonTransparent::menu-indicator { image: None; }
+QToolButtonTransparent::menu-button { border-width: 1px; padding-top: 3px; padding-bottom: 3px; padding-right: 6px; }
+QToolButtonTransparent::menu-arrow { left: 0px; image: url(%DropDownIconFile%); width: 16px; padding-right: 1px; }
+QToolButtonTransparent[popupMode='1'] { padding-right: 16px; }
+
+QToolButtonWhite {
+	color: black;
+	background-color: white;
+	border: 1px solid white;
+}
+QToolButtonWhite:hover {
+	border-color: gray;
+	border-color: %AppUIBackColorDarker%;
+}
+
+/*------------- Push buttons ---------------*/
+
+QPushButtonWhite {
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 2px 5px;
+	color: %AppUITextColor%;
+	background-color: white;
+}
+QPushButtonWhite:pressed{
+	border-color: #CACACA;
+	background-color: #CACACA;
+	background-color: %AppUIBackColorDarker%;
+}
+QPushButtonWhite:hover{
+	border-color: gray;
+	border-color: %AppUIBackColorDarker%;
+}
+QPushButtonWhite::menu-indicator {
+	image: url(%DropDownIconFile%);
+	padding-bottom: 0px;
+	padding-right: 3px;
+	width: 16px;
+	height: 16px;
+}
+
+/*------------- Command-link buttons ---------------*/
+
+QDashboard QLabel{
+	color: %AppUITextColor%;
+}
+
+QCommandLinkButton{
+	color: %AppUITextColor%;
+}
+
+QCommandLinkButton:hover, QCommandLinkButton:pressed
+{
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+QCommandLinkButton:hover
+{
+	background: #ebecec;
+	background: %AppUIBackColorLighter%;
+	background: %AppUIBackColor%;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffffff, stop:1 #f0f0f0);
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 white, stop:1 %AppUIBackColorLighter%);
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColor%);
+	background: %AppUIBackColorLighter%;
+}
+
+QCommandLinkButton:pressed
+{
+	background: lightgrey;
+	background: %AppUIBackColorDarker%;
+}
+
+/*------------- Common settings for Tab widgets ---------------*/
+
+QTabWidget::pane{
+	color: transparent;
+	border: 0px;
+}
+
+QTabBar::tab:first{
+}
+
+QTabBar::tab{
+	border: 1px solid #C4C4C3;
+	border: 1px solid %AppUIBackColorDarkerNoAlpha%;
+	color: black;
+	color: %TabFgNormal%;
+	color: %AppUITextColor%;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #E1E1E1, stop: 0.4 #DDDDDD, stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+	background: rgba(0, 0, 200, 0.5);
+	background: lightgrey;
+	background: %TabBgNormal%;
+	background: %AppUIBackColorDarker%;
+}
+
+QTabBar::tab:hover{
+	color: black;
+	color: %TabFgHover%;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #fafafa, stop: 0.4 #f4f4f4, stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+	background: rgba(0, 0, 255, 0.3);
+	background: rgb(240, 240, 240);
+	background: %TabBgHover%;
+	background: %AppUIBackColorLighter%;
+}
+
+QTabBar::tab:selected{
+	border-color: #9B9B9B;
+	border-color: #555;
+	border-color: %AppUIBackColorMuchMuchDarkerNoAlpha%;
+	color: black;
+	color: %TabFgSelected%;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #fafafa, stop: 0.4 #f4f4f4, stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+	background: rgba(0, 0, 255, 0.5);
+	background: white;
+	background: %TabBgSelected%;
+	background: %AppUIBackColorLighter%;
+}
+
+/*------------- Tab widget for Opened DBs ---------------*/
+
+QTabWidget#OpenedDbs::tab-bar{
+	top: 1px;
+	left: 20px;
+}
+
+QTabBar#OpenedDbs::tab{
+	border-bottom-color: transparent; /* same as the pane color */
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	min-height: 1em;
+	min-width: 100px;
+	padding: 3px 10px;
+}
+
+QTabBar#OpenedDbs::tab:selected{
+	border-bottom-color: transparent; /* same as the current tab color */
+}
+
+QTabBar#OpenedDbs::tab:!selected{
+	margin-top: 0px; /* make non-selected tabs look smaller */
+}
+
+/*------------- Tab widget for DbView Navigation ---------------*/
+
+QTabWidget#DbView::tab-bar{
+	left: 1px;
+	top: 12px;
+}
+
+QTabWidget#DbView::pane{
+	border-left: 1px solid gray;
+}
+
+QTabBar#DbView::tab{
+	border-right-color: transparent; /* same as the pane color */
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	min-width: 1em;
+	padding: 10px 3px;
+}
+
+QTabBar#DbView::tab:selected{
+	border-right-color: white; /* same as the current tab color */
+	border-right-color: %AppUIBackColorMuchLighterNoAlpha%;
+}
+
+QTabBar#DbView::tab:!selected{
+	margin-left: 0px; /* make non-selected tabs look smaller */
+}
+
+/*------------- Tab widget for Option-Dialog ---------------*/
+
+QTabWidget#OptsDlg::tab-bar{
+	top: 1px;
+	left: 1em;
+	alignment: left;
+}
+
+QTabWidget#OptsDlg::pane{
+	border: 1px solid lightgrey;
+	border: 1px solid %AppUIBackColorDarkerNoAlpha%;
+	border-radius: 8px;
+	padding-top: 0.5em;
+}
+
+QTabBar#OptsDlg::tab{
+	border-bottom-color: transparent; /* same as the pane color */
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	min-height: 1em;
+	min-width: 20px;
+	padding: 3px 10px;
+}
+
+QTabBar#OptsDlg::tab:selected{
+	border-bottom-color: white; /* same as the current tab color */
+	border-bottom-color: %AppUIBackColorNoAlpha%;
+}
+
+QTabBar#OptsDlg::tab:!selected{
+	margin-top: 0px; /* make non-selected tabs look smaller */
+}
+
+/*------------- Tab widget for Options/Editors ---------------*/
+
+QTabWidget#Editors::tab-bar{
+	left: 1px;
+	top: 1em;
+}
+
+QTabWidget#Editors::pane{
+	border: 1px solid lightgrey;
+	border: 1px solid %AppUIBackColorDarkerNoAlpha%;
+	border-radius: 8px;
+}
+
+QTabBar#Editors::tab{
+	border-right-color: transparent; /* same as the pane color */
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	min-width: 1em;
+	padding: 10px 3px;
+}
+
+QTabBar#Editors::tab:selected{
+	border-right-color: white; /* same as pane color */
+	border-right-color: %AppUIBackColorNoAlpha%; /* same as pane color */
+}
+
+QTabBar#Editors::tab:!selected{
+	margin-left: 0px; /* make non-selected tabs look smaller */
+}
+
+/*------------- Text sample preview for Options DialogBox ---------------*/
+
+/*QFrame#TextSamplePreview{
+	background-color: white;
+}*/
+
+/*------------- Common CSS for main window & components ---------------*/
+
+QMainWindow{
+	background-color: %AppUIBackColorNoAlpha%;
+	background-color: %AppUIBackColorLighter%;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorNoAlpha%, stop:1 %AppUIBackColorDarkerNoAlpha%);
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorMuchMuchLighterNoAlpha%, stop:1 %AppUIBackColorMuchLighter%);
+	background-color: %AppUIBackColorMuchMuchLighterNoAlpha%;
+	background-image: url(%AppUIBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+}
+
+QGroupBox, QToolButton, QToolBox, QToolTip
+, QLabel, QCheckBox, QRadioButton, QSpinBox, QComboBox
+, QTabBar, QDateEdit, QPlainTextEdit, QLineEditQueryInput
+, QTreeView, QListView, QTableView
+, QToolBar, QStatusBar
+, QMenu QToolButton, QMenu QPushButton
+, QFrame QToolButton
+, QCommandLinkButton
+, QDialog QLineEdit /* 2022.4.15 avoid changing fonts of QLineEdit globally, but only for QDialog/QFrame/etc. Inline QLineEdit need have custom styles within outline view; */
+{
+	font-family: %AppUIFontFamily%;
+	font-size: %AppUIFontSize%;
+	font-weight: %AppUIFontWeight%;
+	font-style: %AppUIFontStyle%;
+	text-decoration: %AppUITextDecoration%;
+	color: %AppUITextColor%;
+}
+
+QPushButton{
+	font-family: %AppUIFontFamily%;
+	font-size: %AppUIFontSize%;
+	font-weight: %AppUIFontWeight%;
+	font-style: %AppUIFontStyle%;
+	text-decoration: %AppUITextDecoration%;
+}
+
+QGroupBox{
+	font-size: %AppUIFontSizeMinor%;
+}
+
+QToolBox{
+	background: transparent;
+}
+
+QToolTip{
+	opacity: 255;
+	border-radius: 3px;
+	border: 1px solid lightgrey;
+	padding: 0px;
+	margin: 0px;
+	color: black;
+	background-color: lightyellow;
+	color: %AppUITooltipForeColor%;
+	background-color: %AppUITooltipBackColor%;
+}
+
+QAbstractItemView, QTextEdit, QPlainTextEdit{
+	selection-color: %AppUISelectionForeColor%;
+	selection-background-color: %AppUISelectionBackColor%;
+}
+
+QAbstractScrollArea{
+	color: %AppUITextColor%;
+	background-color: %AppUIBackColorNoAlpha%;
+	background-color: %AppUIBackColor%;
+}
+
+/*------------- Dialog boxes ---------------*/
+
+QDialog{
+	color: %AppUITextColor%;
+	background-color: %AppUIBackColorNoAlpha%;
+	background-color: %AppUIBackColorMuchLighterNoAlpha%;
+}
+
+QDialog QPlainTextEdit, QDialog QTextEdit{
+	font-family: "Courier New";
+	font-family: %TextBoxFontFamily%;
+	font-size: %TextBoxFontSize%;
+	background-color: %AppUIBackColorMuchLighter%;
+	background-color: %AppUIBackColorLighterNoAlpha%;
+	background-color: %AppUIBackColorLighter%;
+	background-color: %AppUIBackColor%;
+}
+
+QDialog QCalendarMonthlyView, QDialog QWidgetCalendarMonth{
+	background-color: %AppUIBackColor%;
+}
+
+QDialog QTreeView, QDialog QListWidget{
+	background-color: white;
+	background-color: %AppUIBackColorMuchLighter%;
+	background-color: %AppUIBackColorLighterNoAlpha%;
+	background-color: %AppUIBackColor%;
+}
+
+QDialog QLineEdit, QDialog QSpinBox, QDialog QComboBox__{
+	background-color: white;
+	background-color: %AppUIBackColorMuchMuchLighterNoAlpha%;
+}
+
+QDialog QDateEdit QWidget{
+	background-color: %AppUIBackColorLighterNoAlpha%;
+}
+
+QDialog QDateEdit QMenu{
+	color: %AppUITextColor%;
+}
+
+/*------------- Menus ---------------*/
+
+QMenu{
+	font-family: %AppUIFontFamily%;
+	font-size: %AppUIFontSize%;
+	font-weight: %AppUIFontWeight%;
+	font-style: %AppUIFontStyle%;
+	text-decoration: %AppUITextDecoration%;
+}
+
+/*QMenu::item:selected{
+	selection-color: %AppUISelectionForeColor%;
+	selection-background-color: %AppUISelectionBackColor%;
+}
+
+QMenu::item:disabled{
+	color: grey;
+}*/
+
+QMenu#QuickIcon
+, QMenu#QuickLabel
+, QMenu#MruDbList
+, QMenu#QuickCalendar
+, QMenu#ForeColor, QMenu#BackColor
+{
+	background-color: #f0f0f0;
+	background-color: %AppUIBackColorMuchLighter%;
+	background-color: %AppUIBackColorNoAlpha%;
+}
+
+QMenu#QuickIcon, QMenu#QuickLabel, QMenu#QuickCalendar, QMenu#ForeColor, QMenu#BackColor
+{
+	border-radius: 3px;
+	border: 1px solid lightgrey;
+	border: 1px solid %AppUIBackColorDarkerNoAlpha%;
+}
+
+QMenu#MruDbList{
+	min-height: 24em;
+	min-width: 40em;
+	border: 1px solid grey;
+	border: 1px solid %AppUIBackColorDarkerNoAlpha%;
+	border-radius: 3px;
+}
+
+QMenu#MruDbList QTreeView{
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColorDarker%);
+	background-color: %AppUIBackColorMuchLighter%;
+	background-color: %AppUIBackColorLighterNoAlpha%;
+	background-color: %AppUIBackColor%;
+	border: 1px solid %AppUIBackColorDarkerNoAlpha%;
+}
+
+QMenu#QuickLabel QTreeView{
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColorDarker%);
+	background-color: %AppUIBackColorMuchLighter%;
+	background-color: %AppUIBackColorLighterNoAlpha%;
+	border: 1px solid %AppUIBackColorDarkerNoAlpha%;
+}
+
+QMenu#QuickCalendar QCalendarMonthlyView, QMenu#QuickCalendar QWidgetCalendarMonth{
+	background-color: %AppUIBackColor%;
+}
+
+/*------------- Find/Replace panels ---------------*/
+
+QWidget#PanelNavFind, QWidget#PanelTextFindReplace{
+	border-top: 1px solid lightgrey;
+	background-color: #f0f0f0;
+	background-color: %AppUIBackColorNoAlpha%;
+	background-color: %AppUIBackColorMuchDarker%;
+}
+
+/*------------- AdvSearch/Reminder/EventView ---------------*/
+
+QReminderPane, QAdvSearchForm, QEventLogViewer{
+	font-family: %AppUIFontFamily%;
+	font-size: %AppUIFontSize%;
+	font-weight: %AppUIFontWeight%;
+	font-style: %AppUIFontStyle%;
+	text-decoration: %AppUITextDecoration%;
+	border: 1px solid gray;
+	border-radius: 4px;
+	border: 1px solid %AppUIBackColorDarkerNoAlpha%;
+	color: %AppUITextColor%;
+	background-color: #f0f0f0;
+	background-color: %AppUIBackColorMuchLighterNoAlpha%;
+}
+
+QEventLogViewer QPlainTextEdit{
+	font-family: 'Courier';
+	background-color: %AppUIBackColor%;
+}
+
+QAdvSearchForm QDateEdit QWidget{
+	background-color: %AppUIBackColorLighterNoAlpha%;
+}
+
+QAdvSearchForm QDateEdit::down-button{
+	image: url(%DropDownIconFile%);
+}
+
+QReminderPane QToolBox QWidget{
+	background-color: transparent;
+}
+
+QReminderPane QToolBox::tab{
+	font-weight: bold;
+}
+
+QWidget#DueItem{
+	border: 1px solid darkgray;
+	border-radius: 5px;
+}
+
+QWidget#DueItem QLabel#DueDate{
+	margin-left: 1.5em;
+}
+
+QReminderPane QToolButton{
+	border: 1px solid darkgray;
+}
+
+/*------------- Background colors for db-views ---------------*/
+
+QWidget#NavArea{
+	background-color: white;
+	background-color: %AppUIBackColor%; /* This makes the pane look slightly darker with default opacity settings */
+}
+
+QSplitter#DbView, QSplitter#ContentArea{
+	background-color: white;
+}
+
+/*------------- Tree widgets for DbView Navigation ---------------*/
+
+QTreeView#NavOutlineTree{
+	font-family: %NavOutlineTreeFontFamily%;
+	font-size: %NavOutlineTreeFontSize%;
+	font-weight: %NavOutlineTreeFontWeight%;
+	font-style: %NavOutlineTreeFontStyle%;
+	text-decoration: %NavOutlineTreeTextDecoration%;
+	color: %NavOutlineTreeTextColor%;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %NavOutlineTreeBackColorLighter%, stop:1 %NavOutlineTreeBackColorDarker%);
+	background-color: %NavOutlineTreeBackColor%;
+	background-image: url(%NavOutlineTreeBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+}
+
+QTreeView#NavLabelTree{
+	font-family: %NavLabelTreeFontFamily%;
+	font-size: %NavLabelTreeFontSize%;
+	font-weight: %NavLabelTreeFontWeight%;
+	font-style: %NavLabelTreeFontStyle%;
+	text-decoration: %NavLabelTreeTextDecoration%;
+	color: %NavLabelTreeTextColor%;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %NavLabelTreeBackColorLighter%, stop:1 %NavLabelTreeBackColorDarker%);
+	background-color: %NavLabelTreeBackColor%;
+	background-image: url(%NavLabelTreeBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+}
+
+QTreeView#NavThreadList{
+	font-family: %NavThreadListFontFamily%;
+	font-size: %NavThreadListFontSize%;
+	font-weight: %NavThreadListFontWeight%;
+	font-style: %NavThreadListFontStyle%;
+	text-decoration: %NavThreadListTextDecoration%;
+	color: %NavThreadListTextColor%;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %NavThreadListBackColorLighter%, stop:1 %NavThreadListBackColorDarker%);
+	background-color: %NavThreadListBackColor%;
+	background-image: url(%NavThreadListBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+}
+
+QWidget#NavCalendar QTableView, QWidget#NavCalendar QToolButton, QWidget#NavCalendar QDateEdit, QWidget#NavCalendar QWidget{
+	font-family: %NavCalendarFontFamily%;
+	font-size: %NavCalendarFontSize%;
+	font-weight: %NavCalendarFontWeight%;
+	font-style: %NavCalendarFontStyle%;
+	text-decoration: %NavCalendarTextDecoration%;
+	color: %NavCalendarTextColor%;
+	background-color: transparent;
+}
+
+QWidget#NavCalendar{
+	background-color: white;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %NavCalendarBackColorLighter%, stop:1 %NavCalendarBackColorDarker%);
+	background-color: %NavCalendarBackColor%;
+	background-image: url(%NavCalendarBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+}
+
+QTreeView#NavSavedSearches{
+	font-family: %NavSavedSearchesFontFamily%;
+	font-size: %NavSavedSearchesFontSize%;
+	font-weight: %NavSavedSearchesFontWeight%;
+	font-style: %NavSavedSearchesFontStyle%;
+	text-decoration: %NavSavedSearchesTextDecoration%;
+	color: %NavSavedSearchesTextColor%;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %NavSavedSearchesBackColorLighter%, stop:1 %NavSavedSearchesBackColorDarker%);
+	background-color: %NavSavedSearchesBackColor%;
+	background-image: url(%NavSavedSearchesBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+}
+
+QTreeView#NavOverview{
+	font-family: %NavOverviewFontFamily%;
+	font-size: %NavOverviewFontSize%;
+	font-weight: %NavOverviewFontWeight%;
+	font-style: %NavOverviewFontStyle%;
+	text-decoration: %NavOverviewTextDecoration%;
+	color: %NavOverviewTextColor%;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %NavOverviewBackColorLighter%, stop:1 %NavOverviewBackColorDarker%);
+	background-color: %NavOverviewBackColor%;
+	background-image: url(%NavOverviewBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+}
+
+/*------------- Relation list view ---------------*/
+
+QWidget#RelationPane{
+	background-color: white;
+	background-color: %AppUIBackColor%; /* This makes the pane look slightly darker with default opacity, same as Nav-panes */
+}
+
+QTreeView#RelationList{
+	font-family: %RelationListFontFamily%;
+	font-size: %RelationListFontSize%;
+	font-weight: %RelationListFontWeight%;
+	font-style: %RelationListFontStyle%;
+	text-decoration: %RelationListTextDecoration%;
+	color: %RelationListTextColor%;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %RelationListBackColorLighter%, stop:1 %RelationListBackColorDarker%);
+	background-color: %RelationListBackColor%;
+	background-image: url(%RelationListBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+}
+
+/*------------- Tag/search results list ---------------*/
+
+QWidget#SearchResPane{
+	background-color: white;
+}
+
+QTreeView#TagResList{
+	font-family: %ResultsListFontFamily%;
+	font-size: %ResultsListFontSize%;
+	font-weight: %ResultsListFontWeight%;
+	font-style: %ResultsListFontStyle%;
+	text-decoration: %ResultsListTextDecoration%;
+	color: %ResultsListTextColor%;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %ResultsListBackColorLighter%, stop:1 %ResultsListBackColorDarker%);
+	background-color: %ResultsListBackColor%;
+	background-image: url(%ResultsListBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+}
+
+QTreeView#SearchResList{
+	font-family: %ResultsListFontFamily%;
+	font-size: %ResultsListFontSize%;
+	font-weight: %ResultsListFontWeight%;
+	font-style: %ResultsListFontStyle%;
+	text-decoration: %ResultsListTextDecoration%;
+	color: %ResultsListTextColor%;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %ResultsListBackColorLighter%, stop:1 %ResultsListBackColorDarker%);
+	background-color: %ResultsListBackColor%;
+	background-image: url(%ResultsListBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+}
+
+/*------------- Header views of saved-searches, overview and results-list ---------------*/
+
+QTreeView#NavSavedSearches QHeaderView{
+	font-family: %NavSavedSearchesFontFamily%;
+	font-size: %NavSavedSearchesFontSizeMinor%;
+	font-weight: %NavSavedSearchesFontWeight%;
+	font-style: %NavSavedSearchesFontStyle%;
+	text-decoration: %NavSavedSearchesTextDecoration%;
+	color: %NavSavedSearchesTextColor%;
+}
+
+QTreeView#NavOverview QHeaderView{
+	font-family: %NavOverviewFontFamily%;
+	font-size: %NavOverviewFontSizeMinor%;
+	font-weight: %NavOverviewFontWeight%;
+	font-style: %NavOverviewFontStyle%;
+	text-decoration: %NavOverviewTextDecoration%;
+	color: %NavOverviewTextColor%;
+}
+
+QTreeView#TagResList QHeaderView{
+	font-family: %ResultsListFontFamily%;
+	font-size: %ResultsListFontSizeMinor%;
+	font-weight: %ResultsListFontWeight%;
+	font-style: %ResultsListFontStyle%;
+	text-decoration: %ResultsListTextDecoration%;
+	color: %ResultsListTextColor%;
+}
+
+QTreeView#SearchResList QHeaderView{
+	font-family: %ResultsListFontFamily%;
+	font-size: %ResultsListFontSizeMinor%;
+	font-weight: %ResultsListFontWeight%;
+	font-style: %ResultsListFontStyle%;
+	text-decoration: %ResultsListTextDecoration%;
+	color: %ResultsListTextColor%;
+}
+
+/*------------- Text content viewer/editors ---------------*/
+
+QWebEngineView{
+	background-color: %HtmlTextBackColorMuchLighterNoAlpha%;
+	background-color: transparent;
+}
+
+QWebView{
+	/* 2022.1.25 The scroll bars may need to refine if any attributes defined here*/
+	/*background-color: %HtmlTextBackColorMuchLighterNoAlpha%;
+	background-color: transparent;*/
+}
+
+QTextEdit#RichEdit{
+	font-family: %RichTextFontFamily%;
+	font-size: %RichTextFontSize%;
+	font-weight: %RichTextFontWeight%;
+	font-style: %RichTextFontStyle%;
+	text-decoration: %RichTextTextDecoration%;
+	color: %RichTextForeColor%;
+	background-color: %RichTextBackColor%;
+	background-image: url(%RichTextBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+	selection-color: %AppUISelectionForeColor%;
+	selection-background-color: %AppUISelectionBackColor%;
+}
+
+QPlainTextEdit#PlainEdit{
+	font-family: %PlainTextFontFamily%;
+	font-size: %PlainTextFontSize%;
+	font-weight: %PlainTextFontWeight%;
+	font-style: %PlainTextFontStyle%;
+	text-decoration: %PlainTextTextDecoration%;
+	color: %PlainTextForeColor%;
+	background-color: %PlainTextBackColor%;
+	background-image: url(%PlainTextBackImg%);
+	background-repeat: repeat-xy;
+	background-attachment: fixed;
+	selection-color: %AppUISelectionForeColor%;
+	selection-background-color: %AppUISelectionBackColor%;
+}
+
+QPlainTextEdit#PlainEdit:inactive{
+	selection-color: %AppUISelectionForeColor%;
+	selection-background-color: %AppUISelectionBackColor%;
+}
+
+/*------------- Message box ---------------*/
+
+QMsgBox QScrollArea, QMsgBox QLabel{
+	background-color: transparent;
+	border: 0px;
+}
+
+/*------------- QDateTimeEdit ---------------*/
+
+QDateTimeEdit QTableView{
+	background-color: %AppUIBackColorMuchLighter%;
+}

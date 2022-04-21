@@ -1,0 +1,29 @@
+
+/****************************************************************************************
+
+Stylesheet for Ssource Code Blocks in HTML/Markdown in Dark mode
+
+Note that:
+1. the stylesheet code applies to all Html/Markdown documents loaded in the embedded web browser.
+2. it's not recommended to make any modifications to this inbuilt file.
+3. custom css can safely be injected by linking an external .css file from within Options/Format/Html.
+4. the stylesheet code must conform to the W3C/CSS Specs (https://www.w3.org/Style/CSS/).
+5. it's recommended first to create a backup of the original code before making any changes.
+
+****************************************************************************************/
+
+
+pre{
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+	padding: 0px;
+	margin-right: 0.5em;
+	/* white-space: pre; */
+}
+
+code{
+	font-family: Monaco, Consolas, Monospace, Courier;
+	word-break: break-all;
+	border-radius: 6px;
+	/* white-space: pre-wrap; */
+}

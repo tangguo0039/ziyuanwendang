@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" ?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+	<g>
+		<polygon points="3,3 6,3 6,1 1,1 1,6 3,6 ," />
+		<polygon points="44,3 47,3 47,6 49,6 49,1 44,1 ," />
+		<rect x="9" y="1" width="4" height="2" />
+		<rect x="16" y="1" width="4" height="2" />
+		<rect x="23" y="1" width="4" height="2" />
+		<rect x="30" y="1" width="4" height="2" />
+		<rect x="37" y="1" width="4" height="2" />
+		<rect x="9" y="47" width="4" height="2" />
+		<rect x="16" y="47" width="4" height="2" />
+		<rect x="23" y="47" width="4" height="2" />
+		<rect x="30" y="47" width="4" height="2" />
+		<rect x="37" y="47" width="4" height="2" />
+		<polygon points="47,47 44,47 44,49 49,49 49,44 47,44 ," />
+		<rect x="47" y="9" width="2" height="4" />
+		<rect x="47" y="16" width="2" height="4" />
+		<rect x="47" y="23" width="2" height="4" />
+		<rect x="47" y="30" width="2" height="4" />
+		<rect x="47" y="37" width="2" height="4" />
+		<polygon points="6,47 3,47 3,44 1,44 1,49 6,49 ," />
+		<rect x="1" y="9" width="2" height="4" />
+		<rect x="1" y="16" width="2" height="4" />
+		<rect x="1" y="23" width="2" height="4" />
+		<rect x="1" y="30" width="2" height="4" />
+		<rect x="1" y="37" width="2" height="4" />
+	</g>
+</svg>

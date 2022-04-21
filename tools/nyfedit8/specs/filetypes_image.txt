@@ -1,0 +1,3 @@
+
+gif;png;jpg;jpeg;bmp;ico;tif;tiff;mng;tga;pbm;pgm;ppm;xbm;xpm;svg;webp
+

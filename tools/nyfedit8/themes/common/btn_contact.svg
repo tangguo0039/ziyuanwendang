@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" stroke-linecap="round" stroke-linejoin="round" >
+
+	<rect fill="none" stroke="currentColor" stroke-width="2.5" x="2" y="8" width="36" height="24" />
+
+	<path fill="none" stroke="currentColor" stroke-width="2.5" d="M2.5 12 l17.5 12 M37.5 12 l-17.5 12" />
+
+	<line stroke="currentColor" stroke-width="2.5" x1="2" y1="31" x2="16" y2="22" />
+	<line stroke="currentColor" stroke-width="2.5" x1="38" y1="31" x2="25" y2="22" />
+
+</svg>

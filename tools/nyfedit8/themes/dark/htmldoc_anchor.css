@@ -1,0 +1,34 @@
+
+/****************************************************************************************
+
+Stylesheet for Hyperlinks in HTML/Markdown in Dark mode
+
+Note that:
+1. the stylesheet code applies to all Html/Markdown documents loaded in the embedded web browser.
+2. it's not recommended to make any modifications to this inbuilt file.
+3. custom css can safely be injected by linking an external .css file from within Options/Format/Html.
+4. the stylesheet code must conform to the W3C/CSS Specs (https://www.w3.org/Style/CSS/).
+5. it's recommended first to create a backup of the original code before making any changes.
+
+****************************************************************************************/
+
+
+a{
+	text-decoration: none;
+	color: lightGreen;
+	color: skyBlue;
+	color: %DocumentHyperlinkColor%;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	background: url(nyf://appres?id=icon-by-key&ico=Img.Link.Wave&type=svg) repeat-x 0 100%;
+	background-size: 20px auto;
+	animation: wave0 1s 10 linear;
+}
+
+@keyframes wave0 {
+	0% { background-position: 0 100%; }
+	100% { background-position: -20px 100%; }
+}

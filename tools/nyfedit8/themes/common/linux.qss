@@ -1,0 +1,75 @@
+
+/* Tweaks/fixes to Qss for Light mode on Linux */
+
+/*********************************************************/
+
+QMenuBar{
+	font-family: %AppUIFontFamily%;
+	font-size: %AppUIFontSize%;
+	font-weight: %AppUIFontWeight%;
+	font-style: %AppUIFontStyle%;
+	text-decoration: %AppUITextDecoration%;
+}
+
+QMenuBar
+{
+	border-bottom: 1px solid #d5d5d5;
+	border-bottom: 1px solid %AppUIBackColorDarker%;
+	background: #f0f0f0 url(%MenuBarBackgroundImageFile%) repeat-x;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColorDarker%);
+}
+
+QMenuBar::item
+{
+	color: %AppUITextColor%;
+	background: transparent;
+}
+
+QMenuBar::item:selected, QMenuBar::item:pressed
+{
+	color: %AppUITextColor%;
+	background-color: lightgrey;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 white, stop:1 %AppUIBackColorLighter%);
+}
+
+QToolBar
+{
+	border-bottom: 1px solid %AppUIBackColorDarker%;
+	background: #f0f0f0 url(%MenuBarBackgroundImageFile%) repeat-x;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColorDarker%);
+}
+
+QStatusBar
+{
+	border-top: 1px solid lightgrey;
+	background: #f0f0f0 url(%MenuBarBackgroundImageFile%) repeat-x;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColorDarker%);
+}
+
+QWidget#SearchResTitleBar
+{
+	border-bottom: 0px solid %AppUIBackColor%;
+	background: #f0f0f0 url(%MenuBarBackgroundImageFile%) repeat-x;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColorDarker%);
+}
+
+QHeaderView
+{
+	font-size: %AppUIFontSizeMinor%;
+}
+
+/*********************************************************/
+
+QTreeView QHeaderView{
+	background-color: %AppUIBackColorNoAlpha%;
+}
+
+QTreeView::indicator:checked{
+	image: url(%CheckedImageFile%);
+}
+
+QTreeView::indicator:unchecked{
+	image: url(%UncheckedImageFile%);
+}
+
+/*********************************************************/

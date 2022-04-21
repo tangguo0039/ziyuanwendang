@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--<link rel="stylesheet" type="text/css" href="nyf://localhost/${basetheme}/docfmtpicker.css" crossorigin="anonymous">-->
+	<title>Custom Content Type</title>
+
+	<script>
+
+	function _init()
+	{
+		var _html_encode=function(s)
+		{
+			//http://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
+			s=s.replace(/&/g,       '&amp;');
+			s=s.replace(/</g,       '&lt;');
+			s=s.replace(/>/g,       '&gt;');
+			s=s.replace(/\"/g,      '&quot;');
+			s=s.replace(/\'/g,      '&apos;');
+			s=s.replace(/\xA0/g,    '&nbsp;'); //http://www.fileformat.info/info/unicode/char/a0/index.htm
+			s=s.replace(/  /g,      '&nbsp; ');
+			s=s.replace(/\t/g,      '&nbsp; &nbsp; &nbsp; &nbsp; '); //&emsp;
+			//and more ...
+			return s;
+		};
+
+		var c_vDocFmtInfo=[%AVAILABLE_FORMATS%];
+
+		var _dataOf=function(id) {
+			for(var i in c_vDocFmtInfo){
+				var f=c_vDocFmtInfo[i];
+				if(f.ext==id){
+					return f;
+				}
+			}
+		};
+
+		var xTitle=document.getElementById('ID_PageTitle');
+		var xPageDescr=document.getElementById('ID_PageDescr');
+		var xTypeList=document.getElementById('ID_TypeList');
+		var xTypeDescr = document.getElementById("ID_TypeDescr");
+		var xTypeName = document.getElementById("ID_TypeName");
+		var xTypeHint = document.getElementById("ID_TypeHint");
+		var xAsDef=document.getElementById('ID_SaveAsDef');
+
+		var c_sTitle='%FORM_TITLE%';
+		var c_sSubTitle='%FORM_SUBTITLE%';
+		var c_sAsDef='%SAVE_AS_DEF%';
+
+		if(xTitle) xTitle.innerHTML=_html_encode(c_sTitle||'');
+		if(xPageDescr) xPageDescr.innerHTML=_html_encode(c_sSubTitle||'');
+		if(xAsDef) xAsDef.innerHTML=_html_encode(c_sAsDef||'');
+
+		if(xTypeList){
+
+			var sHtml='';
+			for(var i in c_vDocFmtInfo){
+				var f=c_vDocFmtInfo[i];
+				if(sHtml) sHtml+='\n';
+				sHtml+="<a id='%EXT%' class='CLS_Box' href='nyf://internal-command?cmd=newnote&ext=%EXT%&def=0'>%ALIAS%</a>"
+					.replace(/%EXT%/g, f.ext)
+					.replace(/%ALIAS%/g, _html_encode(f.alias))
+					//.replace(/%NAME%/g, _html_encode(f.name))
+					//.replace(/%HINT%/g, _html_encode(f.hint))
+					;
+			}
+
+			xTypeList.innerHTML=sHtml;
+
+			var vChild=xTypeList.children;
+			if(vChild.length>0){
+				for(var i = 0; i < vChild.length; i++){
+					var a = vChild[i];
+					a.addEventListener("mousemove", function(e){
+						_mouseMove(this.id);
+						e.preventDefault();
+						e.stopPropagation();
+						e.stopImmediatePropagation();
+						return false;
+					});
+				}
+
+				var _mouseMove=function(id) {
+					for(var i=0; i<vChild.length; i++){
+						var a=vChild[i];
+						if(a.id != id){
+							//a.style.border = "10px solid #CCCCCC";
+						}else{
+							//a.style.border = "10px solid #2196f3";
+						}
+					}
+					var f=_dataOf(id);
+					if(f && f.ext==id){
+						xTypeName.innerHTML=_html_encode(f.name);
+						xTypeHint.innerHTML=_html_encode(f.hint);
+						xTypeDescr.style.visibility='visible';
+					}
+				};
+			}
+
+			document.body.addEventListener("mousemove", function(){
+				xTypeDescr.style.visibility='hidden';
+			});
+		}
+	}
+
+	function _saveAsDefaults()
+	{
+		var xElm=document.getElementById('ID_ChkboxSaveAsDef');
+		if(xElm){
+			var bDef=xElm.checked;
+			var vLinks=document.getElementsByTagName('a');
+			for(var i in vLinks){
+				var a=vLinks[i];
+				if(a && a.href){
+					var u=(a.href||'').replace(/&def=[01]$/i, '&def='+(bDef?'1':'0'));
+					a.href=u; //a.setAttribute('href', u);
+				}
+			}
+		}
+		return false;
+	}
+
+	document.addEventListener("DOMContentLoaded", function(){
+		_init();
+	});
+
+	</script>
+
+</head>
+<body style="display: none;">
+	<div id="ID_PageContent">
+
+		<h1 id='ID_PageTitle'>Custom Content Type</h1>
+		<h3 id='ID_PageDescr'>Please choose content type for the new info item</h3>
+
+		<div>
+			<div id="ID_TypeList">
+				<!--<a id="html" class="box">HTML</a>
+				<a id="qrich" class="box">RICH</a>
+				<a id="txt" class="box">PLAIN</a>
+				<a id="md" class="box">MD</a>-->
+			</div>
+		</div>
+
+		<div id="ID_TypeDescr" style="visibility: hidden;">
+			<h3 id="ID_TypeName" class="CLS_Descr">HTML Document</h3>
+			<p id="ID_TypeHint" class="CLS_Descr">To save web contents with full support of HTML/CSS layouts</p>
+		</div>
+
+		<div id="ID_Options">
+			<input type='checkbox' id='ID_ChkboxSaveAsDef' onclick='javascript:_saveAsDefaults();' />
+			<label id='ID_SaveAsDef' for='ID_ChkboxSaveAsDef'>Don't ask me again, save my choice as defaults;</label>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+﻿
+/****************************************************************************************
+
+Per-InfoItem Stylesheet for Html/Markdown
+=========================================
+
+Note that:
+
+1. the per-infoitem css applies only to Html/Markdown document of the current info item;
+
+2. the per-infoitem css always takes higher priority than the inbuilt default .css & the
+external .css file specified in Options/Format/Html dialog box.
+
+3. custom stylesheet code must conform to the W3C/CSS Specs (www.w3.org/Style/CSS/).
+
+****************************************************************************************/
+
+body {
+
+}
+
+table {
+
+}
+
+img {
+
+}
+
+p {
+
+}
+
+div {
+
+}
+
+ul {
+
+}
+
+ol {
+
+}
+
+li {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+tr {
+
+}
+
+tr:nth-child(2n) {
+
+}
+
+a {
+
+}
+
+a:hover {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+pre {
+
+}
+
+code {
+
+}
+
+blockquote {
+
+}
+
+hr {
+
+}
+

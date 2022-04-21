@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <meta name="Application" content="%AppTitle%">
+                <title>%DOCUMENT_TITLE%</title>
+
+
+		<!-- common/global markdown stylesheet -->
+		<!-- integration with marked.js (MIT) -->
+		<!-- The stylesheet for markdown will be dynamically injected, instead of statically linked here -->
+		<!--<link rel="stylesheet" type="text/css" href="nyf://localhost/${scripts}/marked/marked.css">-->
+
+
+		<!-- 2019.9.7 support of per-item stylesheet for markdown (optional) -->
+		<!-- 2020.5.17 user-defined per-infoitem.css for individual info items will be dynamically injected -->
+		<!--<link rel="stylesheet" type="text/css" href="./markdown.css">-->
+
+
+		<!-- stylesheet for highlight.js (BSD3) -->
+		<!-- The stylesheet for highlight.js will be dynamically injected, instead of statically linked here -->
+		<!--<link rel="stylesheet" type="text/css" href="nyf://localhost/${scripts}/hljs/styles/${SyntaxHighlightStyleName}.css">-->
+
+
+		<!-- highlightjs begins -->
+		<!-- DO NOT MAKE ANY MODIFICATIONS TO THE BEGIN/END COMMENT TAGS -->
+		<!-- integration with highlight.js (BSD3) -->
+		<script src="nyf://localhost/${scripts}/hljs/highlight.pack.js" type="text/javascript"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", ()=>{
+				//console.debug('highlightjs');
+				//nyf.getConfigValByKey("HtmlEdit.TabWidth", "8", function(nTab){ });
+				hljs.configure(
+					{tabReplace: function(n){
+						if(n<1 || n>32) n=4; var r=''; while(n-- > 0) r+=' ';
+						return r;
+					}(parseInt('%nTabWidth%'))
+				});
+				hljs.initHighlightingOnLoad();
+			});
+		</script>
+		<!-- highlightjs ends -->
+
+
+		<!-- Katex begins -->
+		<!-- DO NOT MAKE ANY MODIFICATIONS TO THE BEGIN/END COMMENT TAGS -->
+		<!-- integration with katex math library (MIT) -->
+		<!-- https://katex.org/docs/autorender.html -->
+		<link rel="stylesheet" type="text/css" href="nyf://localhost/${scripts}/katex/katex.min.css" crossorigin="anonymous">
+		<script src="nyf://localhost/${scripts}/katex/katex.min.js" crossorigin="anonymous" defer></script>
+		<script src="nyf://localhost/${scripts}/katex/contrib/auto-render.min.js" crossorigin="anonymous" defer></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", ()=>{
+				//console.debug('Katex');
+				renderMathInElement(document.body, {
+					delimiters: [
+						{left: '$$', right: '$$', display: true},
+						{left: '$', right: '$', display: false}
+					]
+				});
+			});
+		</script>
+		<!-- Katex ends -->
+
+
+		<!-- MathJax2 begins -->
+		<!-- DO NOT MAKE ANY MODIFICATIONS TO THE BEGIN/END COMMENT TAGS -->
+		<!-- integration with mathjax (Apache-2.0) -->
+		<!-- MathJax CDN hosted at cdn.mathjax.org will be shutting down on April 30, 2017. -->
+		<!-- https://www.mathjax.org/cdn-shutting-down/ -->
+		<!-- https://cdn.mathjax.org/mathjax/latest/MathJax.js -->
+		<!-- https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js -->
+		<!-- https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js -->
+		<script type="text/x-mathjax-config">
+			//console.debug('MathJax2');
+			var nScale=%MathJaxScale%, nMinScale=50;
+			if(MathJax && MathJax.Hub && MathJax.Hub.Config){
+				MathJax.Hub.Config({
+
+					tex2jax: {
+						processEscapes: true
+						, inlineMath: [ ['$', '$'] ]
+						, displayMath: [ ['$$', '$$'] ]
+						, skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a']
+					}
+
+					, CommonHTML: {scale: nScale, minScaleAdjust: nMinScale}
+					, 'HTML-CSS': {scale: nScale, minScaleAdjust: nMinScale}
+					, NativeMML: {scale: nScale, minScaleAdjust: nMinScale}
+					, SVG: {scale: nScale, minScaleAdjust: nMinScale}
+					, PreviewHTML: {scale: nScale, minScaleAdjust: nMinScale}
+
+					, showProcessingMessages: true
+				});
+			}
+		</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=%MathJax2Config%" defer></script>
+		<!-- MathJax2 ends -->
+
+
+		<!-- MathJax3 begins -->
+		<!-- DO NOT MAKE ANY MODIFICATIONS TO THE BEGIN/END COMMENT TAGS -->
+		<!-- integration with mathjax (Apache-2.0) -->
+		<!-- MathJax CDN hosted at cdn.mathjax.org will be shutting down on April 30, 2017. -->
+		<!-- https://www.mathjax.org/cdn-shutting-down/ -->
+		<!-- https://cdn.mathjax.org/mathjax/latest/MathJax.js -->
+		<!-- https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js -->
+		<!-- https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js -->
+		<script>
+			//console.debug('MathJax3');
+			var nScale=%MathJaxScale%/100, nMinScale=0.50;
+			window.MathJax = {
+				tex: {
+					processEscapes: true
+					, inlineMath: [ ['$', '$'] ]
+					, displayMath: [ ['$$', '$$'] ]
+					, autoload: {
+						color: []
+						, colorV2: ['color']
+					}
+					, packages: { '[+]': ['noerrors'] }
+					, tags: 'ams' //2020.3.16 support of automatic equation numbering
+				}
+				, options: {
+					skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'a']
+					, ignoreHtmlClass: 'tex2jax_ignore'
+					, processHtmlClass: 'tex2jax_process'
+				}
+				, chtml: { scale: nScale, minScale: nMinScale }
+				, svg: { scale: nScale, minScale: nMinScale, fontCache: 'none' }
+				, loader: { load: ['[tex]/noerrors'] }
+			};
+		</script>
+		<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/%MathJax3Config%.js" defer></script>
+		<!-- MathJax3 ends -->
+
+
+		<!-- mermaid begins -->
+		<!-- DO NOT MAKE ANY MODIFICATIONS TO THE BEGIN/END COMMENT TAGS -->
+		<!-- integration with mermaid.js (MIT) -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
+		<!-- 2021.11.19 From 8.12.0 on mermaid is no longer compatible with inbuilt webkit; v8.11.5 is the last one compatible. -->
+		<!-- https://github.com/mermaid-js/mermaid/releases -->
+		<script src="nyf://localhost/${scripts}/mermaid/mermaid.min.js" defer></script>
+		<script>
+			//2020.1.22 consider of consistency with htmltree export;
+			var tweaksForMermaid=function(){
+				//2020.1.22 document.getElementsByTagName('code') seemed not to work well, but only first <code> retrieved;
+				var n=0, v=document.querySelectorAll('code'); //document.getElementsByTagName('code');
+				for(var i=0; i<v.length; ++i){
+					var e=v[i];
+					if(e && e.nodeName && e.nodeName.search(/^code$/i)===0){
+						if((e.className||'').search(/mermaid/i)>=0){
+							var s=e.innerHTML;
+							if(s){
+								if(e.parentNode.nodeName.search(/^pre$/i)===0){
+									e=e.parentNode;
+								}
+								var xDiv=document.createElement('div');
+								xDiv.className='mermaid';
+								xDiv.style.margin='1em 1em';
+								xDiv.style.padding='1em 1em';
+								//xDiv.style.border='2px dotted black';
+								//xDiv.style.borderRadius='1em';
+								xDiv.innerHTML=s;
+								e.parentNode.replaceChild(xDiv, e);
+								n++;
+							}
+						}
+					}
+				}
+				if(n>0) console.debug('Tweaks to DOM for mermaid: ' + n);
+			};
+			document.addEventListener('DOMContentLoaded', ()=>{
+				//console.debug('**** tweaksForMermaid');
+				tweaksForMermaid();
+				//if(window.mermaid) mermaid.initialize({startOnLoad:true}, ".mermaid"); else console.error('mermaid.init is unavailable.');
+			});
+		</script>
+		<!-- mermaid ends -->
+
+
+		<!-- pangu begins -->
+		<!-- DO NOT MAKE ANY MODIFICATIONS TO THE BEGIN/END COMMENT TAGS -->
+		<!-- integration with pangu.js (MIT) -->
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js"></script>-->
+		<!--<script src="nyf://localhost/${scripts}/pangu/pangu.min.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', ()=>{
+				//listen to any DOM change and automatically perform spacing via MutationObserver()
+				pangu.autoSpacingPage();
+			});
+		</script>-->
+		<!-- pangu ends -->
+
+
+		<!-- TOC begins -->
+		<!-- Table of Contents by wjjsoft -->
+		<!--<script>
+			document.addEventListener("DOMContentLoaded", ()=>{
+				if(window.dom) dom.makeToc('%sTableOfContents%'); else alert('dom.makeToc is unavailable.');
+			});
+		</script>-->
+		<!-- TOC ends -->
+
+
+		<!-- THREAD begins -->
+		<!-- Highlighting of threads by wjjsoft -->
+		<!--<script>
+			document.addEventListener("DOMContentLoaded", ()=>{
+				if(window.dom) dom.highlightThreads(); else alert('dom.highlightThreads is unavailable.');
+			});
+		</script>-->
+		<!-- THREAD ends -->
+
+        </head>
+
+	<body style="visibility: hidden;">
+
+        <article>%MARKDOWN_CONTENT%</article>
+
+        </body>
+</html>

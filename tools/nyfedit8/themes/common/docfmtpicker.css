@@ -1,0 +1,102 @@
+
+/****************************************************************************************
+
+Stylesheet for Document Format Picking Page in Light mode
+
+Note that:
+1. the stylesheet code applies only to the Document Format Picking page for new info items.
+2. The stylesheet supports a subset of W3C/CSS Specs (e.g. font-size, style, weight, color etc.)
+3. it's recommended first to create a backup of the original code before making any changes.
+
+****************************************************************************************/
+
+
+body {
+	text-align: center;
+	/*2021.5.3 on Chinese OS systems with font mappings inappropriately configured, the hard-coded fonts may cause chinese characters not to work normally*/
+	/*font-family: Monaco, "Microsoft YaHei", Sans-Serif, Tahoma, Verdana, Helvetica, Arial, 'Trebuchet MS';*/
+	background-color: transparent;
+}
+
+#ID_PageContent {
+	margin-top: 10px;
+	margin-right: 0;
+}
+
+#ID_PageTitle {
+	text-shadow: 1px 1px 5px %AppUISvgIconColorMuchLighter%;
+	text-shadow: 1px 1px 5px #CCCCCC;
+	color: %AppUISvgIconColor%;
+	color: %AppUITextColor%;
+	color: #777777;
+}
+
+#ID_PageDescr {
+	text-shadow: 0px 0px 0px %AppUITextColor%;
+	color: %AppUISvgIconColorLighter%;
+	color: %AppUITextColor%;
+	color: #666666;
+}
+
+#ID_TypeList {
+	margin-top: 10px;
+	display: inline-table;
+}
+
+.CLS_Box {
+	width: 110px;
+	height: 64px;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 28px;
+	outline: none;
+	border-radius: 10px;
+	text-decoration: none;
+	opacity: 0.75;
+	border: 10px solid #CCCCCC;
+	border: 10px solid %AppUISvgIconColorLighter%;
+	border: 10px solid %AppUIBackColorMuchMuchDarkerNoAlpha%;
+	color: #555;
+	color: %AppUISvgIconColorLighter%;
+	color: %AppUIBackColorMuchMuchDarkerNoAlpha%;
+	background-color: #ffffff;
+	background-color: transparent;
+}
+
+.CLS_Box:hover {
+	border: 10px solid #2196f3;
+	border: 10px solid %AppUIBackColorMuchMuchDarkerNoAlpha%;
+	border: 10px solid %AppUISvgIconColor%;
+	color: %AppUIBackColorMuchMuchDarkerNoAlpha%;
+	color: %AppUISvgIconColorDarker%;
+}
+
+.CLS_Descr {
+	margin-top: 30px;
+	margin-top: 1em;
+	color: %AppUIBackColorMuchMuchDarkerNoAlpha%;
+	color: %AppUISvgIconColor%;
+}
+
+#ID_Options {
+	margin-top: 3em;
+}
+
+#ID_SaveAsDef{
+	cursor: pointer;
+	color: darkblue;
+	color: %AppUISvgIconColorLighter%;
+	color: %AppUIBackColorMuchMuchDarkerNoAlpha%;
+}
+
+#ID_SaveAsDef:hover{
+	color: #2196f3;
+	color: %AppUIBackColorMuchMuchDarkerNoAlpha%;
+	color: %AppUISvgIconColor%;
+}
+
+#ID_ChkboxSaveAsDef{
+	cursor: pointer;
+}
+
+

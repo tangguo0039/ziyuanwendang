@@ -1,0 +1,58 @@
+
+/* Tweaks/fixes to Qss for Dark mode on Linux */
+
+/*********************************************************/
+
+QMenuBar{
+	font-family: %AppUIFontFamily%;
+	font-size: %AppUIFontSize%;
+	font-weight: %AppUIFontWeight%;
+	font-style: %AppUIFontStyle%;
+	text-decoration: %AppUITextDecoration%;
+}
+
+QMenuBar
+{
+	border-bottom: 1px solid %AppUIBackColorDarker%;
+	border-bottom: 1px solid grey;
+	background: #282d29;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColorMuchLighter%);
+}
+
+QMenuBar::item
+{
+	color: %AppUITextColor%;
+	background: transparent;
+}
+
+QMenuBar::item:selected, QMenuBar::item:pressed
+{
+	color: %AppUITextColor%;
+	background-color: gray;
+}
+
+QToolBar
+{
+	border-bottom: 1px solid %AppUIBackColorLighter%;
+	border-bottom: 1px solid grey;
+	background: #f0f0f0 url(%MenuBarBackgroundImageFile%) repeat-x;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColorDarker%);
+}
+
+QStatusBar
+{
+	border-top: 1px solid lightgrey;
+	background: #f0f0f0 url(%MenuBarBackgroundImageFile%) repeat-x;
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColorDarker%);
+}
+
+QHeaderView
+{
+	font-size: %AppUIFontSizeMinor%;
+}
+
+QDialog QPushButtonEx{
+	color: #e9e9e9;
+}
+
+

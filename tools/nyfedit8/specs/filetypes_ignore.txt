@@ -1,0 +1,10 @@
+
+//file types to be ignored while indexing
+
+zip;zipx;rar;bz;bz2;bzip;xz;tar;tgz;txz;gz;tar.gz;gzip;7z;lz;lz4;lzo;lzw;lzh;lzma;z;arc;arj;zlib;b64;dmg;deb;rpm;pkg;jar;egg;ipa;chm;uue;upx
+
+gif;png;jpg;jpeg;bmp;ico;tif;tiff;mng;tga;pbm;pgm;ppm;xbm;xpm;svg;webp
+
+mp2;mp3;mp4;m4p;m4v;mpeg;mpg;mpe;mpv;avi;wmv;mov;qt;flv;swf;avchd;webm;
+
+mid;wav;aif;aiff;aac;flac;alac;dsd;pcm;ogg;wma;weba

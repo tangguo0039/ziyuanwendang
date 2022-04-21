@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+	<defs>
+		<g id="period" stroke-width="2.5">
+			<circle r="6" />
+		</g>
+		<g id="conn" stroke-width="2.5">
+			<path d="M0 0 v6 a3 3 0 0 0 3 3 h6" />
+		</g>
+		<g id="plus" stroke-width="3.5">
+			<line x1="0" y1="7" x2="14" y2="7" />
+			<line x1="7" y1="0" x2="7" y2="14" />
+		</g>
+	</defs>
+
+	<g fill="none" stroke-linejoin="round" stroke-linecap="round">
+
+	<rect x="0" y="0" width="40" height="40" stroke="none" />
+
+	<use href="#period" x="0" y="0" transform="matrix(1 0 0 1 10 10)" stroke="currentColor" />
+
+	<use href="#conn" x="0" y="0" transform="matrix(1 0 0 1 10 20)" stroke="currentColor" />
+
+	<use href="#plus" x="0" y="0" transform="matrix(0.707 0.707 -0.707 0.707 30 19)" stroke="currentColor" />
+
+	</g>
+</svg>

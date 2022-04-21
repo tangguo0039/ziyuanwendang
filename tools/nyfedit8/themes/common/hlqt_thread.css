@@ -1,0 +1,23 @@
+
+/****************************************************************************************
+
+Stylesheet for Threads Highlighting within Rich/Plain Text Editors in Light mode
+
+Note that:
+1. the stylesheet code applies to all Rich/Plain text documents loaded within Rich/Plain text editors.
+2. The stylesheet supports a subset of W3C/CSS Specs (e.g. font-size, style, weight, color etc.)
+3. it's recommended first to create a backup of the original code before making any changes.
+
+****************************************************************************************/
+
+
+.thread{
+	color: #0366e6;
+	color: %DocumentHyperlinkColor%;
+	background-color: #f5f5f5;
+	/*font-weight: bold;*/
+	/*text-decoration: underline;*/
+}
+
+
+

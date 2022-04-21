@@ -1,0 +1,120 @@
+
+/****************************************************************************************
+
+Stylesheet for Markdown Sourcecode Highlighting in Dark mode
+
+Note that:
+1. the stylesheet code applies to Markdown documents loaded within Rich/Plain text editors.
+2. The stylesheet supports a subset of W3C/CSS Specs (e.g. font-size, style, weight, color etc.)
+3. it's recommended first to create a backup of the original code before making any changes.
+
+****************************************************************************************/
+
+
+.heading1{
+	/* MD::heading 1 */
+	color: salmon;
+	font-size: 22pt;
+	font-weight: bold;
+}
+
+.heading2{
+	/* MD::heading 2 */
+	color: salmon;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.heading3{
+	/* MD::heading 3 */
+	color: salmon;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.heading4{
+	/* MD::heading 4 */
+	color: salmon;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+.heading5{
+	/* MD::heading 5 */
+	color: salmon;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.heading6{
+	/* MD::heading 6 */
+	color: salmon;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.bullet{
+	/* MD::bullets */
+	color: Teal;
+	color: lightblue;
+}
+
+.numbering{
+	/* MD::numbering */
+	color: Sienna;
+	color: deepSkyBlue;
+}
+
+.emphasis{
+	/* MD::emphasis */
+	color: coral;
+	font-style: italic;
+}
+
+.strong{
+	/* MD::strong */
+	color: coral;
+	color: violet;
+	font-weight: bold;
+}
+
+.ref{
+	/* MD::references */
+	color: lightgreen;
+	font-style: italic;
+}
+
+.link{
+	color: lightBlue;
+	color: yellowGreen;
+	color: lightGreen;
+}
+
+.image{
+	/* MD::images */
+	color: PaleVioletRed;
+	font-weight: bold;
+}
+
+.code{
+	/* MD::sourcecode */
+	font-family: Courier;
+	color: cyan;
+	background-color: #383d39;
+}
+
+.math{
+	/* MD::inline maths */
+	font-family: Courier;
+	color: greenyellow;
+	background-color: #383d39;
+}
+
+.maths{
+	/* MD::multi-line maths */
+	font-family: Courier;
+	color: greenyellow;
+	background-color: #383d39;
+
+}
+

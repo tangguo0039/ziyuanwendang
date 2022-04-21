@@ -1,0 +1,38 @@
+
+"txt;ini;log;csv"
+
+"ada;apacheconf;arm;osascript;adoc;" //ada, apache, armasm, applescript
+"sh;zsh;" //bash
+"bf;clean;icl;"
+"dcl;clj;cs;csharp;cr;crm;pcmk;cos;cls;coffee;cson;iced;cmake.in;in;cmake;capnp;"
+"css;"
+"c;cc;cpp;cxx;h;h++;hpp;hxx;" //c/c++
+"dst;bat;cmd;docker;bind;zone;jinja;" //dos, docker-file, dns-zone-file
+"patch;" //diff
+"dpr;dfm;pas;pascal;freepascal;lazarus;lpr;lfm;" //delphi
+"erl;" //erlang
+"fs;f90;f95;" //fortan
+"go;golang;" //golang
+"nc;gss;gms;"
+"hx;hs;hbs;"
+"hhc;hhk;hhp" //Html Help Workshop
+"js;json;java;" //js, java
+"jl;" //google julia
+"lua;lisp;"
+"mips;matlib;m;moo;mma;"
+"md;mkdown;mkd;mk;mak;" //markdown, makefile
+"nixos;nim;nginxconf;"
+"scad;ml;mm;objc;obj-c;" //objective-c
+"py;gyp;bp;bpi;pp;ps;php;php3;php4;php5;php6;pl;pm;" //python, php, perl
+"qt;qml;k;kdb;" //qml
+"r;" //R-lang
+"rs;rb;gemspec;podspec;thor;irb;" //rust, ruby
+"swift;sql;"
+"ts;craftcms;tex;tk;" //typescript, tex, tcl
+"v;sv;svh;vbs;vb;" //vbscript, vb.net
+"xpath;xq;" //xquery
+"rss;atom;xjb;xsd;xsl;plist;" //xml, excluding html, xhtml
+"tao" //XL
+"yml;yaml;" //yaml
+"zep" //Zephir
+'svg' //svg images

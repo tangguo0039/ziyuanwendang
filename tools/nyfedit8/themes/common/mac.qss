@@ -1,0 +1,18 @@
+
+/* Tweaks/fixes to Qss for Light mode on macOS */
+
+/*********************************************************/
+
+QWidget#SearchResTitleBar
+{
+	border-bottom: 0px solid lightgrey;
+	border-bottom: 1px solid %ResultsListBackColorDarker%;
+	background-color: lightgrey;
+	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 %AppUIBackColorLighter%, stop:1 %AppUIBackColorDarker%);
+	background-image url(%MenuBarBackgroundImageFile%);
+	background-repeat: repeat-x;
+	background-color: %AppUIBackColorDarker%;
+	background-color: %ResultsListBackColorNoAlpha%;
+}
+
+/*********************************************************/

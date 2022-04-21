@@ -1,0 +1,935 @@
+
+/* Qss for Dark mode */
+
+
+/*------------- Splitters ---------------*/
+
+QSplitter::handle
+{
+	background-color: lightgrey;
+	background-color: #777;
+	background-color: grey;
+}
+
+QSplitter::vertical::handle
+{
+	width: 2px;
+}
+
+QSplitter::horizontal::handle
+{
+	height: 1px;
+}
+
+/*------------- Font family/size list on main toolbar ---------------*/
+
+QComboBox#FontSize{
+	width: 56px;
+	max-width: 100px;
+}
+
+QComboBox#FontFamily{
+	width: 200px;
+	max-width: 350px;
+}
+
+QComboBox QAbstractItemView::item{
+}
+
+QToolBar, QStatusBar, QStatusBar QLabel
+{
+	color: #e9e9e9;
+	color: %AppUIForeColor%;
+}
+
+QToolBar QToolButton{
+	color: %AppUISvgIconColor%;
+}
+
+/*------------- Find phrase input ---------------*/
+
+QLineEditQueryInput {
+	border: 1px solid gray;
+	border-radius: 4px;
+	color: #e9e9e9;
+	background-color: #525751;
+	color: %AppUIForeColor%;
+	background-color: %AppUIBackColorMuchLighter%;
+}
+
+QLineEdit{
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+
+QLineEdit:hover{
+	border: 1px solid lightgrey;
+}
+
+/*------------- Tool buttons ---------------*/
+
+QToolButtonTransparent {
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	padding: 1px 5px;
+}
+QToolButtonTransparent:disabled {
+	color: gray;
+}
+QToolButtonTransparent:checked {
+	border-style: solid;
+	border-color: gray;
+}
+QToolButtonTransparent:pressed {
+	border-color: #CACACA;
+	color: white;
+	background-color: gray;
+}
+QToolButtonTransparent:hover
+{
+	border-color: #e9e9e9;
+	border-color: lightgrey;
+	background-color: #525751;
+	border-color: %AppUIForeColor%;
+	background-color: %AppUIBackColorMuchLighter%;
+}
+QToolButtonTransparent::menu-indicator { image: None; }
+QToolButtonTransparent::menu-button { border-width: 1px; padding-top: 3px; padding-bottom: 3px; padding-right: 6px; }
+QToolButtonTransparent::menu-arrow { left: 0px; image: url(%DropDownIconFile%); width: 16px; padding-right: 1px; }
+QToolButtonTransparent[popupMode='1'] { padding-right: 16px; }
+
+QToolButtonWhite{
+	border: 1px solid gray;
+	color: #e9e9e9;
+	background-color: #525751;
+	color: %AppUIForeColor%;
+	background-color: %AppUIBackColorMuchLighter%;
+}
+QToolButtonWhite:hover{
+	color: #e9e9e9;
+	color: %AppUIForeColor%;
+}
+
+/*------------- Push buttons ---------------*/
+
+QPushButtonWhite{
+	border: 1px solid gray;
+	border-radius: 3px;
+	padding: 2px 5px;
+	color: #e9e9e9;
+	background-color: #525751;
+	color: %AppUIForeColor%;
+	background-color: %AppUIBackColorMuchLighter%;
+}
+QPushButtonWhite:pressed{
+	border-color: #CACACA;
+	background-color: #CACACA;
+	background-color: %AppUIBackColorDarker%;
+}
+QPushButtonWhite:hover{
+	border-color: gray;
+	border-color: #e9e9e9;
+	border-color: lightgrey;
+}
+QPushButtonWhite::menu-indicator {
+	image: url(%DropDownIconFile%);
+	padding-bottom: 0px;
+	padding-right: 3px;
+	width: 16px;
+	height: 16px;
+}
+
+/*------------- Command-link buttons ---------------*/
+
+QDashboard QLabel{
+	color: #e9e9e9;
+	color: %AppUIForeColor%;
+}
+
+QCommandLinkButton{
+	color: #e9e9e9;
+	color: %AppUIForeColor%;
+}
+
+QCommandLinkButton:hover, QCommandLinkButton:pressed
+{
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+QCommandLinkButton:hover
+{
+	background: #383d39;
+	background-color: %AppUIBackColorMuchLighter%;
+}
+
+QCommandLinkButton:pressed
+{
+	background: gray;
+	background: %AppUIBackColorLighter%;
+}
+
+/*------------- Common settings for Tab widgets ---------------*/
+
+QTabWidget::pane{
+	color: transparent;
+	border: 0px;
+}
+
+QTabBar::tab:first{
+}
+
+QTabBar::tab{
+	border: 1px solid #C4C4C3;
+	border: 1px solid grey;
+	border: 1px solid #888;
+	color: #e9e9e9;
+	color: %AppUIForeColor%;
+	background: transparent;
+}
+
+QTabBar::tab:hover{
+	color: #e9e9e9;
+	background: #383d39;
+	background: gray;
+}
+
+QTabBar::tab:selected{
+	border-color: #9B9B9B;
+	border-color: lightgrey;
+	color: #e9e9e9;
+	color: %AppUIForeColor%;
+	background: %AppUIBackColorMuchLighter%;
+	background: #525751;
+}
+
+/*------------- Tab widget for Opened DBs ---------------*/
+
+QTabWidget#OpenedDbs::tab-bar{
+	top: 1px;
+	left: 20px;
+}
+
+QTabBar#OpenedDbs::tab{
+	border-bottom-color: transparent; /* same as the pane color */
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	min-height: 1em;
+	min-width: 100px;
+	padding: 3px 10px;
+}
+
+QTabBar#OpenedDbs::tab:selected{
+	border-bottom-color: transparent; /* same as the current tab color */
+	border-bottom-color: #525751;
+}
+
+QTabBar#OpenedDbs::tab:!selected{
+	margin-top: 0px; /* make non-selected tabs look smaller */
+}
+
+/*------------- Tab widget for DbView Navigation ---------------*/
+
+QTabWidget#DbView::tab-bar{
+	left: 1px;
+	top: 12px;
+}
+
+QTabWidget#DbView::pane{
+	border-left: 1px solid gray;
+}
+
+QTabBar#DbView::tab{
+	border-right-color: transparent; /* same as the pane color */
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	min-width: 1em;
+	padding: 10px 3px;
+}
+
+QTabBar#DbView::tab:selected{
+	border-right-color: white; /* same as the current tab color */
+	border-right-color: %AppUIBackColorLighter%;
+}
+
+QTabBar#DbView::tab:!selected{
+	margin-left: 0px; /* make non-selected tabs look smaller */
+}
+
+/*------------- Tab widget for Option-Dialog ---------------*/
+
+QTabWidget#OptsDlg::tab-bar{
+	top: 1px;
+	left: 1em;
+	alignment: left;
+}
+
+QTabWidget#OptsDlg::pane{
+	border: 1px solid lightgrey;
+	border: 1px solid #888;
+	border-radius: 8px;
+	padding-top: 0.5em;
+}
+
+QTabBar#OptsDlg::tab{
+	border-bottom-color: transparent; /* same as the pane color */
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	min-height: 1em;
+	min-width: 20px;
+	padding: 3px 10px;
+}
+
+QTabBar#OptsDlg::tab:selected{
+	border-bottom-color: white; /* same as the current tab color */
+	border-bottom-color: %AppUIBackColorLighter%;
+}
+
+QTabBar#OptsDlg::tab:!selected{
+	margin-top: 0px; /* make non-selected tabs look smaller */
+}
+
+/*------------- Tab widget for Options/Editors ---------------*/
+
+QTabWidget#Editors::tab-bar{
+	left: 1px;
+	top: 1em;
+}
+
+QTabWidget#Editors::pane{
+	border: 1px solid lightgrey;
+	border: 1px solid #888;
+	border-radius: 8px;
+}
+
+QTabBar#Editors::tab{
+	border-right-color: transparent; /* same as the pane color */
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	min-width: 1em;
+	padding: 10px 3px;
+}
+
+QTabBar#Editors::tab:selected{
+	border-right-color: white; /* same as pane color */
+	border-right-color: %AppUIBackColorLighter%; /* same as pane color */
+}
+
+QTabBar#Editors::tab:!selected{
+	margin-left: 0px; /* make non-selected tabs look smaller */
+}
+
+/*------------- Text sample preview for Options DialogBox ---------------*/
+
+/*QFrame#TextSamplePreview{
+	background-color: #282d29;
+}*/
+
+/*------------- Common CSS for main window & components ---------------*/
+
+QMainWindow{
+	background-image: ;
+	background-color: #282d29;
+	background-color: %AppUIBackColor%;
+}
+
+QGroupBox, QToolButton, QToolBox, QToolTip
+, QLabel, QCheckBox, QRadioButton, QSpinBox, QComboBox
+, QTabBar, QDateEdit, QPlainTextEdit, QLineEditQueryInput
+, QTreeView, QListView, QTableView
+, QToolBar, QStatusBar
+, QMenu QToolButton, QMenu QPushButtonEx
+, QFrame QToolButton
+, QCommandLinkButton
+, QHeaderView
+{
+	font-family: %AppUIFontFamily%;
+	font-size: %AppUIFontSize%;
+	font-weight: %AppUIFontWeight%;
+	font-style: %AppUIFontStyle%;
+	text-decoration: %AppUITextDecoration%;
+}
+
+QPushButtonEx{
+	font-family: %AppUIFontFamily%;
+	font-size: %AppUIFontSize%;
+	font-weight: %AppUIFontWeight%;
+	font-style: %AppUIFontStyle%;
+	text-decoration: %AppUITextDecoration%;
+}
+
+QGroupBox{
+	font-size: %AppUIFontSizeMinor%;
+	border: 1px solid #555;
+	border-radius: 4px;
+	margin-top: 2ex;
+	padding: 0px;
+}
+
+QGroupBox::title{
+	subcontrol-origin: margin;
+	subcontrol-position: top left;
+	padding: 0 8px;
+}
+
+QToolBox{
+	background: transparent;
+}
+
+QToolTip{
+	opacity: 255;
+	border-radius: 3px;
+	border: 1px solid lightgrey;
+	padding: 0px;
+	margin: 0px;
+	color: black;
+	background-color: lightyellow;
+	color: %AppUITooltipForeColor%;
+	background-color: %AppUITooltipBackColor%;
+}
+
+QToolBar#TbNavOutlineTree, QToolBar#TbNavLabelTree, QToolBar#TbNavThreadList, QToolBar#TbNavCalendar, QToolBar#TbNavSavedSearches, QToolBar#TbNavOverview, QToolBar#TbNavRelationList{
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #555;
+	background-color: #383d39;
+	background-color: %AppUIBackColorLighter%;
+}
+
+QAbstractItemView, QTextEdit, QPlainTextEdit{
+	selection-color: %AppUISelectionForeColor%;
+	selection-background-color: %AppUISelectionBackColor%;
+}
+
+QAbstractScrollArea{
+	color: %AppUITextColor%;
+	background-color: %AppUIBackColorNoAlpha%;
+	background-color: %AppUIBackColor%;
+}
+
+/*------------- Dialog boxes ---------------*/
+
+QDialog{
+	color: #e9e9e9;
+	background-color: #383d39;
+	background-color: %AppUIBackColorLighterNoAlpha%;
+}
+
+QDialog QPlainTextEdit, QDialog QTextEdit{
+	font-family: "Courier New";
+	font-family: %TextBoxFontFamily%;
+	font-size: %TextBoxFontSize%;
+	color: #e9e9e9;
+	background-color: #232724;
+	background-color: %AppUIBackColorNoAlpha%;
+}
+
+QDialog QCalendarMonthlyView, QDialog QCalendarMonthlyView QWidget, QDialog QCalendarMonthlyView QTableWidget{
+	color: #e9e9e9;
+	background-color: #232724;
+	background-color: %AppUIBackColor%;
+}
+
+QDialog QTreeView, QDialog QListWidget{
+	border: 1px solid #888;
+	border-radius: 4px;
+	color: #e9e9e9;
+	background-color: #232724;
+	background-color: #525751;
+	background-color: #383d39;
+	color: %AppUIForeColor%;
+	background-color: %AppUIBackColor%;
+}
+
+QDialog QTreeView QHeaderView{
+	color: #e9e9e9;
+	background-color: #383d39;
+	color: %AppUIForeColor%;
+	background-color: %AppUIBackColorLighter%;
+}
+
+QDialog QLineEdit, QDialog QSpinBox{
+	color: #e9e9e9;
+	background-color: #525751;
+	color: %AppUITextColor%;
+	background-color: %AppUIBackColorMuchLighterNoAlpha%;
+}
+
+QDialog QLineEdit, QDialog QSpinBox{
+	font-family: %AppUIFontFamily%;
+	font-size: %AppUIFontSize%;
+	font-weight: %AppUIFontWeight%;
+	font-style: %AppUIFontStyle%;
+	text-decoration: %AppUITextDecoration%;
+	color: %AppUITextColor%;
+}
+
+QDialog QLineEdit{
+	border: 1px solid grey;
+	border-radius: 4px;
+}
+
+QDialog QDateTimeEdit__, QDialog QPushButtonEx__, QDialog QComboBox__{
+	color: #e9e9e9;
+	background-color: #525751;
+	background-color: %AppUIBackColorMuchMuchLighterNoAlpha%;
+}
+
+QDialog QLabel, QDialog QCheckBox, QDialog QToolButton, QDialog QRadioButton{
+	color: #e9e9e9;
+	color: %AppUITextColor%;
+}
+
+QDialog QComboBox{
+}
+
+QDialog QGroupBox{
+	color: #e9e9e9;
+	background-color: #424741;
+	background-color: %AppUIBackColorMuchLighter%;
+}
+
+QDialog QDateEdit QWidget{
+	background-color: %AppUIBackColorMuchLighterNoAlpha%;
+}
+
+QDialog QDateEdit QMenu{
+	color: %AppUITextColor%;
+}
+
+/*------------- Menus ---------------*/
+
+QMenu{
+	font-family: %AppUIFontFamily%;
+	font-size: %AppUIFontSize%;
+	font-weight: %AppUIFontWeight%;
+	font-style: %AppUIFontStyle%;
+	text-decoration: %AppUITextDecoration%;
+}
+
+QMenu#QuickIcon
+, QMenu#QuickLabel
+, QMenu#QuickCalendar, QMenu#QuickCalendar QWidget
+, QMenu#ForeColor, QMenu#BackColor
+, QMenu QToolButton
+{
+	color: #e9e9e9;
+	background-color: #383d39;
+}
+
+QMenu#QuickIcon, QMenu#QuickLabel, QMenu#QuickCalendar, QMenu#ForeColor, QMenu#BackColor
+{
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+QMenu#MruDbList
+{
+	min-height: 24em;
+	min-width: 40em;
+	border: 1px solid gray;
+	border-radius: 3px;
+	color: #e9e9e9;
+	background-color: #383d39;
+}
+
+QMenu#MruDbList QTreeView{
+	color: #e9e9e9;
+	background-color: #232724;
+}
+
+QMenu#MruDbList QTreeView QHeaderView{
+	color: #e9e9e9;
+	background-color: #383d39;
+}
+
+QMenu#MruDbList QLabel{
+	color: #e9e9e9;
+}
+
+QMenu#QuickLabel
+{
+	color: #e9e9e9;
+	background-color: #383d39;
+}
+
+QMenu#QuickLabel QTreeView{
+	color: #e9e9e9;
+	background-color: #232724;
+}
+
+QMenu#QuickCalendar QToolButton:disabled
+, QMenu#QuickCalendar QCheckBox:disabled
+{
+	color: gray;
+}
+
+/*------------- Find/Replace panels ---------------*/
+
+QWidget#PanelNavFind, QWidget#PanelTextFindReplace{
+	color: #e9e9e9;
+	background-color: #383d39;
+	color: %AppUITextColor%;
+	background-color: %AppUIBackColorMuchLighter%;
+	border-top: 1px solid gray;
+}
+
+QPanelFindReplace QToolButton
+{
+	color: #e9e9e9;
+	color: %AppUITextColor%;
+}
+
+/*------------- AdvSearch/Reminder/EventView ---------------*/
+
+QReminderPane, QAdvSearchForm, QEventLogViewer{
+	border: 1px solid gray;
+	border-radius: 4px;
+	color: #e9e9e9;
+	background-color: #383d39;
+	color: %AppUITextColor%;
+	background-color: %AppUIBackColorNoAlpha%;
+	background-color: %AppUIBackColorLighterNoAlpha%;
+}
+
+QReminderPane QLabel
+, QAdvSearchForm QLabel
+, QAdvSearchForm QGroupBox
+, QAdvSearchForm QCheckBox
+, QAdvSearchForm QRadioButton
+, QEventLogViewer QLabel
+, QEventLogViewer QCheckBox
+{
+	color: #e9e9e9;
+	color: %AppUITextColor%;
+}
+
+QEventLogViewer QPlainTextEdit{
+	font-family: 'Courier';
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %AppUITextColor%;
+	background-color: %AppUIBackColorLighter%;
+	background-color: %AppUIBackColor%;
+}
+
+QAdvSearchForm QDateEdit, QAdvSearchForm QLineEdit{
+	color: #e9e9e9;
+	background-color: #525751;
+	color: %AppUITextColor%;
+	background-color: %AppUIBackColorLighter%;
+}
+
+QAdvSearchForm QLineEdit{
+	border: 1px solid grey;
+	border-radius: 4px;
+}
+
+QAdvSearchForm QGroupBox{
+	background-color: #424741;
+	background-color: %AppUIBackColorLighter%;
+	background-color: %AppUIBackColorMuchLighter%;
+}
+
+QReminderPane QWidget{
+	background-color: #383d39;
+	background-color: %AppUIBackColorLighter%;
+}
+
+QReminderPane QToolBox QWidget{
+}
+
+QReminderPane QToolBox::tab{
+	color: #e9e9e9;
+	color: %AppUITextColor%;
+}
+
+QReminderPane QMenu{
+	border: 1px solid gray;
+	color: #e9e9e9;
+	color: %AppUITextColor%;
+	background-color: %AppUIBackColorNoAlpha%;
+}
+
+QReminderPane QMenu::item:selected{
+	selection-color: %AppUIBackColorNoAlpha%;
+	selection-background-color: lightgrey;
+	selection-color: %AppUISelectionForeColor%;
+	selection-background-color: %AppUISelectionBackColor%;
+}
+
+QWidget#DueItem{
+	color: #e9e9e9;
+	color: %AppUITextColor%;
+}
+
+QWidget#DueItem QLabel#DueDate{
+	margin-left: 1.5em;
+}
+
+/*------------- Background colors for db-views ---------------*/
+
+QWidget#NavArea{
+	background-color: #232724;
+	background-color: %AppUIBackColor%;
+}
+
+QSplitter#DbView, QWidget#TagResArea, QSplitter#ContentArea, QWidget#EditorArea {
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %AppUITextColor%;
+	background-color: %AppUIBackColor%;
+}
+
+/*------------- Tree widgets for DbView Navigation ---------------*/
+
+QTreeView#NavOutlineTree{
+	font-family: %NavOutlineTreeFontFamily%;
+	font-size: %NavOutlineTreeFontSize%;
+	font-weight: %NavOutlineTreeFontWeight%;
+	font-style: %NavOutlineTreeFontStyle%;
+	text-decoration: %NavOutlineTreeTextDecoration%;
+	background-image: ;
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %NavOutlineTreeTextColor%;
+	background-color: %NavOutlineTreeBackColor%;
+}
+
+QTreeView#NavLabelTree{
+	font-family: %NavLabelTreeFontFamily%;
+	font-size: %NavLabelTreeFontSize%;
+	font-weight: %NavLabelTreeFontWeight%;
+	font-style: %NavLabelTreeFontStyle%;
+	text-decoration: %NavLabelTreeTextDecoration%;
+	background-image: ;
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %NavLabelTreeTextColor%;
+	background-color: %NavLabelTreeBackColor%;
+}
+
+QTreeView#NavThreadList{
+	font-family: %NavThreadListFontFamily%;
+	font-size: %NavThreadListFontSize%;
+	font-weight: %NavThreadListFontWeight%;
+	font-style: %NavThreadListFontStyle%;
+	text-decoration: %NavThreadListTextDecoration%;
+	background-image: ;
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %NavThreadListTextColor%;
+	background-color: %NavThreadListBackColor%;
+}
+
+QWidget#NavCalendar QTableView, QWidget#NavCalendar QToolButton, QWidget#NavCalendar QWidget{
+	font-family: %NavCalendarFontFamily%;
+	font-size: %NavCalendarFontSize%;
+	font-weight: %NavCalendarFontWeight%;
+	font-style: %NavCalendarFontStyle%;
+	text-decoration: %NavCalendarTextDecoration%;
+	color: #e9e9e9;
+	color: %NavCalendarTextColor%;
+	background-color: transparent;
+}
+
+QWidget#NavCalendar, QWidget#NavCalendar QWidget{
+	background-image: ;
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %NavCalendarForeColor%;
+	background-color: %NavCalendarBackColor%;
+}
+
+QTreeView#NavSavedSearches{
+	font-family: %NavSavedSearchesFontFamily%;
+	font-size: %NavSavedSearchesFontSize%;
+	font-weight: %NavSavedSearchesFontWeight%;
+	font-style: %NavSavedSearchesFontStyle%;
+	text-decoration: %NavSavedSearchesTextDecoration%;
+	background-image: ;
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %NavSavedSearchesTextColor%;
+	background-color: %NavSavedSearchesBackColor%;
+}
+
+QTreeView#NavOverview{
+	font-family: %NavOverviewFontFamily%;
+	font-size: %NavOverviewFontSize%;
+	font-weight: %NavOverviewFontWeight%;
+	font-style: %NavOverviewFontStyle%;
+	text-decoration: %NavOverviewTextDecoration%;
+	background-image: ;
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %NavOverviewTextColor%;
+	background-color: %NavOverviewBackColor%;
+}
+
+/*------------- Relation list view ---------------*/
+
+QWidget#RelationPane
+{
+}
+
+QTreeView#RelationList QHeaderView
+{
+	color: #e9e9e9;
+	background-color: #383d39;
+	color: %RelationListTextColor%;
+	background-color: %RelationListBackColorLighter%;
+}
+
+QTreeView#RelationList{
+	font-family: %RelationListFontFamily%;
+	font-size: %RelationListFontSize%;
+	font-weight: %RelationListFontWeight%;
+	font-style: %RelationListFontStyle%;
+	text-decoration: %RelationListTextDecoration%;
+	background-image: ;
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %RelationListTextColor%;
+	background-color: %RelationListBackColor%;
+}
+
+/*------------- Tag/search results list ---------------*/
+
+QWidget#SearchResPane
+{
+	color: black;
+}
+
+QWidget#SearchResPane QSearchResTitleBar
+{
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %ResultsListTextColor%;
+	background-color: %ResultsListBackColorLighter%;
+}
+
+QWidget#SearchResPane QSearchResTitleBar QToolButton{
+	color: #e9e9e9;
+	color: %ResultsListTextColor%;
+}
+
+QSearchResTitleBar QToolButton:pressed{
+	color: #e9e9e9;
+	background-color: #383d39;
+	color: %ResultsListTextColor%;
+	background-color: %ResultsListBackColor%;
+}
+
+QTreeView#TagResList, QTreeView#SearchResList{
+	font-family: %ResultsListFontFamily%;
+	font-size: %ResultsListFontSize%;
+	font-weight: %ResultsListFontWeight%;
+	font-style: %ResultsListFontStyle%;
+	text-decoration: %ResultsListTextDecoration%;
+	background-image: ;
+	color: #e9e9e9;
+	background-color: #232724;
+	color: %ResultsListTextColor%;
+}
+
+/*------------- Header views of saved-searches, overview and results-list ---------------*/
+
+QTreeView#NavSavedSearches QHeaderView{
+	font-family: %NavSavedSearchesFontFamily%;
+	font-size: %NavSavedSearchesFontSize%;
+	font-weight: %NavSavedSearchesFontWeight%;
+	font-style: %NavSavedSearchesFontStyle%;
+	text-decoration: %NavSavedSearchesTextDecoration%;
+	color: #e9e9e9;
+	background-color: #383d39;
+	color: %ResultsListTextColor%;
+	background-color: %ResultsListBackColorMuchLighter%;
+}
+
+QTreeView#NavOverview QHeaderView{
+	font-family: %NavOverviewFontFamily%;
+	font-size: %NavOverviewFontSize%;
+	font-weight: %NavOverviewFontWeight%;
+	font-style: %NavOverviewFontStyle%;
+	text-decoration: %NavOverviewTextDecoration%;
+	color: #e9e9e9;
+	background-color: #383d39;
+	color: %NavOverviewTextColor%;
+	background-color: %NavOverviewBackColorMuchLighter%;
+}
+
+QTreeView#TagResList QHeaderView, QTreeView#SearchResList QHeaderView{
+	font-family: %ResultsListFontFamily%;
+	font-size: %ResultsListFontSize%;
+	font-weight: %ResultsListFontWeight%;
+	font-style: %ResultsListFontStyle%;
+	text-decoration: %ResultsListTextDecoration%;
+	color: #e9e9e9;
+	background-color: #383d39;
+	color: %ResultsListTextColor%;
+	background-color: %ResultsListBackColorMuchLighter%;
+}
+
+/*------------- Text content viewer/editors ---------------*/
+
+QWebEngineView{
+	background-color: #232724;
+}
+
+QWebView{
+	/* 2022.1.25 The scroll bars may need to refine if any attributes defined here*/
+	/*background-color: #232724;*/
+}
+
+QTextEdit#RichEdit{
+	font-family: %RichTextFontFamily%;
+	font-size: %RichTextFontSize%;
+	font-weight: %RichTextFontWeight%;
+	font-style: %RichTextFontStyle%;
+	text-decoration: %RichTextTextDecoration%;
+	color: #e9e9e9;
+	background-color: #232724;
+	background-color: %AppUIBackColorLighter%;
+	background-color: %RichTextBackColor%;
+	selection-color: %AppUISelectionForeColor%;
+	selection-background-color: %AppUISelectionBackColor%;
+}
+
+QPlainTextEdit#PlainEdit{
+	font-family: %PlainTextFontFamily%;
+	font-size: %PlainTextFontSize%;
+	font-weight: %PlainTextFontWeight%;
+	font-style: %PlainTextFontStyle%;
+	text-decoration: %PlainTextTextDecoration%;
+	color: #e9e9e9;
+	background-color: #232724;
+	background-color: %AppUIBackColorLighter%;
+	background-color: %PlainTextBackColor%;
+	selection-color: %AppUISelectionForeColor%;
+	selection-background-color: %AppUISelectionBackColor%;
+}
+
+QPlainTextEdit#PlainEdit:inactive{
+	selection-color: %AppUISelectionForeColor%;
+	selection-background-color: %AppUISelectionBackColor%;
+}
+
+/*------------- Message box ---------------*/
+
+QMsgBox QScrollArea, QMsgBox QLabel{
+	background-color: transparent;
+	border: 0px;
+}
+
+/*QMsgBox QPushButtonEx{
+	background-color: transparent;
+}*/
+
+/*------------- QDateTimeEdit ---------------*/
+
+QDateTimeEdit QTableView{
+	background-color: %AppUIBackColorMuchLighter%;
+	background-color: #525751;
+}
