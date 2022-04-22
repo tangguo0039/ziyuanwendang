@@ -1,0 +1,9 @@
+pluginManagement {
+
+}
+
+rootProject.name = 'trident'
+
+include 'utils'
+include 'abi'
+include 'core'
