@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>哈希娱乐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="renderer" content="webkit">
+
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+
+  <link href="/assets/css/frontend.min.css?v=1.0.5" rel="stylesheet">
+
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond.min.js"></script>
+<![endif]-->
+
+
+  <script type="text/javascript">
+    var require = {
+      config: {
+        "site": {
+          "name": "\u54c8\u5e0c\u5a31\u4e50",
+          "cdnurl": "",
+          "version": "1.0.5",
+          "timezone": "Asia\/Shanghai",
+          "languages": {
+            "backend": "zh-cn",
+            "frontend": "zh-cn"
+          }
+        },
+        "upload": {
+          "cdnurl": "",
+          "uploadurl": "\/index\/ajax\/upload",
+          "bucket": "local",
+          "maxsize": "10mb",
+          "mimetype": "jpg,png,bmp,jpeg,gif,webp,zip,rar,xls,xlsx,wav,mp4,mp3,webm,pdf",
+          "chunking": false,
+          "chunksize": 2097152,
+          "savekey": "\/uploads\/{year}{mon}{day}\/{filemd5}{.suffix}",
+          "multipart": [],
+          "multiple": false,
+          "fullmode": false,
+          "thumbstyle": "",
+          "storage": "local"
+        },
+        "modulename": "index",
+        "controllername": "user",
+        "actionname": "earnings",
+        "jsname": "frontend\/user",
+        "moduleurl": "\/index",
+        "language": "zh-cn",
+        "__PUBLIC__": "\/",
+        "__ROOT__": "\/",
+        "__CDN__": ""
+      }
+    };
+  </script>
+
+  <link href="/assets/css/user.css?v=1.0.5" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-white navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">哈希娱乐</a>
+      </div>
+      <div class="collapse navbar-collapse" id="header-navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">首页</a></li>
+          <li class="dropdown">
+            <a href="/index/user/index.html" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="avatar-img"><img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaGVpZ2h0PSIxMDAiIHdpZHRoPSIxMDAiPjxyZWN0IGZpbGw9InJnYigxNjAsMjI5LDE3OSkiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3JlY3Q+PHRleHQgeD0iNTAiIHk9IjUwIiBmb250LXNpemU9IjUwIiB0ZXh0LWNvcHk9ImZhc3QiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRleHQtcmlnaHRzPSJhZG1pbiIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPjwvdGV4dD48L3N2Zz4="
+                  alt=""></span>
+              <span class="visible-xs-inline-block" style="padding:5px;"> <b class="caret"></b></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/index/user/index.html"><i class="fa fa-user-circle fa-fw"></i>会员中心</a></li>
+              <!-- <li><a href="/index/user/profile.html"><i class="fa fa-user-o fa-fw"></i>个人资料</a></li> -->
+              <li><a href="/index/user/changepwd.html"><i class="fa fa-key fa-fw"></i>修改密码</a></li>
+              <li><a href="/index/user/logout.html"><i class="fa fa-sign-out fa-fw"></i>退 出</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="content">
+    <div id="content-container" class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <script src="/assets/js/jquery.min.js"></script>
+          <script src="/assets/js/jquery.qrcode.min.js"></script>
+          <script src="/assets/js/bootstrap-table.min.js"></script>
+
+          <link rel="stylesheet" href="/assets/css/bootstrap-table.min.css">
+
+          <div class="sidebar-toggle"><i class="fa fa-bars"></i></div>
+          <div class="sidenav" id="sidebar-nav">
+            <ul class="list-group">
+              <li class="list-group-heading">会员中心</li>
+              <li class="list-group-item "> <a href="/index/user/index.html"><i class="fa fa-user-circle fa-fw"></i>
+                  会员中心</a> </li>
+              <!-- <li class="list-group-item "> <a href="/index/user/profile.html"><i class="fa fa-user-o fa-fw"></i> 个人资料</a> </li> -->
+              <li class="list-group-item active"> <a href="/index/user/earnings.html"><i class="fa fa-user-o fa-fw"></i>
+                  盈利报表</a> </li>
+              <li class="list-group-item "> <a href="/index/user/subordinate.html"><i class="fa fa-user fa-fw"></i>
+                  下级报表</a> </li>
+              <li class="list-group-item "> <a href="/index/user/changepwd.html"><i class="fa fa-key fa-fw"></i>
+                  修改密码</a> </li>
+              <li class="list-group-item "> <a href="/index/user/logout.html"><i class="fa fa-sign-out fa-fw"></i> 退
+                  出</a> </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-md-9">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h2 class="page-header">盈利表格</h2>
+
+              <table id="table"></table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      $('#table').bootstrapTable({
+        ajax: function ajaxRequest(params) {
+          var url = '/member/trade/list';
+          $.ajax({
+            type: "POST",
+            url,
+            data: params.data,
+            headers: {
+              "Authorization": localStorage.getItem('token')
+            },
+            success: function (result) {
+              console.log(result)
+              params.success({
+                rows: result.data.records,
+                total: result.data.total
+              })
+            }
+          })
+        },
+        striped: true,
+        cache: false,
+        pagination: true,
+        sortable: true,
+        showHeader: true,
+        showRefresh: false,
+        clickToSelect: true,
+        search: false,
+        sidePagination: "server", //客户端client   服务端server
+        pageNumber: 1,
+        pageList: [10, 15],
+        queryParams: function (params) {
+          return {
+            limit: params.limit,
+            offset: params.offset,
+            sort: params.sort,
+            order: params.order
+          };
+        },
+        columns: [{
+          field: 'id',
+          title: 'ID',
+        }, {
+          field: 'walletAddress',
+          title: '钱包地址',
+        }, {
+          field: 'hash',
+          title: '区块哈希',
+        }, {
+          field: 'price',
+          title: '金额',
+        }, {
+          field: 'rewardPrice',
+          title: '奖励金额',
+        }, {
+          field: 'status',
+          title: '状态',
+          formatter: function (value) {
+            if (value == 1) {
+              value = '盈利';
+            } else if (value == 2) {
+              value = '亏损';
+            }
+            return value;
+          }
+        }],
+      });
+
+      // $('#table').bootstrapTable({
+      //     striped: true,//设置为 true 会有隔行变色效果
+      //     method: 'post',//服务器数据的请求方式 'get' or 'post'
+      //     url: '/index/user/earnings',//服务器数据的加载地址
+      //     toolbar:'#toolbar',//
+      //     search:'true',//
+      //     showToggle: 'true',//是否显示 切换试图（table/card）按钮
+      //     showColumns: 'true',//是否显示 内容列下拉框
+      //     sidePagination: "server",   //分页方式：client客户端分页，server服务端分页（*）
+      //     pagination: 'true',//设置为 true 会在表格底部显示分页条
+      //     clickToSelect:'true',//设置true 将在点击行时，自动选择rediobox 和 checkbox
+      //     singleSelect:'true',//设置True 将禁止多选
+      //     pageSize: '10',//如果设置了分页，页面数据条数
+      // });
+    </script>
+  </main>
+
+  <footer class="footer" style="clear:both">
+    <p class="copyright">Copyright&nbsp;©&nbsp;2022 哈希娱乐 All Rights Reserved <a href="https://beian.miit.gov.cn"
+        target="_blank"></a></p>
+  </footer>
+
+  <script src="/assets/js/require.min.js" data-main="/assets/js/require-frontend.min.js?v=1.0.5"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>哈希娱乐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit">
+
+
+    <link rel="shortcut icon" href="/assets/img/favicon.ico"/>
+
+    <link href="/assets/css/frontend.min.css?v=1.0.5" rel="stylesheet">
+    <script src="https://unpkg.com/coco-message/coco-message.min.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <![endif]-->
+
+
+    <script type="text/javascript">
+        var require = {
+            config: {
+                "site": {
+                    "name": "\u54c8\u5e0c\u5a31\u4e50",
+                    "cdnurl": "",
+                    "version": "1.0.5",
+                    "timezone": "Asia\/Shanghai",
+                    "languages": {
+                        "backend": "zh-cn",
+                        "frontend": "zh-cn"
+                    }
+                },
+                "upload": {
+                    "cdnurl": "",
+                    "uploadurl": "\/index\/ajax\/upload",
+                    "bucket": "local",
+                    "maxsize": "10mb",
+                    "mimetype": "jpg,png,bmp,jpeg,gif,webp,zip,rar,xls,xlsx,wav,mp4,mp3,webm,pdf",
+                    "chunking": false,
+                    "chunksize": 2097152,
+                    "savekey": "\/uploads\/{year}{mon}{day}\/{filemd5}{.suffix}",
+                    "multipart": [],
+                    "multiple": false,
+                    "fullmode": false,
+                    "thumbstyle": "",
+                    "storage": "local"
+                },
+                "modulename": "index",
+                "controllername": "user",
+                "actionname": "index",
+                "jsname": "frontend\/user",
+                "moduleurl": "\/index",
+                "language": "zh-cn",
+                "__PUBLIC__": "\/",
+                "__ROOT__": "\/",
+                "__CDN__": ""
+            }
+        };
+    </script>
+
+    <link href="/assets/css/user.css?v=1.0.5" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-white navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">哈希娱乐</a>
+        </div>
+        <div class="collapse navbar-collapse" id="header-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">首页</a></li>
+                <li class="dropdown">
+                    <a href="/index/user/index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="avatar-img"><img
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaGVpZ2h0PSIxMDAiIHdpZHRoPSIxMDAiPjxyZWN0IGZpbGw9InJnYigxNjAsMjI5LDE3OSkiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3JlY3Q+PHRleHQgeD0iNTAiIHk9IjUwIiBmb250LXNpemU9IjUwIiB0ZXh0LWNvcHk9ImZhc3QiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRleHQtcmlnaHRzPSJhZG1pbiIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPjwvdGV4dD48L3N2Zz4="
+                                    alt=""></span>
+                        <span class="visible-xs-inline-block" style="padding:5px;"> <b class="caret"></b></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/index/user/index.html"><i class="fa fa-user-circle fa-fw"></i>会员中心</a></li>
+                        <!-- <li><a href="/index/user/profile.html"><i class="fa fa-user-o fa-fw"></i>个人资料</a></li> -->
+                        <li><a href="/index/user/changepwd.html"><i class="fa fa-key fa-fw"></i>修改密码</a></li>
+                        <li><a href="javascript:void(0)" id="logout1"><i class="fa fa-sign-out fa-fw"></i>退 出</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="content">
+    <style>
+        .basicinfo {
+            margin: 15px 0;
+        }
+
+        .basicinfo .row > .col-xs-4 {
+            padding-right: 0;
+        }
+
+        .basicinfo .row > div {
+            margin: 5px 0;
+        }
+    </style>
+
+    <div id="content-container" class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <script src="/assets/js/jquery.min.js"></script>
+                <script src="/assets/js/jquery.qrcode.min.js"></script>
+                <script src="/assets/js/bootstrap-table.min.js"></script>
+                <script src="/assets/index/js/main.js" type="text/javascript"></script>
+                <script src="/assets/js/require.min.js" data-main="/assets/js/require-frontend.min.js?v=1.0.5"></script>
+                <script src="/assets/index/js/clipboard.js" type="text/javascript"></script>
+
+                <link rel="stylesheet" href="/assets/css/bootstrap-table.min.css">
+
+                <div class="sidebar-toggle"><i class="fa fa-bars"></i></div>
+                <div class="sidenav" id="sidebar-nav">
+                    <ul class="list-group">
+                        <li class="list-group-heading">会员中心</li>
+                        <li class="list-group-item active"><a href="/index/user/index.html"><i
+                                class="fa fa-user-circle fa-fw"></i> 会员中心</a></li>
+                        <!-- <li class="list-group-item "> <a href="/index/user/profile.html"><i class="fa fa-user-o fa-fw"></i> 个人资料</a> </li> -->
+                        <li class="list-group-item "><a href="/index/user/earnings.html"><i
+                                class="fa fa-user-o fa-fw"></i> 盈利报表</a></li>
+                        <li class="list-group-item "><a href="/index/user/subordinate.html"><i
+                                class="fa fa-user fa-fw"></i> 下级报表</a></li>
+                        <li class="list-group-item "><a href="/index/user/changepwd.html"><i
+                                class="fa fa-key fa-fw"></i> 修改密码</a></li>
+                        <li class="list-group-item "><a href="javascript:void(0)" id="logout"><i
+                                class="fa fa-sign-out fa-fw"></i> 退 出</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h2 class="panel-title text-center">
+                            <!-- 今日总盈利 -->
+                            今日总盈利 </h2>
+                    </div>
+                    <div class="panel-body">
+                        <!-- <h2 class="page-header text-center"> -->
+                        <!-- 今日总盈利 -->
+                        <!-- 今日总盈利 -->
+                        <!-- </h2> -->
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!-- Content -->
+                                <div class="ui-content">
+                                    <h2 class="text-center" id="todayTotalAmount">
+                                        $0 </h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h2 class="panel-title text-center">
+                            <!-- 今日个人盈利 -->
+                            今日个人盈利 </h2>
+                    </div>
+                    <div class="panel-body">
+                        <!-- <h2 class="page-header text-center"> -->
+                        <!-- 今日个人盈利 -->
+                        <!-- 今日个人盈利 -->
+                        <!-- </h2> -->
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!-- Content -->
+                                <div class="ui-content">
+                                    <h2 class="text-center" id="todayMyAmount">$0</h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="panel panel-warning">
+
+                    <div class="panel-heading">
+                        <h2 class="panel-title text-center">
+                            <!-- 今日代理盈利 -->
+                            今日代理渠道盈利 </h2>
+                    </div>
+
+                    <div class="panel-body">
+                        <!-- <h2 class="page-header text-center"> -->
+                        <!-- 今日代理盈利 -->
+                        <!-- 今日代理渠道盈利 -->
+                        <!-- </h2> -->
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!-- Content -->
+                                <div class="ui-content">
+                                    <h2 class="text-center" id="todayTeamAmount" >$0</h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h2 class="panel-title text-center">
+                            <!-- 下级数量 -->
+                            下级人数 </h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <!-- Content -->
+                                <div class="ui-content">
+                                    <h2 class="text-center">
+                                        <span id="teamNumbers">0 </span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- 个人资料 -->
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <h2 class="page-header ">个人资料</h2>
+                        <form id="profile-form" class="form-horizontal" role="form"
+                              data-toggle="validator" action="#">
+                            <!-- <input type="hidden" name="__token__" value="1c90cb2d27e94e985dc534646d736461" /> -->
+                            <div class="form-group">
+                                <label
+                                        class="control-label col-xs-12 col-sm-3">用户名:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input type="text" class="form-control"
+                                           id="username" name="username"
+                                           value="" disabled
+                                           data-rule="required;username;remote(/api/validate/check_username_available.html, id=27)"
+                                           placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label
+                                        class="control-label col-xs-12 col-sm-3">钱包地址:</label>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input type="text" class="form-control"
+                                           id="address" name="address"
+                                           value=""
+                                           disabled
+                                           data-rule="required;remote(/api/validate/check_address_available.html, id=27)"
+                                           placeholder="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2 class="page-header text-center">
+                            <!-- 个人钱包余额 -->
+                            个人钱包余额 </h2>
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+
+                                <div class="ui-content">
+                                    <h2 class="text-center"
+                                        style="padding-bottom: 6%;">
+                                        $<span id="balance">0.00</span></h2>
+
+                                    <input type="submit" id="tx"
+                                           class="center-block btn btn-info"
+                                           value="提现"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 col-md-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <h2 class="page-header">
+                            邀请中心
+                        </h2>
+
+                        <div class="row user-baseinfo">
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <!-- Content -->
+                                <div class="ui-content">
+                                    <div class="basicinfo">
+                                        <div class="row">
+                                            <div class="col-xs-4 col-md-2">邀请链接
+                                            </div>
+                                            <div class="col-xs-6 col-md-9">
+                                                <a href="javascript:;"
+                                                   class="viewmoney"
+                                                   id="inviteUrl"></a>
+                                            </div>
+                                            <button type="button" class="copybnt" id="copybnt" onclick="copy1('#inviteUrl')">复制</button>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="col-xs-4 col-md-2">上级名称
+                                            </div>
+                                            <div class="col-xs-8 col-md-4">
+                                                <span id="parentAccount"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-4 col-md-2">邀请码</div>
+                                            <div class="col-xs-8 col-md-4">
+                                                <div id="qrcodeBase64">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    </script>
+
+    <script>
+        $('#logout').on('click', function () {
+            $.ajax({
+                type: "POST",
+                url: "/member/logout",
+                beforeSend: function (request) {
+                    request.setRequestHeader(
+                        'Authorization',
+                        localStorage.getItem(
+                            "token"));
+                },
+                success: function (result) {
+                    localStorage.setItem(
+                        "token", '')
+                    localStorage.setItem(
+                        "account", '')
+                    window.location.href = '/index.html'
+                }
+            })
+        })
+        $('#logout1').on('click', function () {
+            $.ajax({
+                type: "POST",
+                url: "/member/logout",
+                beforeSend: function (request) {
+                    request.setRequestHeader(
+                        'Authorization',
+                        localStorage.getItem(
+                            "token"));
+                },
+                success: function (result) {
+                    localStorage.setItem(
+                        "token", '')
+                    localStorage.setItem(
+                        "account", '')
+                    window.location.href = '/index.html'
+                }
+            })
+        })
+        $.ajax({
+            type: "POST",
+            url: "/member/info",
+            beforeSend: function (request) {
+                request.setRequestHeader('Authorization',
+                    localStorage.getItem(
+                        "token"));
+            },
+            success: function (result) {
+                if (result.code === 50014) {
+                    cocoMessage.info(result.msg);
+                    localStorage.setItem(
+                        "token", '')
+                    localStorage.setItem(
+                        "account", '')
+                    window.location.href = '/index.html'
+                } else {
+                    const {
+                        todayMyAmount,
+                        todayTotalAmount,
+                        todayTeamAmount,
+                        teamNumbers,
+                        account,
+                        walletAddress,
+                        balance,
+                        inviteUrl,
+                        parentAccount,
+                        qrcodeBase64
+                    } = result.data
+                    $('#todayTotalAmount').text(
+                        `$${todayTotalAmount}`)
+                    $('#todayMyAmount').text(
+                        `$${todayMyAmount}`)
+                    $('#todayTeamAmount').text(
+                        `$${todayTeamAmount}`)
+                    $('#teamNumbers').text(
+                        `${teamNumbers}`)
+                    $('#username').val(
+                        `${account}`)
+                    $('#address').val(
+                        `${walletAddress}`)
+                    $('#balance').text(
+                        `${balance}`)
+                    console.log(inviteUrl)
+                    $('#inviteUrl ').text(
+                        `${inviteUrl}`)
+                    $('#parentAccount').text(
+                        `${parentAccount}`)
+                    $('#qrcodeBase64').append(`<img src=${qrcodeBase64} / > `)
+                }
+            }
+        });
+        cocoMessage.config({
+            duration: 2000
+        })
+
+        // user_money
+        var user_money = $('#balance').text;
+        var tx_money = '10';
+
+        console.log('27');
+
+        jQuery('#qrcode').qrcode({
+            render: "table",
+            text: 'https://hashgame.vip/index.php?invitation_code=HB03864275',
+            width: 180,
+            height: 180,
+        });
+
+
+        $('#tx').on('click', function () {
+
+            // 金额不满足条件
+
+            if (user_money < tx_money) {
+                cocoMessage.warning("提现金额不满足条件");
+                return;
+            }
+            window.location.href = '/index/user/deposit.html'
+
+        });
+
+
+        $('#tx1').on('click', function () {
+
+            // 金额不满足条件
+
+            if (user_money < tx_money) {
+                cocoMessage.warning("提现金额不满足条件");
+                return;
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "/index/user/tx",
+                data: {
+                    tx_money: user_money
+                },
+                beforeSend: function () {
+                    cocoMessage.info('正在提交申请,请等待',
+                        1000);
+                    $("#tx").attr({
+                        disabled: "disabled"
+                    });
+                },
+                success: function (result) {
+                    // console.log(result);
+                    if (result.code == 1) {
+                        cocoMessage.success('提交成功');
+                        window.location.href = result
+                            .url;
+                    } else {
+                        cocoMessage.info(result.msg);
+                    }
+                },
+                complete: function () {
+                    setTimeout(function () {
+                        $("#tx").removeAttr(
+                            "disabled");
+                    }, 2000);
+                },
+            });
+        });
+
+        function copy1(textDiv, btn) {
+            var text = $(textDiv).text();
+            var input = document.createElement("input");
+            input.value = text;
+            input.readOnly = true
+            document.body.appendChild(input);
+            input.select();
+            input.setSelectionRange(0, input.value.length)
+            document.execCommand('Copy');
+            document.body.removeChild(input);
+            window.scrollTo(0, 0)
+            cocoMessage.info('复制成功');
+        }
+
+    </script>
+</main>
+
+<footer class="footer" style="clear:both">
+    <p class="copyright">Copyright&nbsp;©&nbsp;2022 哈希娱乐 All Rights Reserved <a href="https://beian.miit.gov.cn"
+                                                                                target="_blank"></a></p>
+</footer>
+
+<script>
+
+
+</script>
+
+</body>
+
+</html>

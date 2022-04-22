@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <title>V8哈希</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <script src="assets/index/js/jquery.js" type="text/javascript"></script>
+  <script src="assets/index/js/clipboard.js" type="text/javascript"></script>
+  <script src="assets/index/js/wow.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="assets/index/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/index/css/main.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async="" src="assets/index/js/js.js"></script> -->
+  <style>
+    .headNav .logo {
+      background: url(../assets/index/image/logo-en.png) no-repeat;
+      background-size: contain;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--头部导航条-->
+  <div class="block headNav">
+    <div class="mainDiv pdiv">
+      <div class="logo"></div>
+      <ul>
+        <li><a data-href="#first">Transfer Address</a></li>
+        <li><a data-href="#rule">Rules for winning</a></li>
+        <li><a data-href="#circuit">Participate in the process</a></li>
+        <li><a data-href="#why">Platform advantage</a></li>
+        <!-- <li><a data-href="#exchange">数字币兑换</a></li> -->
+        <!-- <li><a data-href="#ranking">排行榜</a></li> -->
+        <li><a data-href="#faq">Question</a></li>
+        <!-- <li><a data-href="soft">相关软件下载</a></li> -->
+           <li><a href="javascript:;" data-href="yy">language</a></li>
+                     
+            <li class="regBtn">
+                <a class="go456" data-href="reg">Reg</a></li>
+        <li class="loginBtn">&nbsp;<a class="go123" data-href="login">Login</a></li>
+       
+     
+      </ul>
+    </div>
+    <div class="mainDiv mdiv">
+      <div class="logo"></div>
+      <ul class="nav1">
+        <!-- <li class="faq"><a data-href="#faq">常见问题</a></li> -->
+        <!-- <li class="exchange"><a data-href="soft">相关软件</a></li> -->
+        <li class="service"><a data-href="service">service</a> &nbsp;</li>
+        <li><a data-href="yy">language</a></li>
+        <li class="regBtn"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="go456" data-href="reg">Reg</a>&nbsp;</li>
+        <li class="loginBtn"><a class="go123" data-href="login">Login</a></li>
+      </ul>
+      <ul class="nav2">
+        <li><a data-href="#first">Transfer Address</a></li>
+        <li><a data-href="#rule">Rules for winning</a></li>
+        <li><a data-href="#circuit">Participate in the process</a></li>
+        <li><a data-href="#why">Platform advantage</a></li>
+        <li class="faq"><a data-href="#faq">Question</a></li>
+        <!-- <li><a data-href="#ranking">排行榜</a></li> -->
+        <!-- <li><a data-href="#exchange">币种兑换</a></li> -->
+      </ul>
+    </div>
+  </div>
+
+  <!--首屏-->
+  <a id="first"></a>
+  <div class="block firstDiv">
+    <div class="mainDiv">
+      <h3 class="wow fadeInUp">Build the largest digital coin lottery platform for Global</h3>
+      <div class="slogan">
+        <span data-wow-delay="0.5s" class="wow bounceIn">FAIR</span>
+        <span data-wow-delay="0.5s" class="wow bounceIn">SAFE</span>
+        <span data-wow-delay="0.5s" class="wow fadeInUp">OPEN</span>
+      </div>
+      <div data-wow-delay="0.8s" class="qr wow bounceIn"><i></i></div>
+      <div data-wow-delay="1s" class="hashInfo wow fadeInRight">
+        <div class="text">
+          <h4>You must use [decentralized wallet] to transfer money</h4>
+          <div></div>
+          <span id="hashAddress" class="hashAddress"></span>
+        </div>
+        <div class="copyBut" id="firstCopyBut" onclick="copy('#hashAddress','#firstCopyBut')">click copy</div>
+      </div>
+      <div data-wow-delay="0.5s" class="coins wow fadeInRight"></div>
+    </div>
+  </div>
+
+  <!--规则-->
+  <a id="rule"></a>
+  <div class="block ruleDiv">
+    <div class="mainDiv">
+      <div class="title wow fadeInDown mdiv"></div>
+      <div class="limitBlock wow fadeInLeft">
+        <div class="icon"></div>
+        <h3>Amount Limit</h3>
+        <ul>
+          <li>The number of USDT participation only supports 10,000-20,000 digital coins.</li>
+          <li>If the transfer amount is less than 10USDT,the principal cannot be returned and the prize will be
+            refunded;</li>
+          <li>If the transfer amount exceeds 20,000 USDDT,there will be no rebate. We will deduct the remaining transfer
+            amount to your transfer account after deducting one-thousandth of the handling fee.</li>
+          <li>Only integer coins are supported to participate in the lucky draw, and the decimal part will be
+            automatically ignored.</li>
+        </ul>
+      </div>
+      <div class="side wow fadeInRight">
+        <div class="ruleTitle pdiv">
+          <h1>Rules for winning</h1>
+        </div>
+        <div class="ruleBlock">
+          <div class="icon"></div>
+          <h3>Rules for winning</h3>
+          <ul>
+            <li>If the last two digits of Block Hash after the transfer include both numbers and letters,you will be
+              regarded as receiving a Uber Hash value reward.</li>
+            <li>If you get the Uber hash value,the system will reward you 1.95 times within 10 seconds. If you transfer
+              20U to return 39U (because blockchain technology needs to ensure the security of funds,each transaction
+              needs to be recorded, tamper-proof,and the global population of digital currency is huge,so there may be
+              some Please wait patiently for the delay in the arrival of the account.)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--中将实例-->
+  <div class="block caseDiv">
+    <div class="mainDiv">
+      <h3 class="wow fadeInDown">Examples of winning the lottery <p class="aa123">There are four results in the last two
+          digits of block hash value</p>
+      </h3>
+      <div class="caseList">
+        <ul>
+          <li class="item wow flipInX" data-wow-delay="0.2s">
+            <p>The first combination: the combination of numbers and letters</p>
+            <p>The transfer amount is：<span class="ff0000">1000</span>USDT</p>
+            <p class="top1A">Block hash values are：</p>
+            <p>00****327<i class="ff0000">5a</i></p>
+            <p>The last two numbers are：<i class="ff0000">5a</i>contains letters and numbers</p>
+            <p>Lottery results:<i class="ff0000">win the lottery</i></p>
+            <p>The system returns you the reward：<i class="ff0000">1950</i>USDT</p>
+          </li>
+          <li class="item wow flipInX" data-wow-delay="0.2s">
+            <p>The second combination: the combination of numbers and letters</p>
+            <p>The transfer amount is：<span class="ff0000">1000</span>USDT</p>
+            <p class="top1A">Block hash values are：</p>
+            <p>00****991<i class="ff0000">c5</i></p>
+            <p>The last two numbers are：<i class="ff0000">c5</i>contains letters and numbers</p>
+            <p>Lottery results:<i class="ff0000">win the lottery</i></p>
+            <p>The system returns you the reward：<i class="ff0000">1950</i>USDT</p>
+          </li>
+
+          <li class="item wow flipInX" data-wow-delay="0.2s">
+            <p>The third combination: letters with letters</p>
+            <p>The transfer amount is：<span class="ff0000 ff00001">1000</span>USDT</p>
+            <p class="top1A">Block hash values are：</p>
+            <p>00****02f<i class="ff0000 ff00001">bf</i></p>
+            <p>The last two numbers are：<i class="ff0000 ff00001">bf</i>only contains letters</p>
+            <p>Lottery results:<i class="ff0000 ff00001">not won the lottery</i></p>
+            <p>The system does not return rewards</p>
+          </li>
+
+          <li class="item wow flipInX" data-wow-delay="0.2s">
+            <p>The fourth combination: letters with letters</p>
+            <p>The transfer amount is：<span class="ff0000 ff00001">1000</span>USDT</p>
+            <p class="top1A">Block hash values are：</p>
+            <p>00****659<i class="ff0000 ff00001">78</i></p>
+            <p>The last two numbers are：<i class="ff0000 ff00001">78</i>only contains numbers</p>
+            <p>Lottery results:<i class="ff0000 ff00001">not won the lottery</i></p>
+            <p>The system does not return rewards</p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--参与流程-->
+  <a id="circuit"></a>
+  <div class="block circuitDiv">
+    <div class="mainDiv">
+      <div class="title wow fadeInDown">
+        <h1>Participate in the process</h1>
+      </div>
+      <div class="show">
+        <div class="side">
+          <ul>
+            <li data-num="1" class="wow fadeInUp" data-wow-delay="0.3s">
+              <i>1</i>
+              <span class="pdiv">Register digital currency [decentralized] wallet</span>
+              <span class="mdiv">Register wallet</span>
+            </li>
+            <li data-num="2" class="wow fadeInUp" data-wow-delay="0.6s">
+              <i>2</i>
+              <span class="pdiv">Buy USDT and TRX in digital currency exchanges</span>
+              <span class="mdiv">buy virtual currency</span>
+            </li>
+            <li data-num="3" class="wow fadeInUp" data-wow-delay="0.9s">
+              <i>3</i>
+              <span class="pdiv">Transfer money to this platform to participate in the lucky draw</span>
+              <span class="mdiv">transfer lottery</span>
+            </li>
+            <li data-num="4" class="wow fadeInUp" data-wow-delay="1.2s">
+              <i>4</i>
+              <span class="pdiv">Win the lottery and get the automatic payment</span>
+              <span class="mdiv">Winning money back</span>
+            </li>
+          </ul>
+        </div>
+        <div class="blocks wow fadeInRight" data-wow-delay="0.6s">
+          <div data-num="1" class="item b1">
+            <h4>Digital coin [decentralization] wallet download address</h4>
+            <div class="body">
+              <table>
+                <tr>
+                  <th style="width:30%;">Platform</th>
+                  <th style="width:30%;">Website</th>
+                  <th style="width:40%;">Tutorial</th>
+                </tr>
+                <!-- <tr style="border-bottom:0;">
+										<td><img src="assets/index/picture/xinglong.PNG"></td>
+										<td><a href="javascript:;" target="_blank">360usdt.com</a></td>
+										<td><a href="tutorials1.html" target="_blank">查看教程</a></td>
+									</tr>
+									<tr>
+										<td colspan="3" class="tip" style=""><span>支持电脑和苹果手机使用</span></td>
+									</tr> -->
+                <tr>
+                  <td><img src="assets/index/picture/imtoken.png"></td>
+                  <td><a href="https://token.im/download" target="_blank">token.im</a></td>
+                  <td><a href="/assets/static/0028.html" target="_blank">View the tutorial</a></td>
+                </tr>
+                <tr>
+                  <td><img src="assets/index/picture/ownbit.png"></td>
+                  <td><a href="https://ownbit.io/en/download/" target="_blank">ownbit.io</a></td>
+                  <td><a href="/assets/static/0017.html" target="_blank">View the tutorial</a></td>
+                </tr>
+                <tr>
+                  <td><img src="assets/index/picture/atoken.png"></td>
+                  <td><a href="https://trustwallet.com/zh_CN/" target="_blank">trustwallet.com</a></td>
+                  <td><a href="/assets/static/0015.html" target="_blank">View the tutorial</a></td>
+                </tr>
+                <tr>
+                  <td><img src="assets/index/picture/tronlink.png"></td>
+                  <td><a href="https://www.tronlink.org/cn/" target="_blank">tronlink.org</a></td>
+                  <td><a
+                      href="https://tron7010.zendesk.com/hc/en-us/articles/360027090691-How-to-download-TronLink-Chrome-and-create-wallet-"
+                      target="_blank">View the tutorial</a></td>
+                </tr>
+                <tr>
+                  <td><img src="assets/index/picture/bitpie.png"></td>
+                  <td><a href="https://bitpie.com/" target="_blank">bitpie.com</a></td>
+                  <td><a href="/assets/static/0019.html" target="_blank">View the tutorial</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div data-num="2" class="item b2">
+            <h4>Buy USDT and TRX on the exchange</h4>
+            <div class="body">
+              <table>
+                <tr>
+                  <th style="width:30%;">Platform</th>
+                  <th style="width:30%;">Website</th>
+                  <th style="width:40%;">Tutorial</th>
+                </tr>
+                <!-- <tr style="border-bottom:0;">
+										<td><img src="assets/index/picture/xinglong.PNG"></td>
+										<td><a href="javascript:;" target="_blank">360usdt.com</a></td>
+										<td><a href="tutorials1.html" target="_blank"><label class="pdiv">查看教程</label><label class="mdiv">教程</label></a></td>
+									</tr>
+									<tr>
+										<td colspan="3" class="tip" style=""><span>支持电脑和苹果手机使用</span></td>
+									</tr> -->
+                <tr>
+                  <td><img src="assets/index/picture/gate.png"></td>
+                  <td><a href="https://www.gate.io/cn" target="_blank">gate.io</a></td>
+                  <td><a href="https://www.gate.io/cn/help/guide" target="_blank"><label class="pdiv">View the
+                        tutorial</label><label class="mdiv">Tutorial</label></a></td>
+                </tr>
+                <tr>
+                  <td><img src="assets/index/picture/huobi.png"></td>
+                  <td><a href="https://www.huobi.com/zh-cn/" target="_blank">huobi.com</a></td>
+                  <td><a href="https://www.huobi.com/support/zh-cn/list/360000010372" target="_blank"><label
+                        class="pdiv">View the tutorial</label><label class="mdiv">Tutorial</label></a></td>
+                </tr>
+                <tr>
+                  <td><img src="assets/index/picture/binance.png"></td>
+                  <td><a href="https://www.binance.com/zh-CN" target="_blank">binance.com</a></td>
+                  <td><a href="https://academy.binance.com/zh/articles/binance-beginner-s-guide" target="_blank"><label
+                        class="pdiv">View the tutorial</label><label class="mdiv">Tutorial</label></a></td>
+                </tr>
+                <tr>
+                  <td><img src="assets/index/picture/okex.png"></td>
+                  <td><a href="https://www.okex.com/cn" target="_blank">okex.com</a></td>
+                  <td><a
+                      href="https://www.okex.com/support/hc/zh-cn/sections/360000033031-%E6%96%B0%E6%89%8B%E5%BF%85%E8%AF%BB"
+                      target="_blank"><label class="pdiv">View the tutorial</label><label
+                        class="mdiv">Tutorial</label></a></td>
+                </tr>
+                <tr>
+                  <td><img src="assets/index/picture/zb.png"></td>
+                  <td><a href="https://www.zb.com/cn/" target="_blank">zb.com</a></td>
+                  <td><a href="https://www.zb.com/help/guides/1" target="_blank"><label class="pdiv">View the
+                        tutorial</label><label class="mdiv">Tutorial</label></a></td>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+          <div data-num="3" class="item b3">
+            <h4>Transfer money to this platform to participate in the lucky draw</h4>
+            <div class="body">
+              <h5 class="pdiv">Successfully participate in the lucky draw after transferring money to the specified
+                amount to the address below</h5>
+              <!-- <h5 class="mdiv">向下方地址按规定金额转账<br>即成功参与抽奖</h5> -->
+              <h5 class="mdiv">Transfer the specified amount to the address below<br>Participate in the lucky draw</h5>
+              <div class="text">
+                <p>Official collection address of the platform</p>
+                <span class="hashAddress"></span>
+              </div>
+              <div class="copyBut" id="firstCopyBut" onclick="copy('#hashAddress','#firstCopyBut')">click copy</div>
+              <div class="qr"><i></i></div>
+            </div>
+          </div>
+          <div data-num="4" class="item b4">
+            <h4>Win the lottery and get the automatic payment</h4>
+            <div class="body">
+              <p>The lottery result is <span>letters + numbers</span> or <span>numbers + letters</span> you will
+                successfully win the lottery! You can get 1.95 times the digital coin reward</p>
+              <div class="icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--为什么选择-->
+  <a id="why"></a>
+  <div class="block whyDiv">
+    <div class="mainDiv">
+      <div class="title wow fadeInDown">
+        <h1>Why did you choose us</h1>
+      </div>
+      <div class="show">
+        <div class="buts">
+          <ul>
+            <li data-num="1" class="b1 wow bounceIn" data-wow-delay="0.3s"><em><i></i></em><span>Fair and
+                transparent</span></li>
+            <li data-num="2" class="b2 wow bounceIn" data-wow-delay="0.6s"><em><i></i></em><span>Safe and
+                reliable</span></li>
+            <li data-num="3" class="b3 wow bounceIn" data-wow-delay="0.9s"><em><i></i></em><span class="pdiv">Minimalist
+                and fast</span><span class="mdiv">easy to win</span></li>
+            <li data-num="4" class="b4 wow bounceIn" data-wow-delay="1.2s"><em><i></i></em><span>Exclusive customer
+                service</span></li>
+          </ul>
+        </div>
+        <div class="blocks wow fadeInUp" data-wow-delay="0.6s">
+          <div data-num="4" data-wow-delay="0.3s" class="item b4 wow fadeIn pdiv">
+            <h4>Exclusive customer service</h4>
+            <div class="body">
+              <ul>
+                <li>One-on-one explanation, efficient reply</li>
+                <li>There are many contact information for you to choose freely</li>
+              </ul>
+
+              <div class="connect">
+                <!-- <div class="email">
+										<em id="emailText">@gmail.com</em>
+										<span id="emailCopyBut" onclick="copy('#emailText','#emailCopyBut')">复制</span>
+									</div> -->
+                <ul>
+                  <a class="tg telegram" href="" target="_blank">
+                    <div class="tg"><i></i><span>Telegram</span></div>
+                  </a>
+                  <a class="wa whatsapp" href="" target="_blank">
+                    <div class="wa"><i></i><span>whatsapp</span></div>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-num="1" data-wow-delay="0.6s" class="item b1 wow fadeIn cur">
+            <h4>Fair and transparent</h4>
+            <div class="body">
+              <ul>
+                <li>We defend everyones's right to justice</li>
+                <li>Block hash value relies on the random generation of decentralized blockchain networks，
+                  <div>and anyone can query on the blockchain anytime and anywhere</div>
+                </li>
+                <li>Realize the unmaneuverable data of the platform，
+                  <div>and all records are transparent and traceable</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div data-num="2" data-wow-delay="0.9s" class="item b2 wow fadeIn">
+            <h4>Safe and reliable</h4>
+            <div class="body">
+              <ul>
+                <li>We are committed to ensuring the security of customer information and property</li>
+                <li>Real-name registration is not required</li>
+                <li>No need to bind any personal information</li>
+                <li>No frozen card risk</li>
+                <li>No need to recharge deposits</li>
+                <li>No withdrawal request review is required</li>
+                <li>No payment flow limit</li>
+                <li>The platform fund pool can be checked at any time, and there is no need to worry about the broken
+                  platform funds</li>
+              </ul>
+            </div>
+          </div>
+          <div data-num="3" data-wow-delay="1.2s" class="item b3 wow fadeIn">
+            <h4>Minimalist and fast</h4>
+            <div class="body">
+              <ul>
+                <li>We pursue minimalist processes/fast lottery distribution</li>
+                <li>Just need a [decentralized] digital wallet to participate in the lucky draw now</li>
+                <li>No gameplay, strategy, device restrictions, anytime, anywhere</li>
+                <li>Automatically arrive within 10 seconds after winning the lottery, the game is uninterrupted, and the
+                  experience is smooth</li>
+                <!-- <li>无任何玩法、策略、设备限制，随时随地
+										<div>随心所欲</div></li> -->
+                <!-- <li>中奖后10秒内自动到账，游戏不间断，
+										<div>体验酣畅淋漓</div></li> -->
+              </ul>
+
+            </div>
+          </div>
+          <div data-num="4" data-wow-delay="1.5s" class="item b4 wow fadeIn">
+            <h4>Exclusive customer service</h4>
+            <div class="body">
+              <ul>
+                <li>One-on-one explanation, efficient reply</li>
+                <li>There are many contact information for you to choose freely</li>
+              </ul>
+              <div class="connect">
+                <!-- <div class="email">
+										<em id="emailText">@gmail.com</em>
+										<span id="emailCopyBut" onclick="copy('#emailText','#emailCopyBut')">复制</span>
+									</div> -->
+                <ul>
+                  <a class="tg telegram" href="" target="_blank">
+                    <div class="tg"><i></i><span>Telegram</span></div>
+                  </a>
+                  <a class="wa whatsapp" href="" target="_blank">
+                    <div class="wa"><i></i><span>whatsapp</span></div>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div data-num="1" data-wow-delay="1.8s" class="item b1 wow fadeIn pdiv">
+            <h4>Fair and transparent</h4>
+            <div class="body">
+              <ul>
+                <li>We defend everyones's right to justice</li>
+                <li>Block hash value relies on the random generation of decentralized blockchain networks, and anyone
+                  can query on the blockchain anytime and anywhere</li>
+                <li>Realize the unmaneuverable data of the platform, and all records are transparent and traceable</li>
+                <!-- <li>区块哈希值依托于去中心化的区块链网络随机
+										<div>生成，任何人随时随地都可以在区块链上查询</div></li>
+									<li>真正做到平台不可操控数据，所有记录
+										<div>透明有迹可查</div></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--兑换-->
+  <!-- <a id="exchange"></a>
+		<div class="block exchangeDiv">
+			<div class="mainDiv">
+				<div class="title wow fadeInDown"></div>
+				<div class="rate wow fadeInUp" data-wow-delay="0.2s">当前兑换率：<i>载入中...</i></div>
+				<div class="form wow fadeInLeft" data-wow-delay="0.5s">
+					<div class="type">
+						<ul>
+							<li data-type="usdt_to_trx" class="cur">USDT兑换TRX</li>
+							<li data-type="trx_to_usdt">TRX兑换USDT</li>							
+						</ul>
+					</div>
+					<div class="input b1"><input type="number"><span>USDT</span></div>
+					<div class="text">可兑换</div>
+					<div class="input b2"><input type="number"><span>TRX</span></div>
+					<button>计算</button>
+				</div>
+				<div class="note wow fadeInRight" data-wow-delay="0.5s">
+					<div class="qrInfo">
+						<div class="text">如果您需要使用USDT兑换TRX币或使用TRX币兑换USDT币，可以向下方地址转账，平台将免费在10秒内给您返还同等价值的TRX或USDT币。</div>						
+						<div class="qr pdiv"><i></i><span>扫码转账兑换</span></div>
+					</div>
+					<div class="hashInfo">
+						<button id="exchangeCopyBut" onclick="copy('#exchangeHashAddress','#exchangeCopyBut')"><i></i>复制</button>
+						<h4>平台官方兑换地址</h4>
+						<span id="exchangeHashAddress">TLrfwzSsXw3nxSa2Q5PfiCqtCwnc5hHHHH</span>
+					</div>
+					<div class="qr mdiv"><i></i><span>扫码转账兑换</span></div>
+				</div>
+			</div>
+		</div> -->
+
+  <!--排行榜-->
+  <!-- <a id="ranking"></a>
+		<div class="block rankingDiv">
+			<div class="mainDiv">
+				<div class="title wow fadeInDown"></div>
+				<div class="nav">
+					<ul>
+						<div class="currencys wow fadeInRight mdiv" data-wow-delay="0.9s">
+							<span data-currency="trx" class="cur">TRX币</span>
+							<span data-currency="usdt">USDT币</span>
+						</div>
+						<li data-wow-delay="0.3s" class="wow fadeInDown cur" data-type="newest">实时派彩</li>
+						<li data-wow-delay="0.6s" class="wow fadeInDown" data-type="day"><span class="pdiv">日盈利排行</span><span class="mdiv">日排行</span></li>
+						<li data-wow-delay="0.9s" class="wow fadeInDown" data-type="week"><span class="pdiv">周盈利排行</span><span class="mdiv">周排行</span></li>
+						<li data-wow-delay="1.2s" class="wow fadeInDown" data-type="month"><span class="pdiv">月盈利排行</span><span class="mdiv">月排行</span></li>
+						<div class="currencys wow fadeInRight pdiv" data-wow-delay="0.9s">
+							<span data-currency="trx" class="cur">TRX币</span>
+							<span data-currency="usdt">USDT币</span>
+						</div>
+					</ul>
+					<div class="list wow fadeInUp" data-wow-delay="0.2s"><table><tr><td class="loadTd"><img src="assets/index/picture/rankingAjax.gif"><br>载入中……</td></tr></table></div>
+				</div>
+			</div>
+		</div> -->
+
+  <!--常见问题-->
+  <a id="faq"></a>
+  <div class="block faqDiv">
+    <div class="mainDiv">
+      <div class="title wow fadeInDown">
+        <h1>Question</h1>
+      </div>
+      <div class="list">
+        <ul>
+          <li class="wow fadeInUp">
+            Q1: What is Block hash? <div class="wow fadeInUp">
+              Block hash value is the DNA of a piece of data, and each block hash value is unique, random and
+              incomprecible. <a href="https://baike.baidu.com/item/Hash/390310" target="_blank">Click to view the
+                introduction of Baidu Encyclopedia hash value.</a>。
+            </div>
+            <button class="mdiv">expand</button>
+          </li>
+          <li class="wow fadeInUp">
+            Q2: What is blockchain? <div class="wow fadeInUp">
+              Blockchain is essentially a shared database with data or information stored in it. It has the
+              characteristics of non-counterfeiting, leaving traces throughout the whole process, traceability, openness
+              and transparency, collective maintenance, etc.<br>
+              <a href="https://baike.baidu.com/item/%E5%8C%BA%E5%9D%97%E9%93%BE/13465666" target="_blank">Click to view
+                the introduction of Baidu Encyclopedia blockchain.</a>。
+            </div>
+            <button class="mdiv">expand</button>
+          </li>
+          <li class="wow fadeInUp">
+            Q3: Centralized wallet? Decentralized wallet? Why can't the central wallet query the transfer? <div
+              class="wow fadeInUp">
+              For example, your wallet address is A. You transfer address E to 10 USDDT, but you use the transaction
+              hash value to query, and you can only query the transfer of a random ledger address B (or C or D, etc.) to
+              E by the service provider. Similarly, E can't know whether you transferred these 10 USDT, because E can
+              only see that the account book address B transferred 10 USDT to him. This is why the central wallet cannot
+              query the real transfer information on the blockchain. <br>
+              <a href="https://zhuanlan.zhihu.com/p/98203076" target="_blank">Click to view the difference between
+                blockchain wallets</a><br>
+            </div>
+            <button class="mdiv">expand</button>
+          </li>
+          <li class="wow fadeInUp">
+            Q4: Why do I win or not in a row? <div class="wow fadeInUp">
+              First of all, it is low-probability events（<a
+                href="https://baike.baidu.com/item/%E5%B0%8F%E6%A6%82%E7%8E%87%E4%BA%8B%E4%BB%B6/7339473"
+                target="_blank">definition of low-probability events</a>），that do not win many times in a row. Secondly,
+              winning and not winning are random events, and the frequency of random events tends to be stable. In
+              non-iterative situations, the probability of things appearing is equal to everyone, and in this case,
+              everyone is fair. At the same time, random events will follow the law of large numbers (the test is
+              repeated many times under the condition that the test remains unchanged, and the frequency of random
+              events is similar to the definition of its probability large number law). In the case of increasing
+              transfer frequency, the probability of winning and not winning the lottery tends to a stable value.
+              Therefore, please continue to transfer money. As the frequency of transfer increases, the total
+              probability of winning the lottery will increase. </div>
+            <button class="mdiv">expand</button>
+          </li>
+          <li class="wow fadeInUp">
+            Q5: Why is it delayed? <div class="wow fadeInUp">
+              Because blockchain technology will conduct multiple accounting, comparison and confirmation in order to
+              ensure the security of funds. Therefore, the calculation speed is slow, but the most important thing is
+              safety.<br>
+              <a href="https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/articles/1_conception/why_blockchain_slow.html"
+                target="_blank">Click to view the speed dilemma of blockchain: "The most important thing is trust, slow
+                down</a>
+            </div>
+            <button class="mdiv">expand</button>
+          </li>
+          <li class="wow fadeInUp">
+            Q6: Why are there so many USDT type options when converting coins? Which one should I choose? <div
+              class="wow fadeInUp">
+              There are many well-known public chains around the world（<a
+                href="https://www.tuoluocaijing.cn/article/detail-10030784.html" target="_blank">click to view the
+                introduction of world-renowned public chains</a>）that support USDT transfer, while Hash Entertainment is
+              based on wave field TRC20 technology. Therefore, the transfer address of Hash Entertainment belongs to
+              USDT-TRC20, and you should choose USDT-TRC20; if you choose another type, Hash Entertainment will not
+              receive your USDT, which will cause losses to both you and Hash Entertainment. </div>
+            <button class="mdiv">expand</button>
+          </li>
+          <li class="wow fadeInUp">
+            Q7: What should I do if I transfer the wrong address or select the wrong type of currency when transferring
+            money? Can it be retrieved? <div class="wow fadeInUp">
+              For example, you should choose USDT-TRC20 type when you transfer money to us, but if you choose other
+              types USDT-OMNI or USDT-ERC20, then there will be a loss of coins, which cannot be recovered. <a
+                href="https://www.feixiaohao.cc/news/8183926.html" target="_blank">Click to view what should I do if I
+                transfer the wrong currency?</a>
+            </div>
+            <button class="mdiv">expand</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--提示框-->
+  <div id="tipDiv"></div>
+
+  <!--边栏-->
+  <div class="sideDiv pdiv">
+    <ul>
+      <li class="qr" data-type="qr"><i></i>transfer money</li>
+      <li class="account" data-type="account"><i></i>Account transfer</li>
+      <li class="service" data-type="service"><i></i>customer service</li>
+    </ul>
+  </div>
+
+  <!--信息框-->
+  <div class="winMask"></div>
+  <div class="winDiv">
+    <div class="colse"></div>
+    <!--扫码转账-->
+    <div class="item qr">
+      <h2>transfer money</h2>
+      <div class="body">
+        <em class="transQr"></em>
+        <span>transfer money</span>
+      </div>
+    </div>
+    <!--账号转账-->
+    <div class="item account">
+      <h2>Account transfer</h2>
+      <div class="body">
+        <em class="hashAddress"></em>
+        <button id="winCopyBut" onclick="copy('#hashAddress','#winCopyBut')">copy address</button>
+      </div>
+    </div>
+    <!--联系客服-->
+    <div class="item service">
+      <h2>customer service</h2>
+      <div class="body">
+        <!-- <div class="email">
+						<em id="winEmailText">@gmail.com</em>
+						<span id="winEmailCopyBut" onclick="copy('#winEmailText','#winEmailCopyBut')">复制</span>
+					</div> -->
+        <ul>
+          <a class="tg telegram" href="" target="_blank">
+            <div class="tg"><i></i><span>Telegram</span></div>
+          </a>
+          <a class="wa whatsapp" href="" target="_blank">
+            <div class="wa"><i></i><span>whatsapp</span></div>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <!-- 语言切换 -->
+    <div class="item yy">
+
+      <ul style="list-style: none;">
+        <li>
+          <a href="index.html">简体中文</a>
+        </li>
+
+        <li>
+          <a href="/index_en.html">English</a>
+        </li>
+      </ul>
+    </div>
+
+    <!--相关软件下载-->
+    <div class="item soft">
+      <h2>相关软件下载</h2>
+      <div class="body">
+        <!-- <ul>
+						<li><strong>VPN软件推荐：</strong></li>
+						<li class="link">佛跳墙VPN：<a target="_blank" href="javascript:;">点击下载</a><br></li>
+						<li class="link">旋风加速VPN：<a target="_blank" href="javascript:;">点击下载</a><br></li>
+						
+						<li><strong>其他软件下载：</strong></li>
+						<li class="link">Telegram客户端：<a target="_blank" href="javascript:;">点击下载</a><br></li>
+						<li class="link">兴隆钱包AI智能追踪电脑下单系统：<a target="_blank" href="javascript:;">点击下载</a><br></li>
+					</ul> -->
+      </div>
+    </div>
+
+    <div class="item login">
+      <h2>Login</h2>
+      <div class="body">
+        <div class="LoginOrRigFrom LORs">
+          <input placeholder="Please enter wallet address or username" name="account" type="text" value="">
+          <input placeholder="Please enter password" name="password" type="password" value="">
+        </div>
+
+        <div class="LoginOrRigBtn LORs">
+          <input class="lgB" style="min-width:0px !important;width:60%;" type="submit" name="Login_btn_en" value="Login">
+        </div>
+
+        <div class="LORs">
+          <p>Solemn reminder:</p>
+          <p>User ID: The user ID is automatically generated after registration, and the wallet address or ID can be
+            entered when logging in to the user ID.</p>
+          <p>Password: The login password is not the wallet payment password. After registration, you can log in with
+            confidence</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="item reg">
+      <h2>Reg</h2>
+      <div class="body">
+        <div class="LoginOrRigFrom LORs">
+          <input placeholder="Please enter wallet address" name="reg_address" type="text" value="">
+          <input placeholder="Please enter password" name="reg_password" type="password" value="">
+        </div>
+        <input type="hidden" name="inviteCode" value="">
+        <div class="LoginOrRigBtn LORs">
+          <input class="lgB" style="min-width:0px !important;width:60%;" type="submit" name="Ret_Login_Btn_en" value="Reg">
+        </div>
+        <div class="LORs">
+          <p>Solemn reminder:</p>
+          <p>User ID: The user ID is automatically generated after registration, and the wallet address or ID can be
+            entered when logging in to the user ID.</p>
+          <p>Password: The login password is not the wallet payment password. After registration, you can log in with
+            confidence</p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+ <div id="chatra" data-turbolinks-permanent="" class="chatra--side-bottom chatra--pos-right chatra--style-tab chatra--visible"
+         style="width: 110px; height: 40px; transform: none; z-index: 9999;">
+        <button class="header header--offline header--flatheader--flat js-header" style="background-color: rgb(216, 34, 107);" type="button">
+            <div class="header__inner js-header-inner" style="color: rgb(255, 255, 255);">
+                <span class="header__welcome-text">
+                    <a href="https://static.chat-100.com/standalone.html?appId=c57b0eb373d74e0790d675c87c21698a">Message!</a>
+                </span>
+            </div>
+        </button>
+    </div>
+  <!--引入JS文件-->
+  <script src="assets/index/js/coco-message.min.js"></script>
+
+  <script type="text/javascript">
+    cocoMessage.config({
+      duration: 2000
+    })
+  </script>
+
+  <script src="assets/index/js/main.js" type="text/javascript"></script>
+  <!-- <script src="assets/index/js/api.js" type="text/javascript" ></script> -->
+  <script type="text/javascript">
+    var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 30,
+      mobile: true
+    });
+    wow.init();
+  </script>
+
+  <script>
+    let account = localStorage.getItem('account')
+    if (account) {
+      $('.loginBtn a').attr('href', '/index/user/index_en.html').html('User Info')
+      is_login = true;
+    }
+
+
+    if (is_login) {
+      is_login = true;
+    } else {
+      is_login = false;
+    }
+
+    if (is_login) {
+      $('.go123').removeAttr('data-href')
+      $('.go456').removeAttr('data-href')
+      $('.go123').html('User Info')
+      $('.go123').attr("href", './index/user/index_en.html')
+      username = '';
+      $('.go456').html(account)
+
+    }
+  </script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5e8202b9d80d12fab9742af457ffb86e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+
+</html>

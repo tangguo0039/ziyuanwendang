@@ -1,0 +1,2309 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #312d3a;
+  font-family: "Microsoft YaHei", "微软雅黑";
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+body {
+  background: url(../image/firstDivBg.jpg) no-repeat top center;
+}
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+i,
+em {
+  font-style: normal;
+}
+button {
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+.winDiv .qr em {
+  text-align: center;
+}
+.winDiv .qr em img {
+  margin-top: 45px;
+}
+.block {
+  display: table;
+  width: 100%;
+}
+.block .mainDiv {
+  width: 1250px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*电脑版隐藏手机版内容*/
+@media (min-width: 1023px) {
+  .mdiv {
+    display: none !important;
+  }
+}
+
+/*登陆*/
+/*.loginBtn {*/
+/*  float: right !important;*/
+/*}*/
+
+/*注册*/
+/*.regBtn {*/
+  /*float: right !important;*/
+/*  left: 50%;*/
+/*}*/
+
+/*提示层*/
+#tipDiv {
+  display: table;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+}
+#tipDiv {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(#f68d6a, #ca5f3c);
+  transition: all 1s;
+  opacity: 0;
+}
+
+/*侧边栏*/
+.sideDiv {
+  position: fixed;
+  display: flex;
+  top: 50%;
+  right: 36px;
+  transform: translate(0, -50%);
+  z-index: 99;
+}
+.sideDiv {
+  width: 96px;
+  height: 348px;
+  padding: 40px 19px;
+  border-radius: 62px;
+  box-sizing: border-box;
+}
+.sideDiv {
+  background: linear-gradient(
+    180deg,
+    rgba(254, 255, 254, 0.14) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+.sideDiv ul li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.sideDiv ul li:hover {
+  opacity: 1;
+}
+.sideDiv ul li i {
+  display: block;
+  margin: auto auto 2px auto;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.sideDiv ul li.qr i {
+  background-image: url(../image/side1.png);
+}
+.sideDiv ul li.account i {
+  background-image: url(../image/side2.png);
+}
+.sideDiv ul li.service i {
+  background-image: url(../image/side3.png);
+}
+
+/*浮窗*/
+.winMask {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 555;
+  display: none;
+}
+.winDiv {
+  display: table;
+  width: 550px;
+  position: fixed;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 666;
+  display: none;
+}
+.winDiv {
+  background-image: linear-gradient(150deg, #292533, #30293d);
+  padding: 20px;
+  border-radius: 20px;
+}
+.winDiv h2 {
+  font-size: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 0 18px 15px;
+  margin: 0 -12px;
+}
+.winDiv .colse {
+  background: url(../image/winColse.png);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  position: absolute;
+}
+.winDiv .colse {
+  margin-left: 520px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.winDiv .colse:hover {
+  opacity: 1;
+}
+.winDiv .body {
+  margin-top: 20px;
+}
+
+.winDiv .qr em {
+  display: block;
+  background: url(../image/qrbg.png) no-repeat;
+  width: 300px;
+  height: 300px;
+  background-size: 100% 100%;
+  margin: 0px auto auto auto;
+}
+.winDiv .qr em i {
+  float: left;
+  margin: 68px 0 0 83px;
+  width: 132px;
+  height: 132px;
+  border-radius: 30px;
+}
+.winDiv .qr em i {
+  background: url(../image/qrcode.png) no-repeat;
+  background-size: 100% 100%;
+}
+/*.winDiv .qr em i {*/
+/*    float: left;*/
+/*    margin: 68px 0 0 83px;*/
+/*    width: 132px;*/
+/*    height: 132px;*/
+/*    border-radius: 30px;*/
+/*}*/
+.winDiv .qr span {
+  display: block;
+  text-align: center;
+  margin: -30px 0 30px 0;
+  font-size: 18px;
+}
+
+.winDiv .account em {
+  display: block;
+  text-align: center;
+  margin: 60px 0 50px 0;
+  font-size: 18px;
+}
+.winDiv .account button {
+  display: block;
+  margin: 30px auto;
+  background-image: linear-gradient(#ca5f3c, #a5393c);
+  height: 50px;
+  border-radius: 40px;
+  width: 130px;
+}
+.winDiv .account button {
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: 0;
+  color: #fff;
+  outline: none;
+}
+.winDiv .account button:hover {
+  background-image: linear-gradient(#f68d6a, #ca5f3c);
+}
+
+.winDiv .service .email {
+  padding-left: 33px;
+  line-height: 1.5;
+  margin-left: 138px;
+  margin-top: 30px;
+}
+.winDiv .service .email {
+  background: url(../image/whyEmailIcon.png) no-repeat;
+  background-size: 24px;
+}
+.winDiv .service .email span {
+  text-decoration: underline;
+  color: #ffe9a7;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.winDiv .service .email span:hover {
+  color: #f9db50;
+}
+.winDiv .service ul {
+  margin: 50px 0 50px 120px;
+  display: table;
+}
+.winDiv .service ul div {
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+.winDiv .service ul div i {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto auto 10px auto;
+}
+.winDiv .service ul div i {
+  background: url(../image/whyTGIcon.png);
+  background-size: cover;
+}
+.winDiv .service ul div.fb i {
+  background-image: url(../image/whyFbIcon.png);
+}
+.winDiv .service ul div.wa i {
+  background-image: url(../image/whyWAIcon.png);
+}
+
+.winDiv .soft .body {
+  line-height: 2;
+}
+.winDiv .soft .body ul {
+  padding: 0 10px 30px 10px;
+}
+.winDiv .soft .body li strong {
+  font-size: 18px;
+}
+.winDiv .soft .body li.link {
+  padding-left: 30px;
+}
+.winDiv .soft .body li.link a {
+  color: #c39a66;
+}
+.winDiv .soft .body li.link a:hover {
+  color: #feca88;
+}
+
+/* .winDiv .yy ul{} */
+.winDiv .yy ul li {
+  text-align: center;
+  display: block;
+  line-height: 38px;
+}
+
+.winDiv .yy ul li a {
+  text-align: center;
+}
+
+.winDiv .login h2 {
+  text-align: center;
+}
+.winDiv .login .body {
+  line-height: 2;
+}
+.winDiv .login .body ul {
+  padding: 0 10px 30px 10px;
+}
+.winDiv .login .body li strong {
+  font-size: 18px;
+}
+.winDiv .login .body li.link {
+  padding-left: 30px;
+}
+.winDiv .login .body li.link a {
+  color: #c39a66;
+}
+.winDiv .login .body li.link a:hover {
+  color: #feca88;
+}
+
+.winDiv .reg h2 {
+  text-align: center;
+}
+.winDiv .reg .body {
+  line-height: 2;
+}
+.winDiv .reg .body ul {
+  padding: 0 10px 30px 10px;
+}
+.winDiv .reg .body li strong {
+  font-size: 18px;
+}
+.winDiv .reg .body li.link {
+  padding-left: 30px;
+}
+.winDiv .reg .body li.link a {
+  color: #c39a66;
+}
+.winDiv .reg .body li.link a:hover {
+  color: #feca88;
+}
+
+.LORs {
+  text-align: center;
+  /* width: 80%; */
+  left: 10%;
+  top: 100px;
+  margin-bottom: 30px;
+}
+
+.LoginOrRigFrom input {
+  width: 60%;
+  height: 32px;
+  left: 844px;
+  top: 387px;
+  background: #232128;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.LoginOrRigBtn {
+  width: 100%;
+}
+.LoginOrRigBtn .lgB {
+  min-width: 0px !important;
+  width: 60%;
+  color: white;
+  background: #2f283c;
+  border: 1px solid;
+  height: 40px;
+  border-radius: 5px;
+}
+
+/*顶部导航条*/
+.headNav {
+  background-color: rgba(49, 45, 58, 0.2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 88;
+  transition: all 1s;
+}
+.headNav.in {
+  background-color: rgba(56, 52, 64, 0.98);
+}
+.headNav .mainDiv {
+  height: 88px;
+}
+.headNav .logo {
+  float: left;
+  width: 146px;
+  height: 43px;
+  margin: 23px 0 0 30px;
+}
+/*.headNav .logo{ float:left; width:146px; height:43px; background:url(../image/logo_1.png) no-repeat; background-size:cover; margin:23px 0 0 30px; }*/
+.headNav ul {
+  padding-top: 34px;
+  margin-left: 150px;
+}
+.headNav ul li {
+  float: left;
+  margin-left: 20px;
+}
+.headNav ul li a {
+  transition: all 0.5s;
+}
+.headNav ul li a:hover {
+  color: #ffca57;
+}
+
+/*首屏*/
+.firstDiv {
+  height: 700px;
+}
+.firstDiv .mainDiv {
+  height: 700px;
+}
+.firstDiv h3,
+.firstDiv .slogan,
+.firstDiv .qr,
+.firstDiv .hashInfo,
+.firstDiv .coins {
+  position: absolute;
+}
+.firstDiv h3 {
+  margin: 180px 0 0 50px;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  width: 400px;
+}
+.firstDiv .slogan {
+  margin: 260px 0 0 50px;
+  font-size: 72px;
+  font-weight: 500;
+  width: 680px;
+}
+.firstDiv .slogan span {
+  float: left;
+  margin-right: 50px;
+}
+.firstDiv .qr {
+  margin: 420px 0 0 0px;
+  background: url(../image/qrbg.png) no-repeat;
+  width: 250px;
+  height: 250px;
+  background-size: 100% 100%;
+}
+.firstDiv .qr i {
+  display: block;
+  margin: 55px 0 0 70px;
+  width: 110px;
+  height: 110px;
+  border-radius: 30px;
+}
+.firstDiv .qr i {
+  background: url(../image/qrcode.png) no-repeat;
+  background-size: 100% 100%;
+}
+.firstDiv .hashInfo {
+  margin: 490px 0 0 250px;
+  width: 480px;
+  height: 80px;
+  background: rgba(58, 51, 73, 1);
+  border-radius: 80px;
+  z-index: 10;
+}
+.firstDiv .hashInfo .text {
+  float: left;
+  margin: 18px 0 0 50px;
+}
+/* .firstDiv .hashInfo .text h4{ margin-bottom:5px; font-size:16px; letter-spacing:2px; } */
+.firstDiv .hashInfo .text h4 {
+  margin-bottom: 5px;
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+.firstDiv .hashInfo .text span {
+  font-size: 13px;
+}
+.firstDiv .hashInfo .copyBut {
+  float: right;
+  background-image: linear-gradient(#ca5f3c, #a5393c);
+  height: 80px;
+  border-radius: 40px;
+  width: 130px;
+}
+.firstDiv .hashInfo .copyBut {
+  line-height: 80px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.firstDiv .hashInfo .copyBut:hover {
+  background-image: linear-gradient(#f68d6a, #ca5f3c);
+}
+.firstDiv .coins {
+  margin: 30px 0 0 650px;
+  background: url(../image/coins.png);
+  width: 550px;
+  height: 700px;
+  background-size: 715px 715px;
+}
+
+/*规则*/
+.ruleDiv {
+  display: table;
+  background-color: #312d3a;
+  padding-top: 80px;
+}
+.ruleDiv .limitBlock,
+.ruleDiv .side {
+  float: left;
+}
+.ruleDiv .limitBlock {
+  width: 520px;
+  height: 320px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 100px 0 0 20px;
+}
+.ruleDiv .limitBlock {
+  background-image: linear-gradient(150deg, #ca5f3c, #a3383c);
+  box-shadow: 1px 1px 1px #00000059;
+}
+.ruleDiv .limitBlock .icon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 320px;
+}
+.ruleDiv .limitBlock .icon {
+  background: url(../image/limitIcon.png);
+  background-size: 100% 100%;
+}
+.ruleDiv .limitBlock h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0 0 20px;
+}
+.ruleDiv .limitBlock ul {
+  font-size: 16px;
+  padding-left: 30px;
+  margin: 30px 0 0 18px;
+  width: 430px;
+}
+.ruleDiv .limitBlock ul li {
+  list-style-type: decimal-leading-zero;
+  margin-top: 16px;
+  line-height: 1.1;
+}
+.ruleDiv .side {
+  margin-left: 120px;
+}
+/*.ruleDiv .side .ruleTitle{ background:url(../image/ruleTitle.png); width:280px; height:82px; background-size:100% 100%; }*/
+.ruleDiv .side .ruleTitle {
+  width: 280px;
+  height: 82px;
+}
+.ruleDiv .side .ruleTitle {
+  margin: 30px 0 30px 190px;
+  text-align: center;
+}
+.ruleDiv .ruleBlock {
+  width: 520px;
+  height: 320px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.ruleDiv .ruleBlock {
+  background-image: linear-gradient(150deg, #4a4757, #383547);
+  box-shadow: 1px 1px 1px #00000059;
+}
+.ruleDiv .ruleBlock .icon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin: 175px 0 0 433px;
+}
+.ruleDiv .ruleBlock .icon {
+  background: url(../image/ruleIcon.png);
+  background-size: 100% 100%;
+}
+.ruleDiv .ruleBlock h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0 0 20px;
+}
+.ruleDiv .ruleBlock ul {
+  font-size: 16px;
+  padding-left: 30px;
+  margin: 30px 0 0 18px;
+  width: 430px;
+}
+.ruleDiv .ruleBlock ul li {
+  list-style-type: decimal-leading-zero;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+/*实例*/
+.caseDiv {
+  display: table;
+  padding-bottom: 80px;
+}
+.caseDiv h3 {
+  text-align: center;
+  margin: 80px 0 50px 0;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.caseDiv .caseList {
+  margin-left: 20px;
+}
+.caseDiv .caseList .item {
+  float: left;
+  border: 2px solid #4a4757;
+  width: 220px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.caseDiv .caseList .item {
+  background-image: linear-gradient(150deg, #342f3e, #262132);
+  margin-right: 50px;
+  height: 290px;
+}
+.caseDiv .caseList .item:last-child {
+  margin-right: 0;
+}
+.caseDiv .caseList .item p {
+  margin-bottom: 14px;
+  line-height: 0.9;
+}
+.caseDiv .caseList .item p:nth-child(3) {
+  display: block;
+  height: 15px;
+  font-size: 17px;
+}
+.caseDiv .caseList .item p span {
+  color: #ffae00;
+}
+.caseDiv .caseList .item p i {
+  color: #ff0000;
+  padding: 0 3px;
+  font-size: 20px;
+}
+.caseDiv .caseList .item p em {
+  color: #888;
+  padding: 0 3px;
+  font-size: 20px;
+}
+
+/*流程*/
+.circuitDiv {
+  background: #2a2734;
+  padding-bottom: 80px;
+}
+.circuitDiv .title {
+  width: 404px;
+  height: 82px;
+  margin: 80px auto 80px auto;
+  text-align: center;
+}
+/*.circuitDiv .title{ background:url(../image/circuitTitle.png); background-size:100% 100%; }*/
+.circuitDiv .side {
+  float: left;
+  margin-left: 30px;
+}
+.circuitDiv .side li {
+  width: 440px;
+  height: 50px;
+  padding: 30px 20px;
+  margin-bottom: 35px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 15px;
+}
+.circuitDiv .side li {
+  background-image: linear-gradient(150deg, #575461, #403d4a);
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all 1s;
+}
+.circuitDiv .side li i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 10px;
+}
+.circuitDiv .side li i {
+  background-image: linear-gradient(150deg, #524e5f, #2f2c39);
+}
+.circuitDiv .side li:hover {
+  opacity: 0.6;
+}
+.circuitDiv .side li.cur {
+  opacity: 1;
+}
+.circuitDiv .side li.cur i {
+  background-image: linear-gradient(150deg, #ca5f3c, #a5393c);
+}
+
+.circuitDiv .blocks {
+  float: left;
+  width: 590px;
+  height: 550px;
+  margin-left: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.circuitDiv .blocks {
+  background: url(../image/blockBg.png);
+  background-size: 100% auto;
+}
+.circuitDiv .blocks h4 {
+  line-height: 60px;
+  margin-left: 22px;
+  font-size: 13px;
+  font-weight: normal;
+}
+.circuitDiv .blocks .body {
+  background: #675d82;
+  width: 550px;
+  height: 460px;
+  border-radius: 20px;
+  margin: 10px 0 0 20px;
+}
+
+.circuitDiv .blocks .item {
+  display: none;
+}
+
+.circuitDiv .blocks table {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.circuitDiv .blocks table {
+  border-collapse: collapse;
+  border: 0;
+}
+.circuitDiv .blocks table th,
+table td {
+  border: 0;
+  text-align: left;
+  text-align: center;
+}
+.circuitDiv .blocks table th {
+  border: 0px solid #f5f5f5;
+  background: #574679;
+  padding: 12px 0;
+}
+.circuitDiv .blocks table tr {
+  border-bottom: 1px solid #837b98;
+}
+.circuitDiv .blocks table tr:first-child {
+  border-bottom: 0;
+}
+.circuitDiv .blocks table td {
+  padding: 8px 5px;
+}
+.circuitDiv .blocks table td img {
+  height: 30px;
+}
+.circuitDiv .blocks table td a {
+  cursor: pointer;
+}
+.circuitDiv .blocks table td {
+  padding: 14px 5px;
+}
+.circuitDiv .blocks table td.tip {
+  text-align: right;
+  padding: 0 10px 5px 0;
+}
+.circuitDiv .blocks table td.tip span {
+  background: #eac104;
+  color: #fff;
+  float: right;
+  margin-bottom: 5px;
+  margin-top: -10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.circuitDiv .blocks .b3 {
+}
+.circuitDiv .blocks .b3 h5 {
+  text-align: center;
+  padding: 20px 0 15px 0;
+  font-size: 20px;
+}
+.circuitDiv .blocks .b3 .text {
+  margin: auto auto 20px auto;
+  text-align: center;
+  line-height: 2;
+}
+.circuitDiv .blocks .b3 .text span {
+  font-size: 14px;
+}
+.circuitDiv .blocks .b3 .copyBut {
+  display: block;
+  background-image: linear-gradient(#ca5f3c, #a5393c);
+  height: 50px;
+  border-radius: 40px;
+  width: 230px;
+}
+.circuitDiv .blocks .b3 .copyBut {
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin: auto;
+}
+.circuitDiv .blocks .b3 .copyBut:hover {
+  background-image: linear-gradient(#f68d6a, #ca5f3c);
+}
+.circuitDiv .blocks .b3 .qr {
+  display: block;
+  background: url(../image/qrbg.png) no-repeat;
+  width: 250px;
+  height: 250px;
+  background-size: 100% 100%;
+  margin: auto;
+}
+.circuitDiv .blocks .b3 .qr i {
+  float: left;
+  margin: 55px 0 0 70px;
+  width: 110px;
+  height: 110px;
+  border-radius: 30px;
+}
+.circuitDiv .blocks .b3 .qr i {
+  background: url(../image/qrcode.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.circuitDiv .blocks .b4 p {
+  padding: 40px 20px 20px 20px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+.circuitDiv .blocks .b4 p span {
+  color: #ffae00;
+}
+.circuitDiv .blocks .b4 .icon {
+  display: blocks;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
+.circuitDiv .blocks .b4 .icon {
+  background: url(../image/coinsMin.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+/*为什么*/
+.whyDiv {
+  padding-bottom: 80px;
+}
+.whyDiv {
+  background-image: url(../image/whyBg.jpg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.whyDiv .title {
+  width: 988px;
+  height: 82px;
+  margin: 80px auto 80px auto;
+  text-align: center;
+}
+/*.whyDiv .title{ background:url(../image/whyTitle.png); background-size:100% 100%; }*/
+.whyDiv .buts {
+  display: table;
+  margin: auto;
+}
+.whyDiv .buts li {
+  float: left;
+  display: table;
+  width: 240px;
+  padding-top: 1px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.whyDiv .buts li em {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 30px auto auto auto;
+  transition: all 0.3s;
+}
+.whyDiv .buts li em {
+  background: radial-gradient(
+    76.6% 76.6% at 30.3% 37.5%,
+    #5c5470 0%,
+    #2e273e 100%
+  );
+}
+.whyDiv .buts li em {
+  box-shadow: 0px 12px 31px 0px rgba(23, 18, 38, 0.6);
+}
+.whyDiv .buts li em i {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 50% 0 0 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+.whyDiv .buts li em i {
+  background-size: 100% 100%;
+}
+.whyDiv .buts li span {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.whyDiv .buts li.b1 em i {
+  background-image: url(../image/whyIcon1.png);
+}
+.whyDiv .buts li.b2 em i {
+  background-image: url(../image/whyIcon2.png);
+}
+.whyDiv .buts li.b3 em i {
+  background-image: url(../image/whyIcon3.png);
+}
+.whyDiv .buts li.b4 em i {
+  background-image: url(../image/whyIcon4.png);
+}
+
+.whyDiv .buts li:hover {
+  opacity: 1;
+}
+.whyDiv .buts li.cur {
+  opacity: 1;
+}
+.whyDiv .buts li.cur em {
+  width: 120px;
+  width: 150px;
+  height: 150px;
+  margin-top: 0px;
+}
+.whyDiv .buts li.cur em {
+  background-image: radial-gradient(
+    79.9% 79.9% at 34.7% 34.4%,
+    #df6623 1%,
+    #e55030 41%,
+    #b12f3d 100%
+  );
+}
+.whyDiv .buts li.cur em {
+  box-shadow: inset -6px -4px 19px 0 #862507,
+    inset 5px 8px 26px 0 rgba(255, 255, 255, 0.4),
+    0 30px 100px 0 rgba(182, 57, 21, 0.4);
+}
+.whyDiv .buts li.cur em i {
+  width: 68px;
+  height: 68px;
+}
+.whyDiv .buts li.cur span {
+  color: #d1513e;
+}
+
+.whyDiv .blocks {
+  width: 3000px;
+  margin-top: 80px;
+  transition: all 0.3s;
+}
+.whyDiv .blocks .item {
+  float: left;
+  width: 415px;
+  height: 350px;
+  border-radius: 15px;
+  border: 1px solid #ebebeb;
+  transform: scale(0.85, 0.85);
+  opacity: 0.6;
+}
+.whyDiv .blocks .item h4 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 30px 0 20px 0;
+}
+.whyDiv .blocks .item li {
+  background: url(../image/whyLiIcon.png) no-repeat;
+  background-size: auto 20px;
+  padding-left: 30px;
+}
+.whyDiv .blocks .item li {
+  margin: 15px 20px;
+}
+.whyDiv .blocks .item li button {
+  display: block;
+  border: 0;
+  background: #847a97;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.whyDiv .blocks .item li button {
+  transition: all 0.3s;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.whyDiv .blocks .item li button:hover {
+  background: #bca6e6;
+}
+
+.whyDiv .blocks .item {
+  transition: all 0.3s;
+}
+.whyDiv .blocks .item.cur {
+  transform: scale(1, 1);
+  background: #403c4b;
+  border-color: #403c4b;
+  opacity: 1;
+}
+.whyDiv .blocks .item.b2 li {
+  margin: 5px 20px;
+  font-size: 14px;
+}
+
+.whyDiv .connect .email {
+  padding-left: 33px;
+  line-height: 1.5;
+  margin-left: 18px;
+}
+.whyDiv .connect .email {
+  background: url(../image/whyEmailIcon.png) no-repeat;
+  background-size: 24px;
+}
+.whyDiv .connect .email span {
+  text-decoration: underline;
+  color: #ffe9a7;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.whyDiv .connect .email span:hover {
+  color: #f9db50;
+}
+
+.whyDiv .connect ul {
+  margin: 20px 0 0 50px;
+}
+.whyDiv .connect ul div {
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+.whyDiv .connect ul div i {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto auto 10px auto;
+}
+.whyDiv .connect ul div i {
+  background: url(../image/whyTGIcon.png);
+  background-size: cover;
+}
+.whyDiv .connect ul div.fb i {
+  background-image: url(../image/whyFbIcon.png);
+}
+.whyDiv .connect ul div.wa i {
+  background-image: url(../image/whyWAIcon.png);
+}
+
+/*兑换*/
+.exchangeDiv {
+  background: #2a2734;
+  padding-bottom: 80px;
+}
+.exchangeDiv {
+  background-image: url(../image/exchangeBg.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.exchangeDiv .title {
+  width: 462px;
+  height: 82px;
+  margin: 80px auto 50px auto;
+}
+.exchangeDiv .title {
+  background: url(../image/exchangeTitle.png);
+  background-size: 100% 100%;
+}
+.exchangeDiv .rate {
+  width: 462px;
+  height: 60px;
+  margin: 0px auto 50px auto;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 30px;
+}
+.exchangeDiv .rate {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+}
+.exchangeDiv .rate i {
+  color: #999;
+}
+.exchangeDiv .rate i span {
+  color: #c13e44;
+  margin-right: 20px;
+}
+.exchangeDiv .rate i span:last {
+  margin-right: 0;
+}
+
+.exchangeDiv .form {
+  float: left;
+  width: 500px;
+  height: 548px;
+  background: url(../image/exchangeFormBg.png);
+  background-size: cover;
+  padding-top: 1px;
+  margin-left: 80px;
+}
+.exchangeDiv .form .type {
+  background: #615d68;
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+.exchangeDiv .form .type li {
+  float: left;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  text-align: center;
+}
+.exchangeDiv .form .type li.cur {
+  background: #969799;
+}
+.exchangeDiv .form .input {
+  background: #615d68;
+  width: 300px;
+  height: 66px;
+  border-radius: 33px;
+  margin: 40px auto;
+  line-height: 66px;
+}
+.exchangeDiv .form .input span {
+  float: right;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 28px;
+  margin-right: 20px;
+}
+.exchangeDiv .form .input input {
+  font-size: 26px;
+  width: 150px;
+  margin: 17px 0 0 30px;
+  background: #615d68;
+  border: 0;
+  color: #fff;
+  outline: none;
+}
+.exchangeDiv .form .text {
+  margin: -20px auto;
+  text-align: center;
+}
+.exchangeDiv .form button {
+  display: block;
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  outline: none;
+}
+.exchangeDiv .form button {
+  background-image: linear-gradient(#ca5f3c, #a5393c);
+  border: 0;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.exchangeDiv .note {
+  float: left;
+  width: 500px;
+}
+.exchangeDiv .note .qrInfo {
+  float: left;
+  width: 550px;
+  margin: 30px 0 0 50px;
+  display: table;
+}
+.exchangeDiv .note .qrInfo .text {
+  float: left;
+  width: 250px;
+  padding: 0 40px 20px 40px;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+.exchangeDiv .note .qrInfo .qr {
+  float: left;
+  width: 166px;
+  border: #827c8a solid 1px;
+  border-radius: 10px;
+  padding: 20px 20px;
+  text-align: center;
+}
+.exchangeDiv .note .qrInfo .qr {
+  background-image: linear-gradient(150deg, #605d68, #4a4752);
+  border: #827c8a solid 1px;
+}
+.exchangeDiv .note .qrInfo .qr i {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 8px solid #c1403e;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.exchangeDiv .note .qrInfo .qr i {
+  background: url(../image/exchangeQqrcod.png) no-repeat;
+  background-size: cover;
+}
+
+.exchangeDiv .note .hashInfo {
+  float: left;
+  width: 360px;
+  border-radius: 10px;
+  padding: 30px 50px;
+  line-height: 2.5;
+  margin: 50px 0 0 90px;
+}
+.exchangeDiv .note .hashInfo {
+  background: linear-gradient(
+    134.3deg,
+    rgba(255, 255, 255, 0.24) 0%,
+    rgba(255, 255, 255, 0.12) 78%
+  );
+}
+.exchangeDiv .note .hashInfo h4 {
+  font-size: 20px;
+}
+.exchangeDiv .note .hashInfo button {
+  position: absolute;
+  border: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  border: 1px solid #b6b6b6;
+  color: #fff;
+}
+.exchangeDiv .note .hashInfo button {
+  cursor: pointer;
+  margin: 0px 0 0 365px;
+  outline: none;
+}
+.exchangeDiv .note .hashInfo button {
+  background: linear-gradient(
+    134.3deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.2) 78%
+  );
+}
+.exchangeDiv .note .hashInfo button:hover {
+  background: linear-gradient(
+    134.3deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.3) 78%
+  );
+}
+
+/*排行榜*/
+.rankingDiv {
+  background: #2a2734;
+}
+.rankingDiv {
+  background-image: url(../image/rankingBg.jpg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.rankingDiv .title {
+  width: 386px;
+  height: 82px;
+  margin: 80px auto 50px auto;
+}
+.rankingDiv .title {
+  background: url(../image/rankingTitle.png);
+  background-size: 100% 100%;
+}
+.rankingDiv .nav ul {
+  display: table;
+  width: 100%;
+}
+.rankingDiv .nav li {
+  float: left;
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0 50px 0 0px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.rankingDiv .nav li.cur {
+  background: url(../image/rankingNavBg.png) no-repeat;
+  background-size: 100px auto;
+  background-position: bottom center;
+}
+
+.rankingDiv .currencys {
+  float: right;
+  background: #615d68;
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.rankingDiv .currencys span {
+  float: left;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  text-align: center;
+}
+.rankingDiv .currencys span.cur {
+  background: #969799;
+}
+
+.rankingDiv .list {
+  margin-top: 20px;
+}
+.rankingDiv .list table {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.rankingDiv .list table {
+  border-collapse: collapse;
+  border: 0;
+}
+.rankingDiv .list table th,
+table td {
+  border: 0;
+  text-align: left;
+  text-align: center;
+}
+.rankingDiv .list table th {
+  border: 0px solid #f5f5f5;
+  padding: 22px 0;
+  background: #373344;
+  font-size: 18px;
+}
+.rankingDiv .list table tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+.rankingDiv .list table tr:first-child {
+  border-bottom: 0;
+}
+.rankingDiv .list table td {
+  padding: 10px 5px;
+  background: rgba(68, 60, 85, 1);
+  height: 50px;
+}
+.rankingDiv .list table td img {
+  height: 85px;
+}
+.rankingDiv .list table td a {
+  cursor: pointer;
+}
+.rankingDiv .list table td.tip {
+  text-align: right;
+  padding: 0 10px 5px 0;
+}
+.rankingDiv .list table td.tip span {
+  background: #eac104;
+  color: #fff;
+  float: right;
+  margin-bottom: 5px;
+  margin-top: -10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.rankingDiv .list table td.loadTd {
+  height: 616px;
+}
+.rankingDiv .list table td.loadTd img {
+  margin-bottom: 20px;
+}
+
+/*常见问题*/
+.faqDiv {
+  background: #2a2734;
+  padding-bottom: 0px;
+}
+.faqDiv .title {
+  width: 611px;
+  height: 82px;
+  margin: 80px auto 50px auto;
+  text-align: center;
+}
+/*.faqDiv .title{ background:url(../image/faqTitle.png); background-size:100% 100%; }*/
+.faqDiv .list {
+  width: 1200px;
+  margin: auto;
+  font-size: 16px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+.faqDiv .list a {
+  color: #f4b204;
+}
+.faqDiv .list ul li {
+  color: #c13e44;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.faqDiv .list ul li {
+  background: rgba(56, 52, 65, 1);
+  padding: 30px;
+  border-radius: 15px;
+}
+.faqDiv .list ul li div {
+  color: #fff;
+  padding-left: 20px;
+  margin: 10px 0 10px -20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+@media (max-width: 1023px) {
+  html,
+  body {
+    font-size: 4vw;
+    width: 100vw;
+  }
+  .pdiv {
+    display: none !important;
+  }
+
+  .block {
+    display: table;
+    width: 100vw%;
+  }
+  .block .mainDiv {
+    width: 96vw;
+    margin: auto 2vw;
+    overflow: hidden;
+  }
+
+  /*顶部导航条*/
+  .headNav .mainDiv {
+    width: 100vw;
+    margin: 0;
+    height: auto;
+  }
+  .headNav ul {
+    padding: 0;
+    margin: 0;
+  }
+  .headNav ul li {
+    margin: 0px;
+  }
+  .headNav .logo {
+    width: 19vw;
+    height: 6vw;
+    background-image: url(../image/logo1.png);
+    margin: 3vw 0 0 2vw;
+  }
+  .headNav .nav1 {
+    float: left;
+    width: 75vw;
+    margin: 0 0 0 4vw;
+    display: table;
+  }
+  .headNav .nav1 li {
+    float: left;
+    display: table;
+    margin: 0 0 0 2vw;
+    height: 12vw;
+    line-height: 12vw;
+    font-size: 3vw;
+    padding: 0 1 0 5vw;
+  }
+  .headNav .nav1 li:last-child {
+    margin-right: 0;
+  }
+  .headNav .nav1 li {
+    background-repeat: no-repeat;
+    background-position: 0vw 3.5vw;
+    background-size: 4.5vw 4.5vw;
+  }
+  .headNav .nav1 li.exchange {
+    background-image: url(../image/navExchange.png);
+  }
+  .headNav .nav1 li.faq {
+    background-image: url(../image/navFaq.png);
+  }
+  /*.headNav .nav1 li.service {*/
+  /*  background-image: url(../image/side3.png);*/
+  /*}*/
+  .headNav .nav2 {
+    float: left;
+    width: 100vw;
+    height: 12vw;
+    background: #282534;
+  }
+  .headNav .nav2 li {
+    float: left;
+    display: table;
+    margin: 0 4vw 0 2vw;
+    height: 12vw;
+    line-height: 12vw;
+    font-size: 3.5vw;
+  }
+  .headNav .nav2 li:first-child {
+    margin-left: 5vw;
+  }
+  .headNav .nav2 li:last-child {
+    margin-right: 0;
+  }
+  .headNav .nav2 li {
+    background-position: 0.2vw;
+    background-size: 4.5vw 4.5vw;
+  }
+
+  /*首屏*/
+  .firstDiv {
+    height: 130vw;
+    margin-top: 24vw;
+  }
+  .firstDiv .mainDiv {
+    height: 130vw;
+  }
+  .firstDiv h3 {
+    margin: 10vw 0 0 5vw;
+    font-size: 4vw;
+    width: auto;
+  }
+  .firstDiv .slogan {
+    margin: 20vw 0 0 5vw;
+    font-size: 8vw;
+    font-weight: 500;
+    width: auto;
+  }
+  .firstDiv .slogan span {
+    float: left;
+    margin-right: 4vw;
+  }
+  .firstDiv .qr {
+    margin: 30vw 0 0 -1vw;
+    width: 60vw;
+    height: 60vw;
+  }
+  .firstDiv .qr i {
+    display: block;
+    margin: 14vw 0 0 17vw;
+    width: 26vw;
+    height: 26vw;
+    border-radius: 4vw;
+  }
+  .firstDiv .hashInfo {
+    margin: 85vw 0 0 4vw;
+    width: 90vw;
+    height: 37vw;
+    border-radius: 2vw;
+    background: rgba(58, 51, 73, 0.7);
+  }
+  .firstDiv .hashInfo .text {
+    float: left;
+    margin: 5vw 0 0 7vw;
+  }
+  .firstDiv .hashInfo .text h4 {
+    margin-bottom: 2vw;
+    font-size: 4vw;
+  }
+  .firstDiv .hashInfo .text span {
+    font-size: 3vw;
+  }
+  .firstDiv .hashInfo .copyBut {
+    float: left;
+    height: 10vw;
+    border-radius: 2vw;
+    width: 40vw;
+    margin: 3vw 0 0 7vw;
+  }
+  .firstDiv .hashInfo .copyBut {
+    line-height: 10vw;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  .firstDiv .hashInfo .copyBut:hover {
+    background-image: linear-gradient(#f68d6a, #ca5f3c);
+  }
+  .firstDiv .coins {
+    margin: 0 0 0 0;
+    width: 98vw;
+    height: 100vw;
+    background-repeat: no-repeat;
+    background-size: 150vw 150vw;
+    background-position: 28vw -20vw;
+  }
+
+  /*规则*/
+  .ruleDiv {
+    padding-top: 10vw;
+  }
+  .ruleDiv .title {
+    width: 41vw;
+    height: 12vw;
+    margin: 0 auto 5vw auto;
+  }
+  .ruleDiv .title {
+    background: url(../image/ruleTitle.png);
+    background-size: 100% 100%;
+  }
+  .ruleDiv .limitBlock,
+  .ruleDiv .side {
+    float: none;
+    display: block;
+  }
+  .ruleDiv .limitBlock {
+    width: 86vw;
+    height: auto;
+    padding: 2vw 2vw 5vw 2vw;
+    border-radius: 5vw;
+    margin: 10vw 0 0 3vw;
+  }
+  .ruleDiv .limitBlock .icon {
+    position: absolute;
+    width: 34vw;
+    height: 34vw;
+    margin: -15vw 0 0 55vw;
+  }
+  .ruleDiv .limitBlock h3 {
+    font-size: 6vw;
+    font-weight: 700;
+    margin: 5vw 0 0 5vw;
+  }
+  .ruleDiv .limitBlock ul {
+    font-size: 3.8vw;
+    padding-left: 7vw;
+    margin: 5vw 0 0 5vw;
+    width: 67vw;
+    text-align: center;
+  }
+  .ruleDiv .limitBlock ul li {
+    list-style-type: decimal-leading-zero;
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+  .ruleDiv .side {
+    margin: 0;
+  }
+  .ruleDiv .ruleBlock {
+    width: 86vw;
+    height: auto;
+    padding: 2vw 2vw 5vw 2vw;
+    border-radius: 5vw;
+    margin: 10vw 0 0 3vw;
+  }
+  .ruleDiv .ruleBlock .icon {
+    position: absolute;
+    width: 34vw;
+    height: 34vw;
+    margin: -15vw 0 0 55vw;
+  }
+  .ruleDiv .ruleBlock h3 {
+    font-size: 6vw;
+    font-weight: 700;
+    margin: 5vw 0 0 5vw;
+  }
+  .ruleDiv .ruleBlock ul {
+    font-size: 3.8vw;
+    padding-left: 7vw;
+    margin: 5vw 0 0 5vw;
+    width: 67vw;
+    text-align: center;
+  }
+  .ruleDiv .ruleBlock ul li {
+    list-style-type: decimal-leading-zero;
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+
+  /*实例*/
+  .caseDiv {
+    padding-bottom: 5vw;
+  }
+  .caseDiv h3 {
+    margin: 8vw 0 8vw 0;
+    font-size: 6vw;
+  }
+  .caseDiv .caseList {
+    margin: 0;
+    width: 98vw;
+    height: 85vw;
+    overflow: scroll;
+  }
+  .caseDiv .caseList ul {
+    display: table;
+    width: 267vw;
+    padding-left: 5vw;
+  }
+  .caseDiv .caseList .item {
+    width: 50vw;
+    border-radius: 3vw;
+    padding: 5vw;
+  }
+  .caseDiv .caseList .item {
+    margin-right: 5vw;
+    height: 70vw;
+  }
+  .caseDiv .caseList .item p {
+    margin-bottom: 4vw;
+    font-size: 3.7vw;
+  }
+  .caseDiv .caseList .item p:nth-child(3) {
+    height: 2vw;
+    font-size: 4vw;
+  }
+  .caseDiv .caseList .item p i {
+    padding: 0 1vw;
+    font-size: 4.5vw;
+  }
+  .caseDiv .caseList .item p em {
+    padding: 0 1vw;
+    font-size: 4.5vw;
+  }
+
+  /*流程*/
+  .circuitDiv {
+    padding-bottom: 0;
+  }
+  .circuitDiv .title {
+    width: 59.1vw;
+    height: 12vw;
+    margin: 10vw auto 10vw auto;
+  }
+  .circuitDiv .side {
+    float: left;
+    margin-left: 4vw;
+  }
+  .circuitDiv .side li {
+    float: left;
+    width: 22vw;
+    height: 22vw;
+    padding: 0 0;
+    margin-bottom: 5vw;
+    font-size: 3.5vw;
+    font-weight: 700;
+    border-radius: 0;
+  }
+  .circuitDiv .side li {
+    background: none;
+    text-align: center;
+  }
+  .circuitDiv .side li i {
+    display: block;
+    margin: auto auto 4vw auto;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
+    line-height: 12vw;
+  }
+
+  .circuitDiv .blocks {
+    float: left;
+    width: 90vw;
+    height: 110vw;
+    margin-left: 3vw;
+    border-radius: 5vw;
+  }
+  .circuitDiv .blocks h4 {
+    line-height: 3vw;
+    margin-left: 5vw;
+    font-size: 3.5vw;
+    margin-top: 6vw;
+  }
+  .circuitDiv .blocks .body {
+    width: 80vw;
+    height: 90vw;
+    border-radius: 5vw;
+    margin: 5vw 0 0 5vw;
+  }
+
+  .circuitDiv .blocks table {
+    width: 100%;
+    border-radius: 5vw;
+  }
+  .circuitDiv .blocks table th {
+    padding: 3vw 0;
+    font-size: 4vw;
+  }
+  .circuitDiv .blocks table td img {
+    height: 7vw;
+  }
+  .circuitDiv .blocks table td a {
+    cursor: pointer;
+  }
+  .circuitDiv .blocks table td {
+    padding: 1.7vw 2vw;
+    font-size: 3.5vw;
+  }
+  .circuitDiv .blocks table tr td:first-child {
+    padding: 1.7vw 4vw;
+  }
+  .circuitDiv .blocks table td.tip {
+    text-align: right;
+    padding: 0 2vw 2vw 0;
+    font-size: 3vw;
+  }
+  .circuitDiv .blocks table td.tip span {
+    margin-bottom: 1vw;
+    margin-top: -1vw;
+    padding: 1vw 2vw;
+    border-radius: 2vw;
+  }
+
+  .circuitDiv .blocks .b3 {
+  }
+  .circuitDiv .blocks .b3 h5 {
+    padding: 5vw 0 4vw 0;
+    font-size: 5vw;
+  }
+  .circuitDiv .blocks .b3 .text {
+    margin: auto auto 5vw auto;
+    text-align: center;
+    line-height: 2;
+  }
+  .circuitDiv .blocks .b3 .text span {
+    font-size: 3.2vw;
+  }
+  .circuitDiv .blocks .b3 .copyBut {
+    height: 10vw;
+    border-radius: 5vw;
+    width: 50vw;
+    line-height: 10vw;
+    font-size: 4vw;
+  }
+  .circuitDiv .blocks .b3 .qr {
+    width: 40vw;
+    height: 40vw;
+  }
+  .circuitDiv .blocks .b3 .qr i {
+    margin: 9vw 0 0 11vw;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 5vw;
+  }
+
+  .circuitDiv .blocks .b4 p {
+    padding: 6vw;
+    font-size: 4.5vw;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  .circuitDiv .blocks .b4 .icon {
+    display: blocks;
+    width: 40vw;
+    height: 40vw;
+  }
+
+  /*为什么*/
+  .whyDiv {
+    padding-bottom: 10vw;
+  }
+  .whyDiv .title {
+    width: 90vw;
+    height: 12vw;
+    margin: 12vw auto 8vw auto;
+  }
+  .whyDiv .title {
+    background-size: 145vw 12vw;
+    background-position: center center;
+  }
+
+  .whyDiv .buts li {
+    width: 22vw;
+  }
+  .whyDiv .buts li em {
+    width: 13vw;
+    height: 13vw;
+    margin: 5vw auto auto auto;
+  }
+  .whyDiv .buts li em i {
+    width: 7vw;
+    height: 7vw;
+  }
+  .whyDiv .buts li span {
+    margin-top: 3vw;
+    font-size: 3.5vw;
+  }
+
+  .whyDiv .buts li.cur em {
+    width: 18vw;
+    height: 18vw;
+  }
+  .whyDiv .buts li.cur em i {
+    width: 9vw;
+    height: 9vw;
+  }
+
+  .whyDiv .blocks {
+    width: 3000px;
+    margin-top: 8vw;
+    padding-left: 4vw;
+  }
+  .whyDiv .blocks .item {
+    float: left;
+    width: 88vw;
+    height: 85vw;
+    border-radius: 5vw;
+  }
+
+  .whyDiv .blocks .item h4 {
+    font-size: 6vw;
+    margin: 6vw 0 5vw 0;
+  }
+  .whyDiv .blocks .item li {
+    background-size: auto 4.5vw;
+    padding-left: 6vw;
+    margin: 3vw 2vw;
+    font-size: 4vw;
+    background-position: 0 0.5vw;
+  }
+  .whyDiv .blocks .item li button {
+    padding: 3vw 10vw;
+    border-radius: 5vw;
+    margin-top: 3vw;
+  }
+
+  .whyDiv .blocks .item.b2 li {
+    margin: 1vw 5vw;
+    font-size: 3.5vw;
+    background-size: auto 4vw;
+    background-position: 0 1vw;
+    padding-left: 5vw;
+  }
+
+  .whyDiv .connect .email {
+    padding-left: 8vw;
+    line-height: 1.5;
+    margin-left: 10vw;
+  }
+  .whyDiv .connect .email {
+    background-size: 6vw;
+  }
+  .whyDiv .connect .email span {
+    margin-left: 4vw;
+  }
+
+  .whyDiv .connect ul {
+    margin: 5vw 0 0 10vw;
+  }
+  .whyDiv .connect ul div {
+    width: 35vw;
+  }
+  .whyDiv .connect ul div i {
+    width: 20vw;
+    height: 20vw;
+    margin: auto auto 3vw auto;
+  }
+
+  /*兑换*/
+  .exchangeDiv {
+    padding-bottom: 10vw;
+  }
+  .exchangeDiv .title {
+    width: 67.6vw;
+    height: 12vw;
+    margin: 13vw auto 10vw auto;
+  }
+  .exchangeDiv .rate {
+    width: 90vw;
+    height: 15vw;
+    margin: 0px auto 5vw auto;
+    line-height: 15vw;
+    border-radius: 5vw;
+    font-size: 3.5vw;
+  }
+  .exchangeDiv .rate i span {
+    margin-right: 2vw;
+  }
+
+  .exchangeDiv .form {
+    width: 90vw;
+    height: 100vw;
+    background-size: 100% 100%;
+    margin-left: 3vw;
+  }
+  .exchangeDiv .form .type {
+    width: 70vw;
+    height: 10vww;
+    border-radius: 5vw;
+    margin: 6vw auto 5vw auto;
+  }
+  .exchangeDiv .form .type li {
+    width: 35vw;
+    height: 10vww;
+    line-height: 10vww;
+    border-radius: 5vw;
+  }
+  .exchangeDiv .form .input {
+    width: 70vw;
+    height: 14vw;
+    border-radius: 7vw;
+    margin: 7vw auto 5vw auto;
+    line-height: 14vw;
+  }
+  .exchangeDiv .form .input span {
+    font-size: 6vw;
+    margin-right: 8vw;
+  }
+  .exchangeDiv .form .input input {
+    font-size: 6vw;
+    width: 30vw;
+    margin: 2vw 0 0 5vw;
+  }
+  .exchangeDiv .form .text {
+    margin: -2vw auto -4vw auto;
+  }
+  .exchangeDiv .form button {
+    width: 70vw;
+    height: 14vw;
+    line-height: 14vw;
+    font-size: 5vw;
+    letter-spacing: 2vw;
+  }
+
+  .exchangeDiv .note {
+    width: 90vw;
+  }
+  .exchangeDiv .note .qrInfo {
+    float: left;
+    width: 90vw;
+    margin: 5vw 0 0 0;
+  }
+  .exchangeDiv .note .qrInfo .text {
+    float: left;
+    width: 86vw;
+    padding: 0 5vw;
+    font-size: 4.3vw;
+  }
+
+  .exchangeDiv .note .hashInfo {
+    width: 80vw;
+    border-radius: 3vw;
+    padding: 5vw 5vw;
+    margin: 5vw 0 0 3vw;
+    line-height: 2;
+  }
+  .exchangeDiv .note .hashInfo h4 {
+    font-size: 5vw;
+  }
+  .exchangeDiv .note .hashInfo span {
+    font-size: 3.5vw;
+  }
+  .exchangeDiv .note .hashInfo button {
+    position: absolute;
+    border: 0;
+    width: 30vw;
+    height: 9vw;
+    border-radius: 4.5vw;
+  }
+  .exchangeDiv .note .hashInfo button {
+    margin: 0.5vw 0 0 50vw;
+  }
+
+  .exchangeDiv .note .qr {
+    float: left;
+    border: #827c8a solid 1px;
+    text-align: center;
+    width: 80vw;
+    border-radius: 4vw;
+    padding: 5vw;
+    margin: 5vw 0 0 3vw;
+  }
+  .exchangeDiv .note .qr {
+    background-image: linear-gradient(150deg, #605d68, #4a4752);
+    border: #827c8a solid 1px;
+  }
+  .exchangeDiv .note .qr i {
+    display: block;
+    background: url(../image/exchangeQqrcod.png) no-repeat;
+    background-size: cover;
+  }
+  .exchangeDiv .note .qr i {
+    margin: auto auto 3vw auto;
+    width: 30vw;
+    height: 30vw;
+    border: 2vw solid #c1403e;
+    border-radius: 2vw;
+  }
+
+  /*排行榜*/
+  .rankingDiv {
+  }
+  .rankingDiv .title {
+    width: 56.5vw;
+    height: 12vw;
+    margin: 12vw auto 5vw auto;
+  }
+
+  .rankingDiv .nav ul {
+    display: table;
+    width: 90vw;
+    margin-left: 5vw;
+  }
+  .rankingDiv .nav li {
+    font-size: 4vw;
+    margin: 0 0 0 0px;
+    padding-bottom: 4vw;
+    width: 22vw;
+    text-align: center;
+    background-size: 22vw auto;
+  }
+
+  .rankingDiv .currencys {
+    float: left;
+    width: 80vw;
+    height: 10vw;
+    border-radius: 5vw;
+    margin: 0 0 7vw 3vw;
+  }
+  .rankingDiv .currencys span {
+    float: left;
+    width: 40vw;
+    height: 10vw;
+    line-height: 10vw;
+    border-radius: 25px;
+    text-align: center;
+  }
+  .rankingDiv .currencys span.cur {
+    background: #969799;
+  }
+
+  .rankingDiv .list {
+    margin-top: 4vw;
+  }
+  .rankingDiv .list table {
+    border-radius: 5vw;
+  }
+  .rankingDiv .list table th {
+    padding: 5vw 0;
+    font-size: 4vw;
+  }
+  .rankingDiv .list table td {
+    padding: 1vw 2vw;
+    height: 10vw;
+  }
+  .rankingDiv .list table tr td:nth-child(2) {
+    padding: 1vw 5vw;
+  }
+  .rankingDiv .list table td .date,
+  .rankingDiv .list table.newestTable tr td:nth-child(1),
+  .rankingDiv .list table.newestTable tr th:nth-child(1) {
+    display: none;
+  }
+  .rankingDiv .list table td img {
+    height: 45px;
+  }
+  .rankingDiv .list table td a {
+    cursor: pointer;
+  }
+  .rankingDiv .list table td.tip span {
+    background: #eac104;
+    color: #fff;
+    float: right;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  .rankingDiv .list table td.loadTd {
+    height: 616px;
+  }
+  .rankingDiv .list table td.loadTd img {
+    margin-bottom: 20px;
+  }
+
+  /*常见问题*/
+  .faqDiv .title {
+    width: 89.4vw;
+    height: 12vw;
+    margin: 12vw auto 5vw auto;
+  }
+  .faqDiv .list {
+    width: 90vw;
+    font-size: 4vw;
+    margin-bottom: 10vw;
+  }
+  .faqDiv .list ul li {
+    margin-top: 4vw;
+    font-size: 3.8vw;
+  }
+  .faqDiv .list ul li {
+    padding: 5vw;
+    border-radius: 3.5vw;
+  }
+  .faqDiv .list ul li div {
+    padding-left: 5vw;
+    margin: 2vw 0 1vw -5vw;
+    height: 12vw;
+    overflow: hidden;
+  }
+  .faqDiv .list ul li button {
+    background: #b04e40;
+    border: 0;
+    border-radius: 5px;
+    padding: 1vw 5vw;
+    color: #fff;
+    font-size: 3.5vw;
+  }
+
+  /*浮窗*/
+  .winDiv {
+    width: 80vw;
+    padding: 5vw;
+    border-radius: 5vw;
+  }
+  .winDiv h2 {
+    font-size: 5vw;
+    padding: 0 0 5vw 5vw;
+    margin: 0 -5vw;
+  }
+  .winDiv .colse {
+    width: 6vw;
+    height: 6vw;
+    margin-left: 73vw;
+  }
+  .winDiv .body {
+    margin-top: 5vw;
+  }
+
+  .winDiv .service .email {
+    display: table;
+    padding-left: 8vw;
+    margin: 8vw auto 0 auto;
+  }
+  .winDiv .service .email {
+    background-size: 6vw;
+  }
+  .winDiv .service .email span {
+    margin-left: 2vw;
+  }
+  .winDiv .service ul {
+    margin: 10vw 0 8vw 5vw;
+    display: table;
+  }
+  .winDiv .service ul div {
+    width: 35vw;
+  }
+  .winDiv .service ul div i {
+    display: block;
+    width: 20vw;
+    height: 20vw;
+    margin: auto auto 4vw auto;
+  }
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>哈希娱乐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit">
+
+
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+
+    <link href="/assets/css/frontend.min.css?v=1.0.5" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond.min.js"></script>
+<![endif]-->
+
+
+    <script type="text/javascript">
+        var require = {
+            config: {
+                "site": {
+                    "name": "\u54c8\u5e0c\u5a31\u4e50",
+                    "cdnurl": "",
+                    "version": "1.0.5",
+                    "timezone": "Asia\/Shanghai",
+                    "languages": {
+                        "backend": "zh-cn",
+                        "frontend": "zh-cn"
+                    }
+                },
+                "upload": {
+                    "cdnurl": "",
+                    "uploadurl": "\/index\/ajax\/upload",
+                    "bucket": "local",
+                    "maxsize": "10mb",
+                    "mimetype": "jpg,png,bmp,jpeg,gif,webp,zip,rar,xls,xlsx,wav,mp4,mp3,webm,pdf",
+                    "chunking": false,
+                    "chunksize": 2097152,
+                    "savekey": "\/uploads\/{year}{mon}{day}\/{filemd5}{.suffix}",
+                    "multipart": [],
+                    "multiple": false,
+                    "fullmode": false,
+                    "thumbstyle": "",
+                    "storage": "local"
+                },
+                "modulename": "index",
+                "controllername": "user",
+                "actionname": "changepwd",
+                "jsname": "frontend\/user",
+                "moduleurl": "\/index",
+                "language": "zh-cn",
+                "__PUBLIC__": "\/",
+                "__ROOT__": "\/",
+                "__CDN__": ""
+            }
+        };
+    </script>
+
+    <link href="/assets/css/user.css?v=1.0.5" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-white navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">哈希娱乐</a>
+            </div>
+            <div class="collapse navbar-collapse" id="header-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">首页</a></li>
+                    <li class="dropdown">
+                        <a href="/index/user/index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="avatar-img"><img
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaGVpZ2h0PSIxMDAiIHdpZHRoPSIxMDAiPjxyZWN0IGZpbGw9InJnYigxNjAsMjI5LDE3OSkiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3JlY3Q+PHRleHQgeD0iNTAiIHk9IjUwIiBmb250LXNpemU9IjUwIiB0ZXh0LWNvcHk9ImZhc3QiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRleHQtcmlnaHRzPSJhZG1pbiIgZG9taW5hbnQtYmFzZWxpbmU9ImNlbnRyYWwiPjwvdGV4dD48L3N2Zz4="
+                                    alt=""></span>
+                            <span class="visible-xs-inline-block" style="padding:5px;"> <b class="caret"></b></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/index/user/index.html"><i class="fa fa-user-circle fa-fw"></i>会员中心</a></li>
+                            <!-- <li><a href="/index/user/profile.html"><i class="fa fa-user-o fa-fw"></i>个人资料</a></li> -->
+                            <li><a href="/index/user/changepwd.html"><i class="fa fa-key fa-fw"></i>修改密码</a></li>
+                            <li><a href="/index/user/logout.html"><i class="fa fa-sign-out fa-fw"></i>退 出</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div id="content-container" class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <script src="/assets/js/jquery.min.js"></script>
+                    <script src="/assets/js/jquery.qrcode.min.js"></script>
+                    <script src="/assets/js/bootstrap-table.min.js"></script>
+
+                    <link rel="stylesheet" href="/assets/css/bootstrap-table.min.css">
+
+                    <div class="sidebar-toggle"><i class="fa fa-bars"></i></div>
+                    <div class="sidenav" id="sidebar-nav">
+                        <ul class="list-group">
+                            <li class="list-group-heading">会员中心</li>
+                            <li class="list-group-item "> <a href="/index/user/index.html"><i
+                                        class="fa fa-user-circle fa-fw"></i> 会员中心</a> </li>
+                            <!-- <li class="list-group-item "> <a href="/index/user/profile.html"><i class="fa fa-user-o fa-fw"></i> 个人资料</a> </li> -->
+                            <li class="list-group-item "> <a href="/index/user/earnings.html"><i
+                                        class="fa fa-user-o fa-fw"></i> 盈利报表</a> </li>
+                            <li class="list-group-item "> <a href="/index/user/subordinate.html"><i
+                                        class="fa fa-user fa-fw"></i> 下级报表</a> </li>
+                            <li class="list-group-item active"> <a href="/index/user/changepwd.html"><i
+                                        class="fa fa-key fa-fw"></i> 修改密码</a> </li>
+                            <li class="list-group-item "> <a href="/index/user/logout.html"><i
+                                        class="fa fa-sign-out fa-fw"></i> 退 出</a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h2 class="page-header">修改密码</h2>
+                            <form id="changepwd-form" class="form-horizontal" role="form" data-toggle="validator"
+                                method="POST" action="/member/updatePwd">
+                                <div class="form-group">
+                                    <label for="oldpassword" class="control-label col-xs-12 col-sm-2">旧密码:</label>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <input type="password" class="form-control" id="oldPassword" name="oldPassword"
+                                            value="" data-rule="required;password" placeholder="旧密码">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label col-xs-12 col-sm-2">新密码:</label>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <input type="password" class="form-control" id="password" name="password"
+                                            value="" data-rule="required;password" placeholder="新密码" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rePassword" class="control-label col-xs-12 col-sm-2">确认新密码:</label>
+                                    <div class="col-xs-12 col-sm-4">
+                                        <input type="password" class="form-control" id="rePassword" name="rePassword"
+                                            value="" data-rule="required;password" placeholder="确认新密码" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group normal-footer">
+                                    <label class="control-label col-xs-12 col-sm-2"></label>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <button type="button" id="tijiao" class="btn btn-primary btn-embossed disabled">提交</button>
+                                        <button type="reset" class="btn btn-default btn-embossed">重置</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer" style="clear:both">
+        <p class="copyright">Copyright&nbsp;©&nbsp;2022 哈希娱乐 All Rights Reserved </p>
+    </footer>
+
+    <script src="/assets/js/require.min.js" data-main="/assets/js/require-frontend.min.js?v=1.0.5"></script>
+    <script>
+
+        $('#tijiao').on('click', function () {
+
+            var oldPassword = $('#oldPassword').val();
+            var password = $('#password').val();
+            var rePassword = $('#rePassword').val();
+
+            $.ajax({
+                type: "POST",
+                url: "/member/updatePwd",
+                data: {
+                    oldPassword: oldPassword,
+                    password: password,
+                    rePassword: rePassword
+                },
+                beforeSend: function (request) {
+                    request.setRequestHeader('Authorization',
+                        localStorage.getItem(
+                            "token"));
+                },
+                success: function (result) {
+                    if (result.code = 20000) {
+                        localStorage.setItem(
+                            "token", '')
+                        localStorage.setItem(
+                            "account", '')
+                        window.location.href = '/index.html'
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
