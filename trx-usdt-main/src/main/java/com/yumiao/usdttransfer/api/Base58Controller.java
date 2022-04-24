@@ -28,15 +28,16 @@ public class Base58Controller extends BaseController {
 
     
 
-    @ApiOperation(value = "encode")
+    @ApiOperation(value = "编码: encode")
     @GetMapping("/encode")
     public Object encode(
-            @ApiParam(value = "hexString", required = true) @RequestParam(value = "hexString", required = true) String hexString
+            @ApiParam(value = "hexString", required = true)
+            @RequestParam(value = "hexString", required = true) String hexString
     ) {
         String result = Base58.encode(Hex.decode(hexString));
         return success(result);
     }
-    @ApiOperation(value = "decode")
+    @ApiOperation(value = "解码: decode")
     @GetMapping("/decode")
     public Object decode(
             @ApiParam(value = "base58", required = true) @RequestParam(value = "base58", required = true) String base58) {
@@ -46,7 +47,7 @@ public class Base58Controller extends BaseController {
     }
 
 
-    @ApiOperation(value = "toViewAddress")
+    @ApiOperation(value = "to hexString address: toViewAddress")
     @GetMapping("/toViewAddress")
     public Object toViewAddress(
             @ApiParam(value = "hexString", required = true) @RequestParam(value = "hexString", required = true) String hexString
@@ -56,7 +57,7 @@ public class Base58Controller extends BaseController {
         return success(result);
     }
 
-    @ApiOperation(value = "toHexAddress")
+    @ApiOperation(value = "to base58 地address: toHexAddress")
     @GetMapping("/toHexAddress")
     public Object toHexAddress(
             @ApiParam(value = "base58", required = true) @RequestParam(value = "base58", required = true) String base58) {

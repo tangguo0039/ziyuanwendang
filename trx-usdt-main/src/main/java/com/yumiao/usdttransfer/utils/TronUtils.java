@@ -19,6 +19,9 @@ import org.tron.common.crypto.*;
 import sun.misc.BASE64Decoder;
 
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.math.RoundingMode;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
@@ -79,10 +82,10 @@ public class TronUtils {
 	}
 
 
-
+	private static final BigDecimal decimal = new BigDecimal("1000000");
 
 	public static void main(String args[]) throws Exception {
-	    String priv="BFE7VsiBzHtYpC2x2FJn8V81NQ54w6MUjMxX2aGruNySbsbz88v18yoyFHB2hvQyN7h8Cx97NeLUXd3vXtU6uQDc";
+	    String priv="0000000000000000000000000000000000000000000000000000000430e1b700";
 //	   // priv="909d3f912ab1f816a79e759547bbe33727f03ee7e6e8589d7e49f0092dbb97be";
 //		//priv="AjWnDqkKBR3kimNMAzcZfYdhdPh2Nsj2uvYi1nLaoZkZ";
 ////		String luo="909d3f912ab1f816a79e759547bbe33727f03ee7e6e8589d7e49f0092dbb97be";
@@ -103,10 +106,26 @@ public class TronUtils {
 //        System.out.println(toHexAddress(getAddressByPrivateKey(priv1)));
         //base58 AjWnDqkKBR3kimNMAzcZfYdhdPh2Nsj2uvYi1nLaoZkZ
 //        priv="909d3f912ab1f816a79e759547bbe33727f03ee7e6e8589d7e49f0092dbb97be";
-        String base58=  Base58.encode(Hex.decode(priv));
+		try {
+//			String s = new BigInteger(priv.substring(2), 16).toString();
+
+			final int accuracy = 6;//六位小数
+			BigDecimal bigDecimal =  new BigDecimal(priv).divide(decimal, accuracy, RoundingMode.FLOOR);
+			System.out.println("  === "+bigDecimal);
+		}catch (Exception e){
+			e.printStackTrace();
+		}
+
+//		byte[] v = Hex.decode(priv);
+//		System.out.printf("v.  "+v.toString());
+//        String base58=  Base58.encode(v);
 //        System.out.println(base58);
 //        byte[] eee= Base58.decode(base58);
 //        priv=Hex.toHexString(eee);
+
+//		Hex.decode();
+
+
 //        System.out.println(priv);
 //		System.out.println(getAddressByPrivateKey(priv));
 //		System.out.println(toHexAddress(getAddressByPrivateKey(priv)));

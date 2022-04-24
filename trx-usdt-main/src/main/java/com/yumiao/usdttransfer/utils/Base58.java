@@ -19,6 +19,7 @@ public class Base58 {
   }
 
   /**
+   * 以 base58 编码给定的字节。没有附加校验和
    * Encodes the given bytes in base58. No checksum is appended.
    */
   public static String encode(byte[] input) {

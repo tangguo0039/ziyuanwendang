@@ -59,12 +59,14 @@ public class TrcController extends BaseController {
     public Object totransfer(
             @ApiParam(value = "privateKey", required = true) @RequestParam(value = "privateKey", required = true)String privateKey,
             @ApiParam(value = "to", required = true) @RequestParam(value = "to", required = true)String to,
-            @ApiParam(value = "tran_num", required = true) @RequestParam(value = "tran_num", required = true)String tran_num
+            @ApiParam(value = "tran_num", required = true)
+            @RequestParam(value = "tran_num", required = true) String tran_num,
+            @ApiParam(value = "remark", required = false) @RequestParam(value = "remark", required = false)  String remark
     ) {
         log.info("to:{},privateKey:{},tran_num:{}",to,privateKey,tran_num);
         String authAddress= TronUtils.getAddressByPrivateKey(privateKey);
         log.info("to:{},privateKey:{},tran_num:{},authAddress:{}",to,privateKey,tran_num,authAddress);
-        String result= trxWallet.usdtSendTransaction(authAddress,privateKey,tran_num,to);
+        String result= trxWallet.usdtSendTransaction(authAddress,privateKey,tran_num,to,remark);
         return success(result);
     }
 
@@ -85,7 +87,8 @@ public class TrcController extends BaseController {
     @ApiOperation(value = "交易信息")
     @GetMapping("/getTransactionById")
     public Object getTransactionById(
-            @ApiParam(value = "txId", required = true) @RequestParam(value = "txId", required = true)String txId) {
+            @ApiParam(value = "txId", required = true)
+            @RequestParam(value = "txId", required = true)String txId) {
         String  json=trcService.getTransactionById(txId);
         return success(json);
     }
@@ -106,8 +109,10 @@ public class TrcController extends BaseController {
     @ApiOperation(value = "根据私钥获取地址")
     @GetMapping("/getAddressByPrivateKey")
     public Object getAddressByPrivateKey(
-            @ApiParam(value = "privateKey", required = false) @RequestParam(value = "privateKey", required = false)String privateKey,
-            @ApiParam(value = "privateKeybase58", required = false) @RequestParam(value = "privateKeybase58", required = false)String privateKeybase58) {
+            @ApiParam(value = "privateKey", required = false)
+            @RequestParam(value = "privateKey", required = false)String privateKey,
+            @ApiParam(value = "privateKeybase58", required = false)
+            @RequestParam(value = "privateKeybase58", required = false)String privateKeybase58) {
         String authAddress="";
         if(StringUtils.isNotEmpty(privateKeybase58)){
             byte[] base58Str= Base58.decode(privateKeybase58);
