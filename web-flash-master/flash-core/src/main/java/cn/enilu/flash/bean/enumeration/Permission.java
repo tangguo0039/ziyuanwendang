@@ -59,5 +59,9 @@ public interface Permission {
     String FILE = "file";
     String FILE_UPLOAD = "fileUpload";
 
-
+    //trade管理
+    String TRADE_LIST = "tradeList";
+    String TRADE_AUDIT = "tradeAudit";
+    String TRADE_ABNORMAL_ORDER = "tradeAbnomalOrder";
+    String TRADE_TYPE = "tradeType";
 }

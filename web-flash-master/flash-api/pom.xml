@@ -13,11 +13,19 @@
     <artifactId>flash-api</artifactId>
 
     <dependencies>
+        <!--<dependency>-->
+            <!--<groupId>cn.enilu</groupId>-->
+            <!--<artifactId>flash-workflow</artifactId>-->
+            <!--<version>${project.version}</version>-->
+        <!--</dependency>-->
+
         <dependency>
             <groupId>cn.enilu</groupId>
-            <artifactId>flash-workflow</artifactId>
+            <artifactId>flash-core</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+
         <!--swagger支持-->
         <dependency>
             <groupId>io.springfox</groupId>

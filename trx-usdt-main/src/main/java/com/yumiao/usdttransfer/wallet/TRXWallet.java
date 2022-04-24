@@ -16,6 +16,10 @@ import org.bitcoinj.core.Address;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.ribbon.apache.HttpClientUtils;
 import org.springframework.dao.DuplicateKeyException;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.server.reactive.HttpHandler;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -197,6 +201,10 @@ public class TRXWallet extends AbstractWallet{
 		param.setParameter(addressParam);
 		String url=tronUrl + "/wallet/triggerconstantcontract";//triggersmartcontract
 		BigDecimal amount = BigDecimal.ZERO;
+
+
+
+
         TriggerSmartContract.Result result = restTemplate.postForEntity(url,param,TriggerSmartContract.Result.class).getBody();
 		if (result != null && result.isSuccess()) {
 			String value = result.getConstantResult(0);
@@ -342,7 +350,16 @@ public class TRXWallet extends AbstractWallet{
 			param.setParameter(addressParam + amountParam);
 			log.info("创建交易参数:" + JSONObject.toJSONString(param));
 			String url=tronUrl + "/wallet/triggersmartcontract";
-			String json = restTemplate.postForEntity(url,param,String.class).getBody();
+//			String json = restTemplate.postForEntity(url,param,String.class).getBody();
+//
+
+			HttpHeaders headers = new HttpHeaders();
+			headers.setContentType(MediaType.APPLICATION_JSON_UTF8);
+			headers.set("TRON-PRO-API-KEY","1e5fc191-6381-47e3-b298-f1a9343be146");
+			HttpEntity<String> requetString = new HttpEntity<String>(JSON.toJSONString(param),headers);
+
+//            String json = restTemplate.postForEntity(url,param,String.class).getBody();
+			String json = restTemplate.postForEntity(url,requetString,String.class).getBody();
 			TriggerSmartContract.Result obj=JSON.parseObject(json,TriggerSmartContract.Result.class);
 			if (!obj.isSuccess()) {
 				log.error("创建交易失败");

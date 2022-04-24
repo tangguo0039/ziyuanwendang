@@ -77,7 +77,7 @@ public class ShiroConfig {
         filterRuleMap.put("/file/download", "anon");
         filterRuleMap.put("/file/getImgStream", "anon");
         filterRuleMap.put("/file/getImgBase64", "anon");
-
+        filterRuleMap.put("/trade/**", "anon");
         filterRuleMap.put("/test/**", "anon");
 
         //工作流定义文件流
@@ -88,6 +88,7 @@ public class ShiroConfig {
         filterRuleMap.put("/account/login", "anon");
         filterRuleMap.put("/account/qrcode/**", "anon");
         filterRuleMap.put("/logout", "logout");
+        filterRuleMap.put("/testTrade/**", "anon");
         //H5前端不拦截
         filterRuleMap.put("/offcialsite/**", "anon");
         // 访问401和404页面不通过我们的Filter

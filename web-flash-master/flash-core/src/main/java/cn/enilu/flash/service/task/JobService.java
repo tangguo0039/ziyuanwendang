@@ -101,10 +101,10 @@ public class JobService {
         if (job == null || job.isDisabled()) {
             return false;
         }
-        if (!TaskUtils.isValidExpression(job.getCronExpression())) {
-            logger.error("时间表达式错误（" + job.getJobName() + "," + job.getJobGroup() + "）," + job.getCronExpression());
-            return false;
-        } else {
+//        if (!TaskUtils.isValidExpression(job.getCronExpression())) {
+//            logger.error("时间表达式错误（" + job.getJobName() + "," + job.getJobGroup() + "）," + job.getCronExpression());
+//            return false;
+//        } else {
             // 任务名称和任务组设置规则：    // 名称：task_1 ..    // 组 ：group_1 ..
             TriggerKey triggerKey = TriggerKey.triggerKey(job.getJobName(), job.getJobGroup());
             CronTrigger trigger = (CronTrigger) scheduler.getTrigger(triggerKey);
@@ -126,7 +126,7 @@ public class JobService {
                 // 按新的trigger重新设置job执行
                 scheduler.rescheduleJob(triggerKey, trigger);
             }
-        }
+//        }
         return true;
     }
 
