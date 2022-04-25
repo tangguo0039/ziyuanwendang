@@ -56,7 +56,6 @@ public class TradeOrderController extends BaseController {
 //	@RequiresPermissions(value = "tradeOrder")
 	public Ret list(@RequestParam(required = false) Long id) {
 		Page<TradeOrder> page = new PageFactory<TradeOrder>().defaultPage();
-		page.addFilter("id",id);
 		page = tradeOrderService.queryPage(page);
 		return Rets.success(page);
 	}

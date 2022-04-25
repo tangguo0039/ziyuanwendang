@@ -8,6 +8,7 @@ import cn.enilu.flash.dao.trade.TradeOrderRepository;
 import cn.enilu.flash.service.BaseService;
 import cn.enilu.flash.utils.ByteArray;
 import cn.enilu.flash.utils.TronUtils;
+import cn.enilu.flash.utils.constant.TronConstant;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.google.protobuf.ByteString;
@@ -25,6 +26,8 @@ import org.tron.protos.Protocol;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class TradeOrderService extends BaseService<TradeOrder,Long,TradeOrderRepository>  {
@@ -37,19 +40,44 @@ public class TradeOrderService extends BaseService<TradeOrder,Long,TradeOrderRep
      */
     private static final String tronUrl = "https://api.trongrid.io";
 
-    private static final long feeLimit=1000000L;
+// https://api.trongrid.io/v1/accounts/TAmum5uCXmZmYcKLURa2uvo2isFKsfudb5/transactions?only_confirmed=true&only_to=true&min_block_timestamp=1650794038596
     /**
      * trc20合约地址 这个是USDT代币
      */
     private String contract = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
 
-    @Autowired
-    private RestTemplate restTemplate;
     /**
      * 代币精度
      */
     //token的精度  就是小数点后面有多少位小数 然后1后面加多少个0就可以
     private static final BigDecimal decimal = new BigDecimal("1000000");
+
+
+    private static final long feeLimit=1000000L;
+
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    /**
+     * 获取账户订单
+     */
+
+    public Boolean processTronOrders(String address){
+        Map<String,String> map = new HashMap<>();
+        String jsonObject = restTemplate.getForEntity(TronConstant.TronTradeConstant.tronUrl+TronConstant.TronTradeConstant.accounts,
+                String.class, map).getBody();
+
+        log.info("返回的数据集合:" + jsonObject);
+        if (jsonObject != null) {
+        }
+        return false;
+    }
+
+
+
+
+
 
     public String castHexAddress(String address) {
         if (address.startsWith("T")) {

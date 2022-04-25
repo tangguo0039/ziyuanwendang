@@ -2,324 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04e988f6-ead5-4702-bf76-95e04dca6852" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/test/java/cn/enilu/flash/service/TradeOrderServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/.env.development" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/.env.production" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/.env.staging" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/build/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/jest.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/mock/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/mock/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/mock/mock-server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/mock/table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/mock/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/css/diagram-js.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/vendor/bpmn-font/css/bpmn-codes.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/vendor/bpmn-font/css/bpmn-embedded.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/vendor/bpmn-font/css/bpmn.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/vendor/bpmn-font/font/bpmn.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/vendor/bpmn-font/font/bpmn.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/vendor/bpmn-font/font/bpmn.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/vendor/bpmn-font/font/bpmn.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/vendor/bpmn-font/font/bpmn.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/bpmnjs/vendor/diagram-js.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/img/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/langs/zh_CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/codesample/css/prism.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-cool.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-cry.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-embarassed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-foot-in-mouth.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-frown.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-innocent.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-kiss.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-laughing.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-money-mouth.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-sealed.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-surprised.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-tongue-out.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-undecided.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-wink.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/emoticons/img/smiley-yell.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/plugins/visualblocks/css/visualblocks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/content.inline.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/content.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/fonts/tinymce-mobile.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/fonts/tinymce-small.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/fonts/tinymce-small.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/fonts/tinymce-small.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/fonts/tinymce-small.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/fonts/tinymce.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/fonts/tinymce.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/fonts/tinymce.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/fonts/tinymce.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/img/anchor.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/img/loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/img/object.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/img/trans.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/skin.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/skins/lightgray/skin.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/public/tinymce4.7.5/tinymce.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/cms/article.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/cms/banner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/cms/channel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/cms/contacts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/cms/fileInfo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/message/message.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/message/sender.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/message/template.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/system/cfg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/system/dept.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/system/dict.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/system/log.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/system/loginLog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/system/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/system/notice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/system/role.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/system/task.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/system/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/trade/tradeOrder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/workflow/processDefinition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/api/workflow/workFlowRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/assets/404_images/404.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/assets/404_images/404_cloud.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/assets/custom-theme/fonts/element-icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/assets/custom-theme/fonts/element-icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/assets/custom-theme/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/assets/img/app_download.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/assets/img/avatar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/assets/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/Breadcrumb/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/DictSelect/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/Hamburger/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/HeaderSearch/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/IconSelect/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/IconSelect/requireIcons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/LangSelect/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/RightPanel/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/SvgIcon/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/ThemePicker/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/Tinymce/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/TreeTable/eval.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/components/TreeTable/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/directive/permission/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/directive/permission/permission.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/404.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/articleEdit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/banner.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/bug.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/build.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/cfg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/channel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/chart.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/clipboard.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/code.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/component.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/contacts.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/dashboard.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/date.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/dept.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/dict.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/documentation.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/download.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/drag.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/druid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/edit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/education.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/email.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/excel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/exit-fullscreen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/eye-open.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/form.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/fullscreen.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/international.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/job.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/language.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/link.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/list.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/lock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/log.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/logininfor.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/menu.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/message.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/money.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/monitor.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/nested.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/nested0.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/online.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/operation.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/password.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/password0.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/pdf.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/people.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/peoples.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/phone.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/post.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/processDefine.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/qq.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/sender.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/server.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/shopping.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/shoppingCard.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/size.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/skill.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/star.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/start.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/swagger.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/system.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/tab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/table.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/table0.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/task.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/template.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/theme.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/tool.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/tree-table.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/tree.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/user.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/user0.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/validCode.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/wechat.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/workFlowTask.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/workflow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svg/zip.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/icons/svgo.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/lang/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/lang/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/lang/zh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/AppMain.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/Navbar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/Settings/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/Sidebar/FixiOSBug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/Sidebar/Item.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/Sidebar/Link.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/Sidebar/Logo.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/Sidebar/SidebarItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/Sidebar/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/TagsView/ScrollPane.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/TagsView/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/components/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/layout/mixin/ResizeHandler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/permission.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/settings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/store/getters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/store/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/store/modules/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/store/modules/settings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/store/modules/tagsView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/store/modules/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/styles/common.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/styles/element-ui.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/styles/element-variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/styles/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/styles/mixin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/styles/sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/styles/transition.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/styles/variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/utils/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/utils/get-page-title.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/utils/i18n.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/utils/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/utils/request.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/utils/route.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/utils/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/utils/validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/404.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/account/profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/account/profile.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/article/article.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/article/edit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/article/edit.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/article/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/article/plugins.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/article/toolbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/banner/banner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/banner/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/channel/channel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/channel/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/contacts/contacts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/contacts/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/demo/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/file/file.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/cms/file/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/dashboard/dashboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/dashboard/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/document/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/login/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/login/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/login/login.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/message/message/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/message/message/t_message.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/message/sender/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/message/sender/t_message_sender.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/message/template/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/message/template/t_message_template.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/operation/api/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/operation/druid/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/operation/log/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/operation/log/log.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/operation/loginLog/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/operation/loginLog/loginLog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/redirect/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/cfg/cfg.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/cfg/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/dept/dept.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/dept/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/dict/dict.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/dict/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/menu/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/menu/menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/role/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/role/role.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/task/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/task/log.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/task/task.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/task/taskLog.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/user/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/system/user/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/trade/tradeOrder/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/trade/tradeOrder/tradeOrder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/workflow/processDefinition/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/workflow/processDefinition/processDefinition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/workflow/task/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/workflow/task/task.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/workflow/workFlowRequest/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/src/views/workflow/workFlowRequest/workFlowRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/tests/unit/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/tests/unit/components/Breadcrumb.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/tests/unit/components/Hamburger.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/tests/unit/components/SvgIcon.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/tests/unit/utils/formatTime.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/tests/unit/utils/parseTime.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/tests/unit/utils/validate.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-vue-admin/vue.config.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/trade/tradeOrder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/trade/tradeOrder/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/trade/tradeOrder/tradeOrder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/utils/constant/TronConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.0.0.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.0.0.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/docs/guide/action/cache.md" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/docs/guide/action/cache.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/service/trade/TradeOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/service/trade/TradeOrderService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -331,17 +21,40 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="192">
-                <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+              <first_editor relative-caret-position="167">
+                <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="11" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/trade/tradeOrder.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/trade/tradeOrder/index.vue">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -376,6 +89,61 @@
               <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="operation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="trade" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="trade" type="462c0819:PsiDirectoryNode" />
+              <item name="tradeOrder" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -391,6 +159,12 @@
     <property name="node.js.selected.package.eslint" value="D:\github\ziyuanwendang\flash-vue-admin\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\ziyuanwendang\flash-vue-admin\src\views" />
+      <recent name="D:\github\ziyuanwendang\flash-vue-admin\src\api" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -415,22 +189,19 @@
       <option name="presentableId" value="Default" />
       <updated>1650880530803</updated>
       <workItem from="1650880533876" duration="2876000" />
+      <workItem from="1650899560597" duration="2791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2876000" />
+    <option name="totallyTimeSpent" value="5667000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -438,6 +209,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -450,12 +225,29 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="192">
-            <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <first_editor relative-caret-position="167">
+            <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/trade/tradeOrder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/trade/tradeOrder/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

@@ -8,7 +8,6 @@
 - 针对ehcache的具体用法实现，可以查看EhcacheDao的实现和ehcache.xml配置，这里不再赘述。
 
 ## 缓存应用
-
 web-flash中有两种使用缓存的方法，
 - 一种是通过@Cacheable注解自动缓存查询的数据，避免应用频繁从从数据库读取数据，影响性能。
 ```java
