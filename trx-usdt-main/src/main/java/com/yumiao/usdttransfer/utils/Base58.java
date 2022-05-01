@@ -62,6 +62,15 @@ public class Base58 {
     }
   }
 
+    public static void main(String[] args) {
+        String input = "06c0304ac0fe63acf6a1dae9658f47edf41b554cd4620a3e98db70ef1fbd2187";
+        byte[] decodeKey =  decode(input);
+
+        for (byte c : decodeKey){
+            System.out.printf(" "+c);
+        }
+    }
+
   public static byte[] decode(String input) throws IllegalArgumentException {
     if (input.length() == 0) {
       return new byte[0];

@@ -11,6 +11,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.spongycastle.crypto.digests.SM3Digest;
+import org.spongycastle.util.encoders.DecoderException;
 import org.spongycastle.util.encoders.Hex;
 import org.tron.protos.Protocol;
 import org.tron.protos.Protocol.*;
@@ -19,6 +20,9 @@ import org.tron.common.crypto.*;
 import sun.misc.BASE64Decoder;
 
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
@@ -106,15 +110,15 @@ public class TronUtils {
 //        System.out.println(toHexAddress(getAddressByPrivateKey(priv1)));
         //base58 AjWnDqkKBR3kimNMAzcZfYdhdPh2Nsj2uvYi1nLaoZkZ
 //        priv="909d3f912ab1f816a79e759547bbe33727f03ee7e6e8589d7e49f0092dbb97be";
-		try {
-//			String s = new BigInteger(priv.substring(2), 16).toString();
-
-			final int accuracy = 6;//六位小数
-			BigDecimal bigDecimal =  new BigDecimal(priv).divide(decimal, accuracy, RoundingMode.FLOOR);
-			System.out.println("  === "+bigDecimal);
-		}catch (Exception e){
-			e.printStackTrace();
-		}
+//		try {
+////			String s = new BigInteger(priv.substring(2), 16).toString();
+//
+//			final int accuracy = 6;//六位小数
+//			BigDecimal bigDecimal =  new BigDecimal(priv).divide(decimal, accuracy, RoundingMode.FLOOR);
+//			System.out.println("  === "+bigDecimal);
+//		}catch (Exception e){
+//			e.printStackTrace();
+//		}
 
 //		byte[] v = Hex.decode(priv);
 //		System.out.printf("v.  "+v.toString());
@@ -136,6 +140,13 @@ public class TronUtils {
 //		priv="";
 //		System.out.println(getAddressByPrivateKey(priv));
 //		System.out.println(toHexAddress(getAddressByPrivateKey(priv)));
+        //密钥解压成地址
+        String privateKey = "06c0304ac0fe63acf6a1dae9658f47edf41b554cd4620a3e98db70ef1fbd2187";
+        String authAddress= TronUtils.getAddressByPrivateKey(privateKey);
+        System.out.printf("authAddress: "+authAddress);
+//        地址
+
+
 	}
     /**
      * BASE64解密
@@ -159,11 +170,65 @@ public class TronUtils {
 	 * @return
 	 */
 	public static String getAddressByPrivateKey(String privateKey) {
-		byte[] privateBytes = Hex.decode(privateKey);
+		byte[] privateBytes = decode(privateKey);
+
 		ECKey ecKey = ECKey.fromPrivate(privateBytes);
 		byte[] from = ecKey.getAddress();
 		return toViewAddress(Hex.toHexString(from));
 	}
+    public static byte[] decode(String data) {
+        ByteArrayOutputStream bOut = new ByteArrayOutputStream();
+        try {
+            decode(data, bOut);
+        } catch (Exception var3) {
+            System.out.println("exception decoding Hex string: " + var3.getMessage()+"   "+ var3);
+        }
+        return bOut.toByteArray();
+    }
+
+
+    public static int decode(String data, OutputStream out) throws IOException {
+        int length = 0;
+
+        int end;
+        for(end = data.length(); end > 0 && ignore(data.charAt(end - 1)); --end) {
+        }
+
+        for(int i = 0; i < end; ++length) {
+            while(i < end && ignore(data.charAt(i))) {
+                ++i;
+            }
+
+            byte b1;
+            for(b1 = decodingTable[data.charAt(i++)]; i < end && ignore(data.charAt(i)); ++i) {
+            }
+
+            byte b2 = decodingTable[data.charAt(i++)];
+            if ((b1 | b2) < 0) {
+                throw new IOException("invalid characters encountered in Hex string");
+            }
+
+            out.write(b1 << 4 | b2);
+        }
+
+        return length;
+    }
+    private static boolean ignore(char c) {
+        return c == '\n' || c == '\r' || c == '\t' || c == ' ';
+    }
+
+    public static int encode(byte[] data, int off, int length, OutputStream out) throws IOException {
+        for(int i = off; i < off + length; ++i) {
+            int v = data[i] & 255;
+            out.write(encodingTable[v >>> 4]);
+            out.write(encodingTable[v & 15]);
+        }
+        return length * 2;
+    }
+    protected static final byte[] encodingTable = new byte[]{48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102};
+    protected static final byte[] decodingTable = new byte[128];
+
+
 
     /**
      * 转换成T开头的地址
