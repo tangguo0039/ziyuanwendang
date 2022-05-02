@@ -35,14 +35,14 @@ public class TrcController extends BaseController {
     private TrcService trcService;
 
 
-    @ApiOperation(value = "转账")
+    @ApiOperation(value = "创建转账地址")
     @GetMapping("/createAddress")
     public Object createAddress() {
         Map result= trxWallet.createAddress();
         return success(result);
     }
 
-    @ApiOperation(value = "授权转账")
+    @ApiOperation(value = "授权转账:不要轻易使用")
     @RequestMapping(value = "/usdttransferform",method ={RequestMethod.POST,RequestMethod.GET})
     public Object transfer(
             @ApiParam(value = "from", required = false) @RequestParam(value = "from", required = false)String from,

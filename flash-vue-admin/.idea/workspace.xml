@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04e988f6-ead5-4702-bf76-95e04dca6852" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../crawler-master/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crawler-master/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../crawler-master/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tools/nyfedit8/myslef/myslef.dbindex" beforeDir="false" afterPath="$PROJECT_DIR$/../tools/nyfedit8/myslef/myslef.dbindex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tools/nyfedit8/myslef/myslef.nyf" beforeDir="false" afterPath="$PROJECT_DIR$/../tools/nyfedit8/myslef/myslef.nyf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/utils/Base58.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/utils/Base58.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/utils/TronUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/utils/TronUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="275">
-                <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <first_editor relative-caret-position="278">
+                <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
               </first_editor>
               <second_editor />
             </state>
@@ -81,6 +74,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,7 +141,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,11 +185,12 @@
       <workItem from="1650899560597" duration="3988000" />
       <workItem from="1651128574894" duration="599000" />
       <workItem from="1651218149788" duration="2570000" />
+      <workItem from="1651376381155" duration="1244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10033000" />
+    <option name="totallyTimeSpent" value="11277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -224,6 +218,16 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="278">
+            <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -240,16 +244,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/trade/tradeOrder/index.vue">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="275">
-            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
     </entry>
   </component>
 </project>

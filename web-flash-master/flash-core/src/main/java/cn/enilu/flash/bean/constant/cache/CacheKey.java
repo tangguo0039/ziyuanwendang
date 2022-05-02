@@ -20,14 +20,21 @@ public interface CacheKey {
     String DEPT_NAME = "dept_name_";
 
     String DICT_NAME = "dict_name_";
+
     String DICT = "dict_";
 
 
     String COURSE_NAME = "course_name_";
+
     String ORG_NAME = "org_name_";
+
     String DIC_ALL = "dic_all_";
+
     String CFG = "cfg_";
+
     String MENU_NAME = "menu_name_";
+
     String SYS_USER_NAME = "SYS_USER_NAME";
+
     String FILE_INFO = "file_info";
 }
