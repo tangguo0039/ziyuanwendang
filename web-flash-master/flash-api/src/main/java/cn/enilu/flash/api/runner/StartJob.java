@@ -33,10 +33,10 @@ public class StartJob implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments applicationArguments) throws Exception {
         log.info("start Job >>>>>>>>>>>>>>>>>>>>>>>");
-        List<Task> tasks = taskService.queryAll(SearchFilter.build("disabled", SearchFilter.Operator.EQ, false));
-        List<QuartzJob> list = jobService.getTaskList(tasks);
-        for (QuartzJob quartzJob : list) {
-            jobService.addJob(quartzJob);
-        }
+//        List<Task> tasks = taskService.queryAll(SearchFilter.build("disabled", SearchFilter.Operator.EQ, false));
+//        List<QuartzJob> list = jobService.getTaskList(tasks);
+//        for (QuartzJob quartzJob : list) {
+//            jobService.addJob(quartzJob);
+//        }
     }
 }

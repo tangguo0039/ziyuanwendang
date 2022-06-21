@@ -16,7 +16,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 /**
- * banner管理
+ * banner 管理
  */
 @RestController
 @RequestMapping("/banner")

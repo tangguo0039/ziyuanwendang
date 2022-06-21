@@ -37,4 +37,44 @@ public abstract class BaseEntity implements Serializable {
     @LastModifiedBy
     @Column(name = "modify_by", columnDefinition = "bigint COMMENT '最后更新人'")
     private Long modifyBy;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Long getCreateBy() {
+        return createBy;
+    }
+
+    public void setCreateBy(Long createBy) {
+        this.createBy = createBy;
+    }
+
+    public Date getModifyTime() {
+        return modifyTime;
+    }
+
+    public void setModifyTime(Date modifyTime) {
+        this.modifyTime = modifyTime;
+    }
+
+    public Long getModifyBy() {
+        return modifyBy;
+    }
+
+    public void setModifyBy(Long modifyBy) {
+        this.modifyBy = modifyBy;
+    }
 }

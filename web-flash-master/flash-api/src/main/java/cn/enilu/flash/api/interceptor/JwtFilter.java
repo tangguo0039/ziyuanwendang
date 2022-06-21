@@ -6,6 +6,7 @@ import cn.enilu.flash.security.JwtToken;
 import cn.enilu.flash.security.JwtUtil;
 import cn.enilu.flash.service.system.UserService;
 import cn.enilu.flash.utils.HttpUtil;
+import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,10 +45,10 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
     protected boolean executeLogin(ServletRequest request, ServletResponse response) throws Exception {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         String authorization = httpServletRequest.getHeader("Authorization");
-
         JwtToken token = new JwtToken(authorization);
         // 提交给realm进行登入，如果错误他会抛出异常并被捕获
-        getSubject(request, response).login(token);
+        Subject subject = getSubject(request, response);
+        subject.login(token);
         // 如果没有抛出异常则代表登入成功，返回true
         return true;
     }
@@ -109,7 +110,7 @@ public class JwtFilter extends BasicHttpAuthenticationFilter {
         try {
             HttpServletResponse httpServletResponse = (HttpServletResponse) resp;
             httpServletResponse.setStatus(401);
-//            httpServletResponse.getWriter().println("401");
+//            httpServletResponse.getWriter().println(/login"401");
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
         }

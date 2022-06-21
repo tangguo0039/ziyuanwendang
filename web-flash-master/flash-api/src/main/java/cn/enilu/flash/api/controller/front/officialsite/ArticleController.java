@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/offcialsite/article")
 public class ArticleController extends BaseController {
     private Logger logger = LoggerFactory.getLogger(ArticleController.class);
+
     @Autowired
     private ArticleService articleService;
 

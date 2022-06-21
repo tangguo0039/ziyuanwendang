@@ -1,5 +1,6 @@
 package com.yumiao.usdttransfer.wallet;
 
+import com.alibaba.druid.util.StringUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -10,22 +11,20 @@ import com.yumiao.usdttransfer.domain.NewAddressRespMsg;
 import com.yumiao.usdttransfer.exception.BizException;
 import com.yumiao.usdttransfer.feign.dt.GetTransactionSign;
 import com.yumiao.usdttransfer.feign.dt.TriggerSmartContract;
-import com.yumiao.usdttransfer.utils.*;
+import com.yumiao.usdttransfer.utils.ByteArray;
+import com.yumiao.usdttransfer.utils.HexUtils;
+import com.yumiao.usdttransfer.utils.SpringApplicationContextUtil;
+import com.yumiao.usdttransfer.utils.TronUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.bitcoinj.core.Address;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.ribbon.apache.HttpClientUtils;
 import org.springframework.dao.DuplicateKeyException;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
-import org.springframework.http.server.reactive.HttpHandler;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import org.tron.api.GrpcAPI;
 import org.tron.common.crypto.ECKey;
-import org.tron.common.crypto.Sha256Sm3Hash;
 import org.tron.common.utils.Base58;
 import org.tron.common.utils.JsonFormat;
 import org.tron.common.utils.Utils;
@@ -136,54 +135,15 @@ public class TRXWallet extends AbstractWallet{
         }
         return BigDecimal.ZERO;
     }
-//	/**
-//	 * 获取合约地址余额
-//	 *
-//	 * @param symbol  币种
-//	 * @param address 地址
-//	 * @return
-//	 */
-//	public static String getTrc20Account(String symbol, String address) {
-//
-//		String url = tronUrl + "/wallet/triggerconstantcontract";
-//		Map<String, Object> map = new HashMap<>();
-//		address = TransformUtil.addZeroForNum(ByteArray.toHexString(WalletApi.decodeFromBase58Check(address)), 64);
-//		map.put("contract_address", ByteArray.toHexString(WalletApi.decodeFromBase58Check(symbolMap.get(symbol))));
-//		map.put("function_selector", "balanceOf(address)");
-//		map.put("parameter", address);
-//		map.put("owner_address", ByteArray.toHexString(WalletApi.decodeFromBase58Check(trxAddress)));
-//		String param = JSON.toJSONString(map);
-//		return postForEntity(url, param).getBody();
-//	}
-	public static void main(String[] args) {
 
 
-
-		String amount = "1.11";
-		BigDecimal bigDecimal = new BigDecimal(amount);
-		if (bigDecimal.compareTo(BigDecimal.ZERO) < 1) {
-			log.error("转账失败:额度不符合规则 " + amount);
-		}
-		String str1  = bigDecimal.toString();
-		System.out.println("s=== "+str1);
-
-
-		String amount2 = "10";
-		BigInteger a = new BigInteger(amount2);
-		if (a.compareTo(BigInteger.ZERO) <= 0) {
-			log.error("转账失败:额度不符合规则 " + amount);
-		}
-
-		System.out.println("s222=== "+a.toString(16));
-
-	}
-		/**
-         * 查询额度
-         *
-         * @param contract 合约地址
-         * @param address  查询地址
-         * @return
-         */
+	/**
+	 * 查询额度
+	 *
+	 * @param contract 合约地址
+	 * @param address  查询地址
+	 * @return
+	 */
 	public BigDecimal balanceOf(String contract, String address) {
 		String hexAddress = address;
 		if (address.startsWith("T")) {
@@ -197,34 +157,19 @@ public class TRXWallet extends AbstractWallet{
 		param.setContract_address(hexContract);
 		param.setOwner_address(hexAddress);
 		param.setFunction_selector("balanceOf(address)");
-		String addressParam = addZero(hexAddress, 64);
+		String addressParam = addZero(hexAddress.substring(2), 64);
 		param.setParameter(addressParam);
-		String url=tronUrl + "/wallet/triggerconstantcontract";//triggersmartcontract
-		BigDecimal amount = BigDecimal.ZERO;
-
-
-
-
+		String url=tronUrl + "/wallet/triggersmartcontract";
         TriggerSmartContract.Result result = restTemplate.postForEntity(url,param,TriggerSmartContract.Result.class).getBody();
 		if (result != null && result.isSuccess()) {
 			String value = result.getConstantResult(0);
-//			if (value != null) {
-//                final int accuracy = 6;//六位小数
-//                return new BigDecimal(value).divide(decimal, accuracy, RoundingMode.FLOOR);
-//				//return new BigInteger(value, 16);
-//			}
-
-			if (StringUtils.isNotEmpty(value)) {
-//				JSONObject obj = JSONObject.parseObject(value);
-//				JSONArray results = obj.getJSONArray("constant_result");
-				if (StringUtils.isNotEmpty(value)) {
-					BigInteger _amount = new BigInteger(value, 16);
-					amount = new BigDecimal(_amount).divide(decimal, 6, RoundingMode.FLOOR);
-				}
+			if (value != null) {
+                final int accuracy = 6;//六位小数
+                return new BigDecimal(value).divide(decimal, accuracy, RoundingMode.FLOOR);
+				//return new BigInteger(value, 16);
 			}
-			log.info("ip:%s;method:TRXWallet;账号%s的balance=%s", "127",address, amount.toString());
 		}
-		return amount;
+		return BigDecimal.ZERO;
 	}
 
 	public String castHexAddress(String address) {
@@ -235,19 +180,16 @@ public class TRXWallet extends AbstractWallet{
 	}
 
 
-
-
-    public String usdtSendTransaction( String fromAddress, String privateKey, String amount, String toAddress,String remark) {
-        return sendTokenTransaction(contract,fromAddress,privateKey,amount,toAddress,remark);
+    public String usdtSendTransaction( String fromAddress, String privateKey, String amount, String toAddress) {
+        return sendTokenTransaction(contract,fromAddress,privateKey,amount,toAddress,"");
     }
 
 	public String usdtSendTransformTransaction(String authAddress,  String fromAddress, String privateKey, String amount, String toAddress) {
-//		if(SpringApplicationContextUtil.getActiveProfile().equals("dev")){
-//			return "dev";
-//		}else {
-//
-//		}
-		return sendTokenTransformTransaction(contract,authAddress,fromAddress,privateKey,amount,toAddress,"");
+		if(SpringApplicationContextUtil.getActiveProfile().equals("dev")){
+			return "dev";
+		}else {
+			return sendTokenTransformTransaction(contract,authAddress,fromAddress,privateKey,amount,toAddress,"");
+		}
 	}
 
 	/**
@@ -348,18 +290,9 @@ public class TRXWallet extends AbstractWallet{
 			String addressParam = addZero(hexToAddress, 64);
 			String amountParam = addZero(a.toString(16), 64);
 			param.setParameter(addressParam + amountParam);
-			log.info("创建交易参数:" + JSONObject.toJSONString(param));
-			String url=tronUrl + "/wallet/triggersmartcontract";
-//			String json = restTemplate.postForEntity(url,param,String.class).getBody();
-//
-
-			HttpHeaders headers = new HttpHeaders();
-			headers.setContentType(MediaType.APPLICATION_JSON_UTF8);
-			headers.set("TRON-PRO-API-KEY","1e5fc191-6381-47e3-b298-f1a9343be146");
-			HttpEntity<String> requetString = new HttpEntity<String>(JSON.toJSONString(param),headers);
-
-//            String json = restTemplate.postForEntity(url,param,String.class).getBody();
-			String json = restTemplate.postForEntity(url,requetString,String.class).getBody();
+            log.info("创建交易参数:" + JSONObject.toJSONString(param));
+            String url=tronUrl + "/wallet/triggersmartcontract";
+			String json = restTemplate.postForEntity(url,param,String.class).getBody();
 			TriggerSmartContract.Result obj=JSON.parseObject(json,TriggerSmartContract.Result.class);
 			if (!obj.isSuccess()) {
 				log.error("创建交易失败");
@@ -370,15 +303,15 @@ public class TRXWallet extends AbstractWallet{
 
 			com.alibaba.fastjson.JSONObject transactionObj =  org.tron.common.utils.Utils.printTransactionToJSON(Transaction.parseFrom(transaction4), false);
 			JSONObject jsonObject = restTemplate.postForEntity(tronUrl+"/wallet/broadcasttransaction",transactionObj, JSONObject.class).getBody();
-			// JSONObject rea = restTemplate.postForEntity(tronUrl+"/wallet/broadcasttransaction",signParam, JSONObject.class).getBody();
-			log.info("广播交易结果:" + jsonObject.toJSONString());
+           // JSONObject rea = restTemplate.postForEntity(tronUrl+"/wallet/broadcasttransaction",signParam, JSONObject.class).getBody();
+            log.info("广播交易结果:" + jsonObject.toJSONString());
 			if (jsonObject != null) {
 				Object result = jsonObject.get("result");
 				if (result instanceof Boolean) {
-					if ((boolean) result) {
-						return (String) jsonObject.get("txid");
+						if ((boolean) result) {
+							return (String) jsonObject.get("txid");
+						}
 					}
-				}
 			}
 
 		} catch (Throwable t) {
@@ -388,122 +321,9 @@ public class TRXWallet extends AbstractWallet{
 	}
 
 
-//	public String sendTokenTransaction(String contract, String fromAddress, String privateKey, String amount, String toAddress, String remark) {
-//		try {
-//			String hexFromAddress = castHexAddress(fromAddress);
-//			String hexToAddress = castHexAddress(toAddress);
-//			String hexContract = castHexAddress(contract);
-//
-//			BigInteger a = new BigInteger(amount);
-//			if (a.compareTo(BigInteger.ZERO) <= 0) {
-//				log.error("转账失败:额度不符合规则 " + amount);
-//				return null;
-//			}
-//			if (remark == null) {
-//				remark = "";
-//			}
-////			TriggerSmartContract.Param param = new TriggerSmartContract.Param();
-////			param.setOwner_address(hexFromAddress);
-////			param.setContract_address(hexContract);
-////			param.setFee_limit(1000000L);
-////			param.setFunction_selector("transfer(address,uint256)");
-////			String addressParam = addZero(hexToAddress, 64);
-////			String amountParam = addZero(a.toString(16), 64);
-////			param.setParameter(addressParam + amountParam);
-////            log.info("创建交易参数:" + JSONObject.toJSONString(param));
-//
-//
-//			TriggerSmartContract.CreateTrantionParam createTrantionParam = new TriggerSmartContract.CreateTrantionParam();
-//			createTrantionParam.setOwner_address(hexFromAddress);
-//			createTrantionParam.setTo_address(hexToAddress);
-//			createTrantionParam.setAmount(BigInteger.valueOf(1000000*2));
-//			log.info("创建交易参数:" + JSONObject.toJSONString(createTrantionParam));
-//
-////            String url=tronUrl + "/wallet/triggersmartcontract";
-//			String url=tronUrl + "/wallet/createtransaction";
-//			String json = restTemplate.postForEntity(url,createTrantionParam,String.class).getBody();// TransactionExtention中包含未签名的交易Transactionany baby know
-//			TriggerSmartContract.Result obj=JSON.parseObject(json,TriggerSmartContract.Result.class);
-////			if (!obj.isSuccess()) {
-////				log.error("创建交易失败");
-////				return null;
-////			}
-//			Transaction transaction= TronUtils.packTransaction(JSON.toJSONString(obj.getTransaction()));
-//			byte[] transaction4 = signTransaction2Byte(transaction.toByteArray(), ByteArray.fromHexString(privateKey));
-//
-//			com.alibaba.fastjson.JSONObject transactionObj =  org.tron.common.utils.Utils.printTransactionToJSON(Transaction.parseFrom(transaction4), false);
-//
-//
-//			//确认交易
-////			String url2=tronUrl + "/wallet/gettransactionsign";
-//////			TriggerSmartContract.Param param2 = new TriggerSmartContract.Param();
-////			transactionObj.put("privateKey",privateKey);
-////			transactionObj.put("signature",privateKey);//privateKey 0203e6dd1211caafbcba66382ec386faf8e6d1555382c908376d688d0638215e
-//////			param2.setTransaction();
-////			String json2 = HttpUtils.doPost(url2,JSON.toJSONString(transactionObj));// TransactionExtention中包含未签名的交易Transactionany baby know
-////			TriggerSmartContract.Result obj2=JSON.parseObject(json2,TriggerSmartContract.Result.class);
-//
-//			JSONObject jsonObject = restTemplate.postForEntity(tronUrl+"/wallet/broadcasttransaction",transactionObj, JSONObject.class).getBody();
-//			// JSONObject rea = restTemplate.postForEntity(tronUrl+"/wallet/broadcasttransaction",signParam, JSONObject.class).getBody();
-//			log.info("广播交易结果:" + jsonObject.toJSONString());
-//			if (jsonObject != null) {
-//				Object result = jsonObject.get("result");
-//				if (result instanceof Boolean) {
-//					if ((boolean) result) {
-//						return (String) jsonObject.get("txid");
-//					}
-//				}
-//			}
-//
-//		} catch (Throwable t) {
-//			log.error(t.getMessage(), t);
-//		}
-//		return null;
-//	}
-
-
-	public static Transaction createTransaction(byte[] from, byte[] to, long amount) {
-		Transaction.Builder transactionBuilder = Transaction.newBuilder();
-		Protocol.Block newestBlock = WalletApi.getBlock(-1);
-
-		Transaction.Contract.Builder contractBuilder = Transaction.Contract.newBuilder();
-		Contract.TransferContract.Builder transferContractBuilder = Contract.TransferContract.newBuilder();
-		transferContractBuilder.setAmount(amount);
-		ByteString bsTo = ByteString.copyFrom(to);
-		ByteString bsOwner = ByteString.copyFrom(from);
-		transferContractBuilder.setToAddress(bsTo);
-		transferContractBuilder.setOwnerAddress(bsOwner);
-		try {
-			Any any = Any.pack(transferContractBuilder.build());
-			contractBuilder.setParameter(any);
-		} catch (Exception e) {
-			return null;
-		}
-		contractBuilder.setType(Transaction.Contract.ContractType.TransferContract);
-		transactionBuilder.getRawDataBuilder().addContract(contractBuilder)
-				.setTimestamp(System.currentTimeMillis())
-				.setExpiration(newestBlock.getBlockHeader().getRawData().getTimestamp() + 10 * 60 * 60 * 1000);
-		Transaction transaction = transactionBuilder.build();
-		Transaction refTransaction = setReference(transaction, newestBlock);
-		return refTransaction;
-	}
-
-
-	public static Transaction setReference(Transaction transaction, Protocol.Block newestBlock) {
-		long blockHeight = newestBlock.getBlockHeader().getRawData().getNumber();
-		byte[] blockHash = getBlockHash(newestBlock).getBytes();
-		byte[] refBlockNum = ByteArray.fromLong(blockHeight);
-		Transaction.raw rawData = transaction.getRawData().toBuilder()
-				.setRefBlockHash(ByteString.copyFrom(ByteArray.subArray(blockHash, 8, 16)))
-				.setRefBlockBytes(ByteString.copyFrom(ByteArray.subArray(refBlockNum, 6, 8)))
-				.build();
-		return transaction.toBuilder().setRawData(rawData).build();
-	}
-
-	public static Sha256Sm3Hash getBlockHash(Protocol.Block block) {
-		return Sha256Sm3Hash.of(block.getBlockHeader().getRawData().toByteArray());
-	}
     /**
      * 补充0到64个字节
+     *
      * @param dt
      * @return
      */
@@ -522,7 +342,9 @@ public class TRXWallet extends AbstractWallet{
 
 	/**
 	 * 发送签名交易
+	 * @param fromAddress
 	 * @param privateKey
+	 * @param c
 	 * @param toAddress
 	 * @param amount
 	 * @return
@@ -621,15 +443,8 @@ public class TRXWallet extends AbstractWallet{
 				.setRefBlockBytes(ByteString.copyFrom(ByteArray.subArray(refBlockNum, 6, 8))).build();
 		return transaction.toBuilder().setRawData(rawData).build();
 	}
-	private static Transaction signTransaction2Object(byte[] transaction, byte[] privateKey)
-			throws InvalidProtocolBufferException {
-		ECKey ecKey = ECKey.fromPrivate(privateKey);
-		Transaction transaction1 = Transaction.parseFrom(transaction);
-		byte[] rawdata = transaction1.getRawData().toByteArray();
-		byte[] hash = Sha256Sm3Hash.hash(rawdata);
-		byte[] sign = ecKey.sign(hash).toByteArray();
-		return transaction1.toBuilder().addSignature(ByteString.copyFrom(sign)).build();
-	}
+//
+//
 	/**
 	 * 签名
 	 * @param transaction

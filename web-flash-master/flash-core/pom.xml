@@ -12,6 +12,32 @@
     <artifactId>flash-core</artifactId>
 
     <dependencies>
+        <!--tron jar start https://developers.tron.network/reference/quickstart -->
+        <dependency>
+            <groupId>abi</groupId>
+            <artifactId>abi</artifactId>
+            <version>0.3.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/lib/abi-0.3.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>core</groupId>
+            <artifactId>core</artifactId>
+            <version>0.3.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/lib/core-0.3.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>utils</groupId>
+            <artifactId>utils</artifactId>
+            <version>0.3.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/lib/utils-0.3.0.jar</systemPath>
+        </dependency>
+        <!--tron jar end https://developers.tron.network/reference/quickstart -->
+
         <!-- https://mvnrepository.com/artifact/com.madgag.spongycastle/core -->
         <dependency>
             <groupId>com.madgag.spongycastle</groupId>
@@ -31,7 +57,7 @@
             <artifactId>protobuf-java</artifactId>
             <version>3.5.1</version>
         </dependency>
-        <!-- TRON xrp  begin  -->
+       <!-- &lt;!&ndash; TRON xrp  begin  &ndash;&gt;
         <dependency>
             <groupId>com.github.tronprotocol</groupId>
             <artifactId>tron-wallet-cli</artifactId>
@@ -46,7 +72,7 @@
             <version>1.0</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/src/main/resources/lib/tron-protobuf-1.0-SNAPSHOT.jar</systemPath>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

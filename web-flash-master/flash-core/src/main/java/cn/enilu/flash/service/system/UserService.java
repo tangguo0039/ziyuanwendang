@@ -67,7 +67,7 @@ public class UserService extends BaseService<User, Long, UserRepository> {
      */
     public String loginForToken(User user) {
         //获取用户token值
-        String token = JwtUtil.sign(user, tokenExpireTime * 60000);
+        String token = JwtUtil.sign(user, tokenExpireTime * 120000);
         //将token作为RefreshToken Key 存到缓存中，缓存时间为token有效期的两倍
         String refreshTokenCacheKey = token;
         Date expireDate = new Date(System.currentTimeMillis() + tokenExpireTime * 120000);

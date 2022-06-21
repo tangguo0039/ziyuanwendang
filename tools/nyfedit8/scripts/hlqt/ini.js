@@ -8,14 +8,15 @@
 // for any commercial purpose without preceding consent from authors.
 /////////////////////////////////////////////////////////////////////
 
-var sTitle="INI";
-
-var vTags=[
-		//for .ini files containing [key = value];
-		{pattern: "^([^=]{1,128})(?=[=])", nocase: false, classname: 'attrname'}
-		, {pattern: "(?<=[=])(.+)$", nocase: false, classname: 'attrval'}
-
-	];
-
-var vComments=[
-];
+//var sTitle="INI";
+//
+//var vTags=[
+//		//for .ini files containing [key = value];
+//		{pattern: "^([^=]{1,128})(?=[=])", nocase: false, classname: 'attrname'}
+//		, {pattern: "(?<=[=])(.+)$", nocase: false, classname: 'attrval'}
+//
+//	];
+//
+//var vComments=[
+//];
+//

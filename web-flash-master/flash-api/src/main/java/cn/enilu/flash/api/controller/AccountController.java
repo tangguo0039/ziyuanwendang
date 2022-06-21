@@ -60,20 +60,22 @@ public class AccountController extends BaseController {
      * 1，验证没有注册<br>
      * 2，验证密码错误<br>
      * 3，登录成功
-     *
+     * 4，增加谷歌令牌
      * @param userName
      * @param password
      * @return
      */
     @PostMapping(value = "/login")
-    public Object login(@RequestParam("username") String userName,
-                        @RequestParam("password") String password) {
+    public Object login(@RequestParam(required = true,value = "username") String userName,
+                        @RequestParam(required = true,value = "password") String password,
+                        @RequestParam(required = false,value = "code") String code) {
+
         try {
             //1,
             User user = userService.findByAccountForLogin(userName);
             if (user == null) {
                 return Rets.failure("用户名或密码错误");
-            }
+            }//status
             if (user.getStatus() == ManagerStatus.FREEZED.getCode()) {
                 return Rets.failure("用户已冻结");
             } else if (user.getStatus() == ManagerStatus.DELETED.getCode()) {

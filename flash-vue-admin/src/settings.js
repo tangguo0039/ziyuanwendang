@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'web-flash后台管理',
+  title: 'trading platform后台管理',
 
   /**
    * @type {boolean} true | false

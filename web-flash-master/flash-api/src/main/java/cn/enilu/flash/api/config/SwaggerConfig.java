@@ -61,13 +61,13 @@ public class SwaggerConfig {
      */
     private ApiInfo frontApiInfo() {
         return new ApiInfoBuilder()
-                .title("web-flash api")
+                .title("trading platform api")
                 .description("快速构建web管理平台")
                 .version("v1.0")
                 .license("MIT")
-                .contact(    //添加开发者的一些信息
-                        new Contact("enilu", "http://www.enilu.cn",
-                                "eniluzt@qq.com"))
+//                .contact(    //添加开发者的一些信息
+//                        new Contact("enilu", "http://www.enilu.cn",
+//                                "eniluzt@qq.com"))
                 .build();
     }
 }

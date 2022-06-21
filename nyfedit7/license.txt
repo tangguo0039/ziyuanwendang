@@ -1,0 +1,85 @@
+
+End User License Agreement (EULA)
+__________________________________________________________
+
+
+This agreement explains when and how you may use both trial and purchased 
+copies of software products from WJJ SOFTWARE. In this agreement:
+
+"Program" means the WJJ SOFTWARE product(s) you have purchased or obtained 
+for evaluation, including both the software and the associated documentation 
+and other materials;
+
+"Trial Copy" means a copy of the Program distributed by us or by our 
+authorized agents for evaluation purposes and which is described as a trial, 
+shareware, or unregistered copy in the Program's sign-on messages or About box;
+
+"Purchased Copy" means a copy of the Program purchased from us or from a 
+dealer, and which is not described as a trial, shareware, or unregistered 
+copy in the Program's sign-on messages or About box;
+
+"Key" refers to the unique registration code that you receive when you 
+purchase the Program;
+
+"we" or "us" means WJJ SOFTWARE;
+
+"you" means the end user of the Program.
+
+This is a legal agreement which allows you, the end user, to use the Program 
+under certain terms and conditions. If you cannot agree to abide by what this 
+agreement says you should not use or evaluate the Program.
+
+You may use a Trial Copy of the Program for evaluation only, in order to 
+determine whether the Program meets your needs before purchasing it. While 
+you are evaluating the Program, you may use it on as many computers as are 
+required to perform your evaluation.
+
+Once you purchase the Program, your use is subject to the following 
+restrictions:
+
+You agree not to install or use any individual Key on more than one computer 
+at a time. However, you may install an individual Key simultaneously on one 
+computer at work, one computer at home, and one portable computer, IF (and 
+ONLY if) all these computers are used primarily by the same individual, and 
+there is no possibility that the computers will be in use at the same time 
+except while you are actively transferring files between them. This provision 
+is only for individual Keys and does not apply to multi-user Keys.
+
+If you purchased a multi-user Key for the Program, you agree not to install 
+or use the Program on more computers than the number included in your license, 
+as shown on your order, payment, invoice, or other similar documentation; the 
+Program sign-on screen or About box; or other electronic or printed documents 
+received from us or our dealer.
+
+After your purchase, you may continue to use the Trial Copy on as many 
+computers as you wish. You may NOT install your Key on more than one computer, 
+except as outlined above.
+
+You may freely distribute copies of the original (Trial) version of the Program, 
+in its original format, so long as you do not charge more than a nominal fee 
+to cover the cost of materials. You may not in any way change the original 
+distribution file, except to package it within another archive if necessary.
+
+When you purchase the Program, you will receive a unique registration code, or 
+Key. You may not publish or distribute this Key by any means without direct 
+authorization from us. If you do, your license to use the Program is 
+automatically terminated, you must remove the Program from your computer(s), 
+and you may be liable for legal damages.
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER 
+EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES 
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS 
+TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH YOU. SHOULD THE 
+SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, 
+REPAIR OR CORRECTION.
+
+WJJ SOFTWARE IS NOT RESPONSIBLE FOR ANY DAMAGES WHATSOEVER, INCLUDING LOSS OF 
+INFORMATION, INTERRUPTION OF BUSINESS, PERSONAL INJURY AND/OR ANY DAMAGE OR 
+CONSEQUENTIAL DAMAGE WITHOUT LIMITATION, INCURRED BEFORE, DURING OR AFTER THE 
+USE OF OUR PRODUCTS.
+
+
+__________________________________________________________
+
+Copyright 1998-2014 Wjj Software. All Rights Reserved.
+http://www.wjjsoft.com/

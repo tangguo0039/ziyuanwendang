@@ -19,7 +19,6 @@ public class Base58 {
   }
 
   /**
-   * 以 base58 编码给定的字节。没有附加校验和
    * Encodes the given bytes in base58. No checksum is appended.
    */
   public static String encode(byte[] input) {
@@ -61,15 +60,6 @@ public class Base58 {
       throw new RuntimeException(e);  // Cannot happen.
     }
   }
-
-    public static void main(String[] args) {
-        String input = "06c0304ac0fe63acf6a1dae9658f47edf41b554cd4620a3e98db70ef1fbd2187";
-        byte[] decodeKey =  decode(input);
-
-        for (byte c : decodeKey){
-            System.out.printf(" "+c);
-        }
-    }
 
   public static byte[] decode(String input) throws IllegalArgumentException {
     if (input.length() == 0) {

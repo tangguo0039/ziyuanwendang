@@ -50,18 +50,18 @@
             style="width: 100%; margin-bottom: 30px"
             @click.native.prevent="handleLogin"> {{ $t("login.logIn") }} </el-button>
 
-          <div style="position: relative">
-            <div class="tips">
-              <span>{{ $t("login.username") }} : admin</span>
-              <span>{{ $t("login.password") }} : admin</span>
-            </div>
-            <div class="tips">
-              <span style="margin-right: 18px">{{ $t("login.username") }} : developer</span>
-              <span>{{ $t("login.password") }} : developer</span>
-            </div>
-          </div>
+          <!--<div style="position: relative">-->
+            <!--<div class="tips">-->
+              <!--<span>{{ $t("login.username") }} : admin</span>-->
+              <!--<span>{{ $t("login.password") }} : admin</span>-->
+            <!--</div>-->
+            <!--<div class="tips">-->
+              <!--<span style="margin-right: 18px">{{ $t("login.username") }} : developer</span>-->
+              <!--<span>{{ $t("login.password") }} : developer</span>-->
+            <!--</div>-->
+          <!--</div>-->
         </el-tab-pane>
-        <el-tab-pane label="扫码登录" name="second" >
+<!--        <el-tab-pane label="扫码登录" name="second" >
           <div v-if="qrcode.activeName=='second'"  >
              
               <div class="qrcode" v-show="!qrcode.showAppdownload">
@@ -97,7 +97,7 @@
                     <el-button class="btn  btn-link btn-xs qrCodeRefresh" href="#" style="font-size:12px ;font-weight: bolder;color:rgb(0,146,248)">重新扫描</el-button>
                 </div>
             </div>
-        </el-tab-pane>
+        </el-tab-pane>-->
       </el-tabs>
     </el-form>
   </div>

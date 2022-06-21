@@ -2,7 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04e988f6-ead5-4702-bf76-95e04dca6852" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/video/home-bg-h5.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/trade/TestTradeOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/lib/abi-0.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/lib/core-0.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/lib/utils-0.3.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.0.0.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/@babel/register/.babel.7.0.0.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/978f820f89467cd7ed8e9095f331f4e5.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/978f820f89467cd7ed8e9095f331f4e5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/be5a816c750ce86277a21799e66d9a1c.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/be5a816c750ce86277a21799e66d9a1c.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c22a45910d3a73e051b598f16df7addb.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c22a45910d3a73e051b598f16df7addb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e499d437e353c13697e63b7cfa9d72fc.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/e499d437e353c13697e63b7cfa9d72fc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/5c96b5054ffc148eb6f3ab6b9c29a143.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/5c96b5054ffc148eb6f3ab6b9c29a143.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/5fb2bf71fdae938761042f7d08ade600.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/5fb2bf71fdae938761042f7d08ade600.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/7ab16d079cbccd78d25b8bb7dcdeb29a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/7ab16d079cbccd78d25b8bb7dcdeb29a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/81050fbdbca4d892016a75c1bff4b5a2.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/81050fbdbca4d892016a75c1bff4b5a2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/8f1aab22d3e7974ac6a632aad46cd926.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/8f1aab22d3e7974ac6a632aad46cd926.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d7207bf907b37eba62b15af491ce3dd5.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/d7207bf907b37eba62b15af491ce3dd5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/e9fa528197e4dff1a416843ad499bbb2.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/e9fa528197e4dff1a416843ad499bbb2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/Sidebar/Logo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/components/Sidebar/Logo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tools/nyfedit8/scripts/hlqt/ini.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tools/nyfedit8/scripts/hlqt/ini.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/api/Base58Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/api/Base58Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/api/TrcController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/api/TrcController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/feign/TronFullNodeFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/feign/TronFullNodeFeign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/feign/dt/TriggerSmartContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/feign/dt/TriggerSmartContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/utils/Base58.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/utils/Base58.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/utils/TransformUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/utils/TronUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/utils/TronUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/wallet/TRXWallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../trx-usdt-main/src/main/java/com/yumiao/usdttransfer/wallet/TRXWallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../trx-usdt-main/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../trx-usdt-main/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/config/CORSConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/config/CORSConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/config/ShiroConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/cms/BannerMgrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/cms/BannerMgrController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/front/officialsite/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/front/officialsite/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/game/TradeTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/game/TradeTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/trade/TradeOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/controller/trade/TradeOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/interceptor/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/interceptor/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/runner/StartJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/java/cn/enilu/flash/api/runner/StartJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-api/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/security/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/security/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/service/system/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/service/system/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/service/trade/TradeOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/service/trade/TradeOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/service/trade/TradeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/service/trade/TradeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/utils/Sha256Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/utils/Sha256Hash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/utils/TronUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../web-flash-master/flash-core/src/main/java/cn/enilu/flash/utils/TronUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,10 +72,57 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="278">
-                <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+              <first_editor relative-caret-position="228">
+                <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/login/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1250">
+              <caret line="50" column="67" selection-start-line="50" selection-start-column="62" selection-end-line="50" selection-end-column="67" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/login/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1250">
+              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/login/login.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3275">
+              <caret line="131" column="20" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/img/bg.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lang/zh.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1175">
+              <caret line="47" column="7" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -52,6 +152,21 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>login.logIn</find>
+      <find>web-flash</find>
+      <find>control background</find>
+      <find>developer</find>
+      <find>web-fl</find>
+      <find>后台管理</find>
+      <find>账号密码登录</find>
+      <find>.login</find>
+      <find>trading</find>
+      <find>web-</find>
+      <find>logIn</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -59,6 +174,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/layout/components/Sidebar/Logo.vue" />
+        <option value="$PROJECT_DIR$/src/lang/zh.js" />
+        <option value="$PROJECT_DIR$/src/lang/en.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/views/login/index.vue" />
+        <option value="$PROJECT_DIR$/src/settings.js" />
+        <option value="$PROJECT_DIR$/vue.config.js" />
       </list>
     </option>
   </component>
@@ -85,7 +208,30 @@
             <path>
               <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
@@ -98,44 +244,7 @@
               <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="operation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="trade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flash-vue-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flash-vue-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="trade" type="462c0819:PsiDirectoryNode" />
-              <item name="tradeOrder" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,9 +261,11 @@
     <property name="node.js.selected.package.eslint" value="D:\github\ziyuanwendang\flash-vue-admin\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\ziyuanwendang\flash-vue-admin\public\video" />
       <recent name="D:\github\ziyuanwendang\flash-vue-admin\src\views" />
       <recent name="D:\github\ziyuanwendang\flash-vue-admin\src\api" />
     </key>
@@ -186,11 +297,17 @@
       <workItem from="1651128574894" duration="599000" />
       <workItem from="1651218149788" duration="2570000" />
       <workItem from="1651376381155" duration="1244000" />
+      <workItem from="1651646441394" duration="5868000" />
+      <workItem from="1651727209923" duration="3966000" />
+      <workItem from="1651817124570" duration="2401000" />
+      <workItem from="1652085820357" duration="594000" />
+      <workItem from="1652432437342" duration="1195000" />
+      <workItem from="1652452546315" duration="603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11277000" />
+    <option name="totallyTimeSpent" value="25904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -217,14 +334,62 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/login/index.vue</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="278">
-            <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <first_editor relative-caret-position="228">
+            <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/login/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="50" column="67" selection-start-line="50" selection-start-column="62" selection-end-line="50" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/login/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3275">
+          <caret line="131" column="20" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/bg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lang/zh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="7" />
         </state>
       </provider>
     </entry>

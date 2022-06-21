@@ -22,4 +22,28 @@ public class FileInfo extends BaseEntity {
     @Transient
     private String ablatePath;
 
+
+    public String getOriginalFileName() {
+        return originalFileName;
+    }
+
+    public void setOriginalFileName(String originalFileName) {
+        this.originalFileName = originalFileName;
+    }
+
+    public String getRealFileName() {
+        return realFileName;
+    }
+
+    public void setRealFileName(String realFileName) {
+        this.realFileName = realFileName;
+    }
+
+    public String getAblatePath() {
+        return ablatePath;
+    }
+
+    public void setAblatePath(String ablatePath) {
+        this.ablatePath = ablatePath;
+    }
 }
